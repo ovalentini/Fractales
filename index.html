@@ -216,6 +216,20 @@ img {
   color: #555;
 }
 
+.cloture {
+  background-color: #fdf6ff;
+  padding: 40px 20px;
+  text-align: center;
+  font-style: italic;
+  border-bottom: 2px dashed #ccc;
+}
+
+.cloture blockquote p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #555;
+}
+
 @media screen and (max-width: 600px) {
   .retour-carte {
     display: flex;
@@ -239,19 +253,87 @@ img {
   }
 }
 
+.entree-exposition {
+  background: linear-gradient(to bottom, #fffafc, #f2f0ff);
+  padding: 60px 20px;
+  text-align: center;
+  border-bottom: 2px dashed #ccc;
+}
+
+.entree-exposition h1 {
+  font-size: 2em;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.entree-exposition blockquote p {
+  font-size: 1.3em;
+  font-style: italic;
+  color: #666;
+  line-height: 1.6;
+}
+
+.entree-exposition .nav-btn.retour {
+  margin-top: 30px;
+  background-color: #6b4ca4;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease;
+}
+
+.entree-exposition .nav-btn.retour:hover {
+  background-color: #523a88;
+}
+
+.carte-point.highlight {
+  animation: pulseHighlight 1s ease-out;
+  box-shadow: 0 0 12px 6px rgba(255, 165, 0, 0.6);
+  border-radius: 50%;
+}
+
+@keyframes pulseHighlight {
+  0% { box-shadow: 0 0 0 rgba(255, 165, 0, 0); transform: scale(1); }
+  50% { box-shadow: 0 0 12px 6px rgba(255, 165, 0, 0.6); transform: scale(1.2); }
+  100% { box-shadow: 0 0 0 rgba(255, 165, 0, 0); transform: scale(1); }
+}
+
+.debug-zone.highlight {
+  box-shadow: 0 0 12px 6px rgba(255,165,0,0.6);
+  outline: 2px solid rgba(255,165,0,0.8);
+  animation: pulseZone 1s ease-out;
+}
+
+@keyframes pulseZone {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
 	</style>
 	</head>
 	<body>
-	<header>
-	<h1>Fractales du Monde: Reflets d'Âmes</h1>
-	<p>Bienvenue dans une exposition où chaque image est une porte, chaque spirale un souffle, et chaque pixel une mémoire.</p>
+	<header class="entree-exposition">
+	  <h1>🖼️ Fractales du Monde : Reflets d'Âmes</h1>
+	  <blockquote>
+		<p>
+		  “Bienvenue dans une exposition où chaque image est une porte,<br />
+		  chaque spirale un souffle,<br />
+		  et chaque pixel une mémoire.”
+		</p>
+	  </blockquote>
+	  <div class="retour-carte">
+		<a href="#introduction" class="nav-btn retour" title="Commencer le voyage poétique">✨ Entrer dans l’exposition</a>
+	  </div>
 	</header>
-	
 	<body>
 	
 	<!-- 1. Introduction poétique -->
-	  <section class="introduction">
-		<h2>Introduction poétique</h2>
+	  <section id="introduction" class="introduction">
+		<h2>🖼️ Prologue sensible – Introduction poétique</h2>
 		<blockquote>
 		  <p>“Fermez les yeux… et ouvrez l’âme. Vous entrez dans un monde où les frontières se dissolvent.
 		  Ici, chaque image est un souffle, chaque spirale une mémoire.
@@ -259,17 +341,17 @@ img {
 		  Suivez la lumière, écoutez le rythme caché derrière les pixels, et laissez-vous porter…”</p>
 		</blockquote>
 		<div class="retour-carte">
-		  <a href="#carte" class="nav-btn retour">🧭 Accéder à la carte interactive</a>
-		  <a href="#sommaire" class="nav-btn sommaire">📚 Accéder au sommaire de l'exposition</a>
+		  <a href="#carte" class="nav-btn retour" title="Voir la carte interactive des salles">🗺️ Accéder à la carte interactive</a>
+		  <a href="#sommaire" class="nav-btn sommaire" title="Voir le sommaire narratif des salles">📚 Accéder au sommaire de l'exposition</a>
 		</div>
 	  </section>
 	
 	<!-- Sommaire de l'exposition -->
 	<section id="sommaire" class="sommaire-exposition">
-	  <h2>🧭 Sommaire de l'exposition</h2>
+	  <h2>📚 Sommaire de l'exposition</h2>
 	  
 	  <div class="retour-carte">
-		<a href="#carte" class="nav-btn retour">🔙 Accéder à la carte interactive</a>
+		<a href="#carte" class="nav-btn retour" title="Voir la carte interactive des salles">🗺️ Accéder à la carte interactive</a>
 	  </div>
 	  
 	  <ul>
@@ -355,27 +437,27 @@ img {
 	
 	<!-- Carte interactive -->
 	<section id="carte" class="interactive-map">
-    <h2>Carte interactive</h2>
+    <h2>🗺 Carte interactive</h2>
 	
 	<div class="retour-carte">
-	  <a href="#sommaire" class="nav-btn sommaire">📚 Accéder au sommaire de l'exposition</a>
+	  <a href="#sommaire" class="nav-btn sommaire" title="Voir le sommaire narratif des salles">📚 Accéder au sommaire de l'exposition</a>
 	</div>
 
 	  <div class="carte-container">
 		<div class="carte-wrapper">
 		  <img src="carte-interactive.jpg" alt="Carte interactive des salles" usemap="#map-salles" />
 
+		  <!-- Zones interactives -->
+		  <a href="#hampi" class="debug-zone hampi" title="Salle 1 – Hampi" ></a>
+		  <a href="#perou" class="debug-zone perou" title="Salle 2 – Pérou"></a>
+		  <a href="#flores" class="debug-zone flores" title="Salle 3 – Florès"></a>
+		  <a href="#bali" class="debug-zone bali" title="Salle 4 – Bali"></a>
+
 		  <!-- Points interactifs -->
 		  <a href="#hampi" class="carte-point hampi" title="Hampi"></a>
 		  <a href="#bali" class="carte-point bali" title="Bali"></a>
 		  <a href="#flores" class="carte-point flores" title="Florès"></a>
 		  <a href="#perou" class="carte-point perou" title="Pérou"></a>
-
-		  <!-- Zones interactives -->
-		  <a href="#hampi" class="debug-zone hampi" title="Salle 1 – Hampi"></a>
-		  <a href="#perou" class="debug-zone perou" title="Salle 2 – Pérou"></a>
-		  <a href="#flores" class="debug-zone flores" title="Salle 3 – Florès"></a>
-		  <a href="#bali" class="debug-zone bali" title="Salle 2 – Bali"></a>
 		  
 		</div>
 
@@ -502,11 +584,18 @@ img {
 	</section>
 	
 	</body>
+	
 	<footer>
-	<h2>Finale – Clôture de la visite</h2>
-	<blockquote> <p>“Et maintenant, vous quittez le monde des formes… mais peut-être avec un peu plus d’âme en vous.
-	Souvenez-vous : ce voyage n’était pas dans les images, mais dans ce qu’elles éveillent.
-	Merci d’avoir marché dans les spirales du monde.”</p> </blockquote>
+	
+	<section class="cloture">
+	<h2>🖼️ Épilogue contemplatif – Clôture de la visite</h2>
+	<blockquote>
+		<p>“Et maintenant, vous quittez le monde des formes… mais peut-être avec un peu plus d’âme en vous.
+		Souvenez-vous : ce voyage n’était pas dans les images, mais dans ce qu’elles éveillent.
+		Merci d’avoir marché dans les spirales du monde.”</p>
+	</blockquote>
+	</section>
+	
 	</footer>
 	
 	<script>
@@ -566,5 +655,61 @@ img {
 	  });
 
 	</script>
+	
+	<script>
+	  document.addEventListener('DOMContentLoaded', () => {
+		// 🔁 Quand on clique sur une zone du sommaire
+		const debugLinks = document.querySelectorAll('.debug-zone');
+		debugLinks.forEach(link => {
+		  link.addEventListener('click', event => {
+			event.preventDefault(); // ← Empêche le saut immédiat
+
+			const salleClass = Array.from(link.classList).find(cls => cls !== 'debug-zone');
+			const targetPoint = document.querySelector('.carte-point.' + salleClass);
+			const targetSection = document.querySelector('#' + salleClass);
+
+			if (targetPoint) {
+			  targetPoint.classList.add('highlight');
+			  setTimeout(() => {
+				targetPoint.classList.remove('highlight');
+			  }, 1000);
+			}
+
+			setTimeout(() => {
+			  if (targetSection) {
+				targetSection.scrollIntoView({ behavior: 'smooth' });
+			  }
+			}, 500);
+		  });
+		});
+
+		// 📍 Quand on clique sur un point de la carte
+		const cartePoints = document.querySelectorAll('.carte-point');
+		cartePoints.forEach(point => {
+		  point.addEventListener('click', event => {
+			event.preventDefault(); // ← AJOUTÉ ici aussi !
+
+			const salleClass = Array.from(point.classList).find(cls => cls !== 'carte-point');
+			const targetZone = document.querySelector('.debug-zone.' + salleClass);
+			const targetSection = document.querySelector('#' + salleClass);
+
+			if (targetZone) {
+			  targetZone.classList.add('highlight');
+			  setTimeout(() => {
+				targetZone.classList.remove('highlight');
+			  }, 1000);
+			}
+
+			setTimeout(() => {
+			  if (targetSection) {
+				targetSection.scrollIntoView({ behavior: 'smooth' });
+			  }
+			}, 500);
+		  });
+		});
+	  });
+	</script>
+
+
 	</body>
 	</html>
