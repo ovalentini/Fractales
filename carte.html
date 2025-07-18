@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carte interactive – Au revoir étoilé</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: url("Adieu.jpg") center/cover no-repeat;
+      font-family: 'Segoe UI', sans-serif;
+      color: #f5f5f5;
+      text-shadow: 0 1px 3px rgba(0,0,0,0.7);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .message-final {
+      background: rgba(0,0,0,0.5);
+      padding: 30px;
+      border-radius: 12px;
+      max-width: 700px;
+      text-align: center;
+      animation: fadeIn 2s ease-out;
+    }
+
+    .message-final h1 {
+      font-size: 2em;
+      margin-bottom: 1em;
+      color: #ffe;
+    }
+
+    .message-final p {
+      font-size: 1.2em;
+      line-height: 1.6em;
+      font-style: italic;
+    }
+
+    @keyframes fadeIn {
+      0% {opacity: 0; transform: translateY(20px);}
+      100% {opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+  <section class="message-final">
+    <h1>🌌 Merci pour ce voyage</h1>
+    <p>
+      “À présent, la carte se replie sur elle-même...<br />
+      Mais les éclats que vous avez semés dans chaque salle<br />
+      continueront à briller au-delà de l’image.<br />
+      Revenez quand vous voulez. Le cosmos vous attend.” 
+    </p>
+  </section>
+</body>
+</html>
