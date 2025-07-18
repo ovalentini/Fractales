@@ -61,6 +61,28 @@ header, section, footer {
   margin-top: 20px;
 }
 
+.retour-epilogue {
+  display: flex;
+  justify-content: center;
+  margin: 30px auto;
+}
+
+.nav-btn.epilogue {
+  background-color: #f0f8ff;
+  color: #6a5acd;
+  padding: 10px 18px;
+  border-radius: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.1em;
+  box-shadow: 0 0 8px rgba(106, 90, 205, 0.2);
+  transition: all 0.4s ease;
+}
+.nav-btn.epilogue:hover {
+  background-color: #e6e6fa;
+  box-shadow: 0 0 12px rgba(106, 90, 205, 0.4);
+  transform: scale(1.05);
+}
 
 /* 📎 Liens et effets */
 a {
@@ -290,6 +312,16 @@ td a {
   .retour-carte a + a {
     margin-top: 12px;
   }
+}
+
+.cloture {
+  animation: douceurFinale 5s infinite;
+}
+
+@keyframes douceurFinale {
+  0% { box-shadow: none; }
+  50% { box-shadow: 0 0 12px rgba(106, 90, 205, 0.3); }
+  100% { box-shadow: none; }
 }
 
 </style>
@@ -571,6 +603,11 @@ td a {
       </tbody>
     </table>
   </div>
+  
+  <div class="retour-epilogue">
+	  <a href="#cloture" class="nav-btn epilogue" title="Lire l’épilogue poétique">🌌 Fin du voyage</a>
+	</div>
+
 </section>
 
 	<!-- 📍 Zone d’affichage des coordonnées -->
@@ -606,7 +643,7 @@ td a {
 	</button>-->
 	
 <footer>
-  <section class="cloture">
+  <section id="cloture" class="cloture">
     <h2>🖼️ Épilogue contemplatif – Clôture de la visite</h2>
     <blockquote>
       <p>
