@@ -53,6 +53,15 @@ header, section, footer {
   color: #007BFF;
 }
 
+.retour-carte {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+
 /* 📎 Liens et effets */
 a {
   color: #007BFF;
@@ -252,6 +261,26 @@ td a {
 .salle-4:hover {
   background-color: #D3E7FF;
   box-shadow: 0 0 12px rgba(0, 0, 255, 0.4);
+}
+
+/* Règles spécifiques pour petits écrans */
+@media screen and (max-width: 600px) {
+  .retour-carte {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-btn {
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1.1em;
+    padding: 12px 16px;
+    text-align: center;
+  }
+
+  .retour-carte a + a {
+    margin-top: 12px;
+  }
 }
 
 </style>
