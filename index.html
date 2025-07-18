@@ -33,9 +33,19 @@ header, section, footer {
 }
 
 /* 📌 Navigation */
+
+.navigation-salles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
 .nav-btn {
   background-color: #fff3e0;
   color: #FF6600;
+  flex: 1 1 auto; /* Permet au bouton de s’adapter sans dépasser */
+  padding: 8px 14px;
   padding: 8px 14px;
   border-radius: 20px;
   font-weight: bold;
@@ -61,23 +71,14 @@ header, section, footer {
   margin-top: 20px;
 }
 
-.retour-epilogue {
-  display: flex;
-  justify-content: center;
-  margin: 30px auto;
-}
-
 .nav-btn.epilogue {
   background-color: #f0f8ff;
   color: #6a5acd;
-  padding: 10px 18px;
-  border-radius: 20px;
-  font-weight: bold;
-  text-decoration: none;
-  font-size: 1.1em;
-  box-shadow: 0 0 8px rgba(106, 90, 205, 0.2);
-  transition: all 0.4s ease;
+  box-shadow: 0 2px 6px rgba(106, 90, 205, 0.3);
+  transition: all 0.3s ease;
+  /* héritera des paddings et font-size de .nav-btn */
 }
+
 .nav-btn.epilogue:hover {
   background-color: #e6e6fa;
   box-shadow: 0 0 12px rgba(106, 90, 205, 0.4);
@@ -287,36 +288,39 @@ td a {
 
 /* Règles spécifiques pour petits écrans */
 @media screen and (max-width: 600px) {
-
   .navigation-salles {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 12px; /* espacement entre les boutons */
+    gap: 12px;
     margin-top: 20px;
   }
-  
-  .retour-carte {
-    flex-direction: column;
-    align-items: center;
-  }
 
-  .nav-btn {
+  .nav-btn,
+  .nav-btn.epilogue {
     width: 100%;
     box-sizing: border-box;
     font-size: 1.1em;
     padding: 12px 16px;
     text-align: center;
   }
-  
-  .epilogue {
-  font-size: 1.2em;
-  
+
+  /* Supprime ou commente .epilogue si ce n’est pas utile ici */
+  /* .epilogue {
+    font-size: 1.1em;
+  } */
+
+  .retour-carte {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .retour-carte a + a {
     margin-top: 12px;
   }
 }
 
+/* Effets de clôture */
 .cloture {
   animation: douceurFinale 5s infinite;
 }
