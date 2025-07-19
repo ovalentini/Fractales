@@ -1,137 +1,152 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Carte interactive – Au revoir étoilé</title>
   <style>
-  
-	 .ecran-galactique {
-	  position: relative;
-	  width: 100%;
-	  height: 100vh;
-	  overflow: hidden;
-	}
-
-	.fond-galactique {
-	  width: 100%;
-	  height: 100%;
-	  object-fit: cover;
-	  display: block;
-	}
-
-	.message-carte {
-	  position: absolute;
-	  top: 50%;
-	  left: 50%;
-	  transform: translate(-50%, -50%);
-	  color: #fff;
-	  text-align: center;
-	  background: transparent;     /* aucun fond */
-	  border: none;                /* aucune bordure */
-	  border-radius: 0;            /* pas d'arrondi non plus */
-	  padding: 20px 30px;
-	  font-size: clamp(1em, 2vw, 1.4em);
-	  line-height: 1.5em;
-	  max-width: 90%;
-	  box-shadow: none;            /* aucune ombre */
-	}
-
-
-	.message-final {
-	  position: absolute;
-	  top: 30px;
-	  right: 30px;
-	  max-width: 400px;
-	  background: rgba(0, 0, 0, 0.0);
-	  color: #fff;
-	  padding: 20px;
-	  border-radius: 12px;
-	  text-align: right;
-	}
-
-    @keyframes fadeIn {
-      0% {opacity: 0; transform: translateY(20px);}
-      100% {opacity: 1; transform: translateY(0);}
+    .ecran-galactique {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
     }
-	
-	@keyframes fadeOut {
-	  0% {
-		opacity: 1;
-		filter: blur(0);
-	  }
-	  100% {
-		opacity: 0;
-		filter: blur(4px);
-	  }
-	}
 
-	.message-final.disparaitre {
-	  animation: fadeOut 2.5s ease forwards;
-	}
-	
-	@media screen and (max-width: 600px) {
-	  .message-final {
-		font-size: 0.9em;
-		padding: 16px 20px;
-		max-width: 90%;
-		top: 20px;
-		right: 10px;
-	  }
+    .fond-galactique {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
 
-	  .message-final h1 {
-		font-size: 1.2em;
-	  }
+    .message-carte {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      text-align: center;
+      background: transparent;
+      border: none;
+      padding: 20px 30px;
+      font-size: clamp(1em, 2vw, 1.4em);
+      line-height: 1.6em;
+      max-width: 90%;
+      opacity: 0;
+      filter: blur(6px);
+      animation: apparitionBrumeuse 4s ease-out forwards;
+    }
 
-	  .message-final p {
-		font-size: 1em;
-		line-height: 1.4em;
-	  }
-	}
-	
-	@media screen and (orientation: portrait) {
-	  .message-final {
-		font-size: 1em;
-	  }
-	}
+    .message-final {
+      position: absolute;
+      top: 30px;
+      right: 30px;
+      max-width: 400px;
+      background: transparent;
+      color: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      text-align: right;
+    }
 
-	@media screen and (orientation: landscape) {
-	  .message-final {
-		font-size: 0.9em;
-	  }
-	}
+    @keyframes apparitionBrumeuse {
+      0% {
+        opacity: 0;
+        filter: blur(14px);
+        transform: translate(-50%, -55%);
+      }
+      50% {
+        opacity: 0.5;
+        filter: blur(6px);
+      }
+      100% {
+        opacity: 1;
+        filter: blur(0);
+        transform: translate(-50%, -50%);
+      }
+    }
 
+    @keyframes fadeOutBrume {
+      0% {
+        opacity: 1;
+        filter: blur(0);
+      }
+      100% {
+        opacity: 0;
+        filter: blur(6px);
+      }
+    }
 
+    .message-final.disparaitre {
+      animation: fadeOutBrume 2.5s ease forwards;
+    }
+
+    .message-carte.disparaitre {
+      animation: fadeOutBrume 2.5s ease forwards;
+    }
+
+    @media screen and (max-width: 600px) {
+      .message-final {
+        font-size: 0.9em;
+        padding: 16px 20px;
+        max-width: 90%;
+        top: 20px;
+        right: 10px;
+      }
+
+      .message-final h1 {
+        font-size: 1.2em;
+      }
+
+      .message-final p {
+        font-size: 1em;
+        line-height: 1.4em;
+      }
+    }
+
+    @media screen and (orientation: portrait) {
+      .message-final {
+        font-size: 1em;
+      }
+    }
+
+    @media screen and (orientation: landscape) {
+      .message-final {
+        font-size: 0.9em;
+      }
+    }
   </style>
 </head>
 <body>
   <div class="ecran-galactique">
-    <img src="voie-lactée.jpg" alt="Fond étoilé" class="fond-galactique" />
+    <img src="monde-imaginaire.jpg" alt="Paysage abstrait et désertique" class="fond-galactique" />
     <div class="message-carte">
-      <h1>🌌</h1>
+      <h1>🌄</h1>
       <p>
-        "Merci d'avoir voyagé parmi les<br />
-        constellations de l'exposition.<br />
- 		Que votre exploration continue à travers<br />
-		les galaxies de l'imagination<br />
-		Au revoir"
+        "Vous avez foulé un monde tissé<br />
+        de reflets et de songes.<br />
+        Que votre chemin s’épanouisse encore<br />
+        là où l’imaginaire dessine la réalité.<br />
+        À bientôt."
       </p>
     </div>
   </div>
-  
+
   <section class="message-final">
     <h1>🌌 Merci pour ce voyage</h1>
     <p>
       “À présent, la carte se replie sur elle-même...<br />
       Mais les éclats que vous avez semés dans chaque salle<br />
       continueront à briller au-delà de l’image.<br />
-      Revenez quand vous voulez. Le cosmos vous attend.” 
+      Revenez quand vous voulez. Le monde vous attend.”
     </p>
   </section>
+
+  <script>
+    // Disparition du message final
+    setTimeout(() => {
+      document.querySelector(".message-final").classList.add("disparaitre");
+    }, 7000);
+  </script>
 </body>
-<script>
-  setTimeout(() => {
-    document.querySelector(".message-final").classList.add("disparaitre");
-  }, 8000); // déclenche après 8 secondes
-</script>
 </html>
