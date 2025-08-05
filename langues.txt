@@ -1,21 +1,21 @@
 [intro_fr] 
-“Fermez les yeux… et ouvrez l’âme. Vous entrez dans un monde où les frontières se dissolvent.
+"Fermez les yeux… et ouvrez l’âme. Vous entrez dans un monde où les frontières se dissolvent.
  Ici, chaque image est un souffle, chaque spirale une mémoire. Les fractales ne sont pas que des motifs… elles sont les reflets d’âmes dispersées aux quatre vents du monde.
- Suivez la lumière, écoutez le rythme caché derrière les pixels, et laissez-vous porter…”
+ Suivez la lumière, écoutez le rythme caché derrière les pixels, et laissez-vous porter…"
 
 [intro_en]
- “Close your eyes… and open your soul. You are entering a world where boundaries dissolve.
+ "Close your eyes… and open your soul. You are entering a world where boundaries dissolve.
  Here, every image is a breath, every spiral a memory. Fractals are not just patterns… they are reflections of souls scattered to the four winds of the world.
- Follow the light, listen to the hidden rhythm behind the pixels, and let yourself be carried away…”
+ Follow the light, listen to the hidden rhythm behind the pixels, and let yourself be carried away…"
 
 [salle1_fr]
- Salle 1 — Marché à Hampi ✨ Char mystique de Hampi 🌈 Mandalas et étoffes ondulantes 🎵 Ambiance sonore : Piliers musicaux du temple Vithala
+ "Salle 1 — Marché à Hampi ✨ Char mystique de Hampi 🌈 Mandalas et étoffes ondulantes 🎵 Ambiance sonore : Piliers musicaux du temple Vithala"
 
 [salle1_en]
- Room 1 — Hampi Market ✨ Mystical chariot of Hampi 🌈 Mandalas and flowing fabrics 🎵 Soundscape: Musical pillars of the Vithala temple
+ "Room 1 — Hampi Market ✨ Mystical chariot of Hampi 🌈 Mandalas and flowing fabrics 🎵 Soundscape: Musical pillars of the Vithala temple"
 
 [salle2_fr]
- Salle 2 — Bali la belle île 🌾 Rizières sacrées et offrandes 🕉️ Temples hindous et spirales d'encens 🎶 Ambiance sonore : Gamelan balinais
+ "Salle 2 — Bali la belle île 🌾 Rizières sacrées et offrandes 🕉️ Temples hindous et spirales d'encens 🎶 Ambiance sonore : Gamelan balinais"
 
 [salle2_en]
  Room 2 — Bali the beautiful island 🌾 Sacred rice fields and offerings 🕉️ Hindu temples and spirals of incense 🎶 Soundscape: Balinese gamelan
@@ -33,14 +33,14 @@ Salle 3 — Fleurs de rizières (Florès) 🌸 Terrasses de riz en pétales 💧
  Room 4 — Amazonian Salt Flats ✨ Salt terraces and fractal reflections 🌊 Aquatic geometry and mineral memory 🎶 Soundscape: Traditional Amazonian chants
  
 [epilogue_fr]
- “Et lorsque les lumières s’éteignent, les fractales continuent de danser dans l’obscurité.
+ "Et lorsque les lumières s’éteignent, les fractales continuent de danser dans l’obscurité.
  Elles murmurent des histoires anciennes, des secrets oubliés, et des rêves à venir.
- Chaque reflet est une promesse, chaque spirale un voyage sans fin.”
+ Chaque reflet est une promesse, chaque spirale un voyage sans fin."
 
 [epilogue_en]
- “And when the lights go out, the fractals keep dancing in the dark.
+ "And when the lights go out, the fractals keep dancing in the dark.
  They whisper ancient stories, forgotten secrets, and dreams yet to come.
- Every reflection is a promise, every spiral an endless journey.” 
+ Every reflection is a promise, every spiral an endless journey." 
 
 [btn_flag_fr]
  "🇫🇷 Français"
@@ -50,10 +50,10 @@ Salle 3 — Fleurs de rizières (Florès) 🌸 Terrasses de riz en pétales 💧
 
  
 [btn_quit_fr]
-🌌 Quitter le temple fractal
+"🌌 Quitter le temple fractal"
 
 [btn_quit_en]
-🌌 Leave the fractal temple
+"🌌 Leave the fractal temple"
 
 [btn_enter_fr]
 "✨ Entrer dans l’exposition"
