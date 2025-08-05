@@ -449,8 +449,12 @@ td a {
 
 </style>
 </head>
-<body>
-
+<body> 
+  <div id="language-switcher">
+	  <button onclick="changerLangue('fr')" id="btn_flag_fr">🇫🇷 Français</button>
+	  <button onclick="changerLangue('en')" id="btn_flag_en">🇬🇧 English</button>
+	</div>
+	
   <!-- 🎨 En-tête de l'exposition -->
   <header class="entree-exposition">
     <h1>🖼️ Fractales du Monde : Reflets d'Âmes</h1>
@@ -460,7 +464,7 @@ td a {
       et chaque pixel une mémoire.”</p>
     </blockquote>
     <div class="retour-carte">
-      <a href="#introduction" class="nav-btn retour" title="Commencer le voyage poétique">✨ Entrer dans l’exposition</a>
+      <a href="#introduction" id="btn_enter" class="nav-btn retour" title="Commencer le voyage poétique">✨ Entrer dans l’exposition</a>
     </div>
   </header>
 
@@ -870,6 +874,52 @@ td a {
     }, 2000); // Laisse le temps à l’animation de s'épanouir
   });
 </script>
+
+<script>
+async function chargerLangues(fichier, langue) {
+  try {
+    const response = await fetch(fichier);
+    if (!response.ok) {
+      throw new Error(`Erreur : Impossible de charger le fichier ${fichier}`);
+    }
+
+    const texte = await response.text();
+    const regex = new RegExp(`\
+
+\[([a-zA-Z0-9_]+_${langue})\\]
+
+\\s*“([^”]+)”`, 'g');
+    const labels = {};
+    let match;
+
+    while ((match = regex.exec(texte)) !== null) {
+      labels[match[1]] = match[2];
+    }
+
+    return labels;
+
+  } catch (error) {
+    console.error(error.message);
+    alert(error.message);
+    return {};
+  }
+}
+
+function changerLangue(langue) {
+  chargerLangues("langues.txt", langue).then(labels => {
+    document.getElementById("btn_enter").textContent = labels[`btn_enter_${langue}`] || "🌌 Entrer dans le temple fractal";
+    document.getElementById("btn_quit").textContent = labels[`btn_quit_${langue}`] || "🌌 Quitter";
+    document.getElementById("btn_next").textContent = labels[`btn_next_${langue}`] || "🌌 Salle suivante";
+    document.getElementById("btn_back").textContent = labels[`btn_back_${langue}`] || "🌌 Retour à la carte";
+    document.getElementById("btn_flag_fr").textContent = labels[`btn_flag_fr`] || "🇫🇷 Français";
+    document.getElementById("btn_flag_en").textContent = labels[`btn_flag_en`] || "🇬🇧 English";
+  });
+}
+</script>
+
+ 
+</body>
+
 
 </body>
 </html>
