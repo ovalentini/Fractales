@@ -42,24 +42,13 @@ Salle 3 — Fleurs de rizières (Florès) 🌸 Terrasses de riz en pétales 💧
  They whisper ancient stories, forgotten secrets, and dreams yet to come.
  Every reflection is a promise, every spiral an endless journey." 
 
-[btn_flag_fr]
- "🇫🇷 Français"
+[btn_flag_fr] "🇫🇷 Français"
+[btn_flag_en] "🇬🇧 English"
+[btn_quit_fr] "🌌 Quitter le temple fractal"
+[btn_quit_en] "🌌 Leave the fractal temple"
+[btn_enter_fr] "✨ Entrer dans l'exposition"
+[btn_enter_en] "✨ Enter the exhibition"
 
-[btn_flag_en]
- "🇬🇧 English"
-
- 
-[btn_quit_fr]
-"🌌 Quitter le temple fractal"
-
-[btn_quit_en]
-"🌌 Leave the fractal temple"
-
-[btn_enter_fr]
-"✨ Entrer dans l’exposition"
-
-[btn_enter_en]
-"✨ Enter the exhibition"
 
 [btn_next_fr]
 → Salle suivante
