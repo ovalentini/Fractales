@@ -43,10 +43,10 @@ Salle 3 — Fleurs de rizières (Florès) 🌸 Terrasses de riz en pétales 💧
  Every reflection is a promise, every spiral an endless journey.” 
 
 [btn_flag_fr]
- “🇫🇷 Français”
+ "🇫🇷 Français"
 
 [btn_flag_en]
- “🇬🇧 English”
+ "🇬🇧 English"
 
  
 [btn_quit_fr]
@@ -56,10 +56,10 @@ Salle 3 — Fleurs de rizières (Florès) 🌸 Terrasses de riz en pétales 💧
 🌌 Leave the fractal temple
 
 [btn_enter_fr]
-✨ Entrer dans l’exposition
+"✨ Entrer dans l’exposition"
 
 [btn_enter_en]
-✨ Enter the exhibition
+"✨ Enter the exhibition"
 
 [btn_next_fr]
 → Salle suivante
