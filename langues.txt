@@ -35,4 +35,4 @@
 [carte_fr] 'Vous avez foulé un monde tissé de reflets et de songes. Que votre chemin s’épanouisse encore là où l’imaginaire dessine la réalité. À bientôt.'
 [carte_en] 'You have walked a world woven with reflections and dreams. May your path continue to flourish where imagination shapes reality. See you soon.'
 [adieu_fr] 'À présent, la carte se replie sur elle-même... Mais les éclats que vous avez semés dans chaque salle continueront à briller au-delà de l’image. Revenez quand vous voulez. Le monde vous attend.'
-[adieu_en] 'Now the map folds back on itself... But the shards you've sown in each room will continue to shine beyond the image. Come back anytime. The world awaits.'
+[adieu_en] 'Now the map folds back on itself... But the shards you’ve sown in each room will continue to shine beyond the image. Come back anytime. The world awaits.'

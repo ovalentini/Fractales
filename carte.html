@@ -120,7 +120,7 @@
 <body>
   <div class="ecran-galactique">
     <img src="monde-imaginaire.jpg" alt="Paysage abstrait et désertique" class="fond-galactique" />
-    <div class="message-carte">
+    <div id="carte" class="message-carte">
       <h1>🌄</h1>
       <!--<p>
         "Vous avez foulé un monde tissé<br />
@@ -129,11 +129,10 @@
         là où l’imaginaire dessine la réalité.<br />
         À bientôt."
       </p>-->
-	  <div id="carte"><div>
     </div>
   </div>
 
-  <section class="message-final">
+  <section id="adieu" class="message-final">
     <h1>🌌 Merci pour ce voyage</h1>
     <!--<p>
       “À présent, la carte se replie sur elle-même...<br />
@@ -141,7 +140,6 @@
       continueront à briller au-delà de l’image.<br />
       Revenez quand vous voulez. Le monde vous attend.”
     </p>-->
-	<div id="adieu"></div>
   </section>
 
   <script>
@@ -150,7 +148,7 @@
       document.querySelector(".message-final").classList.add("disparaitre");
     }, 8000);
   </script>
-  <<script>
+  <script>
 
 let langueActuelle = 'fr'; // langue par défaut
 
@@ -168,6 +166,8 @@ let langueActuelle = 'fr'; // langue par défaut
 
 	  return dictionnaire;
 	}
+	
+	
 
 function appliquerTextes(labels, langue) {
   for (const cle in labels) {
