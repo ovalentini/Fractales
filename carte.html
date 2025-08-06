@@ -122,31 +122,81 @@
     <img src="monde-imaginaire.jpg" alt="Paysage abstrait et désertique" class="fond-galactique" />
     <div class="message-carte">
       <h1>🌄</h1>
-      <p>
+      <!--<p>
         "Vous avez foulé un monde tissé<br />
         de reflets et de songes.<br />
         Que votre chemin s’épanouisse encore<br />
         là où l’imaginaire dessine la réalité.<br />
         À bientôt."
-      </p>
+      </p>-->
+	  <div id="carte"><div>
     </div>
   </div>
 
   <section class="message-final">
     <h1>🌌 Merci pour ce voyage</h1>
-    <p>
+    <!--<p>
       “À présent, la carte se replie sur elle-même...<br />
       Mais les éclats que vous avez semés dans chaque salle<br />
       continueront à briller au-delà de l’image.<br />
       Revenez quand vous voulez. Le monde vous attend.”
-    </p>
+    </p>-->
+	<div id="adieu"></div>
   </section>
 
   <script>
     // Disparition du message final
     setTimeout(() => {
       document.querySelector(".message-final").classList.add("disparaitre");
-    }, 7000);
+    }, 8000);
   </script>
+  <<script>
+
+let langueActuelle = 'fr'; // langue par défaut
+
+	async function chargerLangues(url) {
+	  const re = /^\[([^\]]+)\]\s*["']([^"']+)["']/;
+	  const dictionnaire = {};
+	  const response = await fetch(url);
+	  const texte = await response.text();
+	  texte.split('\n').forEach(ligne => {
+		const match = ligne.match(re);
+		if (match) {
+		  dictionnaire[match[1]] = match[2];
+		}
+	  });
+
+	  return dictionnaire;
+	}
+
+function appliquerTextes(labels, langue) {
+  for (const cle in labels) {
+	const baseId = cle.endsWith(`_${langue}`) 
+  ? cle.slice(0, -(`_${langue}`.length)) 
+  : cle;
+    const element = document.getElementById(baseId);
+    if (element) {
+      element.textContent = labels[cle];
+    }
+  }
+}
+
+function switchLangue() {
+  langueActuelle = langueActuelle === 'fr' ? 'en' : 'fr';
+  localStorage.setItem('lang', langueActuelle);
+  chargerLangues('https://ovalentini.github.io/Fractales/langues.txt').then(labels => {
+    appliquerTextes(labels, langueActuelle);
+  });
+}
+
+// Au chargement, appliquer la langue préférée ou par défaut
+window.addEventListener('DOMContentLoaded', () => {
+  chargerLangues('https://ovalentini.github.io/Fractales/langues.txt').then(labels => {
+      appliquerTextes(labels, langueActuelle);
+    });
+});
+</script>
+  
+  
 </body>
 </html>
