@@ -10,15 +10,8 @@
 
   <script>
     async function chargerLangues(url) {
-      const re = /^
-
-\[([^\]
-
-]+)\]
-
-\s*["']([^"']+)["']/;
+      const re = /^\[([^\]]+)\]\s*["']([^"']+)["']/;
       const dictionnaire = {};
-
       const response = await fetch(url);
       const texte = await response.text();
       texte.split('\n').forEach(ligne => {
