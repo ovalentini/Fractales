@@ -5,11 +5,12 @@
   <title>Test Fractales Langues</title>
 </head>
 <body>
+  <button onclick="switchLang()">🌐 Changer de langue / Switch Language</button>
   <button id="btn_enter"></button>
   <button id="btn_quit"></button>
 
   <script>
-    async function chargerLangues(url) {
+ /*   async function chargerLangues(url) {
       const re = /^\[([^\]]+)\]\s*["']([^"']+)["']/;
       const dictionnaire = {};
       const response = await fetch(url);
@@ -32,7 +33,44 @@
       // On affiche deux exemples sur les boutons
       document.getElementById('btn_enter').textContent = data['btn_enter_fr'];
       document.getElementById('btn_quit').textContent = data['btn_quit_fr'];
-    })();
-  </script>
+    })(); */
+	</script>
+<script>
+let langData = {};
+
+function ChargerLangues(callback) {
+  fetch('langues.txt')
+    .then(response => response.text())
+    .then(text => {
+      text.split('\n').forEach(line => {
+        const [key, ...rest] = line.split('=');
+        langData[key.trim()] = rest.join('=').trim().replace(/^“|”$/g, '');
+      });
+      callback();
+    });
+}
+
+function switchLang() {
+  const currentLang = localStorage.getItem('lang') === 'fr' ? 'en' : 'fr';
+  localStorage.setItem('lang', currentLang);
+
+  for (const key in langData) {
+    const [id, lang] = key.split('_');
+    if (lang === currentLang) {
+      const el = document.getElementById(key);
+      if (el) el.innerText = langData[key];
+    }
+  }
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+  ChargerLangues(() => {
+    const savedLang = localStorage.getItem('lang') || 'fr';
+    localStorage.setItem('lang', savedLang);
+    switchLang(); // charge d’abord dans la langue sauvegardée
+  });
+});
+</script>
+
 </body>
 </html>
