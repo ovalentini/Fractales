@@ -8,67 +8,33 @@
   <button onclick="switchLangue()">🌐 Changer de langue / Switch Language</button>
   <button id="btn_enter"></button>
   <button id="btn_quit"></button>
+  <div id="intro"></div>
 
-  <script>
-/*    async function chargerLangues(url) {
-      const re = /^\[([^\]]+)\]\s*["']([^"']+)["']/;
-      const dictionnaire = {};
-      const response = await fetch(url);
-      const texte = await response.text();
-      texte.split('\n').forEach(ligne => {
-        const match = ligne.match(re);
-        if (match) {
-          dictionnaire[match[1]] = match[2];
-        }
-      });
-
-      return dictionnaire;
-    }
-
-    // Exemple d’utilisation
-    (async () => {
-      const url = 'https://ovalentini.github.io/Fractales/langues.txt'; // ↖️ remplace avec l'URL exacte
-      const data = await chargerLangues(url);
-
-      // On affiche deux exemples sur les boutons
-      document.getElementById('btn_enter').textContent = data['btn_enter_fr'];
-      document.getElementById('btn_quit').textContent = data['btn_quit_fr'];
-    })(); */
-	</script>
 <script>
+
 let langueActuelle = 'fr'; // langue par défaut
 
-async function chargerLangues(url) {
-  const re = /^\[([^\]]+)\]\s*["']([^"']+)["']/;
-  const dictionnaire = {};
-  const response = await fetch(url);
-  const texte = await response.text();
+	async function chargerLangues(url) {
+	  const re = /^\[([^\]]+)\]\s*["']([^"']+)["']/;
+	  const dictionnaire = {};
+	  const response = await fetch(url);
+	  const texte = await response.text();
+	  texte.split('\n').forEach(ligne => {
+		const match = ligne.match(re);
+		if (match) {
+		  dictionnaire[match[1]] = match[2];
+		}
+	  });
 
-  texte.split('\n').forEach(ligne => {
-    const match = ligne.match(re);
-    if (match) {
-      dictionnaire[match[1]] = match[2];
-    }
-  });
-
-  return dictionnaire;
-}
-
- (async () => {
-      const url = 'https://ovalentini.github.io/Fractales/langues.txt'; // ↖️ remplace avec l'URL exacte
-      const data = await chargerLangues(url);
-
-      document.getElementById('btn_enter').textContent = data['btn_enter_fr'];
-      document.getElementById('btn_quit').textContent = data['btn_quit_en'];
-});
+	  return dictionnaire;
+	}
 
 function appliquerTextes(labels, langue) {
   for (const cle in labels) {
-    if (cle.endsWith(`_${langue}`)) {
-      const element = document.getElementById(cle);
-      if (element) {
-        element.textContent = labels[cle];
-      }
+    const baseId = cle.replace(`_${langue}`, '');
+    const element = document.getElementById(baseId);
+    if (element) {
+      element.textContent = labels[cle];
     }
   }
 }
