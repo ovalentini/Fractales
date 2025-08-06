@@ -12,6 +12,8 @@
 [btn_previous_en] '← Previous room'
 [btn_back_fr] '🗺️ Retour à la carte'
 [btn_back_en] '🗺️ Back to the map'
+[btn_exit_fr] 'Quitter'
+[btn_exit_en] 'Exit'
 [btn_summary_fr] '📚 Voir le sommaire'
 [btn_summary_en] '📚 View the summary'
 [btn_epilogue_fr] '🌌 Fin du voyage'
