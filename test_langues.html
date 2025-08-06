@@ -39,9 +39,7 @@
 let langueActuelle = 'fr'; // langue par défaut
 
 async function chargerLangues(url) {
-  //const re = /^\[([^\]]+)\]\s*["']([^"']+)["']/;
   const re = /^\[([^\]]+)\]\s*["']([^"']+)["']/;
-
   const dictionnaire = {};
   const response = await fetch(url);
   const texte = await response.text();
@@ -64,7 +62,7 @@ async function chargerLangues(url) {
       document.getElementById('btn_quit').textContent = data['btn_quit_en'];
 });
 
-/*function appliquerTextes(labels, langue) {
+function appliquerTextes(labels, langue) {
   for (const cle in labels) {
     if (cle.endsWith(`_${langue}`)) {
       const element = document.getElementById(cle);
@@ -88,7 +86,7 @@ window.addEventListener('DOMContentLoaded', () => {
   chargerLangues('https://ovalentini.github.io/Fractales/langues.txt').then(labels => {
       appliquerTextes(labels, langueActuelle);
     });
-});*/
+});
 </script>
 </body>
 </html>
