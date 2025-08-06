@@ -26,7 +26,3 @@
 [salle4_en] 'Room 4 — Amazonian Salt Flats ✨ Salt terraces and fractal reflections 🌊 Aquatic geometry and mineral memory 🎶 Soundscape: Traditional Amazonian chants'
 [epilogue_fr] 'Et lorsque les lumières s’éteignent, les fractales continuent de danser dans l’obscurité. Elles murmurent des histoires anciennes, des secrets oubliés, et des rêves à venir. Chaque reflet est une promesse, chaque spirale un voyage sans fin.'
 [epilogue_en] 'And when the lights go out, the fractals keep dancing in the dark. They whisper ancient stories, forgotten secrets, and dreams yet to come. Every reflection is a promise, every spiral an endless journey.'
-
-
-
- 

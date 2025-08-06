@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Test Fractales Langues</title>
+</head>
+<body>
+  <button id="btn_enter"></button>
+  <button id="btn_quit"></button>
+
+  <script>
+    async function chargerLangues(url) {
+      const re = /^
+
+\[([^\]
+
+]+)\]
+
+\s*["']([^"']+)["']/;
+      const dictionnaire = {};
+
+      const response = await fetch(url);
+      const texte = await response.text();
+      texte.split('\n').forEach(ligne => {
+        const match = ligne.match(re);
+        if (match) {
+          dictionnaire[match[1]] = match[2];
+        }
+      });
+
+      return dictionnaire;
+    }
+
+    // Exemple d’utilisation
+    (async () => {
+      const url = 'https://ovalentini.github.io/Fractales/langues.txt'; // ↖️ remplace avec l'URL exacte
+      const data = await chargerLangues(url);
+
+      // On affiche deux exemples sur les boutons
+      document.getElementById('btn_enter').textContent = data['btn_enter_fr'];
+      document.getElementById('btn_quit').textContent = data['btn_quit_fr'];
+    })();
+  </script>
+</body>
+</html>
