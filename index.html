@@ -911,14 +911,14 @@ function appliquerTextes(labels, langue) {
 function switchLangue() {
   langueActuelle = langueActuelle === 'fr' ? 'en' : 'fr';
   localStorage.setItem('lang', langueActuelle);
-  chargerLangues('https://ovalentini.github.io/Fractales/langues.txt').then(labels => {
+  chargerLangues('langues.txt').then(labels => {
     appliquerTextes(labels, langueActuelle);
   });
 }
 
 // Au chargement, appliquer la langue préférée ou par défaut
 window.addEventListener('DOMContentLoaded', () => {
-  chargerLangues('https://ovalentini.github.io/Fractales/langues.txt').then(labels => {
+  chargerLangues('langues.txt').then(labels => {
       appliquerTextes(labels, langueActuelle);
     });
 });
