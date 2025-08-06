@@ -5,12 +5,12 @@
   <title>Test Fractales Langues</title>
 </head>
 <body>
-  <button onclick="switchLang()">🌐 Changer de langue / Switch Language</button>
+  <button onclick="switchLangue()">🌐 Changer de langue / Switch Language</button>
   <button id="btn_enter"></button>
   <button id="btn_quit"></button>
 
   <script>
- /*   async function chargerLangues(url) {
+/*    async function chargerLangues(url) {
       const re = /^\[([^\]]+)\]\s*["']([^"']+)["']/;
       const dictionnaire = {};
       const response = await fetch(url);
@@ -36,41 +36,51 @@
     })(); */
 	</script>
 <script>
-let langData = {};
+let langueActuelle = 'fr'; // langue par défaut
 
-function ChargerLangues(callback) {
-  fetch('langues.txt')
-    .then(response => response.text())
-    .then(text => {
-      text.split('\n').forEach(line => {
-        const [key, ...rest] = line.split('=');
-        langData[key.trim()] = rest.join('=').trim().replace(/^“|”$/g, '');
-      });
-      callback();
-    });
+async function chargerLangues(url) {
+  const re = /^\[([^\]]+)\]\s*["']([^"']+)["']/;
+  const dictionnaire = {};
+  const response = await fetch(url);
+  const texte = await response.text();
+
+  texte.split('\n').forEach(ligne => {
+    const match = ligne.match(re);
+    if (match) {
+      dictionnaire[match[1]] = match[2];
+    }
+  });
+
+  return dictionnaire;
 }
 
-function switchLang() {
-  const currentLang = localStorage.getItem('lang') === 'fr' ? 'en' : 'fr';
-  localStorage.setItem('lang', currentLang);
-
-  for (const key in langData) {
-    const [id, lang] = key.split('_');
-    if (lang === currentLang) {
-      const el = document.getElementById(key);
-      if (el) el.innerText = langData[key];
+function appliquerTextes(labels, langue) {
+  for (const cle in labels) {
+    if (cle.endsWith(`_${langue}`)) {
+      const element = document.getElementById(cle);
+      if (element) {
+        element.textContent = labels[cle];
+      }
     }
   }
 }
 
+function switchLangue() {
+  langueActuelle = langueActuelle === 'fr' ? 'en' : 'fr';
+  localStorage.setItem('lang', langueActuelle);
+
+  chargerLangues('langues.txt').then(labels => {
+    appliquerTextes(labels, langueActuelle);
+  });
+}
+
+// Au chargement, appliquer la langue préférée ou par défaut
 window.addEventListener('DOMContentLoaded', () => {
-  ChargerLangues(() => {
-    const savedLang = localStorage.getItem('lang') || 'fr';
-    localStorage.setItem('lang', savedLang);
-    switchLang(); // charge d’abord dans la langue sauvegardée
+  langueActuelle = localStorage.getItem('lang') || 'fr';
+  chargerLangues('langues.txt').then(labels => {
+    appliquerTextes(labels, langueActuelle);
   });
 });
 </script>
-
 </body>
 </html>
