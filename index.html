@@ -451,8 +451,7 @@ td a {
 </head>
 <body> 
   <div id="language-switcher">
-	  <button onclick="changerLangue('fr')" id="btn_flag_fr">🇫🇷 Français</button>
-	  <button onclick="changerLangue('en')" id="btn_flag_en">🇬🇧 English</button>
+	  <button onclick="switchLangue()" id="btn_flag">🇫🇷 Français</button>
 	</div>
 	
   <!-- 🎨 En-tête de l'exposition -->
@@ -471,13 +470,13 @@ td a {
   <!-- 🌌 Introduction poétique -->
   <section id="introduction" class="introduction">
     <h2>🖼️ Prologue sensible – Introduction poétique</h2>
-    <blockquote class="citation-stylisee">
+    <blockquote id="intro" class="citation-stylisee">
       <p>“Fermez les yeux… et ouvrez l’âme. Vous entrez dans un monde où les frontières se dissolvent.
       Ici, chaque image est un souffle, chaque spirale une mémoire…”</p>
     </blockquote>
     <div class="retour-carte">
-      <a href="#carte" class="nav-btn retour" title="Accéder à la carte interactive">🗺️ Carte interactive</a>
-      <a href="#sommaire" class="nav-btn sommaire" title="Accéder au sommaire de l'exposition">📚 Sommaire de l'exposition</a>
+      <a href="#carte" id="btn_map" class="nav-btn retour" title="Accéder à la carte interactive">🗺️ Carte interactive</a>
+      <a href="#sommaire" id="btn_summary" class="nav-btn sommaire" title="Accéder au sommaire de l'exposition">📚 Sommaire de l'exposition</a>
     </div>
   </section>
 
@@ -485,7 +484,7 @@ td a {
   <section id="sommaire" class="sommaire-exposition">
     <h2>📚 Sommaire de l'exposition</h2>
     <div class="retour-carte">
-      <a href="#carte" class="nav-btn retour" title="Accéder à la carte interactive">🗺️ Carte interactive</a>
+      <a href="#carte" id="btn_map" class="nav-btn retour" title="Accéder à la carte interactive">🗺️ Carte interactive</a>
     </div>
 
     <!-- Les salles -->
@@ -562,7 +561,7 @@ td a {
   <section id="carte" class="interactive-map">
     <h2>🗺️ Carte interactive</h2>
     <div class="retour-carte">
-      <a href="#sommaire" class="nav-btn sommaire">📚 Voir le sommaire</a>
+      <a href="#sommaire" id="btn_summary" class="nav-btn sommaire">📚 Voir le sommaire</a>
     </div>
 
     <div class="carte-container">
@@ -589,9 +588,9 @@ td a {
   <section id="hampi">
   <h2>🏛️ Salle 1 — Marché à Hampi</h2>
   <div class="navigation-salles">
-    <a href="#bali" class="nav-btn suivante">Salle suivante →</a>
-	<a href="#carte" class="nav-btn retour">🗺️ Retour à la carte</a>
-	<a href="#sommaire" class="nav-btn sommaire">📚 Retour au sommaire</a>
+    <a href="#bali" id="btn_next" class="nav-btn suivante">Salle suivante →</a>
+	<a href="#carte" id="btn_back" class="nav-btn retour">🗺️ Retour à la carte</a>
+	<a href="#sommaire" ID="btn_summary" class="nav-btn sommaire">📚 Retour au sommaire</a>
   </div>
 
   <div class="table-image-container">
@@ -626,10 +625,10 @@ td a {
  <section id="bali">
   <h2>🌺 Salle 2 — Bali la belle île</h2>
   <div class="navigation-salles">
-    <a href="#hampi" class="nav-btn precedent">← Salle précédente</a>
-    <a href="#flores" class="nav-btn suivante">Salle suivante →</a>
-    <a href="#carte" class="nav-btn retour">🗺️ Retour à la carte</a>
-	<a href="#sommaire" class="nav-btn sommaire">📚 Retour au sommaire</a>
+    <a href="#hampi" id="btn_previous" class="nav-btn precedent">← Salle précédente</a>
+    <a href="#flores" id="btn_next" class="nav-btn suivante">Salle suivante →</a>
+    <a href="#carte" id="btn_back" class="nav-btn retour">🗺️ Retour à la carte</a>
+	<a href="#sommaire" id="btn_summary" class="nav-btn sommaire">📚 Retour au sommaire</a>
   </div>
 
   <div class="table-image-container">
@@ -664,10 +663,10 @@ td a {
 <section id="flores">
   <h2>🌾 Salle 3 — Fleurs de rizières</h2>
   <div class="navigation-salles">
-    <a href="#bali" class="nav-btn precedent">← Salle précédente</a>
-    <a href="#perou" class="nav-btn suivante">Salle suivante →</a>
-    <a href="#carte" class="nav-btn retour">🗺️ Retour à la carte</a>
-	<a href="#sommaire" class="nav-btn sommaire">📚 Retour au sommaire</a>
+    <a href="#bali" id="btn_previous" class="nav-btn precedent">← Salle précédente</a>
+    <a href="#perou" id="btn_next"  class="nav-btn suivante">Salle suivante →</a>
+    <a href="#carte" id="btn_back" class="nav-btn retour">🗺️ Retour à la carte</a>
+	<a href="#sommaire" id="btn_summary" class="nav-btn sommaire">📚 Retour au sommaire</a>
   </div>
 
   <div class="table-image-container">
@@ -703,10 +702,10 @@ td a {
 <section id="perou">
   <h2>🏔️ Salle 4 — Salines fractales</h2>
   <div class="navigation-salles">
-    <a href="#flores" class="nav-btn precedent">← Salle précédente</a>
-    <a href="#carte" class="nav-btn retour">🗺️ Retour à la carte</a>
-	<a href="#sommaire" class="nav-btn sommaire">📚 Retour au sommaire</a>
-	<a href="#cloture" class="nav-btn epilogue" title="Lire l’épilogue poétique">🌌 Fin du voyage</a>
+    <a href="#flores" id="btn_previous" class="nav-btn precedent">← Salle précédente</a>
+    <a href="#carte" id="btn_back" class="nav-btn retour">🗺️ Retour à la carte</a>
+	<a href="#sommaire" id="btn_summary" class="nav-btn sommaire">📚 Retour au sommaire</a>
+	<a href="#cloture" id="btn_epilogue" class="nav-btn epilogue" title="Lire l’épilogue poétique">🌌 Fin du voyage</a>
   </div>
 
   <div class="table-image-container">
@@ -776,7 +775,7 @@ td a {
 	  <h2>🖼️ Épilogue contemplatif – Clôture de la visite</h2>
 	  <button class="close-poetique" title="Clôturer le voyage">🌌 Quitter</button>
 	</div>
-    <blockquote class="citation-stylisee">
+    <blockquote id="epilogue" class="citation-stylisee">
       <p>
         “Et maintenant, vous quittez le monde des formes… mais peut-être avec un peu plus d’âme en vous.<br />
         Souvenez-vous : ce voyage n’était pas dans les images, mais dans ce qu’elles éveillent.<br />
@@ -875,45 +874,51 @@ td a {
   });
 </script>
 
-<script>
-async function chargerLangues(fichier, langue) {
-  try {
-    const response = await fetch(fichier);
-    if (!response.ok) {
-      throw new Error(`Erreur : Impossible de charger le fichier ${fichier}`);
+<<script>
+
+let langueActuelle = 'fr'; // langue par défaut
+
+	async function chargerLangues(url) {
+	  const re = /^\[([^\]]+)\]\s*["']([^"']+)["']/;
+	  const dictionnaire = {};
+	  const response = await fetch(url);
+	  const texte = await response.text();
+	  texte.split('\n').forEach(ligne => {
+		const match = ligne.match(re);
+		if (match) {
+		  dictionnaire[match[1]] = match[2];
+		}
+	  });
+
+	  return dictionnaire;
+	}
+
+function appliquerTextes(labels, langue) {
+  for (const cle in labels) {
+	const baseId = cle.endsWith(`_${langue}`) 
+  ? cle.slice(0, -(`_${langue}`.length)) 
+  : cle;
+    const element = document.getElementById(baseId);
+    if (element) {
+      element.textContent = labels[cle];
     }
-
-    const texte = await response.text();
-
-    // Expression régulière corrigée :
-    const regex = new RegExp(`\\[([a-zA-Z0-9_]+_${langue})\\]\\s*'(.*?)'`, 'g');
-
-    const labels = {};
-    let match;
-
-    while ((match = regex.exec(texte)) !== null) {
-      labels[match[1]] = match[2];
-    }
-
-    return labels;
-
-  } catch (error) {
-    console.error(error.message);
-    alert(error.message);
-    return {};
   }
 }
 
-function changerLangue(langue) {
-  chargerLangues("langues.txt", langue).then(labels => {
-    document.getElementById("btn_enter").textContent = labels[`btn_enter_${langue}`] || "🌌 Entrer dans le temple fractal";
-    document.getElementById("btn_quit").textContent = labels[`btn_quit_${langue}`] || "🌌 Quitter";
-    document.getElementById("btn_next").textContent = labels[`btn_next_${langue}`] || "🌌 Salle suivante";
-    document.getElementById("btn_back").textContent = labels[`btn_back_${langue}`] || "🌌 Retour à la carte";
-    document.getElementById("btn_flag_fr").textContent = labels[`btn_flag_fr`] || "🇫🇷 Français";
-    document.getElementById("btn_flag_en").textContent = labels[`btn_flag_en`] || "🇬🇧 English";
+function switchLangue() {
+  langueActuelle = langueActuelle === 'fr' ? 'en' : 'fr';
+  localStorage.setItem('lang', langueActuelle);
+  chargerLangues('https://ovalentini.github.io/Fractales/langues.txt').then(labels => {
+    appliquerTextes(labels, langueActuelle);
   });
 }
+
+// Au chargement, appliquer la langue préférée ou par défaut
+window.addEventListener('DOMContentLoaded', () => {
+  chargerLangues('https://ovalentini.github.io/Fractales/langues.txt').then(labels => {
+      appliquerTextes(labels, langueActuelle);
+    });
+});
 </script>
 
  

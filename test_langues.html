@@ -31,8 +31,11 @@ let langueActuelle = 'fr'; // langue par défaut
 
 function appliquerTextes(labels, langue) {
   for (const cle in labels) {
-    const baseId = cle.replace(`_${langue}`, '');
+	const baseId = cle.endsWith(`_${langue}`) 
+  ? cle.slice(0, -(`_${langue}`.length)) 
+  : cle;
     const element = document.getElementById(baseId);
+	alert(baseId);
     if (element) {
       element.textContent = labels[cle];
     }
