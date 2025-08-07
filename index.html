@@ -872,15 +872,13 @@ td a {
   document.querySelector(".close-poetique").addEventListener("click", function () {
     document.body.classList.add("fusion-galactique");
     setTimeout(() => {
-      window.location.href = "carte.html"; // Ou la page finale de ton choix
+	alert(langueActuelle);
+      window.location.href = "carte.html?lang=" + langueActuelle; // Ou la page finale de ton choix
     }, 2000); // Laisse le temps à l’animation de s'épanouir
   });
 </script>
 
-<<script>
-
-let langueActuelle = 'fr'; // langue par défaut
-
+<script>
 	async function chargerLangues(url) {
 	  const re = /^\[([^\]]+)\]\s*["']([^"']+)["']/;
 	  const dictionnaire = {};
