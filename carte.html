@@ -160,7 +160,7 @@
 
 const params = new URLSearchParams(window.location.search);
 const langueActuelle = params.get('lang') || 'fr';
-alert("Langue détectée :", langueActuelle);
+console.log("Langue détectée :", langueActuelle);
 
 	async function chargerLangues(url) {
 	  const re = /^\[([^\]]+)\]\s*["']([^"']+)["']/;
@@ -189,6 +189,14 @@ function appliquerTextes(labels, langue) {
       element.textContent = labels[cle];
     }
   }
+}
+
+function switchLangue() {
+  langueActuelle = langueActuelle === 'fr' ? 'en' : 'fr';
+  localStorage.setItem('lang', langueActuelle);
+  chargerLangues('langues.txt').then(labels => {
+    appliquerTextes(labels, langueActuelle);
+  });
 }
 
 // Au chargement, appliquer la langue préférée ou par défaut
