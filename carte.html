@@ -157,7 +157,6 @@
 </html>
 
   <script>
-
 const params = new URLSearchParams(window.location.search);
 const langueActuelle = params.get('lang') || 'fr';
 console.log("Langue détectée :", langueActuelle);
@@ -177,32 +176,22 @@ console.log("Langue détectée :", langueActuelle);
 	  return dictionnaire;
 	}
 	
-	
+function appliquerTextesCarte(labels, langue) {
+  const clesCiblees = ['lieu', 'adieu'];
 
-function appliquerTextes(labels, langue) {
-  for (const cle in labels) {
-	const baseId = cle.endsWith(`_${langue}`) 
-  ? cle.slice(0, -(`_${langue}`.length)) 
-  : cle;
-    const element = document.getElementById(baseId);
-    if (element) {
-      element.textContent = labels[cle];
+  clesCiblees.forEach(cle => {
+    const cleComplete = `${cle}_${langue}`;
+    const element = document.getElementById(cle);
+    if (element && labels[cleComplete]) {
+      element.textContent = labels[cleComplete];
     }
-  }
-}
-
-function switchLangue() {
-  langueActuelle = langueActuelle === 'fr' ? 'en' : 'fr';
-  localStorage.setItem('lang', langueActuelle);
-  chargerLangues('langues.txt').then(labels => {
-    appliquerTextes(labels, langueActuelle);
   });
 }
-
+	
 // Au chargement, appliquer la langue préférée ou par défaut
 window.addEventListener('DOMContentLoaded', () => {
   chargerLangues('langues.txt').then(labels => {
-      appliquerTextes(labels, langueActuelle);
+      appliquerTextesCarte(labels, langueActuelle);
     });
 });
 </script>

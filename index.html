@@ -869,6 +869,8 @@ td a {
 </script>
 
 <script>
+    langueActuelle = 'fr'
+
 	async function chargerLangues(url) {
 	  const re = /^\[([^\]]+)\]\s*["']([^"']+)["']/;
 	  const dictionnaire = {};
@@ -899,30 +901,24 @@ function appliquerTextes(labels, langue) {
 function switchLangue() {
   langueActuelle = langueActuelle === 'fr' ? 'en' : 'fr';
   localStorage.setItem('lang', langueActuelle);
-  chargerLangues('langues.txt').then(labels => {
+  chargerLangues('https://ovalentini.github.io/Fractales/langues.txt').then(labels => {
     appliquerTextes(labels, langueActuelle);
   });
 }
 
 // Au chargement, appliquer la langue préférée ou par défaut
 window.addEventListener('DOMContentLoaded', () => {
-  chargerLangues('langues.txt').then(labels => {
+  chargerLangues('https://ovalentini.github.io/Fractales/langues.txt').then(labels => {
       appliquerTextes(labels, langueActuelle);
     });
 });
-</script>
-<script>
-  alert(langueActuelle); 
+
   document.querySelector(".close-poetique").addEventListener("click", function () {
     document.body.classList.add("fusion-galactique");
     setTimeout(() => {
-      window.location.href = "carte.html?lang=" + langueActuelle; // Ou la page finale de ton choix
+      window.location.href = "https://ovalentini.github.io/Fractales/carte.html?lang=" + langueActuelle; // Ou la page finale de ton choix
     }, 2000); // Laisse le temps à l’animation de s'épanouir
   });
 </script>
- 
-</body>
-
-
 </body>
 </html>
