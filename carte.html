@@ -148,9 +148,19 @@
       document.querySelector(".message-final").classList.add("disparaitre");
     }, 8000);
   </script>
+  <!-- Ton contenu HTML ici -->
+
+<script>
+  
+</script>
+</body>
+</html>
+
   <script>
 
-let langueActuelle = 'en'; // langue par défaut
+const params = new URLSearchParams(window.location.search);
+const langueActuelle = params.get('lang') || 'fr';
+console.log("Langue détectée :", langueActuelle);
 
 	async function chargerLangues(url) {
 	  const re = /^\[([^\]]+)\]\s*["']([^"']+)["']/;
