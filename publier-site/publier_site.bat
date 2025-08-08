@@ -1,8 +1,9 @@
 @echo off
-cd ..
 
 echo 📦 Passage dans le dossier du projet...
-cd ..\Fractales
+cd ..
+
+echo 📁 Répertoire actuel : %cd%
 
 echo 🚀 Ajout des fichiers modifiés...
 git add .
@@ -15,3 +16,4 @@ git push origin main
 
 echo ✅ Publication terminée !
 pause
+
