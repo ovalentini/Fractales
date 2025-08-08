@@ -2,7 +2,7 @@
 cd ..
 
 echo 📦 Passage dans le dossier du projet...
-cd Fractales
+cd ..\Fractales
 
 echo 🚀 Ajout des fichiers modifiés...
 git add .
