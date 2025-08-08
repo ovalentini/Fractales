@@ -1,5 +1,5 @@
-[btn_flag_fr] '🇫🇷 Français'
-[btn_flag_en] '🇬🇧 English'
+[btn_flag_fr] 'Français'
+[btn_flag_en] 'English'
 [btn_quit_fr] '🌌 Quitter le temple fractal'
 [btn_quit_en] '🌌 Leave the fractal temple'
 [btn_enter_fr] '✨ Entrer dans l’exposition'
