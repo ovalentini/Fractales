@@ -901,13 +901,35 @@ function appliquerTextes(labels, langue) {
   }
 }
 
-function switchLangue() {
+/*function switchLangue() {
   langueActuelle = langueActuelle === 'fr' ? 'en' : 'fr';
   localStorage.setItem('lang', langueActuelle);
   chargerLangues('https://ovalentini.github.io/Fractales/langues.txt').then(labels => {
     appliquerTextes(labels, langueActuelle);
   });
+}*/
+
+function switchLangue() {
+  langueActuelle = (langueActuelle === 'fr') ? 'en' : 'fr';
+  chargerLangues('https://ovalentini.github.io/Fractales/langues.txt').then(labels => {
+    appliquerTextes(labels, langueActuelle);
+  });
+
+  // Met à jour le drapeau et le texte du bouton
+  const flagImg = document.querySelector('.inline-flag');
+  const flagBtn = document.getElementById('btn_flag');
+
+  if (langueActuelle === 'fr') {
+    flagImg.src = 'drapeaux/fr.png';
+    flagImg.alt = 'Drapeau France';
+    flagBtn.textContent = 'Français';
+  } else {
+    flagImg.src = 'drapeaux/en.png';
+    flagImg.alt = 'Flag UK';
+    flagBtn.textContent = 'English';
+  }
 }
+
 
 // Au chargement, appliquer la langue préférée ou par défaut
 window.addEventListener('DOMContentLoaded', () => {
