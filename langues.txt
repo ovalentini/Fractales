@@ -44,7 +44,7 @@
 [btn_summary_5_en] '📚 View the summary'
 [btn_epilogue_fr] '🌌 Fin du voyage'
 [btn_epilogue_en] '🌌 End of the journey'
-[fractales_fr] '🖼️ Fractales du Monde : Reflets d'Âmes'
+[fractales_fr] '🖼️ Fractales du Monde : Reflets d’Âmes'
 [fractales_en] '🖼️ Fractals of the World: Reflections of Souls'
 [first_fr] 'Bienvenue dans une exposition où chaque image est une porte, chaque spirale un souffle, et chaque pixel une mémoire.'
 [first_en] 'Welcome to an exhibition where each image is a door, each spiral a breath, and each pixel a memory.'
