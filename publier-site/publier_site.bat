@@ -1,5 +1,5 @@
 @echo off
-cd %~dp0
+cd ..
 
 echo 📦 Passage dans le dossier du projet...
 cd Fractales

@@ -2,4 +2,4 @@ Some fractales made with photos after my travels to Hampi (India), Bali, Florès
 Aded tools: refresh-navigators edge, firefox, chrome to force refresh of cache written in batch & powershell
             verify-links to verify that http/https links are still active writen in batch & python
 
-Development : multilingual version
+Development : bilingual version french/english reading a file langues.txt for translations
