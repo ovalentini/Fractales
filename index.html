@@ -545,7 +545,7 @@ td a {
   <!-- 🎨 En-tête de l'exposition -->
   <header class="entree-exposition">
     <h1 id="fractales">🖼️ Fractales du Monde : Reflets d'Âmes</h1>
-   <!-- le texte se trouve dans langues.txt sous id-->
+   <!-- le texte se trouve dans langues.txt sous first-->
 	<div id="first" class="citation-stylisee"></div>
     <div class="retour-carte">
       <a href="#introduction" id="btn_enter" class="nav-btn retour" title="Commencer le voyage poétique">✨ Entrer dans l’exposition</a>
@@ -555,7 +555,7 @@ td a {
   <!-- 🌌 Introduction poétique -->
   <section id="introduction" class="introduction">
     <h2 id="prologue_sensible">🖼️ Prologue sensible – Introduction poétique</h2>
-    <!-- le texte se trouve dans langues.txt sous id-->
+    <!-- le texte se trouve dans langues.txt sous intro_poetique-->
 	<div id="intro_poetique" class="citation-stylisee"></div>
     <div class="retour-carte">
       <a href="#carte" id="btn_map_0" class="nav-btn retour" title="Accéder à la carte interactive">🗺️ Carte interactive</a>
@@ -570,7 +570,7 @@ td a {
       <a href="#carte" id="btn_map_1" class="nav-btn retour" title="Accéder à la carte interactive">🗺️ Carte interactive</a>
     </div>
 
-     <!-- Les salles construites avec du jscript--> 
+     <!-- Les salles construites dynamiquement avec du jscript--> 
     <div id="salles-dynamiques"></div>
     <!--<div class="salle-1">
 	  <h3 id="salle1"><img src="drapeaux/in.png" alt="Drapeau Inde" class="inline-flag"><strong> Salle 1 — Marché à Hampi</strong></h3>
@@ -678,7 +678,7 @@ td a {
   </section>
   
   <!-- 🖼 Sections d’exposition détaillées -->
-  <!-- Salle Hampi -->
+  <!-- Salle 1 — Hampi -->
   <section id="hampi">
   <h2 id="salle_hampi"><img src="drapeaux/in.png" alt="Drapeau Inde" class="inline-flag"> Salle 1 — Marché à Hampi</h2>
   <div class="navigation-salles">
@@ -689,7 +689,6 @@ td a {
 
   <div class="table-image-container">
     <img src="Hampi.jpg" alt="Char mystique de Hampi" />
-
     <table>
       <thead>
         <tr>
@@ -715,7 +714,7 @@ td a {
   </div>
 </section>
 
-<!-- Salle Bali -->
+<!-- Salle 2 — Bali -->
  <section id="bali">
   <h2 id="salle_bali">🌺 Salle 2 — Bali la belle île</h2>
   <div class="navigation-salles">
@@ -727,7 +726,6 @@ td a {
 
   <div class="table-image-container">
     <img src="Bali.jpg" alt="Paysage spirituel balinais : rizières et mandalas" />
-
     <table>
       <thead>
         <tr>
@@ -753,7 +751,7 @@ td a {
   </div>
 </section>
 
-<!-- Salle Florès -->
+<!-- Salle 3 — Florès -->
 <section id="flores">
   <h2 id="salle_flores">🌾 Salle 3 — Fleurs de rizières</h2>
   <div class="navigation-salles">
@@ -791,7 +789,7 @@ td a {
 </section>
 
 
-<!-- Salle Pérou -->
+<!-- Salle 4 — Pérou -->
 <section id="perou">
   <h2 id="salle_perou">🏔️ Salle 4 — Salines fractales</h2>
   <div class="navigation-salles">
@@ -803,7 +801,6 @@ td a {
 
   <div class="table-image-container">
     <img src="Perou.jpg" alt="Salines fractales péruviennes" />
-
     <table>
       <thead>
         <tr>
@@ -830,6 +827,7 @@ td a {
   
 </section>
 
+    <!-- Debug --> 
 	<!-- 📍 Zone d’affichage des coordonnées -->
     <!--<div id="coordinates" style="
       margin-top: 12px;
@@ -850,7 +848,7 @@ td a {
 	  <strong>Console interne</strong><br>
 	</div>
 	
-	<button onclick="resetOpenedLinks()" style=<!--"
+	<button onclick="resetOpenedLinks()" style="
 	  margin-top: 12px;
 	  padding: 8px 16px;
 	  background-color: #444;
@@ -874,10 +872,12 @@ td a {
 </footer>
 
 <script>
+
   // 🔧 Fonctions utilitaires
   const openedLinks = new Set();
   let windowCounter = 0;
 
+  // Console	
   function logMessage(msg) {
     const logDiv = document.getElementById("console-log");
     if (logDiv) logDiv.innerHTML += msg + "<br>";
@@ -933,13 +933,13 @@ td a {
 
 	  const langSuffix = classList.includes("carte-point-fr") || classList.includes("debug-zone-fr") ? "fr" : "en";
 	  const targetType = type === "debug-zone" ? "carte-point" : "debug-zone";
-	  logMessage(`🎯 Type source : ${type}, cible : ${targetType}`);
+	  // logMessage(`🎯 Type source : ${type}, cible : ${targetType}`);
 
 	  const highlightTarget = Array.from(document.querySelectorAll(`.${targetType}-${langSuffix}`))
 		.find(el => el.classList.contains(salleName));
 
 	  if (highlightTarget) {
-		logMessage(`✅ Surbrillance : ${targetType}-${langSuffix} → ${highlightTarget.className}`);
+		// logMessage(`✅ Surbrillance : ${targetType}-${langSuffix} → ${highlightTarget.className}`);
 		highlightTarget.classList.add("highlight");
 		setTimeout(() => highlightTarget.classList.remove("highlight"), 1000);
 	  } else {
@@ -952,34 +952,36 @@ td a {
 	  }
 	};
 
-  // 🖱️ Écouteurs sur les zones interactives
-  document.querySelectorAll(".debug-zone-fr, .debug-zone-en").forEach(zone =>
-  zone.addEventListener("click", e => {
-    e.preventDefault();
-    logMessage("🖱️ Zone cliquée : " + zone.className);
-    handleNavigation(zone, "debug-zone"); // ← bon type
-  })
-);
+	  // 🖱️ Écouteurs sur les zones interactives
+	  document.querySelectorAll(".debug-zone-fr, .debug-zone-en").forEach(zone =>
+	  zone.addEventListener("click", e => {
+		e.preventDefault();
+		// logMessage("🖱️ Zone cliquée : " + zone.className);
+		handleNavigation(zone, "debug-zone"); // ← bon type
+	  })
+	);
 
-document.querySelectorAll(".carte-point-fr, .carte-point-en").forEach(point =>
-  point.addEventListener("click", e => {
-    e.preventDefault();
-    logMessage("📍 Point cliqué : " + point.className);
-    handleNavigation(point, "carte-point"); // ← bon type
-  })
-);
+	document.querySelectorAll(".carte-point-fr, .carte-point-en").forEach(point =>
+	  point.addEventListener("click", e => {
+		e.preventDefault();
+		// logMessage("📍 Point cliqué : " + point.className);
+		handleNavigation(point, "carte-point"); // ← bon type
+	  })
+	);
 
-document.addEventListener("DOMContentLoaded", () => {
-  // 🔍 Détection de la langue active
-  const bodyClass = document.body.className;
-  const langSuffix = bodyClass.includes("lang-fr") ? "fr" : "en";
+	document.addEventListener("DOMContentLoaded", () => {
+	  // 🔍 Détection de la langue active
+	  const bodyClass = document.body.className;
+	  const langSuffix = bodyClass.includes("lang-fr") ? "fr" : "en";
 
-  // Tu peux continuer ici avec ton code...
-  logMessage("Langue détectée : " + langSuffix);
-});
+	  // Tu peux continuer ici avec ton code...
+	  // logMessage("Langue détectée : " + langSuffix);
+	});
 </script>
 
 <script>
+
+    // lecture de langues.txt
     langueActuelle = 'fr'
 
 	async function chargerLangues(url) {
@@ -997,302 +999,304 @@ document.addEventListener("DOMContentLoaded", () => {
 	  return dictionnaire;
 	}
 
-function appliquerTextes(labels, langue) {
-  for (const cle in labels) {
-	const baseId = cle.endsWith(`_${langue}`) 
-  ? cle.slice(0, -(`_${langue}`.length)) 
-  : cle;
-    const element = document.getElementById(baseId);
-    if (element) {
-      element.textContent = labels[cle];
-    }
-  }
-}
-
-function switchLangue() {
-  langueActuelle = (langueActuelle === 'fr') ? 'en' : 'fr';
-
-  chargerLangues('https://ovalentini.github.io/Fractales/langues.txt').then(labels => {
-    appliquerTextes(labels, langueActuelle);
-
-    // ✅ Afficher les bons éléments une fois les textes appliqués
-    setTimeout(() => {
-    afficherElementsLangue(langueActuelle);
-	inspecterZonesOpposées(langueActuelle);
-  }, 100); // ou plus si nécessaire
-});
-
-  document.body.className = `lang-${langueActuelle}`;
-
-  // 🏳️ Met à jour le drapeau et le texte du bouton
-  const flagImg = document.querySelector('.inline-flag');
-  const flagBtn = document.getElementById('btn_flag');
-
-  if (langueActuelle === 'fr') {
-    flagImg.src = 'drapeaux/fr.png';
-    flagImg.alt = 'Drapeau France';
-    flagBtn.textContent = 'Français';
-  } else {
-    flagImg.src = 'drapeaux/en.png';
-    flagImg.alt = 'Flag UK';
-    flagBtn.textContent = 'English';
-  }
-
-  // 🖼️ Met à jour l’image et la légende
-  const img = document.getElementById("fractals-img");
-  const caption = document.getElementById("image-caption");
-
-  if (langueActuelle === 'fr') {
-    img.src = "carte-interactive-fr.jpg";
-    img.alt = "Fractales du Monde";
-    caption.textContent = "Chaque spirale raconte une histoire. Laissez les motifs guider votre âme.";
-  } else {
-    img.src = "carte-interactive-en.jpg";
-    img.alt = "Fractals of the World";
-    caption.textContent = "Each spiral tells a story. Let the patterns guide your soul.";
-}
-	nettoyerSallesDynamiques();
-	dispatchSalle(langueActuelle, 1);
-	dispatchSalle(langueActuelle, 2);
-	dispatchSalle(langueActuelle, 3);
-	dispatchSalle(langueActuelle, 4);
-}
-
-function inspecterZonesOpposées(langue) {
-  const langueOpposée = langueActuelle === 'fr' ? 'en' : 'fr';
-  const zonesOpposées = document.querySelectorAll(`.debug-zone-${langueOpposée}`);
-
-  if (zonesOpposées.length === 0) {
-    logMessage(`ℹ️ Aucun élément trouvé pour la langue opposée : ${langueOpposée}`);
-    return;
-  }
-
-  zonesOpposées.forEach(el => {
-    // logMessage(`🔍 Zone opposée : ${el.className}, visible: ${el.classList.contains('visible')}`);
-    // Tu peux aussi manipuler ici, par exemple :
-    // el.classList.add('masqué');
-  });
-}
-
-function afficherElementsLangue(langue) {
-  const zones = document.querySelectorAll(`.debug-zone-${langue}`);
-  const points = document.querySelectorAll(`.carte-point-${langue}`);
-  if (zones.length === 0 && points.length === 0) {
-    logMessage(`⚠️ Aucun élément trouvé pour la langue : ${langue}`);
-    return;
-  }
-  document.querySelectorAll('.debug-zone-fr, .carte-point-fr, .debug-zone-en, .carte-point-en').forEach(el => {
-    el.classList.remove('visible');
-  });
-  zones.forEach(el => el.classList.add('visible'));
-  points.forEach(el => el.classList.add('visible'));
-}
-
-function dispatchSalle(language, salleNumber) {
-  const salles = {
-  salle1: {
-    en: {
-      id: "salle1_en",
-      title: " Room 1 — Hampi Market",
-      elements: [
-      { text:  "✨ Mystical chariot of Hampi" },
-      { text: "🌈 Mandalas and flowing fabrics" },
-      {  
-	   text:"🎵 Soundscape: Musical pillars of the Vithala temple  — ",
-	   link: {
-		href: "https://www.youtube.com/watch?v=UOFoQ70m6Z8",
-		label: "Listen"
+	function appliquerTextes(labels, langue) {
+	  for (const cle in labels) {
+		const baseId = cle.endsWith(`_${langue}`) 
+	  ? cle.slice(0, -(`_${langue}`.length)) 
+	  : cle;
+		const element = document.getElementById(baseId);
+		if (element) {
+		  element.textContent = labels[cle];
 		}
 	  }
-      ]
-    },
-    fr: {
-      id: "salle1_fr",
-      title: " Salle 1 — Marché de Hampi",
-      elements: [
-	  { text: "✨ Char mystique de Hampi" },
-	  { text: "🌈  Mandalas et étoffes ondulantes" },
-	  {
-		text: "🎵  Paysage sonore : Piliers musicaux du temple Vithala — ",
-		link: {
-		  href: "https://www.youtube.com/watch?v=UOFoQ70m6Z8",
-		  label: "Écouter"
+	}
+
+	// langues fr ou en, div id="lang-switch"
+	function switchLangue() {
+	  langueActuelle = (langueActuelle === 'fr') ? 'en' : 'fr';
+
+	  chargerLangues('https://ovalentini.github.io/Fractales/langues.txt').then(labels => {
+		appliquerTextes(labels, langueActuelle);
+
+		// ✅ Afficher les bons éléments une fois les textes appliqués
+		setTimeout(() => {
+		afficherElementsLangue(langueActuelle);
+		inspecterZonesOpposées(langueActuelle);
+	  }, 100); // ou plus si nécessaire
+	});
+
+	  document.body.className = `lang-${langueActuelle}`;
+
+	  // 🏳️ Met à jour le drapeau et le texte du bouton
+	  const flagImg = document.querySelector('.inline-flag');
+	  const flagBtn = document.getElementById('btn_flag');
+
+	  if (langueActuelle === 'fr') {
+		flagImg.src = 'drapeaux/fr.png';
+		flagImg.alt = 'Drapeau France';
+		flagBtn.textContent = 'Français';
+	  } else {
+		flagImg.src = 'drapeaux/en.png';
+		flagImg.alt = 'Flag UK';
+		flagBtn.textContent = 'English';
+	  }
+
+	  // 🖼️ Met à jour l’image et la légende
+	  const img = document.getElementById("fractals-img");
+	  const caption = document.getElementById("image-caption");
+
+	  if (langueActuelle === 'fr') {
+		img.src = "carte-interactive-fr.jpg";
+		img.alt = "Fractales du Monde";
+		caption.textContent = "Chaque spirale raconte une histoire. Laissez les motifs guider votre âme.";
+	  } else {
+		img.src = "carte-interactive-en.jpg";
+		img.alt = "Fractals of the World";
+		caption.textContent = "Each spiral tells a story. Let the patterns guide your soul.";
+	}
+		nettoyerSallesDynamiques();
+		dispatchSalle(langueActuelle, 1); // insère la salle 1 en langueActuelle
+		dispatchSalle(langueActuelle, 2); // insère la salle 2 en langueActuelle
+		dispatchSalle(langueActuelle, 3); // insère la salle 3 en langueActuelle
+		dispatchSalle(langueActuelle, 4); // insère la salle 4 en langueActuelle
+	}
+
+	function inspecterZonesOpposées(langue) {
+	  const langueOpposée = langueActuelle === 'fr' ? 'en' : 'fr';
+	  const zonesOpposées = document.querySelectorAll(`.debug-zone-${langueOpposée}`);
+	  if (zonesOpposées.length === 0) {
+		logMessage(`ℹ️ Aucun élément trouvé pour la langue opposée : ${langueOpposée}`);
+		return;
+	  }
+	  zonesOpposées.forEach(el => {
+		// logMessage(`🔍 Zone opposée : ${el.className}, visible: ${el.classList.contains('visible')}`);
+		// Tu peux aussi manipuler ici, par exemple :
+		// el.classList.add('masqué');
+	  });
+	}
+
+	function afficherElementsLangue(langue) {
+	  const zones = document.querySelectorAll(`.debug-zone-${langue}`);
+	  const points = document.querySelectorAll(`.carte-point-${langue}`);
+	  if (zones.length === 0 && points.length === 0) {
+		logMessage(`⚠️ Aucun élément trouvé pour la langue : ${langue}`);
+		return;
+	  }
+	  document.querySelectorAll('.debug-zone-fr, .carte-point-fr, .debug-zone-en, .carte-point-en').forEach(el => {
+		el.classList.remove('visible');
+	  });
+	  zones.forEach(el => el.classList.add('visible'));
+	  points.forEach(el => el.classList.add('visible'));
+	}
+
+    // Construction des salles, div id="salles-dynamiques"  
+	function dispatchSalle(language, salleNumber) {
+	  const salles = {
+	  salle1: {
+		en: {
+		  id: "salle1_en",
+		  title: " Room 1 — Hampi Market",
+		  elements: [
+		  { text:  "✨ Mystical chariot of Hampi" },
+		  { text: "🌈 Mandalas and flowing fabrics" },
+		  {  
+		   text:"🎵 Soundscape: Musical pillars of the Vithala temple  — ",
+		   link: {
+			href: "https://www.youtube.com/watch?v=UOFoQ70m6Z8",
+			label: "Listen"
+			}
+		  }
+		  ]
+		},
+		fr: {
+		  id: "salle1_fr",
+		  title: " Salle 1 — Marché de Hampi",
+		  elements: [
+		  { text: "✨ Char mystique de Hampi" },
+		  { text: "🌈  Mandalas et étoffes ondulantes" },
+		  {
+			text: "🎵  Paysage sonore : Piliers musicaux du temple Vithala — ",
+			link: {
+			  href: "https://www.youtube.com/watch?v=UOFoQ70m6Z8",
+			  label: "Écouter"
+			}
+		  }
+		]
+	   }
+	  },
+	  salle2: {
+		en: {
+		  id: "salle2_en",
+		  title: " Room 2 — Bali the beautiful island",
+		  elements: [
+		  { text: "🌾 Sacred rice fields and offerings"},
+		  { text: "🕉 Hindu temples and spirals of incense"},
+		  {
+			text: "🎶 Soundscape: Balinese gamelan — ",
+			link: {
+				   href: "https://www.routard.com/fr/photo/p/345-bali",
+				   label: "Listen"
+				   }
+		  }
+		  ]
+		},
+		fr: {
+		  id: "salle2_fr",
+		  title: " Salle 2 — Bali, l’île magnifique",
+		  elements: [
+		  { text: "🌾 Rizières sacrées et offrandes"},
+		  { text: "🕉 Temples hindous et spirales d’encens"},
+		  { 
+		  text: "🎶 Ambiance sonore : Gamelan balinais — ",
+		  link: {
+				 href: "https://www.routard.com/fr/photo/p/345-bali",
+				 label: "Écouter"
+				 }
+		  }
+		  ]
+		}
+	  },
+	  salle3: {
+		en: {
+		  id: "salle3_en",
+		  title: " Room 3 - Rice field flowers (Flores)",
+		  elements: [
+		  { text: "🌸 Rice terraces in petals"},
+		  { text: "💧 Plant spirals and aquatic light"},
+		  {
+		   text: "🎵 Soundscape: Rice field lullabies — ",
+		   link: {
+				  href: "https://munki.audio/catalogue/albums/410/artistes-divers--comptines-et-berceuses-des-rizieres",
+				  label: "Listen"
+				   }
+		  }
+		  ]
+		},
+		fr: {
+		  id: "salle3_fr",
+		  title: " Salle 3 - Fleurs de rizières (Florès)",
+		  elements: [
+		  { text: "🌸 Terrasses de riz en pétales$"},
+		  { text: "💧 Spirales végétales et lumière aquatique"},
+		  {
+		   text: "🎵 Ambiance sonore : Berceuses des rizières — ",
+		   link: {
+				  href: "https://munki.audio/catalogue/albums/410/artistes-divers--comptines-et-berceuses-des-rizieres",
+				  label: "Ecouter"
+				  }
+		  }
+		  ]
+		}
+	  },
+	  salle4: {
+		en: {
+		  id: "salle4_en",
+		  title: "Room 4 - Amazonian Salt Flats",
+		  elements: [
+			{ text: "✨ Salt terraces and fractal reflections"},
+			{ text: "🌊 Aquatic geometry and mineral memory"},
+			{
+			 text: "🎶 Soundscape: Traditional Amazonian chants — ",
+			 link: {
+					href: "https://www.youtube.com/watch?v=jm4lKVxihI4",
+					label: "Listen"
+					}
+			}
+		  ]
+		},
+		fr: {
+		  id: "salle4_fr",
+		  title: "Salle 4 - Salines Amazoniennes",   
+		  elements: [
+			{ text: "✨ Terrasses de sel et reflets fractals"},
+			{ text: "🌊 Géométrie aquatique et mémoire minérale"},
+			{
+			 text: "🎶 Ambiance sonore : Chants traditionnels amazoniens — ",
+			 link: {
+					href: "https://www.youtube.com/watch?v=jm4lKVxihI4",
+					label: "Ecouter"
+					}
+			}
+		  ]
 		}
 	  }
-	]
-   }
-  },
-  salle2: {
-    en: {
-      id: "salle2_en",
-      title: " Room 2 — Bali the beautiful island",
-      elements: [
-      { text: "🌾 Sacred rice fields and offerings"},
-      { text: "🕉 Hindu temples and spirals of incense"},
-	  {
-	    text: "🎶 Soundscape: Balinese gamelan — ",
-		link: {
-		       href: "https://www.routard.com/fr/photo/p/345-bali",
-			   label: "Listen"
-			   }
-	  }
-      ]
-    },
-    fr: {
-      id: "salle2_fr",
-      title: " Salle 2 — Bali, l’île magnifique",
-      elements: [
-      { text: "🌾 Rizières sacrées et offrandes"},
-      { text: "🕉 Temples hindous et spirales d’encens"},
-	  { 
-	  text: "🎶 Ambiance sonore : Gamelan balinais — ",
-	  link: {
-	         href: "https://www.routard.com/fr/photo/p/345-bali",
-			 label: "Écouter"
-			 }
-	  }
-      ]
-    }
-  },
-  salle3: {
-    en: {
-      id: "salle3_en",
-      title: " Room 3 - Rice field flowers (Flores)",
-      elements: [
-      { text: "🌸 Rice terraces in petals"},
-      { text: "💧 Plant spirals and aquatic light"},
-	  {
-	   text: "🎵 Soundscape: Rice field lullabies — ",
-	   link: {
-	          href: "https://munki.audio/catalogue/albums/410/artistes-divers--comptines-et-berceuses-des-rizieres",
-			  label: "Listen"
-			   }
-	  }
-      ]
-    },
-    fr: {
-      id: "salle3_fr",
-      title: " Salle 3 - Fleurs de rizières (Florès)",
-      elements: [
-	  { text: "🌸 Terrasses de riz en pétales$"},
-	  { text: "💧 Spirales végétales et lumière aquatique"},
-	  {
-	   text: "🎵 Ambiance sonore : Berceuses des rizières — ",
-       link: {
-              href: "https://munki.audio/catalogue/albums/410/artistes-divers--comptines-et-berceuses-des-rizieres",
-			  label: "Ecouter"
-			  }
-	  }
-      ]
-    }
-  },
-  salle4: {
-    en: {
-      id: "salle4_en",
-      title: "Room 4 - Amazonian Salt Flats",
-      elements: [
-        { text: "✨ Salt terraces and fractal reflections"},
-		{ text: "🌊 Aquatic geometry and mineral memory"},
-		{
-		 text: "🎶 Soundscape: Traditional Amazonian chants — ",
-		 link: {
-				href: "https://www.youtube.com/watch?v=jm4lKVxihI4",
-				label: "Listen"
-				}
+	};
+
+      // toujours la fonction dispatchSalle
+	  const selectedSalle = salles[`salle${salleNumber}`];
+	  if (!selectedSalle) return;
+
+	  const selectedLanguage = selectedSalle[language];
+	  if (!selectedLanguage) return;
+
+	  const container = document.getElementById("salles-dynamiques");
+	  if (!container) return;
+
+	  // Supprime l’ancienne version si elle existe
+	  const existing = document.getElementById(selectedLanguage.id);
+	  if (existing) existing.parentNode.remove();
+
+	  const newDiv = document.createElement("div");
+	  newDiv.className = `salle-${salleNumber}`;
+
+	  const title = document.createElement("h3");
+	  title.id = selectedLanguage.id;
+	  title.innerHTML = `✨ <strong>${selectedLanguage.title}</strong>`;
+	  newDiv.appendChild(title);
+
+	  const ul = document.createElement("ul");
+	  ul.className = "liste-éléments";
+	  selectedLanguage.elements.forEach(element => {
+	  const li = document.createElement("li");
+	  if (typeof element === "string") {
+		li.textContent = element;
+	  } else {
+		li.textContent = element.text;
+		if (element.link) {
+		  const a = document.createElement("a");
+		  a.href = element.link.href;
+		  a.target = "_blank";
+		  a.textContent = element.link.label;
+		  li.appendChild(a);
 		}
-      ]
-    },
-    fr: {
-      id: "salle4_fr",
-      title: "Salle 4 - Salines Amazoniennes",   
-      elements: [
-        { text: "✨ Terrasses de sel et reflets fractals"},
-		{ text: "🌊 Géométrie aquatique et mémoire minérale"},
-		{
-		 text: "🎶 Ambiance sonore : Chants traditionnels amazoniens — ",
-		 link: {
-				href: "https://www.youtube.com/watch?v=jm4lKVxihI4",
-				label: "Ecouter"
-				}
-		}
-      ]
-    }
-  }
-};
+	  }
+	  ul.appendChild(li);
+	});
+	  newDiv.appendChild(ul);
 
-  const selectedSalle = salles[`salle${salleNumber}`];
-  if (!selectedSalle) return;
+	  container.appendChild(newDiv);
+	}
 
-  const selectedLanguage = selectedSalle[language];
-  if (!selectedLanguage) return;
+	function nettoyerSallesDynamiques() {
+	  const container = document.getElementById("salles-dynamiques");
+	  if (container) container.innerHTML = "";
+	}
 
-  const container = document.getElementById("salles-dynamiques");
-  if (!container) return;
+    // bouton quitter
+	document.querySelector(".close-poetique").addEventListener("click", function () {
+		document.body.classList.add("fusion-galactique");
+		setTimeout(() => {
+		  window.location.href = "https://ovalentini.github.io/Fractales/carte.html?lang=" + langueActuelle; // Ou la page finale de ton choix
+		}, 2000); // Laisse le temps à l’animation de s'épanouir
+	});
 
-  // Supprime l’ancienne version si elle existe
-  const existing = document.getElementById(selectedLanguage.id);
-  if (existing) existing.parentNode.remove();
+	// Au chargement, appliquer la langue préférée ou par défaut
+	function initialiserLangue() {
+	  const navLang = navigator.language.startsWith("fr") ? "fr" : "en";
+	  langueActuelle = navLang;
+	  chargerLangues('https://ovalentini.github.io/Fractales/langues.txt').then(labels => {
+		appliquerTextes(labels, langueActuelle);
+		afficherElementsLangue(langueActuelle);
+		inspecterZonesOpposées(langueActuelle);
+		nettoyerSallesDynamiques();
+		dispatchSalle(langueActuelle, 1); // insère la salle 1 en français
+		dispatchSalle(langueActuelle, 2); // insère la salle 2 en français
+		dispatchSalle(langueActuelle, 3); // insère la salle 3 en français
+		dispatchSalle(langueActuelle, 4); // insère la salle 4 en français
+	  });
+	}
 
-  const newDiv = document.createElement("div");
-  newDiv.className = `salle-${salleNumber}`;
-
-  const title = document.createElement("h3");
-  title.id = selectedLanguage.id;
-  title.innerHTML = `✨ <strong>${selectedLanguage.title}</strong>`;
-  newDiv.appendChild(title);
-
-  const ul = document.createElement("ul");
-  ul.className = "liste-éléments";
-  selectedLanguage.elements.forEach(element => {
-  const li = document.createElement("li");
-  if (typeof element === "string") {
-    li.textContent = element;
-  } else {
-    li.textContent = element.text;
-    if (element.link) {
-      const a = document.createElement("a");
-      a.href = element.link.href;
-      a.target = "_blank";
-      a.textContent = element.link.label;
-      li.appendChild(a);
-    }
-  }
-  ul.appendChild(li);
-});
-  newDiv.appendChild(ul);
-
-  container.appendChild(newDiv);
-}
-
-function nettoyerSallesDynamiques() {
-  const container = document.getElementById("salles-dynamiques");
-  if (container) container.innerHTML = "";
-}
-
-document.querySelector(".close-poetique").addEventListener("click", function () {
-    document.body.classList.add("fusion-galactique");
-    setTimeout(() => {
-      window.location.href = "https://ovalentini.github.io/Fractales/carte.html?lang=" + langueActuelle; // Ou la page finale de ton choix
-    }, 2000); // Laisse le temps à l’animation de s'épanouir
-});
-
-// Au chargement, appliquer la langue préférée ou par défaut
-function initialiserLangue() {
-  const navLang = navigator.language.startsWith("fr") ? "fr" : "en";
-  langueActuelle = navLang;
-  chargerLangues('https://ovalentini.github.io/Fractales/langues.txt').then(labels => {
-	appliquerTextes(labels, langueActuelle);
-	afficherElementsLangue(langueActuelle);
-	inspecterZonesOpposées(langueActuelle);
-	nettoyerSallesDynamiques();
-	dispatchSalle(langueActuelle, 1); // insère la salle 1 en français
-	dispatchSalle(langueActuelle, 2); // insère la salle 1 en français
-	dispatchSalle(langueActuelle, 3); // insère la salle 1 en français
-	dispatchSalle(langueActuelle, 4); // insère la salle 1 en français
-  });
-}
-
-window.addEventListener('DOMContentLoaded', initialiserLangue);
+	window.addEventListener('DOMContentLoaded', initialiserLangue);
 </script>
 </body>
 </html>
