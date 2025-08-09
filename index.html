@@ -671,7 +671,7 @@ td a {
 	
 	
 	<!-- 📍 Zone d’affichage des coordonnées -->
-    <div id="coordinates" style="
+    <!--<div id="coordinates" style="
       margin-top: 12px;
       background-color: #fff7e6;
       padding: 8px 12px;
@@ -700,7 +700,7 @@ td a {
 	  font-family: monospace;
 	  cursor: pointer;">
 	  🔄 Réinitialiser les onglets ouverts
-	</button>
+	</button>-->
 	
   </section>
   
@@ -729,15 +729,15 @@ td a {
       </thead>
       <tbody>
         <tr>
-          <td>Piliers musicaux du temple Vithala</td>
+          <td id="vithala">Piliers musicaux du temple Vithala</td>
           <td>🎶 <a href="https://www.youtube.com/watch?v=UOFoQ70m6Z8" target="_blank" rel="noopener noreferrer">Écouter</a></td>
         </tr>
         <tr>
-          <td>Ambiance ruines de Hampi</td>
+          <td id="ruines" >Ambiance ruines de Hampi</td>
           <td>🏛️ <a href="https://www.youtube.com/watch?v=ChchmDc_OhI" target="_blank" rel="noopener noreferrer">Découvrir</a></td>
         </tr>
         <tr>
-          <td>Narration historique immersive</td>
+          <td id="histoire" >Narration historique immersive</td>
           <td>🎙️ <a href="https://www.youtube.com/watch?v=tMjVqBzSnGs" target="_blank" rel="noopener noreferrer">Explorer</a></td>
         </tr>
       </tbody>
@@ -747,7 +747,7 @@ td a {
 
 <!-- Salle Bali -->
  <section id="bali">
-  <h2>🌺 Salle 2 — Bali la belle île</h2>
+  <h2 id="salle_bali">🌺 Salle 2 — Bali la belle île</h2>
   <div class="navigation-salles">
     <a href="#hampi" id="btn_previous_0" class="nav-btn precedent">← Salle précédente</a>
     <a href="#flores" id="btn_next_1" class="nav-btn suivante">Salle suivante →</a>
@@ -785,7 +785,7 @@ td a {
 
 <!-- Salle Florès -->
 <section id="flores">
-  <h2>🌾 Salle 3 — Fleurs de rizières</h2>
+  <h2 id="salle_flores">🌾 Salle 3 — Fleurs de rizières</h2>
   <div class="navigation-salles">
     <a href="#bali" id="btn_previous_1" class="nav-btn precedent">← Salle précédente</a>
     <a href="#perou" id="btn_next_2"  class="nav-btn suivante">Salle suivante →</a>
@@ -824,7 +824,7 @@ td a {
 
 <!-- Salle Pérou -->
 <section id="perou">
-  <h2>🏔️ Salle 4 — Salines fractales</h2>
+  <h2 id="salle_perou">🏔️ Salle 4 — Salines fractales</h2>
   <div class="navigation-salles">
     <a href="#flores" id="btn_previous_2" class="nav-btn precedent">← Salle précédente</a>
     <a href="#carte" id="btn_back_3" class="nav-btn retour">🗺️ Retour à la carte</a>
@@ -875,13 +875,13 @@ td a {
       Position de la souris : X = 0, Y = 0
     </div>
 	
-	<div id="window-counter" style="margin:12px 0; font-family:monospace; color:#007BFF;"></div>-->
+	<div id="window-counter" style="margin:12px 0; font-family:monospace; color:#007BFF;"></div>
 
 	<div id="console-log" style="background:#000; color:#0f0; padding:10px; font-family:monospace; font-size:0.9em; margin:20px; border-radius:6px;">
 	  <strong>Console interne</strong><br>
 	</div>
 	
-	<!--<button onclick="resetOpenedLinks()" style=<!--"
+	<button onclick="resetOpenedLinks()" style=<!--"
 	  margin-top: 12px;
 	  padding: 8px 16px;
 	  background-color: #444;
