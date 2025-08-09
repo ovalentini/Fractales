@@ -563,9 +563,9 @@ td a {
       <a href="#carte" id="btn_map_1" class="nav-btn retour" title="Accéder à la carte interactive">🗺️ Carte interactive</a>
     </div>
 
-    <!-- Les salles -->
-    <div class="salle-1">
-      <!--<h3>🇮🇳 <strong>Salle 1 — Marché à Hampi</strong></h3>-->
+     <!-- Les salles --> 
+    <div id="salles-dynamiques"></div>
+    <!--<div class="salle-1">
 	  <h3 id="salle1"><img src="drapeaux/in.png" alt="Drapeau Inde" class="inline-flag"><strong> Salle 1 — Marché à Hampi</strong></h3>
       <ul class="liste-éléments">
         <li>✨ Char mystique de Hampi</li>
@@ -631,7 +631,7 @@ td a {
           <a href="https://www.youtube.com/watch?v=LDgR8ffFzBo" target="_blank">Écouter</a>
         </li>
       </ul>
-    </div>
+    </div>-->
   </section>
 
   <!-- 🗺 Carte interactive -->
@@ -710,7 +710,7 @@ td a {
   
   <!-- Salle Hampi -->
   <section id="hampi">
-  <h2><img src="drapeaux/in.png" alt="Drapeau Inde" class="inline-flag"> Salle 1 - Marché à Hampi</h2>
+  <h2><img src="drapeaux/in.png" alt="Drapeau Inde" class="inline-flag"> Salle 1 — Marché à Hampi</h2>
   <div class="navigation-salles">
     <a href="#bali" id="btn_next_0" class="nav-btn suivante">Salle suivante →</a>
 	<a href="#carte" id="btn_back_0" class="nav-btn retour">🗺️ Retour à la carte</a>
@@ -904,7 +904,6 @@ td a {
   </section>
 </footer>
 
-	
 <script>
   // 🔧 Fonctions utilitaires
   const openedLinks = new Set();
@@ -954,7 +953,6 @@ td a {
 
 <script>
 	
-	// Navigation et carte interactive
 	// Navigation et carte interactive
 	const handleNavigation = (sourceElement, type) => {
 	  const classList = Array.from(sourceElement.classList);
@@ -1083,7 +1081,12 @@ function switchLangue() {
     img.src = "carte-interactive-en.jpg";
     img.alt = "Fractals of the World";
     caption.textContent = "Each spiral tells a story. Let the patterns guide your soul.";
-  }
+}
+	nettoyerSallesDynamiques();
+	dispatchSalle(langueActuelle, 1);
+	dispatchSalle(langueActuelle, 2);
+	dispatchSalle(langueActuelle, 3);
+	dispatchSalle(langueActuelle, 4);
 }
 
 function inspecterZonesOpposées(langue) {
@@ -1116,11 +1119,186 @@ function afficherElementsLangue(langue) {
   points.forEach(el => el.classList.add('visible'));
 }
 
+function dispatchSalle(language, salleNumber) {
+  const salles = {
+  salle1: {
+    en: {
+      id: "salle1_en",
+      title: " Room 1 — Hampi Market",
+      elements: [
+      { text:  "✨ Mystical chariot of Hampi" },
+      { text: "🌈 Mandalas and flowing fabrics" },
+      {  
+	   text:"🎵 Soundscape: Musical pillars of the Vithala temple  — ",
+	   link: {
+		href: "https://www.youtube.com/watch?v=UOFoQ70m6Z8",
+		label: "Listen"
+		}
+	  }
+      ]
+    },
+    fr: {
+      id: "salle1_fr",
+      title: " Salle 1 — Marché de Hampi",
+      elements: [
+	  { text: "✨ Char mystique de Hampi" },
+	  { text: "🌈  Mandalas et étoffes ondulantes" },
+	  {
+		text: "🎵  Paysage sonore : Piliers musicaux du temple Vithala — ",
+		link: {
+		  href: "https://www.youtube.com/watch?v=UOFoQ70m6Z8",
+		  label: "Écouter"
+		}
+	  }
+	]
+   }
+  },
+  salle2: {
+    en: {
+      id: "salle2_en",
+      title: " Room 2 — Bali the beautiful island",
+      elements: [
+      { text: "🌾 Sacred rice fields and offerings"},
+      { text: "🕉 Hindu temples and spirals of incense"},
+	  {
+	    text: "🎶 Soundscape: Balinese gamelan — ",
+		link: {
+		       href: "https://www.routard.com/fr/photo/p/345-bali",
+			   label: "Listen"
+			   }
+	  }
+      ]
+    },
+    fr: {
+      id: "salle2_fr",
+      title: " Salle 2 — Bali, l’île magnifique",
+      elements: [
+      { text: "🌾 Rizières sacrées et offrandes"},
+      { text: "🕉 Temples hindous et spirales d’encens"},
+	  { 
+	  text: "🎶 Ambiance sonore : Gamelan balinais — ",
+	  link: {
+	         href: "https://www.routard.com/fr/photo/p/345-bali",
+			 label: "Écouter"
+			 }
+	  }
+      ]
+    }
+  },
+  salle3: {
+    en: {
+      id: "salle3_en",
+      title: " Room 3 - Rice field flowers (Flores)",
+      elements: [
+      { text: "🌸 Rice terraces in petals"},
+      { text: "💧 Plant spirals and aquatic light"},
+	  {
+	   text: "🎵 Soundscape: Rice field lullabies — ",
+	   link: {
+	          href: "https://munki.audio/catalogue/albums/410/artistes-divers--comptines-et-berceuses-des-rizieres",
+			  label: "Listen"
+			   }
+	  }
+      ]
+    },
+    fr: {
+      id: "salle3_fr",
+      title: " Salle 3 - Fleurs de rizières (Florès)",
+      elements: [
+	  { text: "🌸 Terrasses de riz en pétales$"},
+	  { text: "💧 Spirales végétales et lumière aquatique"},
+	  {
+	   text: "🎵 Ambiance sonore : Berceuses des rizières — ",
+       link: {
+              href: "https://munki.audio/catalogue/albums/410/artistes-divers--comptines-et-berceuses-des-rizieres",
+			  label: "Ecouter"
+			  }
+	  }
+      ]
+    }
+  },
+  salle4: {
+    en: {
+      id: "salle4_en",
+      title: "Room 4 - Amazonian Salt Flats",
+      elements: [
+        { text: "✨ Salt terraces and fractal reflections"},
+		{ text: "🌊 Aquatic geometry and mineral memory"},
+		{
+		 text: "🎶 Soundscape: Traditional Amazonian chants — ",
+		 link: {
+				href: "https://www.youtube.com/watch?v=jm4lKVxihI4",
+				label: "Listen"
+				}
+		}
+      ]
+    },
+    fr: {
+      id: "salle4_fr",
+      title: "Salle 4 - Salines Amazoniennes",   
+      elements: [
+        { text: "✨ Terrasses de sel et reflets fractals"},
+		{ text: "🌊 Géométrie aquatique et mémoire minérale"},
+		{
+		 text: "🎶 Ambiance sonore : Chants traditionnels amazoniens — ",
+		 link: {
+				href: "https://www.youtube.com/watch?v=jm4lKVxihI4",
+				label: "Ecouter"
+				}
+		}
+      ]
+    }
+  }
+};
 
-/*function getBaseName(el) {
-  const cls = Array.from(el.classList).find(c => c.includes('-'));
-  return cls ? cls.split('-')[0] : '';
-}*/
+  const selectedSalle = salles[`salle${salleNumber}`];
+  if (!selectedSalle) return;
+
+  const selectedLanguage = selectedSalle[language];
+  if (!selectedLanguage) return;
+
+  const container = document.getElementById("salles-dynamiques");
+  if (!container) return;
+
+  // Supprime l’ancienne version si elle existe
+  const existing = document.getElementById(selectedLanguage.id);
+  if (existing) existing.parentNode.remove();
+
+  const newDiv = document.createElement("div");
+  newDiv.className = `salle-${salleNumber}`;
+
+  const title = document.createElement("h3");
+  title.id = selectedLanguage.id;
+  title.innerHTML = `✨ <strong>${selectedLanguage.title}</strong>`;
+  newDiv.appendChild(title);
+
+  const ul = document.createElement("ul");
+  ul.className = "liste-éléments";
+  selectedLanguage.elements.forEach(element => {
+  const li = document.createElement("li");
+  if (typeof element === "string") {
+    li.textContent = element;
+  } else {
+    li.textContent = element.text;
+    if (element.link) {
+      const a = document.createElement("a");
+      a.href = element.link.href;
+      a.target = "_blank";
+      a.textContent = element.link.label;
+      li.appendChild(a);
+    }
+  }
+  ul.appendChild(li);
+});
+  newDiv.appendChild(ul);
+
+  container.appendChild(newDiv);
+}
+
+function nettoyerSallesDynamiques() {
+  const container = document.getElementById("salles-dynamiques");
+  if (container) container.innerHTML = "";
+}
 
 document.querySelector(".close-poetique").addEventListener("click", function () {
     document.body.classList.add("fusion-galactique");
@@ -1131,12 +1309,21 @@ document.querySelector(".close-poetique").addEventListener("click", function () 
 
 // Au chargement, appliquer la langue préférée ou par défaut
 function initialiserLangue() {
+  const navLang = navigator.language.startsWith("fr") ? "fr" : "en";
+  langueActuelle = navLang;
   chargerLangues('https://ovalentini.github.io/Fractales/langues.txt').then(labels => {
 	appliquerTextes(labels, langueActuelle);
 	afficherElementsLangue(langueActuelle);
 	inspecterZonesOpposées(langueActuelle);
+	nettoyerSallesDynamiques();
+	dispatchSalle(langueActuelle, 1); // insère la salle 1 en français
+	dispatchSalle(langueActuelle, 2); // insère la salle 1 en français
+	dispatchSalle(langueActuelle, 3); // insère la salle 1 en français
+	dispatchSalle(langueActuelle, 4); // insère la salle 1 en français
   });
-}window.addEventListener('DOMContentLoaded', initialiserLangue);
+}
+
+window.addEventListener('DOMContentLoaded', initialiserLangue);
 </script>
 </body>
 </html>
