@@ -54,8 +54,8 @@
 [intro_poetique_en] 'Close your eyes… and open your soul. You are entering a world where boundaries dissolve. Here, every image is a breath, every spiral a memory. Fractals are not just patterns… they are reflections of souls scattered to the four winds of the world. Follow the light, listen to the hidden rhythm behind the pixels, and let yourself be carried away…'
 [sommaire_expo_fr] '📚 Sommaire de l’exposition'
 [sommaire_expo_en] '📚 Exhibition Summary'
-[salle1_fr] 'Salle 1 - Marché à Hampi ✨ Char mystique de Hampi 🌈 Mandalas et étoffes ondulantes 🎵 Ambiance sonore : Piliers musicaux du temple Vithala
-[salle1_en] 'Room 1 - Hampi Market ✨ Mystical chariot of Hampi 🌈 Mandalas and flowing fabrics 🎵 Soundscape: Musical pillars of the Vithala temple
+[salle1_fr] 'Salle 1 - Marché à Hampi ✨ Char mystique de Hampi 🌈 Mandalas et étoffes ondulantes 🎵 Ambiance sonore : Piliers musicaux du temple Vithala'
+[salle1_en] 'Room 1 - Hampi Market ✨ Mystical chariot of Hampi 🌈 Mandalas and flowing fabrics 🎵 Soundscape: Musical pillars of the Vithala temple'
 [salle2_fr] 'Salle 2 - Bali la belle île 🌾 Rizières sacrées et offrandes 🕉️ Temples hindous et spirales d’encens 🎶 Ambiance sonore : Gamelan balinais'
 [salle2_en] 'Room 2 - Bali the beautiful island 🌾 Sacred rice fields and offerings 🕉️ Hindu temples and spirals of incense 🎶 Soundscape: Balinese gamelan'
 [salle3_fr] 'Salle 3 - Fleurs de rizières (Florès) 🌸 Terrasses de riz en pétales 💧 Spirales végétales et lumière aquatique 🎵 Ambiance sonore : Berceuses des rizières'
