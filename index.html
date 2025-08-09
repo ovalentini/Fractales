@@ -222,6 +222,7 @@ td a {
   aspect-ratio: 2 / 3;
   background-color: #eee;
 }
+
 .carte-wrapper img {
   position: absolute;
   top: 0;
@@ -232,7 +233,14 @@ td a {
   z-index: 0;
 }
 
-.carte-point {
+/*.carte-wrapper caption {
+  font-style: italic;
+  color: #555;
+  margin-top: 10px;
+}*/
+
+
+.carte-point-fr {
   position: absolute;
   width: 14px;
   height: 14px;
@@ -242,12 +250,34 @@ td a {
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
   z-index: 1;
 }
-.carte-point.hampi     { top: 81.1%; left: 68.3%; background-color: crimson; box-shadow: 0 0 12px rgba(255, 0, 0, 0.6); }
-.carte-point.perou     { top: 87.8%; left: 25.0%; background-color: blue;    box-shadow: 0 0 12px rgba(0, 0, 255, 0.6); }
-.carte-point.flores    { top: 87.8%; left: 81.7%; background-color: green;   box-shadow: 0 0 12px rgba(0, 255, 0, 0.6); }
-.carte-point.bali      { top: 87.8%; left: 80.0%; background-color: orange;  box-shadow: 0 0 12px rgba(255, 165, 0, 0.6); }
 
-.carte-point.highlight {
+.carte-point-en {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid white;
+  cursor: pointer;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.carte-point-fr.hampi     { top: 81.1%; left: 68.3%; background-color: crimson; box-shadow: 0 0 12px rgba(255, 0, 0, 0.6); }
+.carte-point-fr.perou     { top: 87.8%; left: 25.0%; background-color: blue;    box-shadow: 0 0 12px rgba(0, 0, 255, 0.6); }
+.carte-point-fr.flores    { top: 87.8%; left: 81.7%; background-color: green;   box-shadow: 0 0 12px rgba(0, 255, 0, 0.6); }
+.carte-point-fr.bali      { top: 87.8%; left: 80.0%; background-color: orange;  box-shadow: 0 0 12px rgba(255, 165, 0, 0.6); }
+
+.carte-point-en.hampi     { top: 76.1%; left: 68.3%; background-color: crimson; box-shadow: 0 0 12px rgba(255, 0, 0, 0.6); }
+.carte-point-en.perou     { top: 82.8%; left: 25.0%; background-color: blue;    box-shadow: 0 0 12px rgba(0, 0, 255, 0.6); }
+.carte-point-en.flores   { top: 82.8%; left: 81.7%; background-color: green;   box-shadow: 0 0 12px rgba(0, 255, 0, 0.6); }
+.carte-point-en.bali      { top: 82.8%; left: 80.0%; background-color: orange;  box-shadow: 0 0 12px rgba(255, 165, 0, 0.6); }
+
+.carte-point-fr.highlight {
+  animation: pulseHighlight 1s ease-out;
+  box-shadow: 0 0 12px 6px rgba(255, 165, 0, 0.6);
+}
+
+.carte-point-en.highlight {
   animation: pulseHighlight 1s ease-out;
   box-shadow: 0 0 12px 6px rgba(255, 165, 0, 0.6);
 }
@@ -256,30 +286,73 @@ td a {
 .inline-flag {
     display: inline;
     vertical-align: middle;
-  }
-
+}
 
 /* 🖼️ Zones interactives */
-.debug-zone {
+.debug-zone-fr {
   position: absolute;
   border-radius: 8px;
   pointer-events: auto;
   transition: all 0.3s ease;
   z-index: 0;
 }
-.debug-zone:hover {
+.debug-zone-fr:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   transform: scale(1.1);
 }
-.debug-zone.hampi  { top: 28.9%; left: 6.7%;  width: 20%; height: 36.7%; background-color: rgba(255, 0, 0, 0.3); }
-.debug-zone.perou  { top: 28.9%; left: 28.3%; width: 20%; height: 36.7%; background-color: rgba(0, 0, 255, 0.3); }
-.debug-zone.flores { top: 28.9%; left: 51.7%; width: 20%; height: 36.7%; background-color: rgba(0, 255, 0, 0.3); }
-.debug-zone.bali   { top: 28.9%; left: 73.3%; width: 20%; height: 36.7%; background-color: rgba(255, 165, 0, 0.3); }
 
-.debug-zone.highlight {
+.debug-zone-fr.highlight {
   box-shadow: 0 0 12px 6px rgba(255,165,0,0.6);
   outline: 2px solid rgba(255,165,0,0.8);
   animation: pulseZone 1s ease-out;
+}
+
+.debug-zone-en {
+  position: absolute;
+  border-radius: 8px;
+  pointer-events: auto;
+  transition: all 0.3s ease;
+  z-index: 0;
+}
+.debug-zone-en:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transform: scale(1.1);
+}
+
+.debug-zone-en.highlight {
+  box-shadow: 0 0 12px 6px rgba(255,165,0,0.6);
+  outline: 2px solid rgba(255,165,0,0.8);
+  animation: pulseZone 1s ease-out;
+}
+
+.debug-zone-fr.hampi  { top: 28.9%; left: 6.7%;  width: 20%; height: 36.7%; background-color: rgba(255, 0, 0, 0.3); }
+.debug-zone-fr.perou  { top: 28.9%; left: 28.3%; width: 20%; height: 36.7%; background-color: rgba(0, 0, 255, 0.3); }
+.debug-zone-fr.flores { top: 28.9%; left: 51.7%; width: 20%; height: 36.7%; background-color: rgba(0, 255, 0, 0.3); }
+.debug-zone-fr.bali   { top: 28.9%; left: 73.3%; width: 20%; height: 36.7%; background-color: rgba(255, 165, 0, 0.3); }
+
+.debug-zone-en.hampi  { top: 20.9%; left: 6.7%;  width: 20%; height: 36.7%; background-color: rgba(255, 0, 0, 0.3); }
+.debug-zone-en.perou  { top: 20.9%; left: 28.3%; width: 20%; height: 36.7%; background-color: rgba(0, 0, 255, 0.3); }
+.debug-zone-en.flores { top: 20.9%; left: 51.7%; width: 20%; height: 36.7%; background-color: rgba(0, 255, 0, 0.3); }
+.debug-zone-en.bali   { top: 20.9%; left: 73.3%; width: 20%; height: 38.7%; background-color: rgba(255, 165, 0, 0.3); }
+
+.lang-fr .debug-zone-fr,
+.lang-fr .carte-point-fr {
+  display: block;
+}
+
+.lang-fr .debug-zone-en,
+.lang-fr .carte-point-en {
+  display: none;
+}
+
+.lang-en .debug-zone-fr,
+.lang-en .carte-point-fr {
+  display: none;
+}
+
+.lang-en .debug-zone-en,
+.lang-en .carte-point-en {
+  display: block;
 }
 
 /* 🎞️ Animations */
@@ -456,7 +529,7 @@ td a {
 
 </style>
 </head>
-<body> 
+<body class="lang-fr"> 
   <div id="language-switcher">
       <img src="drapeaux/fr.png" alt="Drapeau France" class="inline-flag">
 	  <button onclick="switchLangue()" id="btn_flag"> Français</button>
@@ -570,27 +643,73 @@ td a {
 
     <div class="carte-container">
       <div class="carte-wrapper">
-        <img src="carte-interactive.jpg" alt="Carte illustrée des salles de l’exposition" usemap="#map-salles" />
-
+        <img id="fractals-img" src="carte-interactive-fr.jpg" alt="Carte illustrée des salles de l’exposition" usemap="#map-salles" />
+		<p class="caption" id="image-caption">Chaque spirale raconte une histoire. Laissez les motifs guider votre âme.</p>
+		
         <!-- Zones & Points -->
-        <a href="#hampi" class="debug-zone hampi" title="Salle 1 – Hampi"></a>
-        <a href="#perou" class="debug-zone perou" title="Salle 4 – Pérou"></a>
-        <a href="#flores" class="debug-zone flores" title="Salle 3 – Florès"></a>
-        <a href="#bali" class="debug-zone bali" title="Salle 2 – Bali"></a>
+        <a href="#hampi" class="debug-zone-fr hampi" title="Salle 1 – Hampi"></a>
+        <a href="#perou" class="debug-zone-fr perou" title="Salle 4 – Pérou"></a>
+        <a href="#flores" class="debug-zone-fr flores" title="Salle 3 – Florès"></a>
+        <a href="#bali" class="debug-zone-fr bali" title="Salle 2 – Bali"></a>
+		
+		<a href="#hampi" class="debug-zone-en hampi" title="Salle 1 – Hampi"></a>
+        <a href="#perou" class="debug-zone-en perou" title="Salle 4 – Pérou"></a>
+        <a href="#flores" class="debug-zone-en flores" title="Salle 3 – Florès"></a>
+        <a href="#bali" class="debug-zone-en bali" title="Salle 2 – Bali"></a>
 
-        <a href="#hampi" class="carte-point hampi" title="Hampi"></a>
-        <a href="#bali" class="carte-point bali" title="Bali"></a>
-        <a href="#flores" class="carte-point flores" title="Florès"></a>
-        <a href="#perou" class="carte-point perou" title="Pérou"></a>
+        <a href="#hampi" class="carte-point-fr hampi" title="Hampi"></a>
+        <a href="#bali" class="carte-point-fr bali" title="Bali"></a>
+        <a href="#flores" class="carte-point-fr flores" title="Florès"></a>
+        <a href="#perou" class="carte-point-fr perou" title="Pérou"></a>
+		
+		<a href="#hampi" class="carte-point-en hampi" title="Hampi"></a>
+        <a href="#bali" class="carte-point-en bali" title="Bali"></a>
+        <a href="#flores" class="carte-point-en flores" title="Florès"></a>
+        <a href="#perou" class="carte-point-en perou" title="Pérou"></a>
       </div>
     </div>
+	
+	
+	<!-- 📍 Zone d’affichage des coordonnées -->
+    <div id="coordinates" style="
+      margin-top: 12px;
+      background-color: #fff7e6;
+      padding: 8px 12px;
+      border-left: 4px solid #FF6600;
+      border-radius: 6px;
+      font-family: monospace;
+      font-size: 0.9em;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      max-width: 320px;">
+      Position de la souris : X = 0, Y = 0
+    </div>
+	
+	<div id="window-counter" style="margin:12px 0; font-family:monospace; color:#007BFF;"></div>
+
+	<div id="console-log" style="background:#000; color:#0f0; padding:10px; font-family:monospace; font-size:0.9em; margin:20px; border-radius:6px;">
+	  <strong>Console interne</strong><br>
+	</div>
+	
+	<button onclick="resetOpenedLinks()" style="
+	  margin-top: 12px;
+	  padding: 8px 16px;
+	  background-color: #444;
+	  color: #fff;
+	  border: none;
+	  border-radius: 6px;
+	  font-family: monospace;
+	  cursor: pointer;">
+	  🔄 Réinitialiser les onglets ouverts
+	</button>
+	
   </section>
+  
+  
 
   <!-- 🖼 Sections d’exposition détaillées -->
   
   <!-- Salle Hampi -->
   <section id="hampi">
-  <!--<h2>🏛️ Salle 1 — Marché à Hampi</h2>-->
   <h2><img src="drapeaux/in.png" alt="Drapeau Inde" class="inline-flag"> Salle 1 - Marché à Hampi</h2>
   <div class="navigation-salles">
     <a href="#bali" id="btn_next_0" class="nav-btn suivante">Salle suivante →</a>
@@ -743,7 +862,7 @@ td a {
 </section>
 
 	<!-- 📍 Zone d’affichage des coordonnées -->
-    <!--div id="coordinates" style="
+    <div id="coordinates" style="
       margin-top: 12px;
       background-color: #fff7e6;
       padding: 8px 12px;
@@ -780,13 +899,7 @@ td a {
 	  <h2>🖼️ Épilogue contemplatif – Clôture de la visite</h2>
 	  <button id="btn_exit" class="close-poetique" title="Clôturer le voyage">🌌 Quitter</button>
 	</div>
-    <!--<blockquote id="epilogue" class="citation-stylisee">
-      <p>
-        “Et maintenant, vous quittez le monde des formes… mais peut-être avec un peu plus d’âme en vous.<br />
-        Souvenez-vous : ce voyage n’était pas dans les images, mais dans ce qu’elles éveillent.<br />
-        Merci d’avoir marché dans les spirales du monde.”
-      </p>
-    </blockquote>-->
+	<!-- le texte se trouve dans langues.txt sous id-->
 	<div id="epilogue" class="citation-stylisee"></div>
   </section>
 </footer>
@@ -837,38 +950,66 @@ td a {
       }
     });
   });
+</script>
 
-  // 🎯 Navigation interactive
-  document.addEventListener("DOMContentLoaded", () => {
-    const handleNavigation = (sourceClass, type) => {
-      const targetClass = Array.from(sourceClass.classList).find(cls => cls !== type);
-      const highlightTarget = document.querySelector(`.${type === 'debug-zone' ? 'carte-point' : 'debug-zone'}.${targetClass}`);
-      const scrollTarget = document.querySelector(`#${targetClass}`);
+<script>
+	
+	// Navigation et carte interactive
+	// Navigation et carte interactive
+	const handleNavigation = (sourceElement, type) => {
+	  const classList = Array.from(sourceElement.classList);
+	  const salleName = classList.find(cls =>
+		["hampi", "bali", "flores", "perou"].includes(cls)
+	  );
 
-      if (highlightTarget) {
-        highlightTarget.classList.add("highlight");
-        setTimeout(() => highlightTarget.classList.remove("highlight"), 1000);
-      }
+	  if (!salleName) return;
 
-      if (scrollTarget) {
-        setTimeout(() => scrollTarget.scrollIntoView({ behavior: "smooth" }), 1000);
-      }
-    };
+	  const langSuffix = classList.includes("carte-point-fr") || classList.includes("debug-zone-fr") ? "fr" : "en";
+	  const targetType = type === "debug-zone" ? "carte-point" : "debug-zone";
+	  logMessage(`🎯 Type source : ${type}, cible : ${targetType}`);
 
-    document.querySelectorAll(".debug-zone").forEach(zone =>
-      zone.addEventListener("click", e => {
-        e.preventDefault();
-        handleNavigation(zone, "debug-zone");
-      })
-    );
+	  const highlightTarget = Array.from(document.querySelectorAll(`.${targetType}-${langSuffix}`))
+		.find(el => el.classList.contains(salleName));
 
-    document.querySelectorAll(".carte-point").forEach(point =>
-      point.addEventListener("click", e => {
-        e.preventDefault();
-        handleNavigation(point, "carte-point");
-      })
-    );
-  });
+	  if (highlightTarget) {
+		logMessage(`✅ Surbrillance : ${targetType}-${langSuffix} → ${highlightTarget.className}`);
+		highlightTarget.classList.add("highlight");
+		setTimeout(() => highlightTarget.classList.remove("highlight"), 1000);
+	  } else {
+		logMessage(`❌ Aucun élément trouvé pour salle : ${salleName}`);
+	  }
+
+	  const scrollTarget = document.querySelector(`#${salleName}`);
+	  if (scrollTarget) {
+		setTimeout(() => scrollTarget.scrollIntoView({ behavior: "smooth" }), 1000);
+	  }
+	};
+
+  // 🖱️ Écouteurs sur les zones interactives
+  document.querySelectorAll(".debug-zone-fr, .debug-zone-en").forEach(zone =>
+  zone.addEventListener("click", e => {
+    e.preventDefault();
+    logMessage("🖱️ Zone cliquée : " + zone.className);
+    handleNavigation(zone, "debug-zone"); // ← bon type
+  })
+);
+
+document.querySelectorAll(".carte-point-fr, .carte-point-en").forEach(point =>
+  point.addEventListener("click", e => {
+    e.preventDefault();
+    logMessage("📍 Point cliqué : " + point.className);
+    handleNavigation(point, "carte-point"); // ← bon type
+  })
+);
+
+document.addEventListener("DOMContentLoaded", () => {
+  // 🔍 Détection de la langue active
+  const bodyClass = document.body.className;
+  const langSuffix = bodyClass.includes("lang-fr") ? "fr" : "en";
+
+  // Tu peux continuer ici avec ton code...
+  logMessage("Langue détectée : " + langSuffix);
+});
 </script>
 
 <script>
@@ -901,21 +1042,22 @@ function appliquerTextes(labels, langue) {
   }
 }
 
-/*function switchLangue() {
-  langueActuelle = langueActuelle === 'fr' ? 'en' : 'fr';
-  localStorage.setItem('lang', langueActuelle);
-  chargerLangues('https://ovalentini.github.io/Fractales/langues.txt').then(labels => {
-    appliquerTextes(labels, langueActuelle);
-  });
-}*/
-
 function switchLangue() {
   langueActuelle = (langueActuelle === 'fr') ? 'en' : 'fr';
+
   chargerLangues('https://ovalentini.github.io/Fractales/langues.txt').then(labels => {
     appliquerTextes(labels, langueActuelle);
-  });
 
-  // Met à jour le drapeau et le texte du bouton
+    // ✅ Afficher les bons éléments une fois les textes appliqués
+    setTimeout(() => {
+    afficherElementsLangue(langueActuelle);
+	inspecterZonesOpposées(langueActuelle);
+  }, 100); // ou plus si nécessaire
+});
+
+  document.body.className = `lang-${langueActuelle}`;
+
+  // 🏳️ Met à jour le drapeau et le texte du bouton
   const flagImg = document.querySelector('.inline-flag');
   const flagBtn = document.getElementById('btn_flag');
 
@@ -928,22 +1070,73 @@ function switchLangue() {
     flagImg.alt = 'Flag UK';
     flagBtn.textContent = 'English';
   }
+
+  // 🖼️ Met à jour l’image et la légende
+  const img = document.getElementById("fractals-img");
+  const caption = document.getElementById("image-caption");
+
+  if (langueActuelle === 'fr') {
+    img.src = "carte-interactive-fr.jpg";
+    img.alt = "Fractales du Monde";
+    caption.textContent = "Chaque spirale raconte une histoire. Laissez les motifs guider votre âme.";
+  } else {
+    img.src = "carte-interactive-en.jpg";
+    img.alt = "Fractals of the World";
+    caption.textContent = "Each spiral tells a story. Let the patterns guide your soul.";
+  }
+}
+
+function inspecterZonesOpposées(langue) {
+  const langueOpposée = langueActuelle === 'fr' ? 'en' : 'fr';
+  const zonesOpposées = document.querySelectorAll(`.debug-zone-${langueOpposée}`);
+
+  if (zonesOpposées.length === 0) {
+    logMessage(`ℹ️ Aucun élément trouvé pour la langue opposée : ${langueOpposée}`);
+    return;
+  }
+
+  zonesOpposées.forEach(el => {
+    // logMessage(`🔍 Zone opposée : ${el.className}, visible: ${el.classList.contains('visible')}`);
+    // Tu peux aussi manipuler ici, par exemple :
+    // el.classList.add('masqué');
+  });
+}
+
+function afficherElementsLangue(langue) {
+  const zones = document.querySelectorAll(`.debug-zone-${langue}`);
+  const points = document.querySelectorAll(`.carte-point-${langue}`);
+  if (zones.length === 0 && points.length === 0) {
+    logMessage(`⚠️ Aucun élément trouvé pour la langue : ${langue}`);
+    return;
+  }
+  document.querySelectorAll('.debug-zone-fr, .carte-point-fr, .debug-zone-en, .carte-point-en').forEach(el => {
+    el.classList.remove('visible');
+  });
+  zones.forEach(el => el.classList.add('visible'));
+  points.forEach(el => el.classList.add('visible'));
 }
 
 
-// Au chargement, appliquer la langue préférée ou par défaut
-window.addEventListener('DOMContentLoaded', () => {
-  chargerLangues('https://ovalentini.github.io/Fractales/langues.txt').then(labels => {
-      appliquerTextes(labels, langueActuelle);
-    });
-});
+/*function getBaseName(el) {
+  const cls = Array.from(el.classList).find(c => c.includes('-'));
+  return cls ? cls.split('-')[0] : '';
+}*/
 
-  document.querySelector(".close-poetique").addEventListener("click", function () {
+document.querySelector(".close-poetique").addEventListener("click", function () {
     document.body.classList.add("fusion-galactique");
     setTimeout(() => {
       window.location.href = "https://ovalentini.github.io/Fractales/carte.html?lang=" + langueActuelle; // Ou la page finale de ton choix
     }, 2000); // Laisse le temps à l’animation de s'épanouir
+});
+
+// Au chargement, appliquer la langue préférée ou par défaut
+function initialiserLangue() {
+  chargerLangues('https://ovalentini.github.io/Fractales/langues.txt').then(labels => {
+	appliquerTextes(labels, langueActuelle);
+	afficherElementsLangue(langueActuelle);
+	inspecterZonesOpposées(langueActuelle);
   });
+}window.addEventListener('DOMContentLoaded', initialiserLangue);
 </script>
 </body>
 </html>
