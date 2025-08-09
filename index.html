@@ -527,10 +527,17 @@ td a {
   100% { box-shadow: none; }
 }
 
+#lang-switch {
+  position: fixed;
+  top: 20px; /* distance depuis le haut */
+  right: 20px; /* distance depuis la droite */
+  z-index: 1000; /* pour qu’il reste au-dessus du contenu */
+}
+
 </style>
 </head>
 <body class="lang-fr"> 
-  <div id="language-switcher">
+  <div id="lang-switch">
       <img src="drapeaux/fr.png" alt="Drapeau France" class="inline-flag">
 	  <button onclick="switchLangue()" id="btn_flag"> Français</button>
 	</div>
@@ -668,46 +675,9 @@ td a {
         <a href="#perou" class="carte-point-en perou" title="Pérou"></a>
       </div>
     </div>
-	
-	
-	<!-- 📍 Zone d’affichage des coordonnées -->
-    <!--<div id="coordinates" style="
-      margin-top: 12px;
-      background-color: #fff7e6;
-      padding: 8px 12px;
-      border-left: 4px solid #FF6600;
-      border-radius: 6px;
-      font-family: monospace;
-      font-size: 0.9em;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      max-width: 320px;">
-      Position de la souris : X = 0, Y = 0
-    </div>
-	
-	<div id="window-counter" style="margin:12px 0; font-family:monospace; color:#007BFF;"></div>
-
-	<div id="console-log" style="background:#000; color:#0f0; padding:10px; font-family:monospace; font-size:0.9em; margin:20px; border-radius:6px;">
-	  <strong>Console interne</strong><br>
-	</div>
-	
-	<button onclick="resetOpenedLinks()" style="
-	  margin-top: 12px;
-	  padding: 8px 16px;
-	  background-color: #444;
-	  color: #fff;
-	  border: none;
-	  border-radius: 6px;
-	  font-family: monospace;
-	  cursor: pointer;">
-	  🔄 Réinitialiser les onglets ouverts
-	</button>-->
-	
   </section>
   
-  
-
   <!-- 🖼 Sections d’exposition détaillées -->
-  
   <!-- Salle Hampi -->
   <section id="hampi">
   <h2 id="salle_hampi"><img src="drapeaux/in.png" alt="Drapeau Inde" class="inline-flag"> Salle 1 — Marché à Hampi</h2>
