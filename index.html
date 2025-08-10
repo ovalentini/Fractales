@@ -688,7 +688,7 @@ td a {
   </div>
 
   <div class="table-image-container">
-    <img src="Hampi.jpg" title="Char mystique de Hampi" />
+    <img src="Hampi.jpg" id="char_hampi" title="Char mystique de Hampi" />
     <table>
       <thead>
         <tr>
@@ -725,7 +725,7 @@ td a {
   </div>
 
   <div class="table-image-container">
-    <img src="Bali.jpg" title="Paysage spirituel balinais : rizières et mandalas" />
+    <img src="Bali.jpg" id="paysage_bali" title="Paysage spirituel balinais : rizières et mandalas" />
     <table>
       <thead>
         <tr>
@@ -762,7 +762,7 @@ td a {
   </div>
 
   <div class="table-image-container">
-    <img src="Flores.jpg" title="Terrasses de riz en fleurs à Florès" />
+    <img src="Flores.jpg" id="terasse_flores" title="Terrasses de riz en fleurs à Florès" />
     <table>
       <thead>
         <tr>
@@ -800,7 +800,7 @@ td a {
   </div>
 
   <div class="table-image-container">
-    <img src="Perou.jpg" title="Salines fractales péruviennes" />
+    <img src="Perou.jpg" id="saline_perou" title="Salines fractales péruviennes" />
     <table>
       <thead>
         <tr>
@@ -1011,6 +1011,173 @@ td a {
 	  }
 	}
 
+    // Met à jour les titres   
+	function modifierTitres(langue) {
+     
+		const boutonEnter = document.getElementById("btn_enter");
+		modifierTitresLien(boutonEnter, langue);
+
+		const boutonExit = document.getElementById("btn_exit");
+		modifierTitresLien(boutonExit, langue);
+		
+		const boutonMap0 = document.getElementById("btn_map_0");
+		modifierTitresLien(boutonMap0, langue);
+		
+		const boutonMap1 = document.getElementById("btn_map_1");
+		modifierTitresLien(boutonMap1, langue);
+		
+		const boutonSummary0 = document.getElementById("btn_summary_0");
+		modifierTitresLien(boutonSummary0, langue);
+		
+		const boutonEpilogue = document.getElementById("btn_epilogue");
+		modifierTitresLien(boutonEpilogue, langue);
+		
+		const imageHampi = document.getElementById("char_hampi")
+		modifierTitresLien(imageHampi, langue);
+		
+		const imageBali = document.getElementById("paysage_bali")
+		modifierTitresLien(imageBali, langue);
+		
+		const imageFlores = document.getElementById("terasse_flores")
+		modifierTitresLien(imageFlores, langue);
+		
+		const imagePerou = document.getElementById("saline_perou")
+		modifierTitresLien(imagePerou, langue);
+    }	
+
+    // modif propriété title des boutons
+    function modifierTitresLien(objet, langue) {
+	  if (!objet) return;
+	  let nouveauTitre = "";
+	  switch (objet.id) {
+		case "btn_enter":
+		  switch (langue) {
+			case "fr":
+			  nouveauTitre = "Commencer le voyage poétique";
+			  break;
+			case "en":
+			  nouveauTitre = "Begin the poetic journey";
+			  break;
+			default:
+			  nouveauTitre = "Commencer le voyage poétique";
+		  }
+		  break;
+		case "btn_exit":
+		  switch (langue) {
+			case "fr":
+			  nouveauTitre = "Quitter l’exposition";
+			  break;
+			case "en":
+			  nouveauTitre = "Exit the exhibition";
+			  break;
+			default:
+			  nouveauTitre = "Quitter l’exposition";
+		  }
+		  break;
+		  case "btn_map_0":
+			switch (langue) {
+			case "fr":
+			  nouveauTitre = "Accéder à la carte interactive";
+			  break;
+			case "en":
+			  nouveauTitre = "Access the Interactive Map";
+			  break;
+			default:
+			  nouveauTitre = "Accéder à la carte interactive";
+		  }
+		  break;	
+		  case "btn_map_1":
+			switch (langue) {
+			case "fr":
+			  nouveauTitre = "Accéder à la carte interactive";
+			  break;
+			case "en":
+			  nouveauTitre = "Access the Interactive Map";
+			  break;
+			default:
+			  nouveauTitre = "Accéder à la carte interactive";
+		  }
+		  break;	
+		  case "btn_summary_0":
+			switch (langue) {
+			case "fr":
+			  nouveauTitre = "Accéder au sommaire de l'exposition";
+			  break;
+			case "en":
+			  nouveauTitre = "Access the Exhibition Summary";
+			  break;
+			default:
+			  nouveauTitre = "Accéder au sommaire de l'exposition";
+		  }
+		  break;	
+		  case "btn_epilogue":
+			switch (langue) {
+			case "fr":
+			  nouveauTitre = "Lire l’épilogue poétique";
+			  break;
+			case "en":
+			  nouveauTitre = "Read the poetic epilogue";
+			  break;
+			default:
+			  nouveauTitre = "Lire l’épilogue poétique";
+		  }
+		  break;
+		  case "char_hampi":
+		  switch (langue) {
+		  case "fr":
+			  nouveauTitre = "Char mystique de Hampi";
+			  break;
+			case "en":
+			  nouveauTitre = "Mystical chariot of Hampi";
+			  break;
+			default:
+			  nouveauTitre = "Char mystique de Hampi";
+		  }
+		  break;
+		   case "paysage_bali":
+		  switch (langue) {
+		  case "fr":
+			  nouveauTitre = "Paysage spirituel balinais : rizières et mandalas";
+			  break;
+			case "en":
+			  nouveauTitre = "Balinese spiritual landscape: rice fields and mandalas";
+			  break;
+			default:
+			  nouveauTitre = "Paysage spirituel balinais : rizières et mandalas";
+		  }
+		  break;
+		  case "terasse_flores":
+		  switch (langue) {
+		  case "fr":
+			  nouveauTitre = "Terrasses de riz en fleurs à Florès";
+			  break;
+			case "en":
+			  nouveauTitre = "Flowering rice terraces in Flores";
+			  break;
+			default:
+			  nouveauTitre = "Terrasses de riz en fleurs à Florès";
+		  }
+		  break;
+		  case "saline_perou":
+		  switch (langue) {
+		  case "fr":
+			  nouveauTitre = "Salines fractales péruviennes";
+			  break;
+			case "en":
+			  nouveauTitre = "Peruvian Fractal Salt Flats";
+			  break;
+			default:
+			  nouveauTitre = "Salines fractales péruviennes";
+		  }
+		  break;
+		  
+		// Ajoute d'autres cas ici si tu as plus de boutons
+		default:
+			nouveauTitre = "Lien de navigation";
+		 }
+		 objet.setAttribute("title", nouveauTitre);
+		}
+
 	// langues fr ou en, div id="lang-switch"
 	function switchLangue() {
 	  langueActuelle = (langueActuelle === 'fr') ? 'en' : 'fr';
@@ -1021,13 +1188,7 @@ td a {
 		// ✅ Afficher les bons éléments une fois les textes appliqués
 		setTimeout(() => {
 		afficherElementsLangue(langueActuelle);
-		
-		const boutonEnter = document.getElementById("btn_enter");
-		modifierTitres(boutonEnter, langueActuelle);
-
-		const boutonExit = document.getElementById("btn_exit");
-		modifierTitres(boutonExit, langueActuelle);
-		
+		modifierTitres(langueActuelle);
 		inspecterZonesOpposées(langueActuelle);
 	  }, 100); // ou plus si nécessaire
 	});
@@ -1291,59 +1452,14 @@ td a {
 		}, 2000); // Laisse le temps à l’animation de s'épanouir
 	});
 
-    function modifierTitres(bouton, langue) {
-	  if (!bouton) return;
-	  let nouveauTitre = "";
-	  switch (bouton.id) {
-		case "btn_enter":
-		  switch (langue) {
-			case "fr":
-			  nouveauTitre = "Commencer le voyage poétique";
-			  break;
-			case "en":
-			  nouveauTitre = "Begin the poetic journey";
-			  break;
-			default:
-			  nouveauTitre = "Commencer le voyage poétique";
-		  }
-		  break;
-		case "btn_exit":
-		  switch (langue) {
-			case "fr":
-			  nouveauTitre = "Quitter l’exposition";
-			  break;
-			case "en":
-			  nouveauTitre = "Exit the exhibition";
-			  break;
-			default:
-			  nouveauTitre = "Quitter l’exposition";
-		  }
-		  break;
-
-		// Ajoute d'autres cas ici si tu as plus de boutons
-
-		default:
-			nouveauTitre = "Lien de navigation";
-		 }
-		 bouton.setAttribute("title", nouveauTitre);
-		}
-
 	// Au chargement, appliquer la langue préférée ou par défaut
-	function initialiserLangue() {
+	  function initialiserLangue() {
 	  const navLang = navigator.language.startsWith("fr") ? "fr" : "en";
 	  langueActuelle = navLang;
 	  chargerLangues('https://ovalentini.github.io/Fractales/langues.txt').then(labels => {
 		appliquerTextes(labels, langueActuelle);
 		afficherElementsLangue(langueActuelle);
-		
-		const boutonEnter = document.getElementById("btn_enter");
-		modifierTitres(boutonEnter, langueActuelle);
-
-		const boutonExit = document.getElementById("btn_exit");
-		modifierTitres(boutonExit, langueActuelle);
-
-		
-		modifierTitres("btn_enter",langueActuelle);
+		modifierTitres(langueActuelle);
 		inspecterZonesOpposées(langueActuelle);
 		nettoyerSallesDynamiques();
 		dispatchSalle(langueActuelle, 1); // insère la salle 1 en français
