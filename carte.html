@@ -142,24 +142,19 @@
     </p>-->
   </section>
 
-  <script>
-    // Disparition du message final
-    setTimeout(() => {
-      document.querySelector(".message-final").classList.add("disparaitre");
-    }, 10000);
-  </script>
-  <!-- Ton contenu HTML ici -->
+	 <script>
+		// Disparition du message final
+		setTimeout(() => {
+		  document.querySelector(".message-final").classList.add("disparaitre");
+		}, 10000);
+	</script>
 
-<script>
-  
-</script>
-</body>
-</html>
-
-  <script>
-const params = new URLSearchParams(window.location.search);
-const langueActuelle = params.get('lang') || 'fr';
-console.log("Langue détectée :", langueActuelle);
+	<script>
+	
+	// Chargement langue passé dans l'URL puis chargement des textes
+	const params = new URLSearchParams(window.location.search);
+	const langueActuelle = params.get('lang') || 'fr';
+	console.log("Langue détectée :", langueActuelle);
 
 	async function chargerLangues(url) {
 	  const re = /^\[([^\]]+)\]\s*["']([^"']+)["']/;
@@ -175,27 +170,25 @@ console.log("Langue détectée :", langueActuelle);
 
 	  return dictionnaire;
 	}
-	
-function appliquerTextesCarte(labels, langue) {
-  const clesCiblees = ['lieu', 'adieu'];
+		
+	function appliquerTextesCarte(labels, langue) {
+	  const clesCiblees = ['lieu', 'adieu'];
 
-  clesCiblees.forEach(cle => {
-    const cleComplete = `${cle}_${langue}`;
-    const element = document.getElementById(cle);
-    if (element && labels[cleComplete]) {
-      element.textContent = labels[cleComplete];
-    }
-  });
-}
-	
-// Au chargement, appliquer la langue préférée ou par défaut
-window.addEventListener('DOMContentLoaded', () => {
-  chargerLangues('langues.txt').then(labels => {
-      appliquerTextesCarte(labels, langueActuelle);
-    });
-});
+	  clesCiblees.forEach(cle => {
+		const cleComplete = `${cle}_${langue}`;
+		const element = document.getElementById(cle);
+		if (element && labels[cleComplete]) {
+		  element.textContent = labels[cleComplete];
+		}
+	  });
+	}
+		
+	// Au chargement, appliquer la langue préférée ou par défaut
+	window.addEventListener('DOMContentLoaded', () => {
+	  chargerLangues('langues.txt').then(labels => {
+		  appliquerTextesCarte(labels, langueActuelle);
+		});
+	});
 </script>
-  
-  
 </body>
 </html>
