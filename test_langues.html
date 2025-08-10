@@ -35,7 +35,7 @@ function appliquerTextes(labels, langue) {
   ? cle.slice(0, -(`_${langue}`.length)) 
   : cle;
     const element = document.getElementById(baseId);
-	alert(baseId);
+	// alert(baseId);
     if (element) {
       element.textContent = labels[cle];
     }
