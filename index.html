@@ -539,7 +539,7 @@ td a {
 <body class="lang-fr"> 
   <div id="lang-switch">
       <img src="drapeaux/fr.png" alt="Drapeau France" class="inline-flag">
-	  <button onclick="switchLangue()" id="btn_flag"> Français</button>
+	  <button onclick="switchLangue()" id="btn_flag" title="Click to switch to English"> Français</button>
 	</div>
 	
   <!-- 🎨 En-tête de l'exposition -->
@@ -650,8 +650,8 @@ td a {
 
     <div class="carte-container">
       <div class="carte-wrapper">
-        <img id="fractals-img" src="carte-interactive-fr.jpg" alt="Carte illustrée des salles de l’exposition" usemap="#map-salles" />
-		<p class="caption" id="image-caption">Chaque spirale raconte une histoire. Laissez les motifs guider votre âme.</p>
+        <img id="fractals-img" src="carte-interactive-fr.jpg" title="Cliquer sur une zone ou un point pour aller à la salle correspondante" usemap="#map-salles" />
+		<p id="image-caption" class="caption">Chaque spirale raconte une histoire. Laissez les motifs guider votre âme.</p>
 		
         <!-- Zones & Points -->
         <a href="#hampi" class="debug-zone-fr hampi" title="Salle 1 – Hampi"></a>
@@ -660,8 +660,8 @@ td a {
         <a href="#bali" class="debug-zone-fr bali" title="Salle 2 – Bali"></a>
 		
 		<a href="#hampi" class="debug-zone-en hampi" title="Salle 1 – Hampi"></a>
-        <a href="#perou" class="debug-zone-en perou" title="Salle 4 – Pérou"></a>
-        <a href="#flores" class="debug-zone-en flores" title="Salle 3 – Florès"></a>
+        <a href="#perou" class="debug-zone-en perou" title="Salle 4 – Peru"></a>
+        <a href="#flores" class="debug-zone-en flores" title="Salle 3 – Flores"></a>
         <a href="#bali" class="debug-zone-en bali" title="Salle 2 – Bali"></a>
 
         <a href="#hampi" class="carte-point-fr hampi" title="Hampi"></a>
@@ -671,8 +671,8 @@ td a {
 		
 		<a href="#hampi" class="carte-point-en hampi" title="Hampi"></a>
         <a href="#bali" class="carte-point-en bali" title="Bali"></a>
-        <a href="#flores" class="carte-point-en flores" title="Florès"></a>
-        <a href="#perou" class="carte-point-en perou" title="Pérou"></a>
+        <a href="#flores" class="carte-point-en flores" title="Flores"></a>
+        <a href="#perou" class="carte-point-en perou" title="Peru"></a>
       </div>
     </div>
   </section>
@@ -688,7 +688,7 @@ td a {
   </div>
 
   <div class="table-image-container">
-    <img src="Hampi.jpg" alt="Char mystique de Hampi" />
+    <img src="Hampi.jpg" title="Char mystique de Hampi" />
     <table>
       <thead>
         <tr>
@@ -725,7 +725,7 @@ td a {
   </div>
 
   <div class="table-image-container">
-    <img src="Bali.jpg" alt="Paysage spirituel balinais : rizières et mandalas" />
+    <img src="Bali.jpg" title="Paysage spirituel balinais : rizières et mandalas" />
     <table>
       <thead>
         <tr>
@@ -762,7 +762,7 @@ td a {
   </div>
 
   <div class="table-image-container">
-    <img src="Flores.jpg" alt="Terrasses de riz en fleurs à Florès" />
+    <img src="Flores.jpg" title="Terrasses de riz en fleurs à Florès" />
     <table>
       <thead>
         <tr>
@@ -800,7 +800,7 @@ td a {
   </div>
 
   <div class="table-image-container">
-    <img src="Perou.jpg" alt="Salines fractales péruviennes" />
+    <img src="Perou.jpg" title="Salines fractales péruviennes" />
     <table>
       <thead>
         <tr>
@@ -1021,6 +1021,13 @@ td a {
 		// ✅ Afficher les bons éléments une fois les textes appliqués
 		setTimeout(() => {
 		afficherElementsLangue(langueActuelle);
+		
+		const boutonEnter = document.getElementById("btn_enter");
+		modifierTitres(boutonEnter, langueActuelle);
+
+		const boutonExit = document.getElementById("btn_exit");
+		modifierTitres(boutonExit, langueActuelle);
+		
 		inspecterZonesOpposées(langueActuelle);
 	  }, 100); // ou plus si nécessaire
 	});
@@ -1035,23 +1042,27 @@ td a {
 		flagImg.src = 'drapeaux/fr.png';
 		flagImg.alt = 'Drapeau France';
 		flagBtn.textContent = 'Français';
+		flagBtn.title = 'Click to switch to English'; 
 	  } else {
 		flagImg.src = 'drapeaux/en.png';
 		flagImg.alt = 'Flag UK';
 		flagBtn.textContent = 'English';
+		flagBtn.title = 'Cliquer pour passer en Français'; 
 	  }
 
-	  // 🖼️ Met à jour l’image et la légende
+	  // 🖼️ Met à jour de l’image et de la légende
 	  const img = document.getElementById("fractals-img");
 	  const caption = document.getElementById("image-caption");
 
 	  if (langueActuelle === 'fr') {
 		img.src = "carte-interactive-fr.jpg";
 		img.alt = "Fractales du Monde";
+		img.title = "Cliquer sur une zone ou un point pour aller à la salle correspondante";
 		caption.textContent = "Chaque spirale raconte une histoire. Laissez les motifs guider votre âme.";
 	  } else {
 		img.src = "carte-interactive-en.jpg";
 		img.alt = "Fractals of the World";
+		img.title = "Click on an area or point to go to the corresponding room"
 		caption.textContent = "Each spiral tells a story. Let the patterns guide your soul.";
 	}
 		nettoyerSallesDynamiques();
@@ -1280,6 +1291,43 @@ td a {
 		}, 2000); // Laisse le temps à l’animation de s'épanouir
 	});
 
+    function modifierTitres(bouton, langue) {
+	  if (!bouton) return;
+	  let nouveauTitre = "";
+	  switch (bouton.id) {
+		case "btn_enter":
+		  switch (langue) {
+			case "fr":
+			  nouveauTitre = "Commencer le voyage poétique";
+			  break;
+			case "en":
+			  nouveauTitre = "Begin the poetic journey";
+			  break;
+			default:
+			  nouveauTitre = "Commencer le voyage poétique";
+		  }
+		  break;
+		case "btn_exit":
+		  switch (langue) {
+			case "fr":
+			  nouveauTitre = "Quitter l’exposition";
+			  break;
+			case "en":
+			  nouveauTitre = "Exit the exhibition";
+			  break;
+			default:
+			  nouveauTitre = "Quitter l’exposition";
+		  }
+		  break;
+
+		// Ajoute d'autres cas ici si tu as plus de boutons
+
+		default:
+			nouveauTitre = "Lien de navigation";
+		 }
+		 bouton.setAttribute("title", nouveauTitre);
+		}
+
 	// Au chargement, appliquer la langue préférée ou par défaut
 	function initialiserLangue() {
 	  const navLang = navigator.language.startsWith("fr") ? "fr" : "en";
@@ -1287,6 +1335,15 @@ td a {
 	  chargerLangues('https://ovalentini.github.io/Fractales/langues.txt').then(labels => {
 		appliquerTextes(labels, langueActuelle);
 		afficherElementsLangue(langueActuelle);
+		
+		const boutonEnter = document.getElementById("btn_enter");
+		modifierTitres(boutonEnter, langueActuelle);
+
+		const boutonExit = document.getElementById("btn_exit");
+		modifierTitres(boutonExit, langueActuelle);
+
+		
+		modifierTitres("btn_enter",langueActuelle);
 		inspecterZonesOpposées(langueActuelle);
 		nettoyerSallesDynamiques();
 		dispatchSalle(langueActuelle, 1); // insère la salle 1 en français
