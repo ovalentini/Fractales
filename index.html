@@ -330,10 +330,10 @@ td a {
 .debug-zone-fr.flores { top: 28.9%; left: 51.7%; width: 20%; height: 36.7%; background-color: rgba(0, 255, 0, 0.3); }
 .debug-zone-fr.bali   { top: 28.9%; left: 73.3%; width: 20%; height: 36.7%; background-color: rgba(255, 165, 0, 0.3); }
 
-.debug-zone-en.hampi  { top: 20.9%; left: 6.7%;  width: 20%; height: 36.7%; background-color: rgba(255, 0, 0, 0.3); }
+.debug-zone-en.hampi  { top: 20.9%; left: 4.7%;  width: 20%; height: 36.7%; background-color: rgba(255, 0, 0, 0.3); }
 .debug-zone-en.perou  { top: 20.9%; left: 28.3%; width: 20%; height: 36.7%; background-color: rgba(0, 0, 255, 0.3); }
 .debug-zone-en.flores { top: 20.9%; left: 51.7%; width: 20%; height: 36.7%; background-color: rgba(0, 255, 0, 0.3); }
-.debug-zone-en.bali   { top: 20.9%; left: 73.3%; width: 20%; height: 38.7%; background-color: rgba(255, 165, 0, 0.3); }
+.debug-zone-en.bali   { top: 20.9%; left: 75.3%; width: 20%; height: 38.7%; background-color: rgba(255, 165, 0, 0.3); }
 
 .lang-fr .debug-zone-fr,
 .lang-fr .carte-point-fr {
@@ -971,8 +971,8 @@ td a {
 
 	document.addEventListener("DOMContentLoaded", () => {
 	  // 🔍 Détection de la langue active
-	  const bodyClass = document.body.className;
-	  const langSuffix = bodyClass.includes("lang-fr") ? "fr" : "en";
+	  const navLang = navigator.language.startsWith("fr") ? "fr" : "en";
+	  const langSuffix = navlang;
 
 	  // Tu peux continuer ici avec ton code...
 	  // logMessage("Langue détectée : " + langSuffix);
@@ -982,7 +982,8 @@ td a {
 <script>
 
     // lecture de langues.txt
-    langueActuelle = 'fr'
+	const navLang = navigator.language.startsWith("fr") ? "fr" : "en";
+	langueActuelle = navLang;
 
 	async function chargerLangues(url) {
 	  const re = /^\[([^\]]+)\]\s*["']([^"']+)["']/;
@@ -1192,40 +1193,6 @@ td a {
 		inspecterZonesOpposées(langueActuelle);
 	  }, 100); // ou plus si nécessaire
 	});
-
-	  document.body.className = `lang-${langueActuelle}`;
-
-	  // 🏳️ Met à jour le drapeau et le texte du bouton
-	  const flagImg = document.querySelector('.inline-flag');
-	  const flagBtn = document.getElementById('btn_flag');
-
-	  if (langueActuelle === 'fr') {
-		flagImg.src = 'drapeaux/fr.png';
-		flagImg.alt = 'Drapeau France';
-		flagBtn.textContent = 'Français';
-		flagBtn.title = 'Click to switch to English'; 
-	  } else {
-		flagImg.src = 'drapeaux/en.png';
-		flagImg.alt = 'Flag UK';
-		flagBtn.textContent = 'English';
-		flagBtn.title = 'Cliquer pour passer en Français'; 
-	  }
-
-	  // 🖼️ Met à jour de l’image et de la légende
-	  const img = document.getElementById("fractals-img");
-	  const caption = document.getElementById("image-caption");
-
-	  if (langueActuelle === 'fr') {
-		img.src = "carte-interactive-fr.jpg";
-		img.alt = "Fractales du Monde";
-		img.title = "Cliquer sur une zone ou un point pour aller à la salle correspondante";
-		caption.textContent = "Chaque spirale raconte une histoire. Laissez les motifs guider votre âme.";
-	  } else {
-		img.src = "carte-interactive-en.jpg";
-		img.alt = "Fractals of the World";
-		img.title = "Click on an area or point to go to the corresponding room"
-		caption.textContent = "Each spiral tells a story. Let the patterns guide your soul.";
-	}
 		nettoyerSallesDynamiques();
 		dispatchSalle(langueActuelle, 1); // insère la salle 1 en langueActuelle
 		dispatchSalle(langueActuelle, 2); // insère la salle 2 en langueActuelle
@@ -1259,6 +1226,41 @@ td a {
 	  });
 	  zones.forEach(el => el.classList.add('visible'));
 	  points.forEach(el => el.classList.add('visible'));
+	  
+	  document.body.className = `lang-${langueActuelle}`;
+
+	  // 🏳️ Met à jour le drapeau et le texte du bouton
+	  const flagImg = document.querySelector('.inline-flag');
+	  const flagBtn = document.getElementById('btn_flag');
+
+	  if (langueActuelle === 'fr') {
+		flagImg.src = 'drapeaux/fr.png';
+		flagImg.alt = 'Drapeau France';
+		flagBtn.textContent = 'Français';
+		flagBtn.title = 'Click to switch to English'; 
+	  } else {
+		flagImg.src = 'drapeaux/en.png';
+		flagImg.alt = 'Flag UK';
+		flagBtn.textContent = 'English';
+		flagBtn.title = 'Cliquer pour passer en Français'; 
+	  }
+
+	  // 🖼️ Met à jour de l’image et de la légende
+	  const img = document.getElementById("fractals-img");
+	  const caption = document.getElementById("image-caption");
+
+	  if (langueActuelle === 'fr') {
+		img.src = "carte-interactive-fr.jpg";
+		img.alt = "Fractales du Monde";
+		img.title = "Cliquer sur une zone ou un point pour aller à la salle correspondante";
+		caption.textContent = "Chaque spirale raconte une histoire. Laissez les motifs guider votre âme.";
+	  } else {
+		img.src = "carte-interactive-en.jpg";
+		img.alt = "Fractals of the World";
+		img.title = "Click on an area or point to go to the corresponding room"
+		caption.textContent = "Each spiral tells a story. Let the patterns guide your soul.";
+	}
+	  
 	}
 
     // Construction des salles, div id="salles-dynamiques"  
@@ -1462,11 +1464,11 @@ td a {
 		modifierTitres(langueActuelle);
 		inspecterZonesOpposées(langueActuelle);
 		nettoyerSallesDynamiques();
-		dispatchSalle(langueActuelle, 1); // insère la salle 1 en français
-		dispatchSalle(langueActuelle, 2); // insère la salle 2 en français
-		dispatchSalle(langueActuelle, 3); // insère la salle 3 en français
-		dispatchSalle(langueActuelle, 4); // insère la salle 4 en français
-	  });
+		dispatchSalle(langueActuelle, 1); // insère la salle 1 en langueActuelle
+		dispatchSalle(langueActuelle, 2); // insère la salle 2 en langueActuelle
+		dispatchSalle(langueActuelle, 3); // insère la salle 3 en langueActuelle
+		dispatchSalle(langueActuelle, 4); // insère la salle 4 en langueActuelle
+	});
 	}
 
 	window.addEventListener('DOMContentLoaded', initialiserLangue);
