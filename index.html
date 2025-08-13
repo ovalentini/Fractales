@@ -538,7 +538,7 @@ td a {
 </head>
 <body class="lang-fr"> 
   <div id="lang-switch">
-      <img src="drapeaux/fr.png" alt="Drapeau France" class="inline-flag">
+      <img src="flags/fr.png" alt="Drapeau France" class="inline-flag">
 	  <button onclick="switchLangue()" id="btn_flag" title="Click to switch to English"> Français</button>
 	</div>
 	
@@ -573,7 +573,7 @@ td a {
      <!-- Les salles construites dynamiquement avec du jscript--> 
     <div id="salles-dynamiques"></div>
     <!--<div class="salle-1">
-	  <h3 id="salle1"><img src="drapeaux/in.png" alt="Drapeau Inde" class="inline-flag"><strong> Salle 1 — Marché à Hampi</strong></h3>
+	  <h3 id="salle1"><img src="flags/in.png" alt="Drapeau Inde" class="inline-flag"><strong> Salle 1 — Marché à Hampi</strong></h3>
       <ul class="liste-éléments">
         <li>✨ Char mystique de Hampi</li>
         <li>🌈 Mandalas et étoffes ondulantes</li>
@@ -680,7 +680,7 @@ td a {
   <!-- 🖼 Sections d’exposition détaillées -->
   <!-- Salle 1 — Hampi -->
   <section id="hampi">
-  <h2 id="salle_hampi"><img src="drapeaux/in.png" alt="Drapeau Inde" class="inline-flag"> Salle 1 — Marché à Hampi</h2>
+  <h2 id="salle_hampi"><img src="flags/in.png" alt="Drapeau Inde" class="inline-flag"> Salle 1 — Marché à Hampi</h2>
   <div class="navigation-salles">
     <a href="#bali" id="btn_next_0" class="nav-btn suivante">Salle suivante →</a>
 	<a href="#carte" id="btn_back_0" class="nav-btn retour">🗺️ Retour à la carte</a>
@@ -1234,12 +1234,12 @@ td a {
 	  const flagBtn = document.getElementById('btn_flag');
 
 	  if (langueActuelle === 'fr') {
-		flagImg.src = 'drapeaux/fr.png';
+		flagImg.src = 'flags/fr.png';
 		flagImg.alt = 'Drapeau France';
 		flagBtn.textContent = 'Français';
 		flagBtn.title = 'Click to switch to English'; 
 	  } else {
-		flagImg.src = 'drapeaux/en.png';
+		flagImg.src = 'flags/en.png';
 		flagImg.alt = 'Flag UK';
 		flagBtn.textContent = 'English';
 		flagBtn.title = 'Cliquer pour passer en Français'; 
