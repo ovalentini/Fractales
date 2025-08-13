@@ -320,7 +320,7 @@
 
 	  if (!salleName) return;
 
-	  const langSuffix = classList.includes("carte-point-fr") || classList.includes("debug-zone-fr") ? "fr" : "en";
+	  const langSuffix = classList.includes("carte-point-en") || classList.includes("debug-zone-en") ? "en" : "fr";
 	  const targetType = type === "debug-zone" ? "carte-point" : "debug-zone";
 	  // logMessage(`🎯 Type source : ${type}, cible : ${targetType}`);
 
@@ -360,8 +360,8 @@
 
 	document.addEventListener("DOMContentLoaded", () => {
 	  // 🔍 Détection de la langue active
-	  const navLang = navigator.language.startsWith("fr") ? "fr" : "en";
-	  const langSuffix = navlang;
+	  //const navLang = navigator.language.startsWith("fr") ? "fr" : "en";
+	  //const langSuffix = navlang;
 
 	  // Tu peux continuer ici avec ton code...
 	  // logMessage("Langue détectée : " + langSuffix);
