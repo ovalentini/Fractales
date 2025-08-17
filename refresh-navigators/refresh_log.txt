@@ -128,3 +128,5 @@
 [16/08/2025 13:31:42] [Edge] Edge not found
 [17/08/2025 10:05:56] [Edge] Refresh succeeded
 [17/08/2025 18:24:19] [Edge] Refresh succeeded
+[17/08/2025 18:28:26] [Edge] Refresh succeeded
+[17/08/2025 18:28:49] [Edge] Refresh succeeded
