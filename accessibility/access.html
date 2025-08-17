@@ -15,7 +15,7 @@
   <!-- 🎨 Exhibition Header -->
   <header class="entree-exposition" role="banner" aria-labelledby="fractales">
     <h1 id="fractales">🖼️ Fractals of the World: Reflections of Souls</h1>
-    <div id="first" class="citation-stylisee">
+    <div id="first" class="citation-stylisee" tabindex="0" lang="en">
       Welcome to an exhibition where each image is a door, each spiral a breath, and each pixel a memory.
     </div>
     <div class="retour-carte">
@@ -25,8 +25,8 @@
 
   <main role="main">
     <section id="introduction" class="introduction" role="region" aria-labelledby="prologue_sensible">
-      <h2 id="prologue_sensible">🖼️ Sensitive Prologue – Poetic Introduction</h2>
-      <div id="intro_poetique" class="citation-stylisee">
+      <h2 id="prologue_sensible" role="heading>🖼️ Sensitive Prologue – Poetic Introduction</h2>
+      <div id="intro_poetique" class="citation-stylisee" tabindex="0" lang="en">
         Close your eyes… and open your soul. You are entering a world where boundaries dissolve.  
         Here, every image is a breath, every spiral a memory.  
         Fractals are not just patterns… they are reflections of souls scattered to the four winds of the world.  
@@ -42,26 +42,26 @@
       <h2 id="carte_interactive">🗺️ Interactive map</h2>
       <div class="carte-container">
         <div class="carte-wrapper">
-          <img id="fractals-img" src="carte-interactive-en.jpg" title="Interactive fractal map with clickable regions for each room" alt="Interactive fractal map with clickable regions for each room" usemap="#map-salles" />
+          <img id="fractals-img" src="carte-interactive-en.jpg" title="Interactive fractal map with clickable regions for each room" alt="Interactive fractal map with clickable regions for each room" usemap="#map-salles" aria-describedby="image-caption"/>
           <p id="image-caption" class="caption">Each spiral tells a story. Let the patterns guide your soul.</p>
 
           <!-- Zones & Points with tabindex -->
-          <a href="#hampi" class="debug-zone-en hampi" title="Room 1 – Hampi" tabindex="0"></a>
-          <a href="#bali" class="debug-zone-en bali" title="Room 2 – Bali" tabindex="0"></a>
-          <a href="#flores" class="debug-zone-en flores" title="Room 3 – Flores" tabindex="0"></a>
-          <a href="#perou" class="debug-zone-en perou" title="Room 4 – Peru" tabindex="0"></a>
+          <a href="#hampi" class="debug-zone-en hampi" title="Room 1 – Hampi"></a>
+          <a href="#bali" class="debug-zone-en bali" title="Room 2 – Bali"></a>
+          <a href="#flores" class="debug-zone-en flores" title="Room 3 – Flores"></a>
+          <a href="#perou" class="debug-zone-en perou" title="Room 4 – Peru"></a>
 
-          <a href="#hampi" class="carte-point-en hampi" title="Hampi" tabindex="0"></a>
-          <a href="#bali" class="carte-point-en bali" title="Bali" tabindex="0"></a>
-          <a href="#flores" class="carte-point-en flores" title="Flores" tabindex="0"></a>
-          <a href="#perou" class="carte-point-en perou" title="Peru" tabindex="0"></a>
+          <a href="#hampi" class="carte-point-en hampi" title="Hampi" tabindex="-1"></a>
+          <a href="#bali" class="carte-point-en bali" title="Bali" tabindex="-1"></a>
+          <a href="#flores" class="carte-point-en flores" title="Flores" tabindex="-1"></a>
+          <a href="#perou" class="carte-point-en perou" title="Peru" tabindex="-1"></a>
         </div>
       </div>
     </section>
 
    <!-- Quick navigation -->
-   <section id="quick-navigation" class="access-content" aria-labelledby="nav_subtitles">
-	  <h2 id="nav_subtitles">🎧 Quick Navigation – Subtitles & Transcriptions</h2>
+   <section id="quick-navigation" class="access-content" role="region" aria-labelledby="nav_subtitles">
+	  <h2 id="nav_subtitles" role="heading">🎧 Quick Navigation – Subtitles & Transcriptions</h2>
 	  <ul>
 		<li><a href="#subtitles_hampi">🎧 Room 1: Hampi</a></li>
 		<li><a href="#subtitles_bali">🎧 Room 2: Bali</a></li>
@@ -75,7 +75,7 @@
     <section id="hampi" role="region" aria-labelledby="salle_hampi">
       <h2 id="salle_hampi">🕉️ Room 1 — Hampi Market</h2>
       <div class="table-image-container">
-        <img src="Hampi.jpg" id="char_hampi" alt="Mystical chariot in Hampi market surrounded by flowing fabrics" />
+        <img src="Hampi.jpg" id="char_hampi" alt="Mystical chariot in Hampi market surrounded by flowing fabrics"/>
         <table>
           <thead>
             <tr>
@@ -98,8 +98,8 @@
             </tr>
           </tbody>
         </table>
-      </div>
-	  <section class="access-content" aria-labelledby="subtitles_hampi">
+      </div
+	  <section class="access-content" aria-labelledby="subtitles_hampi" role="region">
 		  <h3 id="subtitles_hampi">🎧 Subtitles & Transcription – Room 1: Hampi</h3>
 		  <ul>
 			<li>[Gentle rustling of fabric — vibrant hues sway]</li>
@@ -111,13 +111,13 @@
 			The chariot stands timeless, a symbol of Hampi's rich history.  
 			The musical pillars sing, their notes weaving stories of devotion and artistry.
 		  </p>
-		  <div aria-label="Audiodescription for the visually impaired"> 
-		  <h4>Narration</h4> 
+		  <div aria-label="Audiodescription for the visually impaired" tabindex="0"> 
+          <h4 role="heading" aria-level="4">Narration</h4>		  
 		  <p>Imagine a bustling market in Hampi, where the mystical chariot stands as a centerpiece. 
 		  The fabrics flow gently in the breeze, their vibrant colors creating a kaleidoscope of hues. 
 		  The sound of the musical pillars resonates, each note painting an auditory picture of the temple's grandeur.</p> 
-		  <h4>Soundscape Enrichment</h4> 
-		  <audio controls><source src="hampi-sound.mp3" type="audio/mpeg">Your browser does not support the audio element.</audio>
+		  <h4 role="heading" aria-level="4">Soundscape Enrichment</h4> 
+		  <audio controls><source src="sounds/hampi-sound.mp3" type="audio/mpeg">Your browser does not support the audio element.</audio>
 		  </div>
 		  <div class="retour-navigation">
 		    <a href="#quick-navigation" class="nav-btn retour" title="Return to subtitle index">🔝 Back to Quick Navigation</a>
@@ -149,7 +149,7 @@
           </tbody>
         </table>
       </div>
-	  <section class="access-content" aria-labelledby="subtitles_bali">
+	  <section class="access-content" aria-labelledby="subtitles_bali" role="region">
 		  <h3 id="subtitles_bali">🎧 Subtitles & Transcription – Room 2: Bali</h3>
 		  <ul>
 			<li>[Gentle rustling of rice stalks — harmony with nature]</li>
@@ -161,13 +161,13 @@
 			Offerings of flowers and incense bring color and fragrance to the scene.  
 			Temples stand as guardians of tradition, their presence a reminder of Bali's spiritual essence.
 		  </p>
-		  <div aria-label="Audiodescription for the visually impaired"> 
-		  <h4>Narration</h4> 
+		  <div aria-label="Audiodescription for the visually impaired" tabindex="0"> 
+		  <h4 role="heading" aria-level="4">Narration</h4>	
 		  <p>Picture the sacred rice fields of Bali, their terraces cascading like emerald waves.
      		 Offerings of flowers and incense adorn the landscape, each a prayer to the divine.
 			 The temples rise majestically, their intricate carvings telling stories of devotion and tradition.</p> 
-		  <h4>Soundscape Enrichment</h4> 
-		  <audio controls><source src="bali-sound.mp3" type="audio/mpeg">Your browser does not support the audio element.</audio>
+		  <h4 role="heading" aria-level="4">Soundscape Enrichment</h4>
+		  <audio controls><source src="sounds/bali-sound.mp3" type="audio/mpeg">Your browser does not support the audio element.</audio>
 		  </div>
 		   <div class="retour-navigation">
 		    <a href="#quick-navigation" class="nav-btn retour" title="Return to subtitle index">🔝 Back to Quick Navigation</a>
@@ -176,7 +176,7 @@
     </section>
 
     <!-- 🌾 Room 3 — Flores Island -->
-    <section id="flores" role="region" aria-labelledby="salle_flores">
+    <section id="flores" role="region" aria-labelledby="salle_flores" role="region">
       <h2 id="salle_flores">🌾 Room 3 — Flores Island</h2>
       <div class="table-image-container">
         <img src="Komodo.jpg" id="terasse_flores" alt="Komodo dragon near pink beach and coral reef on Flores Island" />
@@ -199,7 +199,7 @@
           </tbody>
         </table>
       </div>
-	  <section class="access-content" aria-labelledby="subtitles_flores">
+	  <section class="access-content" aria-labelledby="subtitles_flores" role="region">
 		  <h3 id="subtitles_flores">🎧 Subtitles & Transcription – Room 3: Flores</h3>
 		  <ul>
 			<li>[Gentle lapping of waves — soothing rhythm]</li>
@@ -211,12 +211,12 @@
 			Komodo dragons embody the island's untamed spirit, while pink beaches and coral reefs showcase its vibrant beauty.  
 			The sounds of nature envelop you, painting a picture of serenity and adventure.
 		  </p>
-		  <div aria-label="Audiodescription for the visually impaired"> 
-		  <h4>Narration</h4> 
+		  <div aria-label="Audiodescription for the visually impaired" tabindex="0"> 
+		  <h4 role="heading" aria-level="4">Narration</h4>
 		  <p>Envision the rugged beauty of Flores Island, where Komodo dragons roam freely and pink beaches shimmer under the sun. 
 		  Beneath the waves, coral reefs burst with color, teeming with marine life.</p> 
-		  <h4>Soundscape Enrichment</h4> 
-		  <audio controls><source src="flores-sound.mp3" type="audio/mpeg">Your browser does not support the audio element.</audio>
+		  <h4 role="heading" aria-level="4">Soundscape Enrichment</h4> 
+		  <audio controls><source src="sounds/flores-sound.mp3" type="audio/mpeg">Your browser does not support the audio element.</audio>
 		  </div>
 		   <div class="retour-navigation">
 		    <a href="#quick-navigation" class="nav-btn retour" title="Return to subtitle index">🔝 Back to Quick Navigation</a>
@@ -249,7 +249,7 @@
         </table>
       </div>
     </section>
-	<section class="access-content" aria-labelledby="subtitles_peru">
+	<section class="access-content" aria-labelledby="subtitles_peru" role="region">
 	  <h3 id="subtitles_peru">🎧 Subtitles & Transcription – Room 4: Peru</h3>
 	  <ul>
 		<li>[Whisper of the wind through the mountains — timeless serenity]</li>
@@ -262,34 +262,36 @@
 		Encircling this iconic site are concentric golden patterns reminiscent of cathedral adornments, adding a divine aura to the scene.  
 		The sounds of nature and history intertwine, offering a glimpse into the soul of Peru.
 	  </p>
-	   <div aria-label="Audiodescription for the visually impaired"> 
-		  <h4>Narration</h4> 
+	   <div aria-label="Audiodescription for the visually impaired" tabindex="0"> 
+		  <h4 role="heading" aria-level="4">Narration</h4>	
 		  <p>Imagine the Sacred Valley of Peru, where the Andes rise majestically and ancient terraces tell stories of agricultural ingenuity. 
 		     Machu Picchu stands as a testament to Inca heritage, its stone structures blending seamlessly with the natural landscape. 
 		     Encircling this iconic site are concentric golden patterns reminiscent of cathedral adornments, adding a divine aura to the scene.</p> 
-	  <h4>Soundscape Enrichment</h4> 
-		  <audio controls><source src="perou-sound.mp3" type="audio/mpeg">Your browser does not support the audio element.</audio>
+		  <h4 role="heading" aria-level="4">Soundscape Enrichment</h4>  
+		  <audio controls><source src="sounds/perou-sound.mp3" type="audio/mpeg">Your browser does not support the audio element.</audio>
 	   <div class="retour-navigation">
 		    <a href="#quick-navigation" class="nav-btn retour" title="Return to subtitle index">🔝 Back to Quick Navigation</a>
-		  </div>
+	    </div>
 	</section>
   </main>
 
   <!-- 🌌 Footer -->
-  <footer role="contentinfo">
-    <section id="cloture" class="cloture" aria-labelledby="cloture_visite">
-      <div class="titre-cloture">
-        <h2 id="cloture_visite">🖼️ Contemplative Epilogue – Closing of the Visit</h2>
-        <button id="btn_exit" class="close-poetique" title="End the journey">🌌 Exit</button>
-      </div>
-      <div id="epilogue" class="citation-stylisee">
-        And when the lights go out, the fractals keep dancing in the dark.  
-        They whisper ancient stories, forgotten secrets, and dreams yet to come.  
-        Every reflection is a promise, every spiral an endless journey.
-      </div>
-    </section>
-  </footer>
+ <footer role="contentinfo">
+  <section id="cloture" class="cloture" aria-labelledby="cloture_visite" role="region">
+	<h2 id="cloture_visite" role="heading" aria-level="2">🖼️ Contemplative Epilogue – Closing of the Visit</h2>
 
+	<div id="epilogue" class="citation-stylisee" tabindex="0">
+	  And when the lights go out, the fractals keep dancing in the dark.  
+	  They whisper ancient stories, forgotten secrets, and dreams yet to come.  
+	  Every reflection is a promise, every spiral an endless journey.
+	</div>
+
+	<div class="retour-carte">
+	  <button id="btn_exit" class="close-poetique" aria-label="Close the exhibition and return to reality">🌌 Exit</button>
+	</div>
+  </section>
+ </footer>
+ 
 <script>
 
   // 🔧 Fonctions utilitaires
@@ -866,6 +868,9 @@
 	}
 
     // bouton quitter
+	//const navLang = navigator.language.startsWith("fr") ? "fr" : "en";
+	//langueActuelle = navigator.language.startsWith("fr") ? "fr" : "en";
+	langueActuelle="en"
 	document.querySelector(".close-poetique").addEventListener("click", function () {
 		document.body.classList.add("fusion-galactique");
 		setTimeout(() => {
@@ -875,8 +880,8 @@
 
 	// Au chargement, appliquer la langue préférée ou par défaut
 	  function initialiserLangue() {
-	  const navLang = navigator.language.startsWith("fr") ? "fr" : "en";
-	  langueActuelle = navLang;
+	  //const navLang = navigator.language.startsWith("fr") ? "fr" : "en";
+	  //langueActuelle = navLang;
 	  chargerLangues('https://ovalentini.github.io/Fractales/langues.txt').then(labels => {
 		appliquerTextes(labels, langueActuelle);
 		afficherElementsLangue(langueActuelle);

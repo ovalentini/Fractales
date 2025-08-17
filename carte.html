@@ -118,36 +118,38 @@
 	</style>
 	</head>
 	<body>
-	<div class="ecran-galactique">
-		<img src="monde-imaginaire.jpg" alt="Paysage abstrait et désertique" class="fond-galactique" />
-		<div id="lieu" class="message-carte">
-		<h1>🌄</h1>
-		<!--<p>
-        "Vous avez foulé un monde tissé<br />
-        de reflets et de songes.<br />
-        Que votre chemin s’épanouisse encore<br />
-        là où l’imaginaire dessine la réalité.<br />
-        À bientôt."
-		</p>-->
-		</div>
-	</div>
+	<body>
+  <div class="ecran-galactique">
+    <img src="monde-imaginaire.jpg" alt="Paysage abstrait et désertique" class="fond-galactique" />
+    
+    <div id="lieu" class="message-carte" role="region" aria-label="Message de bienvenue">
+      <h1>🌄</h1>
+      <p id="texteCarte" tabindex="1" lang="fr">
+        Vous avez foulé un monde tissé  
+        de reflets et de songes.  
+        Que votre chemin s’épanouisse encore  
+        là où l’imaginaire dessine la réalité.  
+        À bientôt.
+      </p>
+    </div>
+  </div>
 
-  <section id="adieu" class="message-final">
+  <section id="adieu" class="message-final" role="region" aria-label="Message d’adieu">
     <h1>🌌 Merci pour ce voyage</h1>
-    <!--<p>
-      “À présent, la carte se replie sur elle-même...<br />
-      Mais les éclats que vous avez semés dans chaque salle<br />
-      continueront à briller au-delà de l’image.<br />
-      Revenez quand vous voulez. Le monde vous attend.”
-    </p>-->
+    <p id="texteAdieu" tabindex="2" lang="fr">
+      À présent, la carte se replie sur elle-même...  
+      Mais les éclats que vous avez semés dans chaque salle  
+      continueront à briller au-delà de l’image.  
+      Revenez quand vous voulez. Le monde vous attend.
+    </p>
   </section>
 
-	 <script>
-		// Disparition du message final
-		setTimeout(() => {
-		  document.querySelector(".message-final").classList.add("disparaitre");
-		}, 10000);
-	</script>
+  <script>
+    // Disparition du message final après 10 secondes
+    setTimeout(() => {
+      document.querySelector(".message-final").classList.add("disparaitre");
+    }, 10000);
+  </script>
 
 	<script>
 	
@@ -172,16 +174,18 @@
 	}
 		
 	function appliquerTextesCarte(labels, langue) {
-	  const clesCiblees = ['lieu', 'adieu'];
+	  const clesCiblees = ['texteCarte', 'texteAdieu'];
 
 	  clesCiblees.forEach(cle => {
 		const cleComplete = `${cle}_${langue}`;
 		const element = document.getElementById(cle);
 		if (element && labels[cleComplete]) {
-		  element.textContent = labels[cleComplete];
+		  element.innerText = labels[cleComplete]; // conserve les attributs comme tabindex
 		}
 	  });
 	}
+
+
 		
 	// Au chargement, appliquer la langue préférée ou par défaut
 	window.addEventListener('DOMContentLoaded', () => {

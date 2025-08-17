@@ -178,6 +178,8 @@ button:hover {
 .carte-point-en.flores   { top: 82.8%; left: 81.7%; background-color: green;   box-shadow: 0 0 12px rgba(0, 255, 0, 0.6); }
 .carte-point-en.bali      { top: 82.8%; left: 80.0%; background-color: orange;  box-shadow: 0 0 12px rgba(255, 165, 0, 0.6); }
 
+
+
 .carte-point-en.highlight {
   animation: pulseHighlight 1s ease-out;
   box-shadow: 0 0 12px 6px rgba(255, 165, 0, 0.6);
@@ -204,5 +206,5 @@ button:hover {
 .debug-zone-en.hampi  { top: 20.9%; left: 4.7%;  width: 20%; height: 36.7%; background-color: rgba(255, 0, 0, 0.3); }
 .debug-zone-en.perou  { top: 20.9%; left: 28.3%; width: 20%; height: 36.7%; background-color: rgba(0, 0, 255, 0.3); }
 .debug-zone-en.flores { top: 20.9%; left: 51.7%; width: 20%; height: 36.7%; background-color: rgba(0, 255, 0, 0.3); }
-.debug-zone-en.bali   { top: 20.9%; left: 75.3%; width: 20%; height: 38.7%; background-color: rgba(255, 165, 0, 0.3); }
+.debug-zone-en.bali   { top: 20.9%; left: 75.3%; width: 20%; height: 36.7%; background-color: rgba(255, 165, 0, 0.3); }
 
