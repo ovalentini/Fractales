@@ -144,16 +144,16 @@
   </section>
 
   <script>
-    // Disparition du message final après 10 secondes
+    // Disparition du message final après 30 secondes
     setTimeout(() => {
       document.querySelector(".message-final").classList.add("disparaitre");
-    }, 10000);
+    }, 30000);
   </script>
 
  <script>
     // Chargement langue passé dans l'URL puis chargement des textes
 	const params = new URLSearchParams(window.location.search);
-	const langueActuelle = params.get('lang') || 'fr';
+	const langueActuelle = params.get('lang') || 'en';
 	console.log("Langue détectée :", langueActuelle);
 
 	async function chargerLangues(url) {
@@ -183,27 +183,22 @@
 	  });
 	}
  
- 
-    // voix parlée
-	function lireTexteAvecVoix(elementId) {
+    // Lecture vocale selon la langue
+	function lireTexteAvecVoix(elementId, langue) {
 	  const element = document.getElementById(elementId);
 	  if (!element) return;
-
+	  
 	  const message = element.innerText;
-	  const langue = element.lang || 'fr';
-
-	  function choisirVoixEtParler() {
+	  
+	  function choisirVoixEtParler(langue) {
 		const utterance = new SpeechSynthesisUtterance(message);
 
 		// Définir la langue de la voix
-		//utterance.lang = langue === 'en' ? 'en-GB' : 'fr-FR';
-		utterance.lang = langueActuelle;
-		
-		
+		utterance.lang = langue === 'fr' ? 'fr-FR' : 'en-GB';
 		console.log(utterance.lang);
-
+		
 		const voixDisponibles = speechSynthesis.getVoices(); 
-		const voixCible = voixDisponibles.find(v => v.lang.startsWith(langue === 'en' ? 'en' : 'fr'));
+		const voixCible = voixDisponibles.find(v => v.lang.startsWith(langue === 'fr' ? 'fr' : 'en'));
         console.log(voixCible);
 
 		if (voixCible) {
@@ -217,17 +212,19 @@
 
 	  // Attendre que les voix soient chargées
 	  if (speechSynthesis.getVoices().length === 0) {
-		speechSynthesis.onvoiceschanged = choisirVoixEtParler;
+		speechSynthesis.onvoiceschanged = choisirVoixEtParler(langue);
 	  } else {
-		choisirVoixEtParler();
+		choisirVoixEtParler(langue);
 	  }
 	}
 		
 	// Au chargement, appliquer la langue préférée ou par défaut
 	window.addEventListener('DOMContentLoaded', () => {
-	  chargerLangues('langues.txt').then(labels => {
+	  chargerLangues('https://ovalentini.github.io/Fractales/langues.txt').then(labels => {
 		  appliquerTextesCarte(labels, langueActuelle);
-		  lireTexteAvecVoix('texteCarte');
+		  lireTexteAvecVoix('titreAdieu', langueActuelle);
+		  lireTexteAvecVoix('texteAdieu', langueActuelle);
+		  lireTexteAvecVoix('texteCarte', langueActuelle);
 		});
 	});
 </script>
