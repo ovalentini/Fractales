@@ -166,24 +166,8 @@
 		// Définir la langue de la voix
 		utterance.lang = langue === 'en' ? 'en-US' : 'fr-FR';
 
-		const voixDisponibles = speechSynthesis.getVoices();
-		const voixCible = voixDisponibles.find(v => {
-		  if (langue === 'en') {
-			return v.lang.startsWith('en') //&& (
-			  //v.name.includes('David') ||
-			  //v.name.includes('Google UK English Male') ||
-			  //v.name.includes('Microsoft Zira') // autre voix anglaise possible
-			//);
-		  } else {
-			return v.lang.startsWith('fr') //&& (
-			  //v.name.includes('Google français') ||
-			  //v.name.includes('Amelie') ||
-			  //v.name.includes('Thomas') ||
-			  //v.name.includes('Microsoft Hortense')
-			//);
-		  }
-		});
-
+		const voixDisponibles = speechSynthesis.getVoices(); 
+		const voixCible = voixDisponibles.find(v => v.lang.startsWith(langue === 'en' ? 'en' : 'fr'));
         console.log(voixCible);
 
 		if (voixCible) {
