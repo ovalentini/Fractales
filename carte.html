@@ -151,48 +151,10 @@
   </script>
 
  <script>
- 
-    // voix parlée
-	function lireTexteAvecVoix(elementId) {
-	  const element = document.getElementById(elementId);
-	  if (!element) return;
-
-	  const message = element.innerText;
-	  const langue = element.lang || 'fr';
-
-	  function choisirVoixEtParler() {
-		const utterance = new SpeechSynthesisUtterance(message);
-
-		// Définir la langue de la voix
-		utterance.lang = langue === 'en' ? 'en-GB' : 'fr-FR';
-		
-		console.log(utterance.lang);
-
-		const voixDisponibles = speechSynthesis.getVoices(); 
-		const voixCible = voixDisponibles.find(v => v.lang.startsWith(langue === 'en' ? 'en' : 'fr'));
-        console.log(voixCible);
-
-		if (voixCible) {
-		  utterance.voice = voixCible;
-		} else {
-		  console.warn("Voix appropriée non trouvée. Utilisation de la voix par défaut.");
-		}
-
-		speechSynthesis.speak(utterance);
-	  }
-
-	  // Attendre que les voix soient chargées
-	  if (speechSynthesis.getVoices().length === 0) {
-		speechSynthesis.onvoiceschanged = choisirVoixEtParler;
-	  } else {
-		choisirVoixEtParler();
-	  }
-	}
-	
-	// Chargement langue passé dans l'URL puis chargement des textes
+    // Chargement langue passé dans l'URL puis chargement des textes
 	const params = new URLSearchParams(window.location.search);
 	const langueActuelle = params.get('lang') || 'fr';
-	//console.log("Langue détectée :", langueActuelle);
+	console.log("Langue détectée :", langueActuelle);
 
 	async function chargerLangues(url) {
 	  const re = /^\[([^\]]+)\]\s*["']([^"']+)["']/;
@@ -219,6 +181,46 @@
 		  element.innerText = labels[cleComplete]; // conserve les attributs comme tabindex
 		}
 	  });
+	}
+ 
+ 
+    // voix parlée
+	function lireTexteAvecVoix(elementId) {
+	  const element = document.getElementById(elementId);
+	  if (!element) return;
+
+	  const message = element.innerText;
+	  const langue = element.lang || 'fr';
+
+	  function choisirVoixEtParler() {
+		const utterance = new SpeechSynthesisUtterance(message);
+
+		// Définir la langue de la voix
+		//utterance.lang = langue === 'en' ? 'en-GB' : 'fr-FR';
+		utterance.lang = langueActuelle;
+		
+		
+		console.log(utterance.lang);
+
+		const voixDisponibles = speechSynthesis.getVoices(); 
+		const voixCible = voixDisponibles.find(v => v.lang.startsWith(langue === 'en' ? 'en' : 'fr'));
+        console.log(voixCible);
+
+		if (voixCible) {
+		  utterance.voice = voixCible;
+		} else {
+		  console.warn("Voix appropriée non trouvée. Utilisation de la voix par défaut.");
+		}
+
+		speechSynthesis.speak(utterance);
+	  }
+
+	  // Attendre que les voix soient chargées
+	  if (speechSynthesis.getVoices().length === 0) {
+		speechSynthesis.onvoiceschanged = choisirVoixEtParler;
+	  } else {
+		choisirVoixEtParler();
+	  }
 	}
 		
 	// Au chargement, appliquer la langue préférée ou par défaut
