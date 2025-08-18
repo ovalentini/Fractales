@@ -150,7 +150,51 @@
     }, 10000);
   </script>
 
-	<script>
+ <script>
+	function lireTexteAvecVoix(elementId) {
+	  const element = document.getElementById(elementId);
+	  if (!element) return;
+
+	  const message = element.innerText;
+	  const langue = element.lang || 'fr';
+
+	  function choisirVoixEtParler() {
+		const utterance = new SpeechSynthesisUtterance(message);
+		utterance.lang = langue === 'en' ? 'en-GB' : 'fr-FR';
+
+        speechSynthesis.getVoices().forEach(v => console.log(v.name, v.lang));
+
+
+		const voixDisponibles = speechSynthesis.getVoices();
+		const voixCible = voixDisponibles.find(v => {
+		  if (langue === 'en') return v.lang.startsWith('en') && (v.name.includes('David') || v.name.includes('Google UK English Male'));
+		  else return v.lang.startsWith('fr') && (v.name.includes('Google français') || v.name.includes('Amelie') || v.name.includes('Thomas'));
+		});
+
+		if (voixCible) {
+		  utterance.voice = voixCible;
+		} else {
+		  console.warn("Voix appropriée non trouvée. Utilisation de la voix par défaut.");
+		}
+
+		speechSynthesis.speak(utterance);
+	  }
+
+	  // Attendre que les voix soient chargées
+	  if (speechSynthesis.getVoices().length === 0) {
+		speechSynthesis.onvoiceschanged = choisirVoixEtParler;
+	  } else {
+		choisirVoixEtParler();
+	  }
+	}
+
+	// Appel au chargement
+	window.addEventListener('DOMContentLoaded', () => {
+	  lireTexteAvecVoix('texteCarte');
+	});
+</script>
+
+<script>
 	
 	// Chargement langue passé dans l'URL puis chargement des textes
 	const params = new URLSearchParams(window.location.search);
@@ -183,37 +227,12 @@
 		}
 	  });
 	}
-
-    // Lecture vocale selon la langue
-	function lireTexteAvecVoix(elementId) {
-	  const element = document.getElementById(elementId);
-	  if (!element) return;
-
-	  const message = element.innerText;
-	  const langue = element.lang || 'fr';
-
-	  const utterance = new SpeechSynthesisUtterance(message);
-	  utterance.lang = langue === 'en' ? 'en-GB' : 'fr-FR';
-
-	  const voixDisponibles = speechSynthesis.getVoices();
-	  const voixCible = voixDisponibles.find(v => {
-		if (langue === 'en') return v.lang.startsWith('en') && (v.name.includes('David') || v.name.includes('Google UK English Male'));
-		else return v.lang.startsWith('fr') && (v.name.includes('Google français') || v.name.includes('Amelie') || v.name.includes('Thomas'));
-	  });
-
-	  if (voixCible) utterance.voice = voixCible;
-	  else console.warn("Voix appropriée non trouvée. Utilisation de la voix par défaut.");
-
-	  speechSynthesis.speak(utterance);
-	}
-
-
 		
 	// Au chargement, appliquer la langue préférée ou par défaut
 	window.addEventListener('DOMContentLoaded', () => {
 	  chargerLangues('langues.txt').then(labels => {
 		  appliquerTextesCarte(labels, langueActuelle);
-		  lireTexteAvecVoix('texteCarte');
+		  //lireTexteAvecVoix('texteCarte');
 		});
 	});
 </script>
