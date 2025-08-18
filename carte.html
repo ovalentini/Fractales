@@ -189,12 +189,9 @@
 	}
 
 	// Appel au chargement
-	window.addEventListener('DOMContentLoaded', () => {
-	  lireTexteAvecVoix('texteCarte');
-	});
-</script>
-
-<script>
+	//window.addEventListener('DOMContentLoaded', () => {
+	//  lireTexteAvecVoix('texteCarte');
+	//});
 	
 	// Chargement langue passé dans l'URL puis chargement des textes
 	const params = new URLSearchParams(window.location.search);
@@ -232,7 +229,7 @@
 	window.addEventListener('DOMContentLoaded', () => {
 	  chargerLangues('langues.txt').then(labels => {
 		  appliquerTextesCarte(labels, langueActuelle);
-		  //lireTexteAvecVoix('texteCarte');
+		  lireTexteAvecVoix('texteCarte');
 		});
 	});
 </script>
