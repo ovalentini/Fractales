@@ -164,7 +164,9 @@
 		const utterance = new SpeechSynthesisUtterance(message);
 
 		// Définir la langue de la voix
-		utterance.lang = langue === 'en' ? 'en-US' : 'fr-FR';
+		utterance.lang = langue === 'en' ? 'en-GB' : 'fr-FR';
+		
+		console.log(utterance.lang);
 
 		const voixDisponibles = speechSynthesis.getVoices(); 
 		const voixCible = voixDisponibles.find(v => v.lang.startsWith(langue === 'en' ? 'en' : 'fr'));
@@ -190,7 +192,7 @@
 	// Chargement langue passé dans l'URL puis chargement des textes
 	const params = new URLSearchParams(window.location.search);
 	const langueActuelle = params.get('lang') || 'fr';
-	console.log("Langue détectée :", langueActuelle);
+	//console.log("Langue détectée :", langueActuelle);
 
 	async function chargerLangues(url) {
 	  const re = /^\[([^\]]+)\]\s*["']([^"']+)["']/;
