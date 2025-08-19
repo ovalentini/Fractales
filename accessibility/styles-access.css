@@ -192,9 +192,9 @@ button:hover {
 .carte-point-en.bali      { top: 82.8%; left: 80.0%; background-color: orange;  box-shadow: 0 0 12px rgba(255, 165, 0, 0.6); }
 
 .carte-point-fr.hampi     { top: 73.1%; left: 68.3%; background-color: crimson; box-shadow: 0 0 12px rgba(255, 0, 0, 0.6); }
-.carte-point-fr.perou     { top: 79.8%; left: 25.0%; background-color: blue;    box-shadow: 0 0 12px rgba(0, 0, 255, 0.6); }
-.carte-point-fr.flores    { top: 79.8%; left: 81.7%; background-color: green;   box-shadow: 0 0 12px rgba(0, 255, 0, 0.6); }
-.carte-point-fr.bali      { top: 79.8%; left: 80.0%; background-color: orange;  box-shadow: 0 0 12px rgba(255, 165, 0, 0.6); }
+.carte-point-fr.perou     { top: 79.8%; left: 24.0%; background-color: blue;    box-shadow: 0 0 12px rgba(0, 0, 255, 0.6); }
+.carte-point-fr.flores    { top: 79.8%; left: 82.7%; background-color: green;   box-shadow: 0 0 12px rgba(0, 255, 0, 0.6); }
+.carte-point-fr.bali      { top: 79.8%; left: 81.0%; background-color: orange;  box-shadow: 0 0 12px rgba(255, 165, 0, 0.6); }
 
 
 .carte-point-en.highlight {
