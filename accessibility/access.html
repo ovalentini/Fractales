@@ -64,11 +64,23 @@
           <a href="#bali" class="debug-zone-en bali" title="Room 2 – Bali"></a>
           <a href="#flores" class="debug-zone-en flores" title="Room 3 – Flores"></a>
           <a href="#perou" class="debug-zone-en perou" title="Room 4 – Peru"></a>
+		  
+		  <a href="#hampi" class="debug-zone-fr hampi" title="Salle 1 – Hampi"></a>
+          <a href="#bali" class="debug-zone-fr bali" title="Salle 2 – Bali"></a>
+          <a href="#flores" class="debug-zone-fr flores" title="Salle 3 – Flores"></a>
+          <a href="#perou" class="debug-zone-fr perou" title="Salle 4 – Peru"></a>
 
           <a href="#hampi" class="carte-point-en hampi" title="Hampi" tabindex="-1"></a>
           <a href="#bali" class="carte-point-en bali" title="Bali" tabindex="-1"></a>
           <a href="#flores" class="carte-point-en flores" title="Flores" tabindex="-1"></a>
           <a href="#perou" class="carte-point-en perou" title="Peru" tabindex="-1"></a>
+		  
+		  <a href="#hampi" class="carte-point-fr hampi" title="Hampi" tabindex="-1"></a>
+          <a href="#bali" class="carte-point-fr bali" title="Bali" tabindex="-1"></a>
+          <a href="#flores" class="carte-point-fr flores" title="Flores" tabindex="-1"></a>
+          <a href="#perou" class="carte-point-fr perou" title="Peru" tabindex="-1"></a>
+		  
+		  
         </div>
       </div>
     </section>
@@ -644,7 +656,7 @@
 	  const zones = document.querySelectorAll(`.debug-zone-${langue}`);
 	  const points = document.querySelectorAll(`.carte-point-${langue}`);
 	  if (zones.length === 0 && points.length === 0) {
-		logMessage(`⚠️ Aucun élément trouvé pour la langue : ${langue}`);
+		console.log(`⚠️ Aucun élément trouvé pour la langue : ${langue}`);
 		return;
 	  }
 	  document.querySelectorAll('.debug-zone-fr, .carte-point-fr, .debug-zone-en, .carte-point-en').forEach(el => {
