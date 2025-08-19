@@ -19,6 +19,18 @@ btn_quick_navigation_fr="🎧 Navigation rapide – Sous-titres & Transcriptions
 nav_subtitles_en="🎧 Quick Navigation – Subtitles & Transcriptions"
 nav_subtitles_fr="🎧 Navigation rapide – Sous-titres & Transcriptions"
 
+nav_Hampi_en="🎧 Room 1: Hampi"
+nav_Hampi_fr="🎧 Salle 1: Hampi"
+
+nav_Bali_en="🎧 Room 2: Bali"
+nav_Bali_fr="🎧 Salle 2: Bali"
+
+nav_Flores_en="🎧 Room 3: Flores"
+nav_Flores_fr="🎧 Salle 3: Florès"
+
+nav_Peru_en="🎧 Room 4: Peru"
+nav_Peru_fr="🎧 Salle 4: Pérou"
+
 btn_map_0_en="🗺️ Interactive map"
 btn_map_0_fr="🗺️ Carte interactive"
 
