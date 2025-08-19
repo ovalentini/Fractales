@@ -1,8 +1,8 @@
 fractales_en="🖼️ Fractals of the World: Reflections of Souls"
 fractales_fr="🖼️ Fractales du Monde : Reflets d’Âmes"
 
-first_en="Welcome to an exhibition where each image is a door..."
-first_fr="Bienvenue dans une exposition où chaque image est une porte..."
+first_en="Welcome to an exhibition where each image is a door, each spiral a breath, and each pixel a memory."
+first_fr="Bienvenue dans une exposition où chaque image est une porte, chaque spirale un souffle, et chaque pixel une mémoire."
 
 btn_enter_en="✨ Enter the Exhibition"
 btn_enter_fr="✨ Entrer dans l’exposition"
@@ -10,8 +10,8 @@ btn_enter_fr="✨ Entrer dans l’exposition"
 prologue_sensible_en="🖼️ Sensitive Prologue – Poetic Introduction"
 prologue_sensible_fr="🖼️ Prologue Sensible – Introduction Poétique"
 
-intro_poetique_en="Close your eyes… and open your soul..."
-intro_poetique_fr="Fermez les yeux… et ouvrez votre âme..."
+intro_poetique_en="Close your eyes… and open your soul. You are entering a world where boundaries dissolve. Here, every image is a breath, every spiral a memory. Fractals are not just patterns… they are reflections of souls scattered to the four winds of the world. Follow the light, listen to the hidden rhythm behind the pixels, and let yourself be carried away…"
+intro_poetique_fr="Fermez les yeux… et ouvrez l’âme. Vous entrez dans un monde où les frontières se dissolvent. Ici, chaque image est un souffle, chaque spirale une mémoire. Les fractales ne sont pas que des motifs… elles sont les reflets d’âmes dispersées aux quatre vents du monde. Suivez la lumière, écoutez le rythme caché derrière les pixels, et laissez-vous porter…"
 
 btn_quick_navigation_en="🎧 Quick Navigation – Subtitles & Transcriptions"
 btn_quick_navigation_fr="🎧 Navigation rapide – Sous-titres & Transcriptions"
@@ -170,7 +170,7 @@ cloture_visite_en="🖼️ Contemplative Epilogue – Closing of the Visit"
 cloture_visite_fr="🖼️ Épilogue contemplatif – Clôture de la visite"
 
 epilogue_en="And when the lights go out, the fractals keep dancing in the dark. They whisper ancient stories, forgotten secrets, and dreams yet to come. Every reflection is a promise, every spiral an endless journey."
-epilogue_fr="Et quand les lumières s’éteignent, les fractales dansent encore..."
+epilogue_fr="Et lorsque les lumières s’éteignent, les fractales continuent de danser dans l’obscurité. Elles murmurent des histoires anciennes, des secrets oubliés, et des rêves à venir. Chaque reflet est une promesse, chaque spirale un voyage sans fin."
 
 btn_exit_en="🌌 Exit"
 btn_exit_fr="🌌 Quitter"
