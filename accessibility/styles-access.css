@@ -191,10 +191,10 @@ button:hover {
 .carte-point-en.flores   { top: 82.8%; left: 81.7%; background-color: green;   box-shadow: 0 0 12px rgba(0, 255, 0, 0.6); }
 .carte-point-en.bali      { top: 82.8%; left: 80.0%; background-color: orange;  box-shadow: 0 0 12px rgba(255, 165, 0, 0.6); }
 
-.carte-point-fr.hampi     { top: 81.1%; left: 68.3%; background-color: crimson; box-shadow: 0 0 12px rgba(255, 0, 0, 0.6); }
-.carte-point-fr.perou     { top: 87.8%; left: 25.0%; background-color: blue;    box-shadow: 0 0 12px rgba(0, 0, 255, 0.6); }
-.carte-point-fr.flores    { top: 87.8%; left: 81.7%; background-color: green;   box-shadow: 0 0 12px rgba(0, 255, 0, 0.6); }
-.carte-point-fr.bali      { top: 87.8%; left: 80.0%; background-color: orange;  box-shadow: 0 0 12px rgba(255, 165, 0, 0.6); }
+.carte-point-fr.hampi     { top: 76.1%; left: 68.3%; background-color: crimson; box-shadow: 0 0 12px rgba(255, 0, 0, 0.6); }
+.carte-point-fr.perou     { top: 82.8%; left: 25.0%; background-color: blue;    box-shadow: 0 0 12px rgba(0, 0, 255, 0.6); }
+.carte-point-fr.flores    { top: 82.8%; left: 81.7%; background-color: green;   box-shadow: 0 0 12px rgba(0, 255, 0, 0.6); }
+.carte-point-fr.bali      { top: 82.8%; left: 80.0%; background-color: orange;  box-shadow: 0 0 12px rgba(255, 165, 0, 0.6); }
 
 
 .carte-point-en.highlight {
@@ -248,10 +248,10 @@ button:hover {
 .debug-zone-en.flores { top: 20.9%; left: 51.7%; width: 20%; height: 36.7%; background-color: rgba(0, 255, 0, 0.3); }
 .debug-zone-en.bali   { top: 20.9%; left: 75.3%; width: 20%; height: 36.7%; background-color: rgba(255, 165, 0, 0.3); }
 
-.debug-zone-fr.hampi  { top: 28.9%; left: 6.7%;  width: 20%; height: 36.7%; background-color: rgba(255, 0, 0, 0.3); }
-.debug-zone-fr.perou  { top: 28.9%; left: 28.3%; width: 20%; height: 36.7%; background-color: rgba(0, 0, 255, 0.3); }
-.debug-zone-fr.flores { top: 28.9%; left: 51.7%; width: 20%; height: 36.7%; background-color: rgba(0, 255, 0, 0.3); }
-.debug-zone-fr.bali   { top: 28.9%; left: 73.3%; width: 20%; height: 36.7%; background-color: rgba(255, 165, 0, 0.3); }
+.debug-zone-fr.hampi  { top: 20.9%; left: 4.7%;  width: 20%; height: 36.7%; background-color: rgba(255, 0, 0, 0.3); }
+.debug-zone-fr.perou  { top: 20.9%; left: 28.3%; width: 20%; height: 36.7%; background-color: rgba(0, 0, 255, 0.3); }
+.debug-zone-fr.flores { top: 20.9%; left: 51.7%; width: 20%; height: 36.7%; background-color: rgba(0, 255, 0, 0.3); }
+.debug-zone-fr.bali   { top: 20.9%; left: 75.3%; width: 20%; height: 36.7%; background-color: rgba(255, 165, 0, 0.3); }
 
 .lang-fr .debug-zone-fr,
 .lang-fr .carte-point-fr {
