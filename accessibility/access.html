@@ -108,17 +108,17 @@
 			<li>[Distant chatter of market-goers — lively atmosphere]</li>
 			<li>[Rhythmic tones of the musical pillars — sacred resonance]</li>
 		  </ul>
-		  <p class="transcription">
+		  <p class="transcription" id="transcription">
 			The market hums with life. Fabrics sway, their colors vivid even in the mind's eye.  
 			The chariot stands timeless, a symbol of Hampi's rich history.  
 			The musical pillars sing, their notes weaving stories of devotion and artistry.
 		  </p>
 		  <div aria-label="Audiodescription for the visually impaired" tabindex="0"> 
           <h4 role="heading" aria-level="4">Narration</h4>		  
-		  <p>Imagine a bustling market in Hampi, where the mystical chariot stands as a centerpiece. 
+		  <p id="texteNarrationHampi">Imagine a bustling market in Hampi, where the mystical chariot stands as a centerpiece. 
 		  The fabrics flow gently in the breeze, their vibrant colors creating a kaleidoscope of hues. 
 		  The sound of the musical pillars resonates, each note painting an auditory picture of the temple's grandeur.</p> 
-		  <h4 role="heading" aria-level="4">Soundscape Enrichment</h4> 
+		  <h4 role="heading" aria-level="4" id="enrichissementHampi">Soundscape Enrichment</h4> 
 		  <audio controls><source src="sounds/hampi-sound.mp3" type="audio/mpeg">Your browser does not support the audio element.</audio>
 		  </div>
 		  <div class="retour-navigation">
@@ -158,17 +158,17 @@
 			<li>[Soft chanting of prayers — spiritual essence]</li>
 			<li>[Spirals of incense smoke — fragrant devotion]</li>
 		  </ul>
-		  <p class="transcription">
+		  <p class="transcription" id="transcription_bali">
 			The rice fields stretch endlessly, their terraces a testament to harmony with nature.  
 			Offerings of flowers and incense bring color and fragrance to the scene.  
 			Temples stand as guardians of tradition, their presence a reminder of Bali's spiritual essence.
 		  </p>
 		  <div aria-label="Audiodescription for the visually impaired" tabindex="0"> 
 		  <h4 role="heading" aria-level="4">Narration</h4>	
-		  <p>Picture the sacred rice fields of Bali, their terraces cascading like emerald waves.
+		  <p id="texteNarrationBali">Picture the sacred rice fields of Bali, their terraces cascading like emerald waves.
      		 Offerings of flowers and incense adorn the landscape, each a prayer to the divine.
 			 The temples rise majestically, their intricate carvings telling stories of devotion and tradition.</p> 
-		  <h4 role="heading" aria-level="4">Soundscape Enrichment</h4>
+		  <h4 role="heading" aria-level="4" id="enrichissementBali">Soundscape Enrichment</h4>
 		  <audio controls><source src="sounds/bali-sound.mp3" type="audio/mpeg">Your browser does not support the audio element.</audio>
 		  </div>
 		   <div class="retour-navigation">
@@ -208,16 +208,16 @@
 			<li>[Rustle of leaves — vibrant foliage]</li>
 			<li>[Distant calls of exotic birds — untamed spirit]</li>
 		  </ul>
-		  <p class="transcription">
+		  <p class="transcription" id="transcription_flores">
 			Flores Island is a haven of natural wonders.  
 			Komodo dragons embody the island's untamed spirit, while pink beaches and coral reefs showcase its vibrant beauty.  
 			The sounds of nature envelop you, painting a picture of serenity and adventure.
 		  </p>
 		  <div aria-label="Audiodescription for the visually impaired" tabindex="0"> 
 		  <h4 role="heading" aria-level="4">Narration</h4>
-		  <p>Envision the rugged beauty of Flores Island, where Komodo dragons roam freely and pink beaches shimmer under the sun. 
+		  <p id="texteNarrationFlores">Envision the rugged beauty of Flores Island, where Komodo dragons roam freely and pink beaches shimmer under the sun. 
 		  Beneath the waves, coral reefs burst with color, teeming with marine life.</p> 
-		  <h4 role="heading" aria-level="4">Soundscape Enrichment</h4> 
+		  <h4 role="heading" aria-level="4" id="enrichissementFlores">Soundscape Enrichment</h4> 
 		  <audio controls><source src="sounds/flores-sound.mp3" type="audio/mpeg">Your browser does not support the audio element.</audio>
 		  </div>
 		   <div class="retour-navigation">
@@ -258,7 +258,7 @@
 		<li>[Distant sound of flowing rivers — life's pulse]</li>
 		<li>[Echoes of history — profound legacy]</li>
 	  </ul>
-	  <p class="transcription">
+	  <p class="transcription" id="transcription_peru">
 		The Sacred Valley is a place of awe and wonder.  
 		The Andes dominate the horizon, while Machu Picchu invites you to explore its mysteries.  
 		Encircling this iconic site are concentric golden patterns reminiscent of cathedral adornments, adding a divine aura to the scene.  
@@ -266,10 +266,10 @@
 	  </p>
 	   <div aria-label="Audiodescription for the visually impaired" tabindex="0"> 
 		  <h4 role="heading" aria-level="4">Narration</h4>	
-		  <p>Imagine the Sacred Valley of Peru, where the Andes rise majestically and ancient terraces tell stories of agricultural ingenuity. 
+		  <p id="texteNarrationValleeSacree">Imagine the Sacred Valley of Peru, where the Andes rise majestically and ancient terraces tell stories of agricultural ingenuity. 
 		     Machu Picchu stands as a testament to Inca heritage, its stone structures blending seamlessly with the natural landscape. 
 		     Encircling this iconic site are concentric golden patterns reminiscent of cathedral adornments, adding a divine aura to the scene.</p> 
-		  <h4 role="heading" aria-level="4">Soundscape Enrichment</h4>  
+		  <h4 role="heading" aria-level="4" id="enrichissementPeru">Soundscape Enrichment</h4>  
 		  <audio controls><source src="sounds/perou-sound.mp3" type="audio/mpeg">Your browser does not support the audio element.</audio>
 		<div>  
 		<div class="retour-navigation">
@@ -406,9 +406,11 @@
     // lecture de langues.txt
 	const navLang = navigator.language.startsWith("fr") ? "fr" : "en";
 	langueActuelle = navLang;
+	console.log(langueActuelle);
 
 	async function chargerLangues(url) {
-	  const re = /^\[([^\]]+)\]\s*["']([^"']+)["']/;
+	  //const re = /^\[([^\]]+)\]\s*["']([^"']+)["']/;
+	  const re = /^(\w+_\w+)\s*=\s*"([^"]+)"$/;
 	  const dictionnaire = {};
 	  const response = await fetch(url);
 	  const texte = await response.text();
@@ -419,6 +421,8 @@
 		}
 	  });
 
+      console.log("Nombre d'entrées chargées :", Object.keys(dictionnaire).length);
+	  console.log("Exemple :", dictionnaire["texteCarte_fr"]);
 	  return dictionnaire;
 	}
 
@@ -605,7 +609,7 @@
 	function switchLangue() {
 	  langueActuelle = (langueActuelle === 'fr') ? 'en' : 'fr';
 
-	  chargerLangues('https://ovalentini.github.io/Fractales/langues.txt').then(labels => {
+	  chargerLangues('https://ovalentini.github.io/Fractales/accessibility/langues-access.txt').then(labels => {
 		appliquerTextes(labels, langueActuelle);
 
 		// ✅ Afficher les bons éléments une fois les textes appliqués
@@ -883,8 +887,10 @@
 	  function initialiserLangue() {
 	  //const navLang = navigator.language.startsWith("fr") ? "fr" : "en";
 	  //langueActuelle = navLang;
-	  chargerLangues('https://ovalentini.github.io/Fractales/langues-access.txt').then(labels => {
+	  console.log(langueActuelle);
+	  chargerLangues('https://ovalentini.github.io/Fractales/accessibility/langues-access.txt').then(labels => {
 		appliquerTextes(labels, langueActuelle);
+		
 		afficherElementsLangue(langueActuelle);
 		modifierTitres(langueActuelle);
 		inspecterZonesOpposées(langueActuelle);
@@ -896,7 +902,7 @@
 	});
 	}
 
-	/*window.addEventListener('DOMContentLoaded', initialiserLangue);*/
+	window.addEventListener('DOMContentLoaded', initialiserLangue);
 </script>
 </body>
 </html>

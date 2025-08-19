@@ -55,6 +55,9 @@ subtitles_hampi_fr="🎧 Sous-titres & Transcription – Salle 1 : Hampi"
 transcription_en="The market hums with life. Fabrics sway, their colors vivid even in the mind's eye.  The chariot stands timeless, a symbol of Hampi's rich history.  The musical pillars sing, their notes weaving stories of devotion and artistry."
 transcription_fr="Le marché vibre de vie. Les étoffes ondulent, leurs couleurs éclatantes même dans l’œil de l’esprit. Le char se dresse hors du temps, symbole intemporel de l’histoire riche de Hampi. Les piliers musicaux chantent, leurs notes tissent des récits de dévotion et d’art sacré."
 
+enrichissementHampi_fr="Enrichissement sonore"
+enrichissementHampi_en="Soudscape Enrichment"
+
 enrichissementSonoreHampi_fr="Écoutez les résonances du temple, où chaque pilier chante l’histoire d’un peuple. Les sons du marché, les murmures des étoffes, et les notes sacrées vous enveloppent dans une fresque sonore."
 enrichissementSonoreHampi_en="Listen to the temple’s resonance, where each pillar sings the story of a people. The sounds of the market, the whispers of fabric, and sacred notes wrap you in a sonic fresco."
 
@@ -88,6 +91,9 @@ transcription_bali_fr="Les rizières s’étendent à perte de vue, leurs terras
 texteNarrationBali_en="Picture the sacred rice fields of Bali, their terraces cascading like emerald waves. Offerings of flowers and incense adorn the landscape, each a prayer to the divine. The temples rise majestically, their intricate carvings telling stories of devotion and tradition."
 texteNarrationBali_fr="Imaginez une procession au lever du jour, les pas silencieux sur les pierres humides. Les fleurs s’ouvrent lentement, et les encens s’élèvent vers le ciel, porteurs de vœux et de gratitude."
 
+enrichissementBali_fr="Enrichissement sonore"
+enrichissementBali_en="Soudscape Enrichment"
+
 enrichissementSonoreBali_fr="Laissez-vous porter par les gamelans et les chants d’offrandes, comme une prière qui danse dans l’air. Chaque son est une caresse, chaque silence un souffle sacré."
 enrichissementSonoreBali_en="Let yourself be carried by gamelans and offering chants, like a prayer dancing in the air. Each sound is a caress, each silence a sacred breath."
 
@@ -114,6 +120,9 @@ transcription_flores_fr="L’île de Flores est un sanctuaire de merveilles natu
 
 texteNarrationFlores_en="Envision the rugged beauty of Flores Island, where Komodo dragons roam freely and pink beaches shimmer under the sun. Beneath the waves, coral reefs burst with color, teeming with marine life."
 texteNarrationFlores_fr="Imaginez les pas feutrés d’un dragon de Komodo sur le sable rose, tandis que les vagues murmurent des secrets anciens. Les coraux scintillent sous la lumière, et chaque cri d’oiseau semble guider l’explorateur vers l’inconnu."
+
+enrichissementFlores_fr="Enrichissement sonore"
+enrichissementFlores_en="Soudscape Enrichment"
 
 enrichissementSonoreFlores_fr="Écoutez les vagues qui parlent aux récifs, les pas du dragon sur le sable, et les cris d’oiseaux qui veillent. Une symphonie sauvage, entre mystère et beauté."
 enrichissementSonoreFlores_en="Hear the waves speaking to the reefs, the dragon’s steps on the sand, and the cries of birds keeping watch. A wild symphony, woven from mystery and beauty."
@@ -142,13 +151,16 @@ transcription_peru_fr="La Vallée Sacrée est un lieu d’émerveillement et de 
 texteNarrationValleeSacree_en="Imagine the Sacred Valley of Peru, where the Andes rise majestically and ancient terraces tell stories of agricultural ingenuity. Machu Picchu stands as a testament to Inca heritage, its stone structures blending seamlessly with the natural landscape. Encircling this iconic site are concentric golden patterns reminiscent of cathedral adornments, adding a divine aura to the scene"
 texteNarrationValleeSacree_fr="Imaginez les terrasses verdoyantes de la vallée, où les murmures du vent se mêlent aux chants anciens. Chaque pierre semble porter la mémoire d’un peuple, et les ombres des montagnes dansent au rythme du soleil andin."
 
+enrichissementPeru_fr="Enrichissement sonore"
+enrichissementPeru_en="Soudscape Enrichment"
+
 enrichissementSonoreValleeSacree_fr="Les Andes murmurent des légendes dans le vent, et les voix anciennes résonnent entre les pierres. Fermez les yeux : vous êtes au cœur du souffle sacré du Pérou."
 enrichissementSonoreValleeSacree_en="The Andes whisper legends in the wind, and ancient voices echo between the stones. Close your eyes: you are at the heart of Peru’s sacred breath."
 
 cloture_visite_en="🖼️ Contemplative Epilogue – Closing of the Visit"
 cloture_visite_fr="🖼️ Épilogue contemplatif – Clôture de la visite"
 
-epilogue_en="And when the lights go out, the fractals keep dancing..."
+epilogue_en="And when the lights go out, the fractals keep dancing in the dark. They whisper ancient stories, forgotten secrets, and dreams yet to come. Every reflection is a promise, every spiral an endless journey."
 epilogue_fr="Et quand les lumières s’éteignent, les fractales dansent encore..."
 
 btn_exit_en="🌌 Exit"
