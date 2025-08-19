@@ -43,6 +43,9 @@ image-caption_fr="Chaque spirale raconte une histoire. Laissez les motifs guider
 salle_hampi_en="🕉️ Room 1 — Hampi Market"
 salle_hampi_fr="🕉️ Salle 1 — Marché de Hampi"
 
+btn_back_Hampi_en="🗺️ Back to the map"
+btn_back_Hampi_fr="🗺️ Retour à la carte"
+
 element1_en="Element"
 element1_fr="Élément"
 
@@ -89,6 +92,9 @@ navigationHampi_fr="🔝 Retour à la navigation rapide"
 salle_bali_en="🌺 Room 2 — Bali the Beautiful Island"
 salle_bali_fr="🌺 Salle 2 — Bali, l’île spirituelle"
 
+btn_back_Bali_en="🗺️ Back to the map"
+btn_back_Bali_fr="🗺️ Retour à la carte"
+
 element2_en="Element"
 element2_fr="Élément"
 
@@ -128,6 +134,9 @@ navigationBali_fr="🔝 Retour à la navigation rapide"
 
 salle_flores_en="🌾 Room 3 — Flores Island"
 salle_flores_fr="🌾 Salle 3 — Île de Flores"
+
+btn_back_Flores_en="🗺️ Back to the map"
+btn_back_Flores_fr="🗺️ Retour à la carte"
 
 element3_en="Element"
 element3_fr="Élément"
@@ -183,6 +192,9 @@ foret_fr="🌄 Machu Picchu et héritage inca"
 
 subtitles_peru_en="🎧 Subtitles & Transcription – Room 4: Peru"
 subtitles_peru_fr="🎧 Sous-titres & Transcription – Salle 4 : Pérou"
+
+btn_back_Peru_en="🗺️ Back to the map"
+btn_back_Peru_fr="🗺️ Retour à la carte"
 
 subtitle_wind_en="[Whisper of the wind through the mountains — timeless serenity]"
 subtitle_wind_fr="[Murmure du vent à travers les montagnes — sérénité intemporelle]"
