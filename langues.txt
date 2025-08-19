@@ -30,6 +30,8 @@
 [btn_back_3_en] '🗺️ Back to the map'
 [btn_exit_fr] 'Quitter'
 [btn_exit_en] 'Exit'
+[btn_quick_navigation_fr] '🎧 Navigation rapide – Sous-titres & Transcriptions'
+[btn_quick_navigation_en] '🎧 Quick Navigation – Subtitles & Transcriptions'
 [btn_summary_0_fr] '📚 Voir le sommaire'
 [btn_summary_0_en] '📚 View the summary'
 [btn_summary_1_fr] '📚 Voir le sommaire'

@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Fractals of the World – Accessible Version</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles-access.css" />
 </head>
 <body class="lang-en">
 
@@ -32,10 +32,24 @@
         Fractals are not just patterns… they are reflections of souls scattered to the four winds of the world.  
         Follow the light, listen to the hidden rhythm behind the pixels, and let yourself be carried away…
       </div>
-      <div class="retour-carte">
-        <a href="#carte" id="btn_map_0" class="nav-btn retour" title="Access the interactive map">🗺️ Interactive map</a>
+	  <div class="retour-carte">
+        <a href="#quick-navigation" id="btn_quick_navigation" class="nav-btn retour" title="Access the quick navigation">🎧 Quick Navigation – Subtitles & Transcriptions </a>
       </div>
     </section>
+
+     <!-- Quick navigation -->
+   <section id="quick-navigation" class="access-content" role="region" aria-labelledby="nav_subtitles">
+	  <h2 id="nav_subtitles" role="heading">🎧 Quick Navigation – Subtitles & Transcriptions</h2>
+	  <ul>
+		<li><a href="#subtitles_hampi">🎧 Room 1: Hampi</a></li>
+		<li><a href="#subtitles_bali">🎧 Room 2: Bali</a></li>
+		<li><a href="#subtitles_flores">🎧 Room 3: Flores</a></li>
+		<li><a href="#subtitles_peru">🎧 Room 4: Peru</a></li>
+	  </ul>
+	  <div class="quick-navigation">
+        <a href="#carte" id="btn_map_0" class="nav-btn retour" title="Access the interactive map">🗺️ Interactive map</a>
+      </div>
+	</section>
 
     <!-- 🗺️ Interactive Map -->
     <section id="carte" class="interactive-map" role="region" aria-labelledby="carte_interactive">
@@ -58,18 +72,6 @@
         </div>
       </div>
     </section>
-
-   <!-- Quick navigation -->
-   <section id="quick-navigation" class="access-content" role="region" aria-labelledby="nav_subtitles">
-	  <h2 id="nav_subtitles" role="heading">🎧 Quick Navigation – Subtitles & Transcriptions</h2>
-	  <ul>
-		<li><a href="#subtitles_hampi">🎧 Room 1: Hampi</a></li>
-		<li><a href="#subtitles_bali">🎧 Room 2: Bali</a></li>
-		<li><a href="#subtitles_flores">🎧 Room 3: Flores</a></li>
-		<li><a href="#subtitles_peru">🎧 Room 4: Peru</a></li>
-	  </ul>
-	</section>
-
 
     <!-- 🕉️ Room 1 — Hampi Market -->
     <section id="hampi" role="region" aria-labelledby="salle_hampi">
@@ -868,8 +870,8 @@
 
     // bouton quitter
 	//const navLang = navigator.language.startsWith("fr") ? "fr" : "en";
-	//langueActuelle = navigator.language.startsWith("fr") ? "fr" : "en";
-	langueActuelle="en"
+	langueActuelle = navigator.language.startsWith("fr") ? "fr" : "en";
+	//langueActuelle="en"
 	document.querySelector(".close-poetique").addEventListener("click", function () {
 		document.body.classList.add("fusion-galactique");
 		setTimeout(() => {
@@ -881,7 +883,7 @@
 	  function initialiserLangue() {
 	  //const navLang = navigator.language.startsWith("fr") ? "fr" : "en";
 	  //langueActuelle = navLang;
-	  chargerLangues('https://ovalentini.github.io/Fractales/langues.txt').then(labels => {
+	  chargerLangues('https://ovalentini.github.io/Fractales/langues-access.txt').then(labels => {
 		appliquerTextes(labels, langueActuelle);
 		afficherElementsLangue(langueActuelle);
 		modifierTitres(langueActuelle);

@@ -52,13 +52,6 @@ button:hover {
   background-color: #6a4fb3;
 }
 
-/*.citation-stylisee {
-  font-style: italic;
-  color: #555;
-  margin-top: 1rem;
-  padding-left: 1rem;
-  border-left: 3px solid #ccc;
-}*/
 .citation-stylisee {
   position: relative;
   background: #f9f9f9;
@@ -115,6 +108,15 @@ button:hover {
   text-decoration: none;
   color: #4b2e83;
   font-weight: bold;
+}
+
+#quick-navigation a.nav-btn.retour {
+  background-color: rgba(75, 46, 131, 0.8); /* violet semi-transparent */
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 #quick-navigation a:hover {

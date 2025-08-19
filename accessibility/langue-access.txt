@@ -1,0 +1,155 @@
+fractales_en="🖼️ Fractals of the World: Reflections of Souls"
+fractales_fr="🖼️ Fractales du Monde : Reflets d’Âmes"
+
+first_en="Welcome to an exhibition where each image is a door..."
+first_fr="Bienvenue dans une exposition où chaque image est une porte..."
+
+btn_enter_en="✨ Enter the Exhibition"
+btn_enter_fr="✨ Entrer dans l’exposition"
+
+prologue_sensible_en="🖼️ Sensitive Prologue – Poetic Introduction"
+prologue_sensible_fr="🖼️ Prologue Sensible – Introduction Poétique"
+
+intro_poetique_en="Close your eyes… and open your soul..."
+intro_poetique_fr="Fermez les yeux… et ouvrez votre âme..."
+
+btn_quick_navigation_en="🎧 Quick Navigation – Subtitles & Transcriptions"
+btn_quick_navigation_fr="🎧 Navigation rapide – Sous-titres & Transcriptions"
+
+nav_subtitles_en="🎧 Quick Navigation – Subtitles & Transcriptions"
+nav_subtitles_fr="🎧 Navigation rapide – Sous-titres & Transcriptions"
+
+btn_map_0_en="🗺️ Interactive map"
+btn_map_0_fr="🗺️ Carte interactive"
+
+carte_interactive_en="🗺️ Interactive map"
+carte_interactive_fr="🗺️ Carte interactive"
+
+image-caption_en="Each spiral tells a story. Let the patterns guide your soul."
+image-caption_fr="Chaque spirale raconte une histoire. Laissez les motifs guider votre âme."
+
+salle_hampi_en="🕉️ Room 1 — Hampi Market"
+salle_hampi_fr="🕉️ Salle 1 — Marché de Hampi"
+
+element1_en="Element"
+element1_fr="Élément"
+
+lien1_en="Link"
+lien1_fr="Lien"
+
+hampi_desc_en="Mystical Chariot of Hampi"
+hampi_desc_fr="Char mystique de Hampi"
+
+mandala_en="Mandalas and flowing fabrics"
+mandala_fr="Mandalas et tissus ondulants"
+
+vithala_en="Soundscape: Musical pillars of the Vithala temple"
+vithala_fr="Paysage sonore : Piliers musicaux du temple Vithala"
+
+ecoute1_en="Listen"
+ecoute1_fr="Écouter"
+
+subtitles_hampi_en="🎧 Subtitles & Transcription – Room 1: Hampi"
+subtitles_hampi_fr="🎧 Sous-titres & Transcription – Salle 1 : Hampi"
+
+transcription_en="The market hums with life. Fabrics sway, their colors vivid even in the mind's eye.  The chariot stands timeless, a symbol of Hampi's rich history.  The musical pillars sing, their notes weaving stories of devotion and artistry."
+transcription_fr="Le marché vibre de vie. Les étoffes ondulent, leurs couleurs éclatantes même dans l’œil de l’esprit. Le char se dresse hors du temps, symbole intemporel de l’histoire riche de Hampi. Les piliers musicaux chantent, leurs notes tissent des récits de dévotion et d’art sacré."
+
+enrichissementSonoreHampi_fr="Écoutez les résonances du temple, où chaque pilier chante l’histoire d’un peuple. Les sons du marché, les murmures des étoffes, et les notes sacrées vous enveloppent dans une fresque sonore."
+enrichissementSonoreHampi_en="Listen to the temple’s resonance, where each pillar sings the story of a people. The sounds of the market, the whispers of fabric, and sacred notes wrap you in a sonic fresco."
+
+texteNarrationHampi_en="Imagine a bustling market in Hampi, where the mystical chariot stands as a centerpiece. The fabrics flow gently in the breeze, their vibrant colors creating a kaleidoscope of hues. The sound of the musical pillars resonates, each note painting an auditory picture of the temple's grandeur."
+texteNarrationHampi_fr="Imaginez un marché animé à Hampi, où le char mystique se dresse en pièce maîtresse. Les étoffes ondulent doucement dans la brise, leurs couleurs vibrantes composent un kaléidoscope de teintes. Le son des piliers musicaux résonne, chaque note peignant une fresque sonore de la grandeur du temple."
+
+retour-navigation_en="🔝 Back to Quick Navigation"
+retour-navigation_fr="🔝 Retour à la navigation rapide"
+
+salle_bali_en="🌺 Room 2 — Bali the Beautiful Island"
+salle_bali_fr="🌺 Salle 2 — Bali, l’île spirituelle"
+
+element2_en="Element"
+element2_fr="Élément"
+
+lien2_en="Link"
+lien2_fr="Lien"
+
+ceremonie_en="🌾 Sacred rice fields and offerings"
+ceremonie_fr="🌾 Rizières sacrées et offrandes"
+
+visite_en="🕉️ Hindu temples and spirals of incense"
+visite_fr="🕉️ Temples hindous et spirales d’encens"
+
+subtitles_bali_en="🎧 Subtitles & Transcription – Room 2: Bali"
+subtitles_bali_fr="🎧 Sous-titres & Transcription – Salle 2 : Bali"
+
+transcription_bali_en="The rice fields stretch endlessly, their terraces a testament to harmony with nature.  Offerings of flowers and incense bring color and fragrance to the scene.  Temples stand as guardians of tradition, their presence a reminder of Bali's spiritual essence."
+transcription_bali_fr="Les rizières s’étendent à perte de vue, leurs terrasses témoignent d’une harmonie profonde avec la nature. Les offrandes de fleurs et d’encens colorent le paysage et l’imprègnent de parfums sacrés. Les temples veillent comme des gardiens de la tradition, rappelant la dimension spirituelle de Bali."
+
+texteNarrationBali_en="Picture the sacred rice fields of Bali, their terraces cascading like emerald waves. Offerings of flowers and incense adorn the landscape, each a prayer to the divine. The temples rise majestically, their intricate carvings telling stories of devotion and tradition."
+texteNarrationBali_fr="Imaginez une procession au lever du jour, les pas silencieux sur les pierres humides. Les fleurs s’ouvrent lentement, et les encens s’élèvent vers le ciel, porteurs de vœux et de gratitude."
+
+enrichissementSonoreBali_fr="Laissez-vous porter par les gamelans et les chants d’offrandes, comme une prière qui danse dans l’air. Chaque son est une caresse, chaque silence un souffle sacré."
+enrichissementSonoreBali_en="Let yourself be carried by gamelans and offering chants, like a prayer dancing in the air. Each sound is a caress, each silence a sacred breath."
+
+salle_flores_en="🌾 Room 3 — Flores Island"
+salle_flores_fr="🌾 Salle 3 — Île de Flores"
+
+element3_en="Element"
+element3_fr="Élément"
+
+lien3_en="Link"
+lien3_fr="Lien"
+
+komodo_en="🌺 Komodo dragons and pink beaches"
+komodo_fr="🌺 Dragons de Komodo et plages roses"
+
+coral_en="🌊 Coral reefs and underwater wonders"
+coral_fr="🌊 Récifs coralliens et merveilles sous-marines"
+
+subtitles_flores_en="🎧 Subtitles & Transcription – Room 3: Flores"
+subtitles_flores_fr="🎧 Sous-titres & Transcription – Salle 3 : Flores"
+
+transcription_flores_en="Flores Island is a haven of natural wonders.  Komodo dragons embody the island's untamed spirit, while pink beaches and coral reefs showcase its vibrant beauty.  The sounds of nature envelop you, painting a picture of serenity and adventure."
+transcription_flores_fr="L’île de Flores est un sanctuaire de merveilles naturelles. Les dragons de Komodo incarnent l’esprit indompté de l’île, tandis que les plages roses et les récifs coralliens dévoilent sa beauté éclatante. Les sons de la nature vous enveloppent, dessinant un tableau de sérénité et d’aventure."
+
+texteNarrationFlores_en="Envision the rugged beauty of Flores Island, where Komodo dragons roam freely and pink beaches shimmer under the sun. Beneath the waves, coral reefs burst with color, teeming with marine life."
+texteNarrationFlores_fr="Imaginez les pas feutrés d’un dragon de Komodo sur le sable rose, tandis que les vagues murmurent des secrets anciens. Les coraux scintillent sous la lumière, et chaque cri d’oiseau semble guider l’explorateur vers l’inconnu."
+
+enrichissementSonoreFlores_fr="Écoutez les vagues qui parlent aux récifs, les pas du dragon sur le sable, et les cris d’oiseaux qui veillent. Une symphonie sauvage, entre mystère et beauté."
+enrichissementSonoreFlores_en="Hear the waves speaking to the reefs, the dragon’s steps on the sand, and the cries of birds keeping watch. A wild symphony, woven from mystery and beauty."
+
+salle_perou_en="🏔️ Room 4 — Peru’s Sacred Valley"
+salle_perou_fr="🏔️ Salle 4 — Vallée Sacrée du Pérou"
+
+element4_en="Element"
+element4_fr="Élément"
+
+lien4_en="Link"
+lien4_fr="Lien"
+
+chant_en="🏔️ Majestic Andes and ancient terraces"
+chant_fr="🏔️ Andes majestueuses et terrasses anciennes"
+
+foret_en="🌄 Machu Picchu and Inca heritage"
+foret_fr="🌄 Machu Picchu et héritage inca"
+
+subtitles_peru_en="🎧 Subtitles & Transcription – Room 4: Peru"
+subtitles_peru_fr="🎧 Sous-titres & Transcription – Salle 4 : Pérou"
+
+transcription_peru_en="The Sacred Valley is a place of awe and wonder.  The Andes dominate the horizon, while Machu Picchu invites you to explore its mysteries.  Encircling this iconic site are concentric golden patterns reminiscent of cathedral adornments, adding a divine aura to the scene.  The sounds of nature and history intertwine, offering a glimpse into the soul of Peru."
+transcription_peru_fr="La Vallée Sacrée est un lieu d’émerveillement et de mystère. Les Andes dominent l’horizon, tandis que Machu Picchu vous invite à explorer ses secrets. Autour de ce site emblématique, des motifs dorés concentriques évoquent les ornements des cathédrales, ajoutant une aura divine à la scène. Les sons de la nature et de l’histoire s’entrelacent, offrant un aperçu de l’âme du Pérou."
+
+texteNarrationValleeSacree_en="Imagine the Sacred Valley of Peru, where the Andes rise majestically and ancient terraces tell stories of agricultural ingenuity. Machu Picchu stands as a testament to Inca heritage, its stone structures blending seamlessly with the natural landscape. Encircling this iconic site are concentric golden patterns reminiscent of cathedral adornments, adding a divine aura to the scene"
+texteNarrationValleeSacree_fr="Imaginez les terrasses verdoyantes de la vallée, où les murmures du vent se mêlent aux chants anciens. Chaque pierre semble porter la mémoire d’un peuple, et les ombres des montagnes dansent au rythme du soleil andin."
+
+enrichissementSonoreValleeSacree_fr="Les Andes murmurent des légendes dans le vent, et les voix anciennes résonnent entre les pierres. Fermez les yeux : vous êtes au cœur du souffle sacré du Pérou."
+enrichissementSonoreValleeSacree_en="The Andes whisper legends in the wind, and ancient voices echo between the stones. Close your eyes: you are at the heart of Peru’s sacred breath."
+
+cloture_visite_en="🖼️ Contemplative Epilogue – Closing of the Visit"
+cloture_visite_fr="🖼️ Épilogue contemplatif – Clôture de la visite"
+
+epilogue_en="And when the lights go out, the fractals keep dancing..."
+epilogue_fr="Et quand les lumières s’éteignent, les fractales dansent encore..."
+
+btn_exit_en="🌌 Exit"
+btn_exit_fr="🌌 Quitter"
