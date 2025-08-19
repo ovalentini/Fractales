@@ -64,8 +64,8 @@ enrichissementSonoreHampi_en="Listen to the temple’s resonance, where each pil
 texteNarrationHampi_en="Imagine a bustling market in Hampi, where the mystical chariot stands as a centerpiece. The fabrics flow gently in the breeze, their vibrant colors creating a kaleidoscope of hues. The sound of the musical pillars resonates, each note painting an auditory picture of the temple's grandeur."
 texteNarrationHampi_fr="Imaginez un marché animé à Hampi, où le char mystique se dresse en pièce maîtresse. Les étoffes ondulent doucement dans la brise, leurs couleurs vibrantes composent un kaléidoscope de teintes. Le son des piliers musicaux résonne, chaque note peignant une fresque sonore de la grandeur du temple."
 
-retour-navigation_en="🔝 Back to Quick Navigation"
-retour-navigation_fr="🔝 Retour à la navigation rapide"
+retour-navigationHampi_en="🔝 Back to Quick Navigation"
+retour-navigationHampi_fr="🔝 Retour à la navigation rapide"
 
 salle_bali_en="🌺 Room 2 — Bali the Beautiful Island"
 salle_bali_fr="🌺 Salle 2 — Bali, l’île spirituelle"
@@ -97,6 +97,9 @@ enrichissementBali_en="Soudscape Enrichment"
 enrichissementSonoreBali_fr="Laissez-vous porter par les gamelans et les chants d’offrandes, comme une prière qui danse dans l’air. Chaque son est une caresse, chaque silence un souffle sacré."
 enrichissementSonoreBali_en="Let yourself be carried by gamelans and offering chants, like a prayer dancing in the air. Each sound is a caress, each silence a sacred breath."
 
+retour-navigationBali_en="🔝 Back to Quick Navigation"
+retour-navigationBali_fr="🔝 Retour à la navigation rapide"
+
 salle_flores_en="🌾 Room 3 — Flores Island"
 salle_flores_fr="🌾 Salle 3 — Île de Flores"
 
@@ -127,6 +130,9 @@ enrichissementFlores_en="Soudscape Enrichment"
 enrichissementSonoreFlores_fr="Écoutez les vagues qui parlent aux récifs, les pas du dragon sur le sable, et les cris d’oiseaux qui veillent. Une symphonie sauvage, entre mystère et beauté."
 enrichissementSonoreFlores_en="Hear the waves speaking to the reefs, the dragon’s steps on the sand, and the cries of birds keeping watch. A wild symphony, woven from mystery and beauty."
 
+retour-navigationFlores_en="🔝 Back to Quick Navigation"
+retour-navigationFlores_fr="🔝 Retour à la navigation rapide"
+
 salle_perou_en="🏔️ Room 4 — Peru’s Sacred Valley"
 salle_perou_fr="🏔️ Salle 4 — Vallée Sacrée du Pérou"
 
@@ -156,6 +162,9 @@ enrichissementPeru_en="Soudscape Enrichment"
 
 enrichissementSonoreValleeSacree_fr="Les Andes murmurent des légendes dans le vent, et les voix anciennes résonnent entre les pierres. Fermez les yeux : vous êtes au cœur du souffle sacré du Pérou."
 enrichissementSonoreValleeSacree_en="The Andes whisper legends in the wind, and ancient voices echo between the stones. Close your eyes: you are at the heart of Peru’s sacred breath."
+
+retour-navigationPeru_en="🔝 Back to Quick Navigation"
+retour-navigationPeru_fr="🔝 Retour à la navigation rapide"
 
 cloture_visite_en="🖼️ Contemplative Epilogue – Closing of the Visit"
 cloture_visite_fr="🖼️ Épilogue contemplatif – Clôture de la visite"
