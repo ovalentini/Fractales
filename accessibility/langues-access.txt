@@ -133,7 +133,7 @@ navigationBali_en="🔝 Back to Quick Navigation"
 navigationBali_fr="🔝 Retour à la navigation rapide"
 
 salle_flores_en="🌾 Room 3 — Flores Island"
-salle_flores_fr="🌾 Salle 3 — Île de Flores"
+salle_flores_fr="🌾 Salle 3 — Île de Florès"
 
 btn_back_Flores_en="🗺️ Back to the map"
 btn_back_Flores_fr="🗺️ Retour à la carte"
@@ -151,7 +151,7 @@ coral_en="🌊 Coral reefs and underwater wonders"
 coral_fr="🌊 Récifs coralliens et merveilles sous-marines"
 
 subtitles_flores_en="🎧 Subtitles & Transcription – Room 3: Flores"
-subtitles_flores_fr="🎧 Sous-titres & Transcription – Salle 3 : Flores"
+subtitles_flores_fr="🎧 Sous-titres & Transcription – Salle 3 : Florès"
 
 subtitle_wave_en="[Gentle lapping of waves — soothing rhythm]"
 subtitle_wave_fr="[Doux clapotis des vagues — rythme apaisant]"
@@ -161,7 +161,7 @@ subtitle_bird_en="[Distant calls of exotic birds — untamed spirit]"
 subtitle_bird_fr="[Appels lointains d'oiseaux exotiques — esprit indompté]"
 
 transcription_flores_en="Flores Island is a haven of natural wonders.  Komodo dragons embody the island's untamed spirit, while pink beaches and coral reefs showcase its vibrant beauty.  The sounds of nature envelop you, painting a picture of serenity and adventure."
-transcription_flores_fr="L’île de Flores est un sanctuaire de merveilles naturelles. Les dragons de Komodo incarnent l’esprit indompté de l’île, tandis que les plages roses et les récifs coralliens dévoilent sa beauté éclatante. Les sons de la nature vous enveloppent, dessinant un tableau de sérénité et d’aventure."
+transcription_flores_fr="L’île de Florès est un sanctuaire de merveilles naturelles. Les dragons de Komodo incarnent l’esprit indompté de l’île, tandis que les plages roses et les récifs coralliens dévoilent sa beauté éclatante. Les sons de la nature vous enveloppent, dessinant un tableau de sérénité et d’aventure."
 
 texteNarrationFlores_en="Envision the rugged beauty of Flores Island, where Komodo dragons roam freely and pink beaches shimmer under the sun. Beneath the waves, coral reefs burst with color, teeming with marine life."
 texteNarrationFlores_fr="Imaginez les pas feutrés d’un dragon de Komodo sur le sable rose, tandis que les vagues murmurent des secrets anciens. Les coraux scintillent sous la lumière, et chaque cri d’oiseau semble guider l’explorateur vers l’inconnu."

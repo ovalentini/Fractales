@@ -1,6 +1,6 @@
 	
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,7 +15,7 @@
   <!-- 🎨 Exhibition Header -->
   <header class="entree-exposition" role="banner" aria-labelledby="fractales">
     <h1 id="fractales">🖼️ Fractals of the World: Reflections of Souls</h1>
-    <div id="first" class="citation-stylisee" tabindex="0" lang="en">
+    <div id="first" class="citation-stylisee" tabindex="0">
       Welcome to an exhibition where each image is a door, each spiral a breath, and each pixel a memory.
     </div>
     <div class="retour-carte">
@@ -26,7 +26,7 @@
   <main role="main">
     <section id="introduction" class="introduction" role="region" aria-labelledby="prologue_sensible">
       <h2 id="prologue_sensible">🖼️ Sensitive Prologue – Poetic Introduction</h2>
-      <div id="intro_poetique" class="citation-stylisee" tabindex="0" lang="en">
+      <div id="intro_poetique" class="citation-stylisee" tabindex="0">
         Close your eyes… and open your soul. You are entering a world where boundaries dissolve.  
         Here, every image is a breath, every spiral a memory.  
         Fractals are not just patterns… they are reflections of souls scattered to the four winds of the world.  
@@ -202,7 +202,7 @@
 		<a href="#carte" id="btn_back_Flores" class="nav-btn retour">🗺️ Back to the map</a>
 	  </div>
       <div class="table-image-container">
-        <img src="Komodo.jpg" id="terasse_flores" alt="Komodo dragon near pink beach and coral reef on Flores Island" />
+        <img src="Komodo.jpg" id="dragon_komodo" alt="Komodo dragon near pink beach and coral reef on Flores Island" />
         <table>
           <thead>
             <tr>
@@ -254,7 +254,7 @@
 		<a href="#carte" id="btn_back_Peru" class="nav-btn retour">🗺️ Back to the map</a>
 	  </div>
       <div class="table-image-container">
-        <img src="Macchu Pichu.jpg" id="saline_perou" alt="Fractal view of Machu Picchu surrounded by golden cathedral-like circles" />
+        <img src="Macchu Pichu.jpg" id="machu_picchu" alt="Fractal view of Machu Picchu surrounded by golden cathedral-like circles" />
         <table>
           <thead>
             <tr>
@@ -477,11 +477,26 @@
 		const boutonMap1 = document.getElementById("btn_map_1");
 		modifierTitresLien(boutonMap1, langue);
 		
+		const boutonQuickNav = document.getElementById("btn_quick_navigation");
+		modifierTitresLien(boutonQuickNav, langue);
+		
 		const boutonSummary0 = document.getElementById("btn_summary_0");
 		modifierTitresLien(boutonSummary0, langue);
 		
 		const boutonEpilogue = document.getElementById("btn_epilogue");
 		modifierTitresLien(boutonEpilogue, langue);
+		
+		const boutonHampi = document.getElementById("navigationHampi");
+		modifierTitresLien(boutonHampi, langue);
+		
+		const boutonBali = document.getElementById("navigationBali");
+		modifierTitresLien(boutonBali, langue);
+		
+		const boutonFlores = document.getElementById("navigationFlores");
+		modifierTitresLien(boutonFlores, langue);
+		
+		const boutonPerou = document.getElementById("navigationPeru");
+		modifierTitresLien(boutonPerou, langue);
 		
 		const imageHampi = document.getElementById("char_hampi")
 		modifierTitresLien(imageHampi, langue);
@@ -489,10 +504,10 @@
 		const imageBali = document.getElementById("paysage_bali")
 		modifierTitresLien(imageBali, langue);
 		
-		const imageFlores = document.getElementById("terasse_flores")
+		const imageFlores = document.getElementById("dragon_komodo")
 		modifierTitresLien(imageFlores, langue);
 		
-		const imagePerou = document.getElementById("saline_perou")
+		const imagePerou = document.getElementById("machu_picchu")
 		modifierTitresLien(imagePerou, langue);
     }	
 
@@ -523,6 +538,18 @@
 			  break;
 			default:
 			  nouveauTitre = "Quitter l’exposition";
+		  }
+		  break;
+		  case "btn_quick_navigation":
+		  switch (langue) {
+			case "fr":
+			  nouveauTitre = "Accéder à la navigation rapide";
+			  break;
+			case "en":
+			  nouveauTitre = "Access the quick navigation";
+			  break;
+			default:
+			  nouveauTitre = "Accéder à la navigation rapide";
 		  }
 		  break;
 		  case "btn_map_0":
@@ -561,6 +588,54 @@
 			  nouveauTitre = "Accéder au sommaire de l'exposition";
 		  }
 		  break;	
+		  case "navigationHampi":
+		  switch (langue) {
+			case "fr":
+			  nouveauTitre = "Retour à l'index des sous-titres";
+			  break;
+			case "en":
+			  nouveauTitre = "Return to subtitle index";
+			  break;
+			default:
+			  nouveauTitre = "Retour à l'index des sous-titres";
+		  }
+		  break;	
+		  case "navigationBali":
+		  switch (langue) {
+			case "fr":
+			  nouveauTitre = "Retour à l'index des sous-titres";
+			  break;
+			case "en":
+			  nouveauTitre = "Return to subtitle index";
+			  break;
+			default:
+			  nouveauTitre = "Retour à l'index des sous-titres";
+		  }
+		  break;
+		  case "navigationFlores":
+		  switch (langue) {
+			case "fr":
+			  nouveauTitre = "Retour à l'index des sous-titres";
+			  break;
+			case "en":
+			  nouveauTitre = "Return to subtitle index";
+			  break;
+			default:
+			  nouveauTitre = "Retour à l'index des sous-titres";
+		  }
+		  break;	
+		  case "navigationPeru":
+		  switch (langue) {
+			case "fr":
+			  nouveauTitre = "Retour à l'index des sous-titres";
+			  break;
+			case "en":
+			  nouveauTitre = "Return to subtitle index";
+			  break;
+			default:
+			  nouveauTitre = "Retour à l'index des sous-titres";
+		  }
+		  break;		
 		  case "btn_epilogue":
 			switch (langue) {
 			case "fr":
@@ -597,28 +672,28 @@
 			  nouveauTitre = "Paysage spirituel balinais : rizières et mandalas";
 		  }
 		  break;
-		  case "terasse_flores":
+		  case "dragon_komodo":
 		  switch (langue) {
 		  case "fr":
-			  nouveauTitre = "Terrasses de riz en fleurs à Florès";
+			  nouveauTitre = "Dragon de Komodo près d'une plage rose";
 			  break;
 			case "en":
-			  nouveauTitre = "Flowering rice terraces in Flores";
+			  nouveauTitre = "Komodo dragon near pink beach";
 			  break;
 			default:
-			  nouveauTitre = "Terrasses de riz en fleurs à Florès";
+			  nouveauTitre = "Dragon de Komodo près d'une plage rose";
 		  }
 		  break;
-		  case "saline_perou":
+		  case "machu_picchu":
 		  switch (langue) {
 		  case "fr":
-			  nouveauTitre = "Salines fractales péruviennes";
+			  nouveauTitre = "Machu Picchu entouré d'une cathédrale dorée";
 			  break;
 			case "en":
-			  nouveauTitre = "Peruvian Fractal Salt Flats";
+			  nouveauTitre = "Machu Picchu surrounded by golden cathedral";
 			  break;
 			default:
-			  nouveauTitre = "Salines fractales péruviennes";
+			  nouveauTitre = "Machu Picchu entouré d'une cathédrale dorée";
 		  }
 		  break;
 		  
