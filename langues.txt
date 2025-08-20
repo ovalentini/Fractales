@@ -142,6 +142,8 @@
 [cloture_visite_en] '🖼️ Contemplative Epilogue – Closing of the Visit'
 [epilogue_fr] 'Et lorsque les lumières s’éteignent, les fractales continuent de danser dans l’obscurité. Elles murmurent des histoires anciennes, des secrets oubliés, et des rêves à venir. Chaque reflet est une promesse, chaque spirale un voyage sans fin.'
 [epilogue_en] 'And when the lights go out, the fractals keep dancing in the dark. They whisper ancient stories, forgotten secrets, and dreams yet to come. Every reflection is a promise, every spiral an endless journey.'
+[titreCarte_fr] '🌄 Message de bienvenue'
+[titreCarte_en] '🌄 Welcome message'
 [titreAdieu_fr] '🌌 Merci pour ce voyage'
 [titreAdieu_en] '🌌 Thank you for this trip'
 [texteCarte_fr] 'Vous avez foulé un monde tissé de reflets et de songes. Que votre chemin s’épanouisse encore là où l’imaginaire dessine la réalité. À bientôt.'
