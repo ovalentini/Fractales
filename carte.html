@@ -123,7 +123,7 @@
     
     <div id="lieu" class="message-carte" role="region" aria-label="Message de bienvenue">
       <h1>🌄</h1>
-      <p id="texteCarte" tabindex="0" lang="fr">
+      <p id="texteCarte" tabindex="0">
         Vous avez foulé un monde tissé  
         de reflets et de songes.  
         Que votre chemin s’épanouisse encore  
@@ -135,7 +135,7 @@
 
   <section id="adieu" class="message-final" role="region" aria-label="Message d’adieu">
     <h1 id="titreAdieu" tabindex="1">🌌 Merci pour ce voyage</h1>
-    <p id="texteAdieu" tabindex="2" lang="fr">
+    <p id="texteAdieu" tabindex="2">
       À présent, la carte se replie sur elle-même...  
       Mais les éclats que vous avez semés dans chaque salle  
       continueront à briller au-delà de l’image.  
@@ -222,9 +222,9 @@
 	window.addEventListener('DOMContentLoaded', () => {
 	  chargerLangues('https://ovalentini.github.io/Fractales/langues.txt').then(labels => {
 		  appliquerTextesCarte(labels, langueActuelle);
-		  lireTexteAvecVoix('titreAdieu', langueActuelle);
-		  lireTexteAvecVoix('texteAdieu', langueActuelle);
-		  lireTexteAvecVoix('texteCarte', langueActuelle);
+		  //lireTexteAvecVoix('titreAdieu', langueActuelle);
+		  //lireTexteAvecVoix('texteAdieu', langueActuelle);
+		  //lireTexteAvecVoix('texteCarte', langueActuelle);
 		});
 	});
 </script>
