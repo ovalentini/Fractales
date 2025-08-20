@@ -14,10 +14,10 @@ intro_poetique_en="Close your eyes… and open your soul. You are entering a wor
 intro_poetique_fr="Fermez les yeux… et ouvrez l’âme. Vous entrez dans un monde où les frontières se dissolvent. Ici, chaque image est un souffle, chaque spirale une mémoire. Les fractales ne sont pas que des motifs… elles sont les reflets d’âmes dispersées aux quatre vents du monde. Suivez la lumière, écoutez le rythme caché derrière les pixels, et laissez-vous porter…"
 
 btn_quick_navigation_en="🎧 Quick Navigation – Subtitles & Transcriptions"
-btn_quick_navigation_fr="🎧 Navigation rapide – Sous-titres & Transcriptions"
+btn_quick_navigation_fr="🎧 Navigation rapide – Sous-titres et Transcriptions"
 
 nav_subtitles_en="🎧 Quick Navigation – Subtitles & Transcriptions"
-nav_subtitles_fr="🎧 Navigation rapide – Sous-titres & Transcriptions"
+nav_subtitles_fr="🎧 Navigation rapide – Sous-titres et Transcriptions"
 
 nav_Hampi_en="🎧 Room 1: Hampi"
 nav_Hampi_fr="🎧 Salle 1: Hampi"
@@ -65,7 +65,7 @@ ecoute1_en="Listen"
 ecoute1_fr="Écouter"
 
 subtitles_hampi_en="🎧 Subtitles & Transcription – Room 1: Hampi"
-subtitles_hampi_fr="🎧 Sous-titres & Transcription – Salle 1 : Hampi"
+subtitles_hampi_fr="🎧 Sous-titres et Transcription – Salle 1 : Hampi"
 
 subtitle_rustling_en="[Gentle rustling of fabric — vibrant hues sway]"
 subtitle_rustling_fr="[Doux bruissement du tissu — les teintes vibrantes se balancent]"
@@ -108,7 +108,7 @@ visite_en="🕉️ Hindu temples and spirals of incense"
 visite_fr="🕉️ Temples hindous et spirales d’encens"
 
 subtitles_bali_en="🎧 Subtitles & Transcription – Room 2: Bali"
-subtitles_bali_fr="🎧 Sous-titres & Transcription – Salle 2 : Bali"
+subtitles_bali_fr="🎧 Sous-titres et Transcription – Salle 2 : Bali"
 
 subtitle_rice_en ="[Gentle rustling of rice stalks — harmony with nature]"
 subtitle_rice_fr ="[Doux bruissement des tiges de riz — harmonie avec la nature]"
@@ -151,7 +151,7 @@ coral_en="🌊 Coral reefs and underwater wonders"
 coral_fr="🌊 Récifs coralliens et merveilles sous-marines"
 
 subtitles_flores_en="🎧 Subtitles & Transcription – Room 3: Flores"
-subtitles_flores_fr="🎧 Sous-titres & Transcription – Salle 3 : Florès"
+subtitles_flores_fr="🎧 Sous-titres et Transcription – Salle 3 : Florès"
 
 subtitle_wave_en="[Gentle lapping of waves — soothing rhythm]"
 subtitle_wave_fr="[Doux clapotis des vagues — rythme apaisant]"
@@ -191,7 +191,7 @@ foret_en="🌄 Machu Picchu and Inca heritage"
 foret_fr="🌄 Machu Picchu et héritage inca"
 
 subtitles_peru_en="🎧 Subtitles & Transcription – Room 4: Peru"
-subtitles_peru_fr="🎧 Sous-titres & Transcription – Salle 4 : Pérou"
+subtitles_peru_fr="🎧 Sous-titres et Transcription – Salle 4 : Pérou"
 
 btn_back_Peru_en="🗺️ Back to the map"
 btn_back_Peru_fr="🗺️ Retour à la carte"
