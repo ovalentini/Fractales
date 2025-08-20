@@ -123,7 +123,7 @@
   <a href="#introduction" class="skip-link" style="position:absolute;top:-40px;left:0;background:#000;color:#fff;padding:8px;z-index:100;" tabIndex="-1">Skip to main content</a>	
 	
   <div class="ecran-galactique">
-    <img src="monde-imaginaire.jpg" alt="Paysage abstrait et désertique" class="fond-galactique" />
+    <img src="monde-imaginaire.jpg" id="imageCarte" title="Paysage abstrait et désertique" class="fond-galactique" />
     
     <div id="lieu" class="message-carte" role="region" aria-labelledby="titreCarte">
       <h1 id="titreCarte">🌄 Message de bienvenue</h1>
@@ -187,6 +187,31 @@
 	  });
 	}
  
+    function appliquerTitresCarte(langue) {
+	
+		const objet = document.getElementById("imageCarte");
+		if (!objet) return;
+		let nouveauTitre = "";
+		  switch (objet.id) {
+			case "imageCarte":
+			  switch (langue) {
+				case "fr":
+				  nouveauTitre = "Paysage abstrait et désertique";
+				  break;
+				case "en":
+				  nouveauTitre = "Abstract desert landscape";
+				  break;
+				default:
+				  nouveauTitre = "Paysage abstrait et désertique";
+			  }
+			  break;
+			  // Ajoute d'autres cas ici si tu as plus de boutons
+			default:
+				nouveauTitre = "Lien de navigation";
+			 }
+			 objet.setAttribute("title", nouveauTitre);
+	}
+ 
     // Lecture vocale selon la langue
 	function lireTexteAvecVoix(elementId, langue) {
 	  const element = document.getElementById(elementId);
@@ -226,6 +251,7 @@
 	window.addEventListener('DOMContentLoaded', () => {
 	  chargerLangues('https://ovalentini.github.io/Fractales/langues.txt').then(labels => {
 		  appliquerTextesCarte(labels, langueActuelle);
+		  appliquerTitresCarte(langueActuelle);
 		  //lireTexteAvecVoix('titreAdieu', langueActuelle);
 		  //lireTexteAvecVoix('texteAdieu', langueActuelle);
 		  //lireTexteAvecVoix('texteCarte', langueActuelle);
