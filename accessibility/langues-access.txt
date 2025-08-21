@@ -112,11 +112,11 @@ visite_fr="🕉️ Temples hindous et spirales d’encens"
 subtitles_bali_en="🎧 Subtitles & Transcription – Room 2: Bali"
 subtitles_bali_fr="🎧 Sous-titres et Transcription – Salle 2 : Bali"
 
-subtitle_insects_en="[Insect chorus — vibrant microscopic life in the rice fields]"
-subtitle_insects_fr="[Chœur d’insectes — vie invisible dans les rizières]"
+subtitle_insect_en="[Insect chorus — vibrant microscopic life in the rice fields]"
+subtitle_insect_fr="[Chœur d’insectes — vie invisible dans les rizières]"
 
-subtitle_wind_en="[Breath of wind through the rice terraces — the earth’s quiet respiration]"
-subtitle_wind_fr="[Souffle du vent dans les rizières — respiration de la terre]"
+subtitle_rice_en="[Breath of wind through the rice terraces — the earth’s quiet respiration]"
+subtitle_rice_fr="[Souffle du vent dans les rizières — respiration de la terre]"
 
 subtitle_gamelan_en="[Echoes of gamelan — spiritual pulse in rhythmic devotion]"
 subtitle_gamelan_fr="[Échos du gamelan — dévotion rythmique]"
