@@ -69,8 +69,10 @@ subtitles_hampi_fr="🎧 Sous-titres et Transcription – Salle 1 : Hampi"
 
 subtitle_rustling_en="[Gentle rustling of fabric — vibrant hues sway]"
 subtitle_rustling_fr="[Doux bruissement du tissu — les teintes vibrantes se balancent]"
+
 subtitle_market_en="[Distant chatter of market-goers — lively atmosphere]"
 subtitle_market_fr="[Bavardages lointains des visiteurs du marché — atmosphère animée]"
+
 subtitle_pillar_en="[Rhythmic tones of the musical pillars — sacred resonance]"
 subtitle_pillar_fr="[Tons rythmiques des piliers musicaux — résonance sacrée]"
 
@@ -110,12 +112,14 @@ visite_fr="🕉️ Temples hindous et spirales d’encens"
 subtitles_bali_en="🎧 Subtitles & Transcription – Room 2: Bali"
 subtitles_bali_fr="🎧 Sous-titres et Transcription – Salle 2 : Bali"
 
-subtitle_rice_en ="[Gentle rustling of rice stalks — harmony with nature]"
-subtitle_rice_fr ="[Doux bruissement des tiges de riz — harmonie avec la nature]"
-subtitle_prayer_en="[Soft chanting of prayers — spiritual essence]"
-subtitle_prayer_fr="[Chant doux de prières — essence spirituelle]"
-subtitle_incense_en="[Spirals of incense smoke — fragrant devotion]"
-subtitle_incense_fr="[Spirales de fumée d'encens — dévotion parfumée]"
+subtitle_insects_en="[Insect chorus — vibrant microscopic life in the rice fields]"
+subtitle_insects_fr="[Chœur d’insectes — vie invisible dans les rizières]"
+
+subtitle_wind_en="[Breath of wind through the rice terraces — the earth’s quiet respiration]"
+subtitle_wind_fr="[Souffle du vent dans les rizières — respiration de la terre]"
+
+subtitle_gamelan_en="[Echoes of gamelan — spiritual pulse in rhythmic devotion]"
+subtitle_gamelan_fr="[Échos du gamelan — dévotion rythmique]"
 
 transcription_bali_en="The rice fields stretch endlessly, their terraces a testament to harmony with nature.  Offerings of flowers and incense bring color and fragrance to the scene.  Temples stand as guardians of tradition, their presence a reminder of Bali's spiritual essence."
 transcription_bali_fr="Les rizières s’étendent à perte de vue, leurs terrasses témoignent d’une harmonie profonde avec la nature. Les offrandes de fleurs et d’encens colorent le paysage et l’imprègnent de parfums sacrés. Les temples veillent comme des gardiens de la tradition, rappelant la dimension spirituelle de Bali."
@@ -155,8 +159,10 @@ subtitles_flores_fr="🎧 Sous-titres et Transcription – Salle 3 : Florès"
 
 subtitle_wave_en="[Gentle lapping of waves — soothing rhythm]"
 subtitle_wave_fr="[Doux clapotis des vagues — rythme apaisant]"
+
 subtitle_leave_en="[Rustle of leaves — vibrant foliage]"
 subtitle_leave_fr="[Bruissement des feuilles — feuillage vibrant]"
+
 subtitle_bird_en="[Distant calls of exotic birds — untamed spirit]"
 subtitle_bird_fr="[Appels lointains d'oiseaux exotiques — esprit indompté]"
 
@@ -198,8 +204,10 @@ btn_back_Peru_fr="🗺️ Retour à la carte"
 
 subtitle_wind_en="[Whisper of the wind through the mountains — timeless serenity]"
 subtitle_wind_fr="[Murmure du vent à travers les montagnes — sérénité intemporelle]"
+
 subtitle_river_en="[Distant sound of flowing rivers — life's pulse]"
 subtitle_river_fr="[Bruit lointain des rivières qui coulent — le pouls de la vie]"
+
 subtitle_history_en="[Echoes of history — profound legacy]"
 subtitle_history_fr="[Échos de l'histoire — un héritage profond]"
 
