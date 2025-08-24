@@ -49,76 +49,8 @@
     <div class="retour-carte">
       <a href="#carte" id="btn_map_1" class="nav-btn retour" title="Accéder à la carte interactive">🗺️ Carte interactive</a>
     </div>
-
      <!-- Les salles construites dynamiquement avec du jscript--> 
     <div id="salles-dynamiques"></div>
-    <!--<div class="salle-1">
-	  <h3 id="salle1"><img src="flags/in.png" alt="Drapeau Inde" class="inline-flag"><strong> Salle 1 — Marché à Hampi</strong></h3>
-      <ul class="liste-éléments">
-        <li>✨ Char mystique de Hampi</li>
-        <li>🌈 Mandalas et étoffes ondulantes</li>
-        <li>🎶 Piliers musicaux —
-          <a href="https://www.youtube.com/watch?v=UOFoQ70m6Z8" target="_blank">Écouter</a>
-        </li>
-        <li>🏛️ Ruines de Hampi —
-          <a href="https://www.youtube.com/watch?v=ChchmDc_OhI" target="_blank">Découvrir</a>
-        </li>
-        <li>🎙️ Narration immersive —
-          <a href="https://www.youtube.com/watch?v=tMjVqBzSnGs" target="_blank">Explorer</a>
-        </li>
-      </ul>
-    </div>
-
-    <div class="salle-2">
-      <h3 id="salle2">🌺 <strong>Salle 2 — Bali la belle île</strong></h3>
-      <ul class="liste-éléments">
-        <li>🌾 Rizières sacrées et offrandes</li>
-        <li>🕉️ Temples hindous et spirales d'encens</li>
-        <li>🎶 Gamelan —
-          <a href="https://www.routard.com/fr/photo/p/345-bali" target="_blank">Écouter</a>
-        </li>
-        <li>🏛️ Visite immersive —
-          <a href="https://www.visitonsbali.com/photos" target="_blank">Découvrir</a>
-        </li>
-        <li>🎙️ Sons de prière —
-          <a href="https://www.okvoyage.com/post/paysages-bali/" target="_blank">Explorer</a>
-        </li>
-      </ul>
-    </div>
-
-    <div class="salle-3">
-      <h3 id="salle3">🌾 <strong>Salle 3 — Fleurs de rizières</strong></h3>
-      <ul class="liste-éléments">
-        <li>🌸 Terrasses de riz en pétales</li>
-        <li>💧 Spirales végétales et lumière aquatique</li>
-        <li>🎶 Berceuse —
-          <a href="https://munki.audio/catalogue/albums/410/artistes-divers--comptines-et-berceuses-des-rizieres" target="_blank">Écouter</a>
-        </li>
-        <li>🏛️ Musique néoclassique —
-          <a href="https://soundcloud.com/julien-boulier/episodes-rizieres-by-julien" target="_blank">Découvrir</a>
-        </li>
-        <li>🌾 Ambiance champêtre —
-          <a href="https://www.youtube.com/watch?v=jKxOceVX9wk" target="_blank">Explorer</a>
-        </li>
-      </ul>
-    </div>
-
-    <div class="salle-4">
-      <h3 id="salle4">🏔️ <strong>Salle 4 — Salines Amazoniennes</strong></h3>
-      <ul class="liste-éléments">
-        <li>✨ Terrasses de sel</li>
-        <li>🌊 Mémoire minérale</li>
-        <li>🎶 Chants amazoniens —
-          <a href="https://www.youtube.com/watch?v=jm4lKVxihI4" target="_blank">Écouter</a>
-        </li>
-        <li>🏛️ Forêt & rivières —
-          <a href="https://www.youtube.com/watch?v=go7GM3N6kqY" target="_blank">Découvrir</a>
-        </li>
-        <li>🎶 Icaro chamanique —
-          <a href="https://www.youtube.com/watch?v=LDgR8ffFzBo" target="_blank">Écouter</a>
-        </li>
-      </ul>
-    </div>-->
   </section>
 
   <!-- 🗺 Carte interactive -->
@@ -189,6 +121,10 @@
           <td id="histoire" >Narration historique immersive</td>
           <td>🎙️ <a href="https://www.youtube.com/watch?v=tMjVqBzSnGs" id="explore1" target="_blank" rel="noopener noreferrer">Explorer</a></td>
         </tr>
+		<tr>
+          <td id="SonHampi" >Enrichissement sonore</td>
+          <td><audio controls><source src="/accessibility/sounds/hampi-sound.mp3" type="audio/mpeg"></audio></td>
+        </tr>
       </tbody>
     </table>
   </div>
@@ -225,6 +161,10 @@
         <tr>
           <td id="priere">Sons de prière et offrandes</td>
           <td>🎙️ <a href="https://www.okvoyage.com/post/paysages-bali/" id="explore2" target="_blank" rel="noopener noreferrer">Explorer</a></td>
+        </tr>
+		<tr>
+          <td id="SonBali" >Enrichissement sonore</td>
+          <td><audio controls><source src="/accessibility/sounds/bali-sound.mp3" type="audio/mpeg"></audio></td>
         </tr>
       </tbody>
     </table>
@@ -263,6 +203,10 @@
           <td id="matin">Ambiance matinale dans les champs</td>
           <td>🌾 <a href="https://www.youtube.com/watch?v=jKxOceVX9wk" id="explore3" target="_blank" rel="noopener noreferrer">Explorer</a></td>
         </tr>
+		<tr>
+          <td id="SonFlores" >Enrichissement sonore</td>
+          <td><audio controls><source src="/accessibility/sounds/flores-sound.mp3" type="audio/mpeg"></audio></td>
+        </tr>
       </tbody>
     </table>
   </div>
@@ -300,6 +244,10 @@
         <tr>
           <td id="icaro">Icaro sacré — chant chamanique amazonien</td>
           <td>🎶 <a href="https://www.youtube.com/watch?v=LDgR8ffFzBo" id="ecoute5" target="_blank" rel="noopener noreferrer">Écouter</a></td>
+        </tr>
+		<tr>
+          <td id="SonPeru" >Enrichissement sonore</td>
+          <td><audio controls><source src="/accessibility/sounds/perou-sound.mp3" type="audio/mpeg"></audio></td>
         </tr>
       </tbody>
     </table>

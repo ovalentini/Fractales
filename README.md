@@ -25,4 +25,6 @@ This project includes a dedicated accessible version for visually and hearing im
 
 ✅ Responsive layout and contrast-aware design for readability
 
+✅ Soundscapes enrichment
+
 Accessible version available in /accessibility/access.html Styles defined in /accessibility/styles.css
