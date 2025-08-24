@@ -139,7 +139,7 @@
 		    Listen to the temple’s resonance, where each pillar sings the story of a people.
 			The sounds of the market, the whispers of fabric, and sacred notes wrap you in a sonic fresco.
 		  </p>
-		  <audio controls><source src="sounds/hampi-sound.mp3" type="audio/mpeg">Your browser does not support the audio element.</audio>
+		  <button id="btnHampi" onclick="document.getElementById('audioHampi').play()" aria-label="Écouter l’enrichissement sonore de Hampi">🎧 Écouter</button> <audio id="audioHampi" src="sounds/hampi-sound.mp3" type="audio/mpeg" hidden></audio>
 		  </div>
 		  <div class="retour-navigation">
 		    <a href="#quick-navigation" class="nav-btn retour" id="navigationHampi" title="Return to subtitle index">🔝 Back to Quick Navigation</a>
@@ -196,7 +196,7 @@
 		    Let yourself be carried by gamelans and offering chants, like a prayer dancing in the air.
 			Each sound is a caress, each silence a sacred breath.
 		  </p>
-		  <audio controls><source src="sounds/bali-sound.mp3" type="audio/mpeg">Your browser does not support the audio element.</audio>
+		  <button id="btnBali" onclick="document.getElementById('audioBali').play()" aria-label="Écouter l’enrichissement sonore de Bali">🎧 Écouter</button> <audio id="audioBali" src="sounds/bali-sound.mp3" type="audio/mpeg" hidden></audio>
 		  </div>
 		   <div class="retour-navigation">
 		    <a href="#quick-navigation" class="nav-btn retour" id="navigationBali" title="Return to subtitle index">🔝 Back to Quick Navigation</a>
@@ -254,7 +254,7 @@
 		    Hear the waves speaking to the reefs, the dragon’s steps on the sand, and the cries of birds keeping watch.
 			A wild symphony, woven from mystery and beauty.
 		  </p>
-		  <audio controls><source src="sounds/flores-sound.mp3" type="audio/mpeg">Your browser does not support the audio element.</audio>
+		  <button id="btnFlores" onclick="document.getElementById('audioFlores').play()" aria-label="Écouter l’enrichissement sonore de Flores">🎧 Écouter</button> <audio id="audioFlores" src="sounds/flores-sound.mp3" type="audio/mpeg" hidden></audio>
 		  </div>
 		   <div class="retour-navigation">
 		    <a href="#quick-navigation" class="nav-btn retour" id="navigationFlores" title="Return to subtitle index">🔝 Back to Quick Navigation</a>
@@ -313,7 +313,7 @@
 		    The Andes whisper legends in the wind, and ancient voices echo between the stones.
 			Close your eyes: you are at the heart of Peru’s sacred breath.
 		  </p>	
-		  <audio controls><source src="sounds/perou-sound.mp3" type="audio/mpeg">Your browser does not support the audio element.</audio>
+		  <button id="btnPerou" onclick="document.getElementById('audioPerou').play()" aria-label="Écouter l’enrichissement sonore de la vallée sacrée">🎧 Écouter</button> <audio id="audioPerou" src="sounds/perou-sound.mp3" type="audio/mpeg" hidden></audio>
 		<div>  
 		<div class="retour-navigation">
 		    <a href="#quick-navigation" class="nav-btn retour" id="navigationPeru" title="Return to subtitle index">🔝 Back to Quick Navigation</a>
@@ -450,6 +450,24 @@
 	const navLang = navigator.language.startsWith("fr") ? "fr" : "en";
 	langueActuelle = navLang;
 	console.log(langueActuelle);
+
+    const labelsAudio = {
+	fr: {
+		btnPerou: "Écouter l’enrichissement sonore de la Vallée Sacrée",
+		btnHampi: "Écouter l’enrichissement sonore de Hampi",
+		btnFlores: "Écouter l’enrichissement sonore de Flores",
+		btnBali: "Écouter l’enrichissement sonore de Bali" },
+	en: { 
+		btnPerou: "Listen to the Sacred Valley soundscape", 
+		btnHampi: "Listen to the Hampi soundscape", 
+		btnFlores: "Listen to the Flores soundscape", 
+		btnBali: "Listen to the Bali soundscape" 
+	}};
+
+    Object.entries(labelsAudio[langueActuelle]).forEach(([id, label]) => { 
+	const bouton = document.getElementById(id); 
+	if (bouton) bouton.setAttribute("aria-label", label); 
+	});
 
 	async function chargerLangues(url) {
 	  //const re = /^\[([^\]]+)\]\s*["']([^"']+)["']/;
@@ -1022,5 +1040,37 @@
 
 	window.addEventListener('DOMContentLoaded', initialiserLangue);
 </script>
+
+<script>
+  // Liste des lecteurs audio
+  const lecteursAudio = [
+	  document.getElementById('audioPerou'),
+	  document.getElementById('audioHampi'),
+	  document.getElementById('audioFlores'),
+	  document.getElementById('audioBali')
+	].filter(audio => audio !== null);
+
+
+  // Fonction pour arrêter tous les sons
+  function stopAllAudio() {
+    lecteursAudio.forEach(audio => {
+      if (!audio.paused) {
+        audio.pause();
+        audio.currentTime = 0;
+      }
+    });
+  }
+
+  // Écouteur sur tout changement de focus
+  document.addEventListener('focusin', function(e) {
+    const cible = e.target;
+    // Si le nouvel élément n’est pas un bouton audio, on arrête le son
+    if (!cible.matches('button[aria-label^="Écouter"]')) {
+	  console.log("stopAllAudio");
+      stopAllAudio();
+    }
+  });
+</script>
+
 </body>
 </html>
