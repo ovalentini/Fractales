@@ -12,12 +12,12 @@
         {
           "text": "Char mystique de Hampi",
           "type": "Visuel narratif",
-          "link": { "href": "#salle1_fr", "label": "Découvrir" }
+          "link": { "href": "#salle_hampi_fr", "label": "Découvrir" }
         },
         {
           "text": "Marché sacré et étoffes ondulantes",
           "type": "Ambiance visuelle",
-          "link": { "href": "#salle1_fr", "label": "Explorer" }
+          "link": { "href": "#salle_hampi_fr", "label": "Explorer" }
         }
       ]
     },
