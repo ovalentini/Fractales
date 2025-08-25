@@ -1,0 +1,188 @@
+{
+  "salle1": {
+    "fr": {
+      "id": "salle1_fr",
+      "title": "🕉️ Salle 1 — Marché de Hampi",
+      "elements": [
+        {
+          "text": "Piliers musicaux du temple Vithala",
+          "type": "Ambiance sonore",
+          "link": { "href": "https://www.youtube.com/watch?v=UOFoQ70m6Z8", "label": "Écouter" }
+        },
+        {
+          "text": "Char mystique de Hampi",
+          "type": "Visuel narratif",
+          "link": { "href": "#salle1_fr", "label": "Découvrir" }
+        },
+        {
+          "text": "Marché sacré et étoffes ondulantes",
+          "type": "Ambiance visuelle",
+          "link": { "href": "#salle1_fr", "label": "Explorer" }
+        }
+      ]
+    },
+    "en": {
+      "id": "salle1_en",
+      "title": "🕉️ Room 1 — Hampi Market",
+      "elements": [
+        {
+          "text": "Musical pillars of the Vithala temple",
+          "type": "Soundscape",
+          "link": { "href": "https://www.youtube.com/watch?v=UOFoQ70m6Z8", "label": "Listen" }
+        },
+        {
+          "text": "Mystical chariot of Hampi",
+          "type": "Narrative visual",
+          "link": { "href": "#salle1_en", "label": "Discover" }
+        },
+        {
+          "text": "Sacred market and flowing fabrics",
+          "type": "Visual ambiance",
+          "link": { "href": "#salle1_en", "label": "Explore" }
+        }
+      ]
+    }
+  },
+  "salle2": {
+  "fr": {
+    "id": "salle2_fr",
+    "title": "🌺 Salle 2 — Bali, l’île magnifique",
+    "elements": [
+      {
+        "text": "Rizières sacrées et offrandes",
+        "type": "Ambiance visuelle",
+        "link": { "href": "#salle2_fr", "label": "Explorer" }
+      },
+      {
+        "text": "Temples hindous et spirales d’encens",
+        "type": "Visuel narratif",
+        "link": { "href": "#salle2_fr", "label": "Découvrir" }
+      },
+      {
+        "text": "Gamelan balinais",
+        "type": "Ambiance sonore",
+        "link": { "href": "https://www.routard.com/fr/photo/p/345-bali", "label": "Écouter" }
+      }
+    ]
+  },
+  "en": {
+    "id": "salle2_en",
+    "title": "🌺 Room 2 — Bali the beautiful island",
+    "elements": [
+      {
+        "text": "Sacred rice fields and offerings",
+        "type": "Visual ambiance",
+        "link": { "href": "#salle2_en", "label": "Explore" }
+      },
+      {
+        "text": "Hindu temples and spirals of incense",
+        "type": "Narrative visual",
+        "link": { "href": "#salle2_en", "label": "Discover" }
+      },
+      {
+        "text": "Balinese gamelan",
+        "type": "Soundscape",
+        "link": { "href": "https://www.routard.com/fr/photo/p/345-bali", "label": "Listen" }
+      }
+      }
+    ]
+  },
+  "salle3": {
+  "fr": {
+    "id": "salle3_fr",
+    "title": "🌾 Salle 3 — Fleurs de rizières (Florès)",
+    "elements": [
+      {
+        "text": "Terrasses de riz en pétales",
+        "type": "Ambiance visuelle",
+        "link": { "href": "#salle3_fr", "label": "Explorer" }
+      },
+      {
+        "text": "Spirales végétales et lumière aquatique",
+        "type": "Visuel narratif",
+        "link": { "href": "#salle3_fr", "label": "Découvrir" }
+      },
+      {
+        "text": "Berceuses des rizières",
+        "type": "Ambiance sonore",
+        "link": {
+          "href": "https://munki.audio/catalogue/albums/410/artistes-divers--comptines-et-berceuses-des-rizieres",
+          "label": "Écouter"
+        }
+      }
+    ]
+  },
+  "en": {
+    "id": "salle3_en",
+    "title": "🌾 Room 3 — Rice field flowers (Flores)",
+    "elements": [
+      {
+        "text": "Rice terraces in petals",
+        "type": "Visual ambiance",
+        "link": { "href": "#salle3_en", "label": "Explore" }
+      },
+      {
+        "text": "Plant spirals and aquatic light",
+        "type": "Narrative visual",
+        "link": { "href": "#salle3_en", "label": "Discover" }
+      },
+      {
+        "text": "Rice field lullabies",
+        "type": "Soundscape",
+        "link": {
+          "href": "https://munki.audio/catalogue/albums/410/artistes-divers--comptines-et-berceuses-des-rizieres",
+          "label": "Listen"
+        }
+      }
+    ]
+  },
+  "salle4": {
+  "fr": {
+    "id": "salle4_fr",
+    "title": "🏔️ Salle 4 — Salines Amazoniennes",
+    "elements": [
+      {
+        "text": "Terrasses de sel et reflets fractals",
+        "type": "Ambiance visuelle",
+        "link": { "href": "#salle4_fr", "label": "Explorer" }
+      },
+      {
+        "text": "Géométrie aquatique et mémoire minérale",
+        "type": "Visuel narratif",
+        "link": { "href": "#salle4_fr", "label": "Découvrir" }
+      },
+      {
+        "text": "Chants traditionnels amazoniens",
+        "type": "Ambiance sonore",
+        "link": {
+          "href": "https://www.youtube.com/watch?v=jm4lKVxihI4",
+          "label": "Écouter"
+        }
+      }
+    ]
+  },
+  "en": {
+    "id": "salle4_en",
+    "title": "🏔️ Room 4 — Amazonian Salt Flats",
+    "elements": [
+      {
+        "text": "Salt terraces and fractal reflections",
+        "type": "Visual ambiance",
+        "link": { "href": "#salle4_en", "label": "Explore" }
+      },
+      {
+        "text": "Aquatic geometry and mineral memory",
+        "type": "Narrative visual",
+        "link": { "href": "#salle4_en", "label": "Discover" }
+      },
+      {
+        "text": "Traditional Amazonian chants",
+        "type": "Soundscape",
+        "link": {
+          "href": "https://www.youtube.com/watch?v=jm4lKVxihI4",
+          "label": "Listen"
+        }
+      }
+    ]
+  }
+}
