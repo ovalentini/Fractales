@@ -545,7 +545,7 @@
 	  }, 100); // ou plus si nécessaire
 	});
 		nettoyerSallesDynamiques();
-		chargerSalles('salles.json').then(salles => {
+		chargerSalles('https://ovalentini.github.io/Fractales/salles.json').then(salles => {
 		  dispatchSalle(langueActuelle, 1, salles);
 		  dispatchSalle(langueActuelle, 2, salles);
 		  dispatchSalle(langueActuelle, 3, salles);
@@ -905,7 +905,7 @@
 		dispatchSalle(langueActuelle, 2); // insère la salle 2 en langueActuelle
 		dispatchSalle(langueActuelle, 3); // insère la salle 3 en langueActuelle
 		dispatchSalle(langueActuelle, 4); // insère la salle 4 en langueActuelle*/
-		chargerSalles('salles.json').then(salles => {
+		chargerSalles('https://ovalentini.github.io/Fractales/salles.json').then(salles => {
 		  dispatchSalle(langueActuelle, 1, salles);
 		  dispatchSalle(langueActuelle, 2, salles);
 		  dispatchSalle(langueActuelle, 3, salles);
