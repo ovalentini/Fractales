@@ -380,8 +380,8 @@
 	  }
 	};
 
-	  // 🖱️ Écouteurs sur les zones interactives
-	  document.querySelectorAll(".debug-zone-fr, .debug-zone-en").forEach(zone =>
+	// 🖱️ Écouteurs sur les zones interactives
+	document.querySelectorAll(".debug-zone-fr, .debug-zone-en").forEach(zone =>
 	  zone.addEventListener("click", e => {
 		e.preventDefault();
 		// logMessage("🖱️ Zone cliquée : " + zone.className);
@@ -397,14 +397,14 @@
 	  })
 	);
 
-	document.addEventListener("DOMContentLoaded", () => {
+	//document.addEventListener("DOMContentLoaded", () => {
 	  // 🔍 Détection de la langue active
 	  //const navLang = navigator.language.startsWith("fr") ? "fr" : "en";
 	  //const langSuffix = navlang;
 
 	  // Tu peux continuer ici avec ton code...
 	  // logMessage("Langue détectée : " + langSuffix);
-	});
+	//});
 </script>
 
 <script>
@@ -545,10 +545,10 @@
 		afficherElementsLangue(langueActuelle);
 		switchTitres(langueActuelle);
 		switchAudioDescription(langueActuelle);
-		inspecterZonesOpposées(langueActuelle);
+		//inspecterZonesOpposées(langueActuelle);
 	  }, 100); // ou plus si nécessaire
 	});
-		nettoyerSallesDynamiques();
+		nettoyerSalles();
 		chargerSalles('https://ovalentini.github.io/Fractales/salles.json').then(salles => {
 		  dispatchSalle(langueActuelle, 1, salles);
 		  dispatchSalle(langueActuelle, 2, salles);
@@ -633,7 +633,8 @@
 	  document.body.className = `lang-${langue}`;
 	}
 
-    // Construction des salles, div id="salles-dynamiques"  et fichier salles.json
+    // Construction des salles
+    // div id="salles-dynamiques" & fichier salles.json
 	function dispatchSalle(language, salleNumber, salles) {
 	  const selectedSalle = salles[`salle${salleNumber}`];
 	  if (!selectedSalle) return;
@@ -701,7 +702,7 @@
 	  container.appendChild(newDiv);
 	}
 
-	function nettoyerSallesDynamiques() {
+	function nettoyerSalles() {
 	  const container = document.getElementById("salles-dynamiques");
 	  if (container) container.innerHTML = "";
 	}
@@ -723,12 +724,8 @@
 		afficherElementsLangue(langueActuelle);
 		switchTitres(langueActuelle);
 		switchAudioDescription(langueActuelle);
-		inspecterZonesOpposées(langueActuelle);
-		nettoyerSallesDynamiques();
-		/*dispatchSalle(langueActuelle, 1); // insère la salle 1 en langueActuelle
-		dispatchSalle(langueActuelle, 2); // insère la salle 2 en langueActuelle
-		dispatchSalle(langueActuelle, 3); // insère la salle 3 en langueActuelle
-		dispatchSalle(langueActuelle, 4); // insère la salle 4 en langueActuelle*/
+		//inspecterZonesOpposées(langueActuelle);
+		nettoyerSalles();
 		chargerSalles('https://ovalentini.github.io/Fractales/salles.json').then(salles => {
 		  dispatchSalle(langueActuelle, 1, salles);
 		  dispatchSalle(langueActuelle, 2, salles);

@@ -33,12 +33,12 @@
         {
           "text": "Mystical chariot of Hampi",
           "type": "Narrative visual",
-          "link": { "href": "#salle1_en", "label": "Discover" }
+          "link": { "href": "#salle_hampi", "label": "Discover" }
         },
         {
           "text": "Sacred market and flowing fabrics",
           "type": "Visual ambiance",
-          "link": { "href": "#salle1_en", "label": "Explore" }
+          "link": { "href": "#salle_hampi", "label": "Explore" }
         }
       ]
     }
@@ -51,12 +51,12 @@
         {
           "text": "Rizières sacrées et offrandes",
           "type": "Ambiance visuelle",
-          "link": { "href": "#salle2_fr", "label": "Explorer" }
+          "link": { "href": "#salle_bali", "label": "Explorer" }
         },
         {
           "text": "Temples hindous et spirales d’encens",
           "type": "Visuel narratif",
-          "link": { "href": "#salle2_fr", "label": "Découvrir" }
+          "link": { "href": "#salle_bali", "label": "Découvrir" }
         },
         {
           "text": "Gamelan balinais",
@@ -72,12 +72,12 @@
         {
           "text": "Sacred rice fields and offerings",
           "type": "Visual ambiance",
-          "link": { "href": "#salle2_en", "label": "Explore" }
+          "link": { "href": "#salle_bali", "label": "Explore" }
         },
         {
           "text": "Hindu temples and spirals of incense",
           "type": "Narrative visual",
-          "link": { "href": "#salle2_en", "label": "Discover" }
+          "link": { "href": "#salle_bali", "label": "Discover" }
         },
         {
           "text": "Balinese gamelan",
@@ -95,12 +95,12 @@
         {
           "text": "Terrasses de riz en pétales",
           "type": "Ambiance visuelle",
-          "link": { "href": "#salle3_fr", "label": "Explorer" }
+          "link": { "href": "#salle_flores", "label": "Explorer" }
         },
         {
           "text": "Spirales végétales et lumière aquatique",
           "type": "Visuel narratif",
-          "link": { "href": "#salle3_fr", "label": "Découvrir" }
+          "link": { "href": "#salle_flores", "label": "Découvrir" }
         },
         {
           "text": "Berceuses des rizières",
@@ -119,12 +119,12 @@
         {
           "text": "Rice terraces in petals",
           "type": "Visual ambiance",
-          "link": { "href": "#salle3_en", "label": "Explore" }
+          "link": { "href": "#salle_flores", "label": "Explore" }
         },
         {
           "text": "Plant spirals and aquatic light",
           "type": "Narrative visual",
-          "link": { "href": "#salle3_en", "label": "Discover" }
+          "link": { "href": "#salle_flores", "label": "Discover" }
         },
         {
           "text": "Rice field lullabies",
@@ -145,12 +145,12 @@
         {
           "text": "Terrasses de sel et reflets fractals",
           "type": "Ambiance visuelle",
-          "link": { "href": "#salle4_fr", "label": "Explorer" }
+          "link": { "href": "#salle_perou", "label": "Explorer" }
         },
         {
           "text": "Géométrie aquatique et mémoire minérale",
           "type": "Visuel narratif",
-          "link": { "href": "#salle4_fr", "label": "Découvrir" }
+          "link": { "href": "#salle_perou", "label": "Découvrir" }
         },
         {
           "text": "Chants traditionnels amazoniens",
@@ -169,12 +169,12 @@
         {
           "text": "Salt terraces and fractal reflections",
           "type": "Visual ambiance",
-          "link": { "href": "#salle4_en", "label": "Explore" }
+          "link": { "href": "#salle_perou", "label": "Explore" }
         },
         {
           "text": "Aquatic geometry and mineral memory",
           "type": "Narrative visual",
-          "link": { "href": "#salle4_en", "label": "Discover" }
+          "link": { "href": "#salle_perou", "label": "Discover" }
         },
         {
           "text": "Traditional Amazonian chants",
