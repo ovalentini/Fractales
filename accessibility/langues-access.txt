@@ -28,8 +28,8 @@ nav_Bali_fr="🎧 Salle 2: Bali"
 nav_Flores_en="🎧 Room 3: Flores"
 nav_Flores_fr="🎧 Salle 3: Florès"
 
-nav_Peru_en="🎧 Room 4: Peru"
-nav_Peru_fr="🎧 Salle 4: Pérou"
+nav_Perou_en="🎧 Room 4: Peru"
+nav_Perou_fr="🎧 Salle 4: Pérou"
 
 btn_map_0_en="🗺️ Interactive map"
 btn_map_0_fr="🗺️ Carte interactive"
@@ -196,11 +196,11 @@ chant_fr="🏔️ Andes majestueuses et terrasses anciennes"
 foret_en="🌄 Machu Picchu and Inca heritage"
 foret_fr="🌄 Machu Picchu et héritage inca"
 
-subtitles_peru_en="🎧 Subtitles & Transcription – Room 4: Peru"
-subtitles_peru_fr="🎧 Sous-titres et Transcription – Salle 4 : Pérou"
+subtitles_perou_en="🎧 Subtitles & Transcription – Room 4: Peru"
+subtitles_perou_fr="🎧 Sous-titres et Transcription – Salle 4 : Pérou"
 
-btn_back_Peru_en="🗺️ Back to the map"
-btn_back_Peru_fr="🗺️ Retour à la carte"
+btn_back_Perou_en="🗺️ Back to the map"
+btn_back_Perou_fr="🗺️ Retour à la carte"
 
 subtitle_wind_en="[Whisper of the wind through the mountains — timeless serenity]"
 subtitle_wind_fr="[Murmure du vent à travers les montagnes — sérénité intemporelle]"
@@ -211,20 +211,20 @@ subtitle_river_fr="[Bruit lointain des rivières qui coulent — le pouls de la 
 subtitle_history_en="[Echoes of history — profound legacy]"
 subtitle_history_fr="[Échos de l'histoire — un héritage profond]"
 
-transcription_peru_en="The Sacred Valley is a place of awe and wonder.  The Andes dominate the horizon, while Machu Picchu invites you to explore its mysteries.  Encircling this iconic site are concentric golden patterns reminiscent of cathedral adornments, adding a divine aura to the scene.  The sounds of nature and history intertwine, offering a glimpse into the soul of Peru."
-transcription_peru_fr="La Vallée Sacrée est un lieu d’émerveillement et de mystère. Les Andes dominent l’horizon, tandis que Machu Picchu vous invite à explorer ses secrets. Autour de ce site emblématique, des motifs dorés concentriques évoquent les ornements des cathédrales, ajoutant une aura divine à la scène. Les sons de la nature et de l’histoire s’entrelacent, offrant un aperçu de l’âme du Pérou."
+transcription_perou_en="The Sacred Valley is a place of awe and wonder.  The Andes dominate the horizon, while Machu Picchu invites you to explore its mysteries.  Encircling this iconic site are concentric golden patterns reminiscent of cathedral adornments, adding a divine aura to the scene.  The sounds of nature and history intertwine, offering a glimpse into the soul of Peru."
+transcription_perou_fr="La Vallée Sacrée est un lieu d’émerveillement et de mystère. Les Andes dominent l’horizon, tandis que Machu Picchu vous invite à explorer ses secrets. Autour de ce site emblématique, des motifs dorés concentriques évoquent les ornements des cathédrales, ajoutant une aura divine à la scène. Les sons de la nature et de l’histoire s’entrelacent, offrant un aperçu de l’âme du Pérou."
 
 texteNarrationValleeSacree_en="Imagine the Sacred Valley of Peru, where the Andes rise majestically and ancient terraces tell stories of agricultural ingenuity. Machu Picchu stands as a testament to Inca heritage, its stone structures blending seamlessly with the natural landscape. Encircling this iconic site are concentric golden patterns reminiscent of cathedral adornments, adding a divine aura to the scene"
 texteNarrationValleeSacree_fr="Imaginez les terrasses verdoyantes de la vallée, où les murmures du vent se mêlent aux chants anciens. Chaque pierre semble porter la mémoire d’un peuple, et les ombres des montagnes dansent au rythme du soleil andin."
 
-enrichissementPeru_fr="Enrichissement sonore"
-enrichissementPeru_en="Soudscape Enrichment"
+enrichissementPerou_fr="Enrichissement sonore"
+enrichissementPerou_en="Soudscape Enrichment"
 
 enrichissementSonoreValleeSacree_fr="Les Andes murmurent des légendes dans le vent, et les voix anciennes résonnent entre les pierres. Fermez les yeux : vous êtes au cœur du souffle sacré du Pérou."
 enrichissementSonoreValleeSacree_en="The Andes whisper legends in the wind, and ancient voices echo between the stones. Close your eyes: you are at the heart of Peru’s sacred breath."
 
-navigationPeru_en="🔝 Back to Quick Navigation"
-navigationPeru_fr="🔝 Retour à la navigation rapide"
+navigationPerou_en="🔝 Back to Quick Navigation"
+navigationPerou_fr="🔝 Retour à la navigation rapide"
 
 cloture_visite_en="🖼️ Contemplative Epilogue – Closing of the Visit"
 cloture_visite_fr="🖼️ Épilogue contemplatif – Clôture de la visite"
