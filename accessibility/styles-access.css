@@ -52,6 +52,10 @@ button:hover {
   background-color: #6a4fb3;
 }
 
+.caption {
+  white-space: pre-line;
+}
+
 .citation-stylisee {
   position: relative;
   background: #f9f9f9;
