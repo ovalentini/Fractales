@@ -25,6 +25,10 @@ header, section, footer {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.caption {
+  white-space: pre-line;
+}
+
 /* 📌 Navigation */
 
  .navigation-salles {
