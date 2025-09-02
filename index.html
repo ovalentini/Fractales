@@ -91,17 +91,17 @@
 	  </div>
 	  <div class="carte-page" id="carte2">
 		<div class="carte-wrapper">
-			<img id="fractals-img" src="carte-interactive-fr.jpg" title="Cliquer sur une zone ou un point pour aller à la salle correspondante" usemap="#map-salles" />
-			<p id="image-caption" class="caption">Chaque spirale raconte une histoire. Laissez les motifs guider votre âme.</p>
+			<img id="fractals-img2" src="carte-interactive-fr2.jpg" title="Cliquer sur une zone ou un point pour aller à la salle correspondante" usemap="#map-salles2" />
+			<p id="image-caption2" class="caption">Chaque spirale raconte une histoire. Laissez les motifs guider votre âme.</p>
 			
 			<!-- Zones & Points -->
-			<a href="#maurice" class="debug-zone-fr maurice" title="Salle 5 – Maurice"></a>
+			<a href="#maurice" class="debug-zone-fr maurice" title="Salle 5 – île Maurice"></a>
 			<a href="#maldives" class="debug-zone-fr maldives" title="Salle 6 – Maldives"></a>
 			
 			<a href="#maurice" class="debug-zone-en maurice" title="Salle 5 – Mauritius"></a>
 			<a href="#maldives" class="debug-zone-en maldives" title="Salle 6 – Maldives"></a>
 
-			<a href="#maurice" class="carte-point-fr maurice" title="Maurice"></a>
+			<a href="#maurice" class="carte-point-fr maurice" title="île Maurice"></a>
 			<a href="maldives" class="carte-point-fr maldives" title="Maldives"></a>
 		
 			<a href="#maurice" class="carte-point-en maurice" title="Mauritius"></a>
@@ -371,7 +371,7 @@
   </div>
 
   <div class="table-image-container">
-    <img src="Maurice.jpg" id="paysage_maldives" title="Salines fractales péruviennes" alt="Fractale inspirée des salines de Maras, entre géométrie minérale et lumière des Andes"/>
+    <img src="Maldives.jpg" id="paysage_maldives" title="Salines fractales péruviennes" alt="Fractale inspirée des salines de Maras, entre géométrie minérale et lumière des Andes"/>
     <table>
       <thead>
         <tr>
@@ -476,7 +476,7 @@
 	const handleNavigation = (sourceElement, type) => {
 	  const classList = Array.from(sourceElement.classList);
 	  const salleName = classList.find(cls =>
-		["hampi", "bali", "flores", "perou"].includes(cls)
+		["hampi", "bali", "flores", "perou", "maurice", "maldives"].includes(cls)
 	  );
 
 	  if (!salleName) return;
@@ -530,25 +530,31 @@
 </script>
 
 <script>
-	let pageActuelle = 0;
-	const pages = document.querySelectorAll('.carte-page');
+  let pageActuelle = 0;
+  const pages = document.querySelectorAll('.carte-page');
 
-	function afficherPage(index) {
-	  pages.forEach((page, i) => {
-		page.classList.toggle('active', i === index);
-	  });
-	}
+  function afficherPage(index) {
+    pages.forEach((page, i) => {
+      page.classList.toggle('active', i === index);
+    });
+  }
 
-	document.getElementById('fleche-gauche').addEventListener('click', () => {
-	  pageActuelle = (pageActuelle - 1 + pages.length) % pages.length;
-	  afficherPage(pageActuelle);
-	});
+  const flecheGauche = document.getElementById('fleche-gauche');
+  const flecheDroite = document.getElementById('fleche-droite');
 
-	document.getElementById('fleche-droite').addEventListener('click', () => {
-	  pageActuelle = (pageActuelle + 1) % pages.length;
-	  afficherPage(pageActuelle);
-	});
+  if (flecheGauche && flecheDroite) {
+    flecheGauche.addEventListener('click', () => {
+      pageActuelle = (pageActuelle - 1 + pages.length) % pages.length;
+      afficherPage(pageActuelle);
+    });
+
+    flecheDroite.addEventListener('click', () => {
+      pageActuelle = (pageActuelle + 1) % pages.length;
+      afficherPage(pageActuelle);
+    });
+  }
 </script>
+
 
 <script>
 
@@ -795,6 +801,40 @@
 	  img.alt = imgData.alt;
 	  img.title = imgData.title;
 	  caption.textContent = imgData.caption;
+	  
+	  const img2 = document.getElementById("fractals-img2");
+	  const caption2 = document.getElementById("image-caption2");
+
+	  const imageData2 = {
+	  fr: {
+		src: "carte-interactive-fr2.jpg",
+		alt: "Reflets insulaires",
+		title: "Cliquer sur une zone ou un point pour aller à la salle correspondante",
+		caption: "Chaque reflet insulaire murmure une légende. Laissez les vagues vous guider."
+	  },
+	  en: {
+		src: "interactive-map-en2.jpg",
+		alt: "Island Reflections",
+		title: "Click on an area or point to go to the corresponding room",
+		caption: "Each island reflection whispers a legend. Let the waves guide you."
+	  }
+	  };
+
+		const imgData2 = imageData2[langue];
+		img2.src = imgData2.src;
+		img2.alt = imgData2.alt;
+		img2.title = imgData2.title;
+		caption2.textContent = imgData2.caption;
+
+	  
+	  const cartes = document.querySelectorAll('.carte-wrapper img');
+	  cartes.forEach(carte => {
+		  carte.addEventListener('click', () => {
+			// action commune à toutes les cartes
+		  });
+		});
+
+	  
 
 	  // 🖼️ Mise à jour de la classe body
 	  document.body.className = `lang-${langue}`;
