@@ -279,8 +279,8 @@ td a {
 .carte-point-fr.maurice     { top: 82.1%; left: 64.3%; background-color: crimson; box-shadow: 0 0 12px rgba(255, 0, 0, 0.6); }
 .carte-point-fr.maldives     { top: 74.8%; left: 68.3%; background-color: blue;    box-shadow: 0 0 12px rgba(0, 0, 255, 0.6); }
 
-.carte-point-en.maurice     { top: 76.1%; left: 68.3%; background-color: crimson; box-shadow: 0 0 12px rgba(255, 0, 0, 0.6); }
-.carte-point-en.maldives     { top: 82.8%; left: 25.0%; background-color: blue;    box-shadow: 0 0 12px rgba(0, 0, 255, 0.6); }
+.carte-point-en.maurice     { top: 82.3%; left: 66.3%; background-color: crimson; box-shadow: 0 0 12px rgba(255, 0, 0, 0.6); }
+.carte-point-en.maldives     { top: 76.1%; left: 68.3%; background-color: blue;    box-shadow: 0 0 12px rgba(0, 0, 255, 0.6); }
 
 .carte-point-fr.highlight {
   animation: pulseHighlight 1s ease-out;
