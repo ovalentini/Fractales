@@ -62,32 +62,55 @@
     </div>
 
     <div class="carte-container">
-      <div class="carte-wrapper">
-        <img id="fractals-img" src="carte-interactive-fr.jpg" title="Cliquer sur une zone ou un point pour aller à la salle correspondante" usemap="#map-salles" />
-		<p id="image-caption" class="caption">Chaque spirale raconte une histoire. Laissez les motifs guider votre âme.</p>
-		
-        <!-- Zones & Points -->
-        <a href="#hampi" class="debug-zone-fr hampi" title="Salle 1 – Hampi"></a>
-        <a href="#perou" class="debug-zone-fr perou" title="Salle 4 – Pérou"></a>
-        <a href="#flores" class="debug-zone-fr flores" title="Salle 3 – Florès"></a>
-        <a href="#bali" class="debug-zone-fr bali" title="Salle 2 – Bali"></a>
-		
-		<a href="#hampi" class="debug-zone-en hampi" title="Salle 1 – Hampi"></a>
-        <a href="#perou" class="debug-zone-en perou" title="Salle 4 – Peru"></a>
-        <a href="#flores" class="debug-zone-en flores" title="Salle 3 – Flores"></a>
-        <a href="#bali" class="debug-zone-en bali" title="Salle 2 – Bali"></a>
+	  <div class="carte-page active" id="carte1">
+		  <div class="carte-wrapper">
+			<img id="fractals-img" src="carte-interactive-fr.jpg" title="Cliquer sur une zone ou un point pour aller à la salle correspondante" usemap="#map-salles" />
+			<p id="image-caption" class="caption">Chaque spirale raconte une histoire. Laissez les motifs guider votre âme.</p>
+			
+			<!-- Zones & Points -->
+			<a href="#hampi" class="debug-zone-fr hampi" title="Salle 1 – Hampi"></a>
+			<a href="#perou" class="debug-zone-fr perou" title="Salle 4 – Pérou"></a>
+			<a href="#flores" class="debug-zone-fr flores" title="Salle 3 – Florès"></a>
+			<a href="#bali" class="debug-zone-fr bali" title="Salle 2 – Bali"></a>
+			
+			<a href="#hampi" class="debug-zone-en hampi" title="Salle 1 – Hampi"></a>
+			<a href="#perou" class="debug-zone-en perou" title="Salle 4 – Peru"></a>
+			<a href="#flores" class="debug-zone-en flores" title="Salle 3 – Flores"></a>
+			<a href="#bali" class="debug-zone-en bali" title="Salle 2 – Bali"></a>
 
-        <a href="#hampi" class="carte-point-fr hampi" title="Hampi"></a>
-        <a href="#bali" class="carte-point-fr bali" title="Bali"></a>
-        <a href="#flores" class="carte-point-fr flores" title="Florès"></a>
-        <a href="#perou" class="carte-point-fr perou" title="Pérou"></a>
+			<a href="#hampi" class="carte-point-fr hampi" title="Hampi"></a>
+			<a href="#bali" class="carte-point-fr bali" title="Bali"></a>
+			<a href="#flores" class="carte-point-fr flores" title="Florès"></a>
+			<a href="#perou" class="carte-point-fr perou" title="Pérou"></a>
+			
+			<a href="#hampi" class="carte-point-en hampi" title="Hampi"></a>
+			<a href="#bali" class="carte-point-en bali" title="Bali"></a>
+			<a href="#flores" class="carte-point-en flores" title="Flores"></a>
+			<a href="#perou" class="carte-point-en perou" title="Peru"></a>
+		  </div>
+	  </div>
+	  <div class="carte-page" id="carte2">
+		<div class="carte-wrapper">
+			<img id="fractals-img" src="carte-interactive-fr.jpg" title="Cliquer sur une zone ou un point pour aller à la salle correspondante" usemap="#map-salles" />
+			<p id="image-caption" class="caption">Chaque spirale raconte une histoire. Laissez les motifs guider votre âme.</p>
+			
+			<!-- Zones & Points -->
+			<a href="#maurice" class="debug-zone-fr maurice" title="Salle 5 – Maurice"></a>
+			<a href="#maldives" class="debug-zone-fr maldives" title="Salle 6 – Maldives"></a>
+			
+			<a href="#maurice" class="debug-zone-en maurice" title="Salle 5 – Mauritius"></a>
+			<a href="#maldives" class="debug-zone-en maldives" title="Salle 6 – Maldives"></a>
+
+			<a href="#maurice" class="carte-point-fr maurice" title="Maurice"></a>
+			<a href="maldives" class="carte-point-fr maldives" title="Maldives"></a>
 		
-		<a href="#hampi" class="carte-point-en hampi" title="Hampi"></a>
-        <a href="#bali" class="carte-point-en bali" title="Bali"></a>
-        <a href="#flores" class="carte-point-en flores" title="Flores"></a>
-        <a href="#perou" class="carte-point-en perou" title="Peru"></a>
-      </div>
+			<a href="#maurice" class="carte-point-en maurice" title="Mauritius"></a>
+			<a href="#maldives" class="carte-point-en maldives" title="Maldives"></a>
+		</div>
+	  </div>
     </div>
+	<button id="fleche-gauche" aria-label="Naviguer vers la carte précédente">⬅️</button>
+	<button id="fleche-droite" aria-label="Naviguer vers la carte suivante">➡️</button>
   </section>
   
   <!-- 🖼 Sections d’exposition détaillées -->
@@ -287,6 +310,105 @@
   </div>
   
 </section>
+
+<!-- Salle 5 — Maurice -->
+<section id="maurice">
+  <h2 id="salle_maurice">🏔️ Salle 5 — Salines fractales</h2>
+  <div class="navigation-salles">
+    <a href="#perou" id="btn_previous_3" class="nav-btn precedent">← Salle précédente</a>
+    <a href="#carte" id="btn_back_4" class="nav-btn retour">🗺️ Retour à la carte</a>
+	<a href="#sommaire" id="btn_summary_6" class="nav-btn sommaire">📚 Retour au sommaire</a>
+  </div>
+
+  <div class="table-image-container">
+    <img src="Maurice.jpg" id="paysage_maurice" title="Salines fractales péruviennes" alt="Fractale inspirée des salines de Maras, entre géométrie minérale et lumière des Andes"/>
+    <table>
+      <thead>
+        <tr>
+          <th id="element4">Élément</th>
+          <th id="lien4">Lien</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td id="chant">Chants traditionnels amazoniens</td>
+          <td>🎶 <a href="https://www.youtube.com/watch?v=jm4lKVxihI4" id="ecoute4" target="_blank" rel="noopener noreferrer">Écouter</a></td>
+        </tr>
+        <tr>
+          <td id="foret">Ambiance forêt & rivières</td>
+          <td>🏛️ <a href="https://www.youtube.com/watch?v=go7GM3N6kqY" id="decouvre4" target="_blank" rel="noopener noreferrer">Découvrir</a></td>
+        </tr>
+        <tr>
+          <td id="icaro">Icaro sacré — chant chamanique amazonien</td>
+          <td>🎶 <a href="https://www.youtube.com/watch?v=LDgR8ffFzBo" id="ecoute5" target="_blank" rel="noopener noreferrer">Écouter</a></td>
+        </tr>
+		<tr>
+         <figure>
+		  <figcaption id="sonMaurice" class="caption">
+			🎶 Ambiance sonore : Chants traditionnels des Andes, portés par les cristaux de sel et les reflets minéraux.
+			Une mémoire chantée, gravée dans la roche.
+		  </figcaption>
+		  <audio controls title="Ambiance sonore : Chants amazoniens et salines fractales">
+			<source src="sounds/perou-sound.mp3" type="audio/mpeg">
+			Votre navigateur ne supporte pas l’audio HTML5.
+		  </audio>
+		</figure>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+</section>
+	
+<!-- Salle 6 — Maldives -->
+<section id="maldives">
+  <h2 id="salle_maldives">🏔️ Salle 6 — Salines fractales</h2>
+  <div class="navigation-salles">
+    <a href="#maurice" id="btn_previous_4" class="nav-btn precedent">← Salle précédente</a>
+    <a href="#carte" id="btn_back_5" class="nav-btn retour">🗺️ Retour à la carte</a>
+	<a href="#sommaire" id="btn_summary_7" class="nav-btn sommaire">📚 Retour au sommaire</a>
+	<a href="#cloture" id="btn_epilogue_2" class="nav-btn epilogue" title="Lire l’épilogue poétique">🌌 Fin du voyage</a>
+  </div>
+
+  <div class="table-image-container">
+    <img src="Maurice.jpg" id="paysage_maldives" title="Salines fractales péruviennes" alt="Fractale inspirée des salines de Maras, entre géométrie minérale et lumière des Andes"/>
+    <table>
+      <thead>
+        <tr>
+          <th id="element4">Élément</th>
+          <th id="lien4">Lien</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td id="chant">Chants traditionnels amazoniens</td>
+          <td>🎶 <a href="https://www.youtube.com/watch?v=jm4lKVxihI4" id="ecoute4" target="_blank" rel="noopener noreferrer">Écouter</a></td>
+        </tr>
+        <tr>
+          <td id="foret">Ambiance forêt & rivières</td>
+          <td>🏛️ <a href="https://www.youtube.com/watch?v=go7GM3N6kqY" id="decouvre4" target="_blank" rel="noopener noreferrer">Découvrir</a></td>
+        </tr>
+        <tr>
+          <td id="icaro">Icaro sacré — chant chamanique amazonien</td>
+          <td>🎶 <a href="https://www.youtube.com/watch?v=LDgR8ffFzBo" id="ecoute5" target="_blank" rel="noopener noreferrer">Écouter</a></td>
+        </tr>
+		<tr>
+         <figure>
+		  <figcaption id="sonMaldives" class="caption">
+			🎶 Ambiance sonore : Chants traditionnels des Andes, portés par les cristaux de sel et les reflets minéraux.
+			Une mémoire chantée, gravée dans la roche.
+		  </figcaption>
+		  <audio controls title="Ambiance sonore : Chants amazoniens et salines fractales">
+			<source src="sounds/perou-sound.mp3" type="audio/mpeg">
+			Votre navigateur ne supporte pas l’audio HTML5.
+		  </audio>
+		</figure>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+</section>	
 	
 <footer>
   <section id="cloture" class="cloture">
@@ -408,6 +530,27 @@
 </script>
 
 <script>
+	let pageActuelle = 0;
+	const pages = document.querySelectorAll('.carte-page');
+
+	function afficherPage(index) {
+	  pages.forEach((page, i) => {
+		page.classList.toggle('active', i === index);
+	  });
+	}
+
+	document.getElementById('fleche-gauche').addEventListener('click', () => {
+	  pageActuelle = (pageActuelle - 1 + pages.length) % pages.length;
+	  afficherPage(pageActuelle);
+	});
+
+	document.getElementById('fleche-droite').addEventListener('click', () => {
+	  pageActuelle = (pageActuelle + 1) % pages.length;
+	  afficherPage(pageActuelle);
+	});
+</script>
+
+<script>
 
     // lecture de langues.txt
 	const navLang = navigator.language.startsWith("fr") ? "fr" : "en";
@@ -459,10 +602,14 @@
 		document.getElementById("paysage_bali").title = "Paysage spirituel balinais : rizières et mandalas";
 		document.getElementById("paysage_flores").title = "Terrasses de riz en fleurs à Florès";
 		document.getElementById("paysage_perou").title = "Salines fractales péruviennes";
+		document.getElementById("paysage_maurice").title = "Salines fractales péruviennes";
+		document.getElementById("paysage_maldives").title = "Salines fractales péruviennes";
 		document.getElementById("paysage_hampi").alt = "Fractale inspirée des temples et paysages mystiques de Hampi";
 		document.getElementById("paysage_bali").alt = "Fractale inspirée des paysages de Bali : rizières et mandalas";
 		document.getElementById("paysage_flores").alt = "Fractale évoquant les rizières en cascade et l’harmonie naturelle des cultures asiatiques";
 		document.getElementById("paysage_perou").alt = "Fractale inspirée des salines de Maras, entre géométrie minérale et lumière des Andes";
+		document.getElementById("paysage_maurice").alt = "Fractale inspirée des salines de Maras, entre géométrie minérale et lumière des Andes";
+		document.getElementById("paysage_maldives").alt = "Fractale inspirée des salines de Maras, entre géométrie minérale et lumière des Andes";
 	  } else if (lang === "en") {
 	    document.getElementById("btn_enter").title = "Begin the poetic journey";
 		document.getElementById("btn_exit").title = "Exit the exhibition";
@@ -474,10 +621,14 @@
 		document.getElementById("paysage_bali").title = "Balinese spiritual landscape: rice fields and mandalas";
 		document.getElementById("paysage_flores").title = "Flowering rice terraces in Flores";
 		document.getElementById("paysage_perou").title = "Peruvian Fractal Salt Flats";
+		document.getElementById("paysage_maurice").title = "Peruvian Fractal Salt Flats";
+		document.getElementById("paysage_maldives").title = "Peruvian Fractal Salt Flats";
 		document.getElementById("paysage_hampi").alt = "Fractal inspired by the temples and mystical scenery of Hampi";
 		document.getElementById("paysage_bali").alt = "Fractal inspired by Balinese landscapes: rice fields and mandalas";
 		document.getElementById("paysage_flores").alt = "Fractal evoking cascading rice terraces and the natural harmony of Asian cultures";
 		document.getElementById("paysage_perou").alt = "Fractal inspired by the salt ponds of Maras, blending mineral geometry and Andean light";
+		document.getElementById("paysage_maurice").alt = "Fractal inspired by the salt ponds of Maras, blending mineral geometry and Andean light";
+		document.getElementById("paysage_maldives").alt = "Fractal inspired by the salt ponds of Maras, blending mineral geometry and Andean light";
 	  }
 	}
 
@@ -499,6 +650,14 @@
 		  sonPerou: {
 			caption: "🎶 Ambiance sonore : Chants traditionnels des Andes, portés par les cristaux de sel et les reflets minéraux.\nUne mémoire chantée, gravée dans la roche.",
 			title: "Ambiance sonore : Chants amazoniens et salines fractales"
+		  },
+		  sonMaurice: {
+			caption: "🎶 Ambiance sonore : Chants traditionnels des Andes, portés par les cristaux de sel et les reflets minéraux.\nUne mémoire chantée, gravée dans la roche.",
+			title: "Ambiance sonore : Chants amazoniens et salines fractales"
+		  },
+		  sonMaldives: {
+			caption: "🎶 Ambiance sonore : Chants traditionnels des Andes, portés par les cristaux de sel et les reflets minéraux.\nUne mémoire chantée, gravée dans la roche.",
+			title: "Ambiance sonore : Chants amazoniens et salines fractales"
 		  }
 		},
 		en: {
@@ -515,6 +674,14 @@
 			title: "Soundscape: Rice field lullabies from Flores"
 		  },
 		  sonPerou: {
+			caption: "🎶 Soundscape: Traditional Andean chants carried by salt crystals and mineral reflections.\nA sung memory etched into stone.",
+			title: "Soundscape: Amazonian chants and fractal salt flats"
+		  },
+		  sonMaurice: {
+			caption: "🎶 Soundscape: Traditional Andean chants carried by salt crystals and mineral reflections.\nA sung memory etched into stone.",
+			title: "Soundscape: Amazonian chants and fractal salt flats"
+		  },
+		  sonMaldives: {
 			caption: "🎶 Soundscape: Traditional Andean chants carried by salt crystals and mineral reflections.\nA sung memory etched into stone.",
 			title: "Soundscape: Amazonian chants and fractal salt flats"
 		  }

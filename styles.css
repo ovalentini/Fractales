@@ -208,6 +208,13 @@ td a {
 }
 
 /* 🗺️ Carte interactive */
+.carte-page {
+  display: none;
+}
+.carte-page.active {
+  display: block;
+}
+
 .carte-container {
   max-width: 600px;
   width: 100%;
@@ -268,6 +275,12 @@ td a {
 .carte-point-en.perou     { top: 82.8%; left: 25.0%; background-color: blue;    box-shadow: 0 0 12px rgba(0, 0, 255, 0.6); }
 .carte-point-en.flores   { top: 82.8%; left: 81.7%; background-color: green;   box-shadow: 0 0 12px rgba(0, 255, 0, 0.6); }
 .carte-point-en.bali      { top: 82.8%; left: 80.0%; background-color: orange;  box-shadow: 0 0 12px rgba(255, 165, 0, 0.6); }
+
+.carte-point-fr.maurice     { top: 81.1%; left: 68.3%; background-color: crimson; box-shadow: 0 0 12px rgba(255, 0, 0, 0.6); }
+.carte-point-fr.maldives     { top: 87.8%; left: 25.0%; background-color: blue;    box-shadow: 0 0 12px rgba(0, 0, 255, 0.6); }
+
+.carte-point-en.maurice     { top: 76.1%; left: 68.3%; background-color: crimson; box-shadow: 0 0 12px rgba(255, 0, 0, 0.6); }
+.carte-point-en.maldives     { top: 82.8%; left: 25.0%; background-color: blue;    box-shadow: 0 0 12px rgba(0, 0, 255, 0.6); }
 
 .carte-point-fr.highlight {
   animation: pulseHighlight 1s ease-out;
@@ -331,6 +344,12 @@ td a {
 .debug-zone-en.perou  { top: 20.9%; left: 28.3%; width: 20%; height: 36.7%; background-color: rgba(0, 0, 255, 0.3); }
 .debug-zone-en.flores { top: 20.9%; left: 51.7%; width: 20%; height: 36.7%; background-color: rgba(0, 255, 0, 0.3); }
 .debug-zone-en.bali   { top: 20.9%; left: 75.3%; width: 20%; height: 38.7%; background-color: rgba(255, 165, 0, 0.3); }
+
+.debug-zone-fr.maurice  { top: 28.9%; left: 6.7%;  width: 20%; height: 36.7%; background-color: rgba(255, 0, 0, 0.3); }
+.debug-zone-fr.maldives  { top: 28.9%; left: 28.3%; width: 20%; height: 36.7%; background-color: rgba(0, 0, 255, 0.3); }
+
+.debug-zone-en.maurice  { top: 20.9%; left: 4.7%;  width: 20%; height: 36.7%; background-color: rgba(255, 0, 0, 0.3); }
+.debug-zone-en.maldives  { top: 20.9%; left: 28.3%; width: 20%; height: 36.7%; background-color: rgba(0, 0, 255, 0.3); }
 
 .lang-fr .debug-zone-fr,
 .lang-fr .carte-point-fr {
