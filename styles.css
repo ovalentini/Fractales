@@ -207,6 +207,20 @@ td a {
   min-width: 260px;
 }
 
+.table-image-container figure {
+  flex: 1 1 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.table-image-container figcaption {
+  text-align: left;
+  padding: 0.5em 1em;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
+
 /* 🗺️ Carte interactive */
 .carte-page {
   display: none;
@@ -454,20 +468,12 @@ button:hover {
   box-shadow: 0 0 12px rgba(0, 0, 255, 0.4);
 }
 
-/* Enrichissement sonore */
-figcaption.caption {
-  text-align: left;
-  margin: 0 auto;
-  max-width: 100%;
-  padding: 0.5em 1em;
-  box-sizing: border-box;
-  word-wrap: break-word;
-}
-
 /* Règles spécifiques pour petits écrans */
 @media screen and (max-width: 600px) {
-
-  figcaption.caption {
+  .table-image-container figure {
+    flex: 1 1 100%;
+  }
+  .table-image-container figcaption {
     font-size: 0.95em;
     padding: 0.5em;
   }
