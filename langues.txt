@@ -132,7 +132,7 @@
 [marin_en] 'Mauritius – The Marine Park of Blue Bay'
 [sonMaurice_fr] 'Enrichissement sonore'
 [sonMaurice_en] 'Soundscape enrichment'
-[salle_maldives_fr] '🏔️ Salle 6 — L'Atoll aux Mille Bleus'
+[salle_maldives_fr] '🏔️ Salle 6 — L’Atoll aux Mille Bleus'
 [salle_maldives_en] '🏔️ Room 6 — The Atoll of a Thousand Blues'
 [coraux_fr] 'Maldives : Coraux, un trésor à sauver'
 [coraux_en] 'Maldives: Coral Reefs, a Treasure to Protect'
