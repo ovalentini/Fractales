@@ -243,6 +243,21 @@ td a {
   margin-top: 10px;
 }*/
 
+button#fleche-gauche, button#fleche-droite {
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
 
 .carte-point-fr {
   position: absolute;
@@ -439,8 +454,24 @@ td a {
   box-shadow: 0 0 12px rgba(0, 0, 255, 0.4);
 }
 
+/* Enrichissement sonore */
+figcaption.caption {
+  text-align: left;
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 0.5em 1em;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
 /* Règles spécifiques pour petits écrans */
 @media screen and (max-width: 600px) {
+
+  figcaption.caption {
+    font-size: 0.95em;
+    padding: 0.5em;
+  }
+	
   .navigation-salles {
     display: flex;
     flex-direction: column;
