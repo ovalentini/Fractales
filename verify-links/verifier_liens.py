@@ -25,7 +25,13 @@ liens_a_verifier = [
     "https://www.youtube.com/watch?v=jKxOceVX9wk",
     "https://www.youtube.com/watch?v=jm4lKVxihI4",
     "https://www.youtube.com/watch?v=go7GM3N6kqY",
-    "https://www.youtube.com/watch?v=LDgR8ffFzBo"
+    "https://www.youtube.com/watch?v=LDgR8ffFzBo",
+    "https://youtu.be/2YaFRe9DdUo",
+    "https://youtu.be/jMXVgR8W1Mk",
+    "https://www.youtube.com/watch?v=Y2EaevkTn1E",
+    "https://www.youtube.com/watch?v=gUOQ9baRLUI",
+    "https://www.youtube.com/watch?v=aCY3qnFvEXo",
+    "https://youtu.be/9w1zh9fnmXg"
 ]
 
 # Affichage des résultats

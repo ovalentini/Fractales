@@ -209,17 +209,18 @@ td a {
 
 .table-image-container figure {
   flex: 1 1 100%;
+  width: 100%;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .table-image-container figcaption {
   text-align: left;
   padding: 0.5em 1em;
-  box-sizing: border-box;
+  font-size: 1em;
   word-wrap: break-word;
 }
-
 
 /* 🗺️ Carte interactive */
 .carte-page {
