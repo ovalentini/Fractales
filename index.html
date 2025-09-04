@@ -857,12 +857,13 @@
 
 	  const thead = document.createElement("thead");
 	  thead.innerHTML = `
-		<tr>
-		  <th>Élément</th>
-		  <th>Lien</th>
-		  <th>Type</th>
-		</tr>`;
+		  <tr>
+			<th>${selectedLanguage.thead.element}</th>
+			<th>${selectedLanguage.thead.link}</th>
+			<th>${selectedLanguage.thead.type}</th>
+		  </tr>`;
 	  table.appendChild(thead);
+
 
 	  const tbody = document.createElement("tbody");
 	  selectedLanguage.elements.forEach(element => {

@@ -3,6 +3,11 @@
     "fr": {
       "id": "salle1_fr",
       "title": "🕉️ Salle 1 — Marché de Hampi",
+	  "thead": {
+		  "element": "Élément",
+		  "link": "Lien",
+		  "type": "Type"
+	  },
       "elements": [
         {
           "text": "Piliers musicaux du temple Vithala",
@@ -24,6 +29,11 @@
     "en": {
       "id": "salle1_en",
       "title": "🕉️ Room 1 — Hampi Market",
+	  "thead": {
+		  "element": "Element",
+		  "link": "Link",
+		  "type": "Type"
+	  },
       "elements": [
         {
           "text": "Musical pillars of the Vithala temple",
@@ -47,6 +57,11 @@
     "fr": {
       "id": "salle2_fr",
       "title": "🌺 Salle 2 — Bali, l’île magnifique",
+	  "thead": {
+		  "element": "Élément",
+		  "link": "Lien",
+		  "type": "Type"
+	  },
       "elements": [
         {
           "text": "Rizières sacrées et offrandes",
@@ -68,6 +83,11 @@
     "en": {
       "id": "salle2_en",
       "title": "🌺 Room 2 — Bali the beautiful island",
+	  "thead": {
+		  "element": "Element",
+		  "link": "Link",
+		  "type": "Type"
+	  },
       "elements": [
         {
           "text": "Sacred rice fields and offerings",
@@ -91,6 +111,11 @@
     "fr": {
       "id": "salle3_fr",
       "title": "🌾 Salle 3 — Fleurs de rizières (Florès)",
+	  "thead": {
+		  "element": "Élément",
+		  "link": "Lien",
+		  "type": "Type"
+	  },
       "elements": [
         {
           "text": "Terrasses de riz en pétales",
@@ -115,6 +140,11 @@
     "en": {
       "id": "salle3_en",
       "title": "🌾 Room 3 — Rice field flowers (Flores)",
+	  "thead": {
+		  "element": "Element",
+		  "link": "Link",
+		  "type": "Type"
+	  },
       "elements": [
         {
           "text": "Rice terraces in petals",
@@ -141,6 +171,11 @@
     "fr": {
       "id": "salle4_fr",
       "title": "🏔️ Salle 4 — Salines Amazoniennes",
+	  "thead": {
+		  "element": "Élément",
+		  "link": "Lien",
+		  "type": "Type"
+	  },
       "elements": [
         {
           "text": "Terrasses de sel et reflets fractals",
@@ -165,6 +200,11 @@
     "en": {
       "id": "salle4_en",
       "title": "🏔️ Room 4 — Amazonian Salt Flats",
+	  "thead": {
+		  "element": "Element",
+		  "link": "Link",
+		  "type": "Type"
+	  },
       "elements": [
         {
           "text": "Salt terraces and fractal reflections",
