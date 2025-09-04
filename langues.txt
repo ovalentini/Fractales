@@ -62,6 +62,8 @@
 [btn_summary_7_en] '📚 View the summary'
 [btn_epilogue_fr] '🌌 Fin du voyage'
 [btn_epilogue_en] '🌌 End of the journey'
+[changer_carte_fr] 'Changer de carte interactive'
+[changer_carte_en] 'Change interactive map'
 [fractales_fr] '🖼️ Fractales du Monde : Reflets d’Âmes'
 [fractales_en] '🖼️ Fractals of the World: Reflections of Souls'
 [first_fr] 'Bienvenue dans une exposition où chaque image est une porte, chaque spirale un souffle, et chaque pixel une mémoire.'

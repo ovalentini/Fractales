@@ -109,8 +109,11 @@
 		</div>
 	  </div>
     </div>
-	<button id="fleche-gauche" aria-label="Naviguer vers la carte précédente">⬅️</button>
-	<button id="fleche-droite" aria-label="Naviguer vers la carte suivante">➡️</button>
+	<div class="navigation-cartes">
+	  <button id="fleche-gauche" title="aller à la carte précédente" aria-label="Naviguer vers la carte précédente">⬅️</button>
+	  <button id="fleche-droite" title="aller à la carte suivante" aria-label="Naviguer vers la carte suivante">➡️</button>
+	  <p class="carte-texte" id="changer_carte">Changer de carte interactive</p>
+	</div>
   </section>
   
   <!-- 🖼 Sections d’exposition détaillées -->
@@ -589,6 +592,8 @@
 		document.getElementById("btn_exit").title = "Quitter l’exposition";
 		document.getElementById("btn_map_0").title = "Accéder à la carte interactive";
 		document.getElementById("btn_map_1").title = "Accéder à la carte interactive";
+		document.getElementById("fleche-gauche").title = "Aller à la carte précédente";
+		document.getElementById("fleche-droite").title = "Aller à la carte suivante";
 		document.getElementById("btn_summary_0").title = "Accéder au sommaire de l'exposition";
 		document.getElementById("btn_epilogue").title = "Lire l’épilogue poétique";
 		document.getElementById("paysage_hampi").title = "Char mystique de Hampi";
@@ -597,6 +602,8 @@
 		document.getElementById("paysage_perou").title = "Salines fractales péruviennes";
 		document.getElementById("paysage_maurice").title = "Couleurs des 7 Terres – Éclats d’Île et d’Océan";
 		document.getElementById("paysage_maldives").title = "Mille bleus de l'Atoll";
+		document.getElementById("fleche-gauche").alt = "Naviguer vers la carte précédente",
+		document.getElementById("fleche-droite").alt = "Naviguer vers la carte suivante",
 		document.getElementById("paysage_hampi").alt = "Fractale inspirée des temples et paysages mystiques de Hampi";
 		document.getElementById("paysage_bali").alt = "Fractale inspirée des paysages de Bali : rizières et mandalas";
 		document.getElementById("paysage_flores").alt = "Fractale évoquant les rizières en cascade et l’harmonie naturelle des cultures asiatiques";
@@ -608,6 +615,8 @@
 		document.getElementById("btn_exit").title = "Exit the exhibition";
 		document.getElementById("btn_map_0").title = "Access the Interactive Map";
 		document.getElementById("btn_map_1").title = "Access the Interactive Map";
+		document.getElementById("fleche-gauche").title = "Go to previous map";
+		document.getElementById("fleche-droite").title = "Go to next map";
 		document.getElementById("btn_summary_0").title = "Access the Exhibition Summary";
 		document.getElementById("btn_epilogue").title = "Read the poetic epilogue";
 		document.getElementById("paysage_hampi").title = "Mystical chariot of Hampi";
@@ -616,6 +625,8 @@
 		document.getElementById("paysage_perou").title = "Peruvian Fractal Salt Flats";
 		document.getElementById("paysage_maurice").title = "Colors of the Seven Earths – Island and Ocean Splendor";
 		document.getElementById("paysage_maldives").title = "A Thousand Blues of the Atoll";
+		document.getElementById("fleche-gauche").alt = "Navigate to previous map",
+		document.getElementById("fleche-droite").alt = "Navigate to next map",
 		document.getElementById("paysage_hampi").alt = "Fractal inspired by the temples and mystical scenery of Hampi";
 		document.getElementById("paysage_bali").alt = "Fractal inspired by Balinese landscapes: rice fields and mandalas";
 		document.getElementById("paysage_flores").alt = "Fractal evoking cascading rice terraces and the natural harmony of Asian cultures";
