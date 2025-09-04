@@ -260,18 +260,20 @@ td a {
 
 .navigation-cartes {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 10px;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap; /* utile si l’écran est étroit */
   margin-top: 20px;
 }
 
 .carte-texte {
-  font-size: 1em;
-  color: #555;
+  font-size: 0.95em;
+  color: #666;
   font-style: italic;
-  margin: 0;
+  opacity: 0.8;
 }
+
 
 button#fleche-gauche, button#fleche-droite {
   background: linear-gradient(to right, #00c6ff, #0072ff);
