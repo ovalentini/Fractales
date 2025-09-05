@@ -325,9 +325,11 @@ button:hover {
 
 .carte-point-fr.maurice     { top: 82.1%; left: 64.3%; background-color: crimson; box-shadow: 0 0 12px rgba(255, 0, 0, 0.6); }
 .carte-point-fr.maldives     { top: 74.8%; left: 68.3%; background-color: blue;    box-shadow: 0 0 12px rgba(0, 0, 255, 0.6); }
+.carte-point-fr.laos     { top: 74.8%; left: 88.3%; background-color: green;    box-shadow: 0 0 12px rgba(0, 0, 255, 0.6); }
 
 .carte-point-en.maurice     { top: 84.1%; left: 65.3%; background-color: crimson; box-shadow: 0 0 12px rgba(255, 0, 0, 0.6); }
 .carte-point-en.maldives     { top: 76.8%; left: 68.3%; background-color: blue;    box-shadow: 0 0 12px rgba(0, 0, 255, 0.6); }
+.carte-point-en.laos     { top: 76.8%; left: 88.3%; background-color: green;    box-shadow: 0 0 12px rgba(0, 0, 255, 0.6); }
 
 .carte-point-fr.highlight {
   animation: pulseHighlight 1s ease-out;
@@ -394,9 +396,11 @@ button:hover {
 
 .debug-zone-fr.maurice  { top: 18.9%; left: 4.0%;  width: 20%; height: 32.7%; background-color: rgba(255, 0, 0, 0.3); }
 .debug-zone-fr.maldives  { top: 18.9%; left: 28.3%; width: 20%; height: 32.7%; background-color: rgba(0, 0, 255, 0.3); }
+.debug-zone-fr.laos  { top: 18.9%; left: 51.7%; width: 20%; height: 32.7%; background-color: rgba(0, 255, 0, 0.3); }
 
 .debug-zone-en.maurice  { top: 20.9%; left: 4.7%;  width: 20%; height: 32.7%; background-color: rgba(255, 0, 0, 0.3); }
 .debug-zone-en.maldives  { top: 20.9%; left: 28.3%; width: 20%; height: 32.7%; background-color: rgba(0, 0, 255, 0.3); }
+.debug-zone-en.laos  { top: 20.9%; left: 51.7%; width: 20%; height: 32.7%; background-color: rgba(0, 255, 0, 0.3); }
 
 .lang-fr .debug-zone-fr,
 .lang-fr .carte-point-fr {

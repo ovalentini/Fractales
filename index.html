@@ -65,7 +65,6 @@
     <div class="retour-carte">
       <a href="#sommaire" id="btn_summary_1" class="nav-btn sommaire">📚 Voir le sommaire</a>
     </div>
-
     <div class="carte-container">
 	  <div class="carte-page active" id="carte1">
 		  <div class="carte-wrapper">
@@ -78,10 +77,10 @@
 			<a href="#flores" class="debug-zone-fr flores" title="Salle 3 – Florès"></a>
 			<a href="#bali" class="debug-zone-fr bali" title="Salle 2 – Bali"></a>
 			
-			<a href="#hampi" class="debug-zone-en hampi" title="Salle 1 – Hampi"></a>
-			<a href="#perou" class="debug-zone-en perou" title="Salle 4 – Peru"></a>
-			<a href="#flores" class="debug-zone-en flores" title="Salle 3 – Flores"></a>
-			<a href="#bali" class="debug-zone-en bali" title="Salle 2 – Bali"></a>
+			<a href="#hampi" class="debug-zone-en hampi" title="Room 1 – Hampi"></a>
+			<a href="#perou" class="debug-zone-en perou" title="Room 4 – Peru"></a>
+			<a href="#flores" class="debug-zone-en flores" title="Room 3 – Flores"></a>
+			<a href="#bali" class="debug-zone-en bali" title="Room 2 – Bali"></a>
 
 			<a href="#hampi" class="carte-point-fr hampi" title="Hampi"></a>
 			<a href="#bali" class="carte-point-fr bali" title="Bali"></a>
@@ -102,15 +101,19 @@
 			<!-- Zones & Points -->
 			<a href="#maurice" class="debug-zone-fr maurice" title="Salle 5 – île Maurice"></a>
 			<a href="#maldives" class="debug-zone-fr maldives" title="Salle 6 – Maldives"></a>
+			<a href="#laos" class="debug-zone-fr laos" title="Salle 7 – Laos-Cambodge"></a>
 			
-			<a href="#maurice" class="debug-zone-en maurice" title="Salle 5 – Mauritius"></a>
-			<a href="#maldives" class="debug-zone-en maldives" title="Salle 6 – Maldives"></a>
+			<a href="#maurice" class="debug-zone-en maurice" title="Room 5 – Mauritius"></a>
+			<a href="#maldives" class="debug-zone-en maldives" title="Room 6 – Maldives"></a>
+            <a href="#laos" class="debug-zone-en laos" title="Room 7 – Laos-Cambodia"></a>
 
 			<a href="#maurice" class="carte-point-fr maurice" title="île Maurice"></a>
 			<a href="maldives" class="carte-point-fr maldives" title="Maldives"></a>
-		
+		    <a href="laos" class="carte-point-fr laos" title="Laos-Cambodge"></a>
+		  
 			<a href="#maurice" class="carte-point-en maurice" title="Mauritius"></a>
 			<a href="#maldives" class="carte-point-en maldives" title="Maldives"></a>
+			<a href="laos" class="carte-point-en laos" title="Laos-Cambodia"></a>
 		</div>
 	  </div>
     </div>
@@ -358,13 +361,60 @@
   <h2 id="salle_maldives">🐠 Salle 6 — L'Atoll aux Mille Bleus</h2>
   <div class="navigation-salles">
     <a href="#maurice" id="btn_previous_4" class="nav-btn precedent">← Salle précédente</a>
+	<a href="#laos" id="btn_next_5" class="nav-btn suivante">← Salle suivante</a>
     <a href="#carte" id="btn_back_5" class="nav-btn retour">🗺️ Retour à la carte</a>
 	<a href="#sommaire" id="btn_summary_7" class="nav-btn sommaire">📚 Retour au sommaire</a>
-	<a href="#cloture" id="btn_epilogue" class="nav-btn epilogue" title="Lire l’épilogue poétique">🌌 Fin du voyage</a>
   </div>
 
   <div class="table-image-container">
     <img src="Maldives.jpg" id="paysage_maldives" title="Mille bleus de l'Atoll" alt="Fractale inspirée des nuances coralliennes et des bleus infinis de l’atoll maldivien"/>
+    <table>
+      <thead>
+        <tr>
+          <th id="element6">Élément</th>
+          <th id="lien6">Lien</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td id="coraux">Maldives : Coraux, un trésor à sauver</td>
+          <td>🏛️ <a href="https://www.youtube.com/watch?v=gUOQ9baRLUI" id="decouvre6" target="_blank" rel="noopener noreferrer">Découvrir</a></td>
+        </tr>
+        <tr>
+          <td id="raies">Maldives : Le ballet des raies manta</td>
+          <td>🏛️ <a href="https://www.youtube.com/watch?v=aCY3qnFvEXo" id="decouvre7" target="_blank" rel="noopener noreferrer">Découvrir</a></td>
+        </tr>
+        <tr>
+          <td id="poissons">La Ligne Latérale – Banc de poissons</td>
+          <td>🎙️ <a href="https://youtu.be/9w1zh9fnmXg" id="explore5" target="_blank" rel="noopener noreferrer">Explorer</a></td>
+        </tr>
+      </tbody>
+    </table>
+	<figure>
+	  <figcaption id="sonMaldives" class="caption">
+		🎶 Ambiance sonore : murmures des profondeurs, chants de baleines et ballet silencieux des poissons — l’atoll respire dans l’écho du bleu.
+	  </figcaption>
+	  <audio controls title="Ambiance sonore : Chants des profondeurs, des baleines et des poissons">
+		<source src="sounds/maldives-sound.mp3" type="audio/mpeg">
+		Votre navigateur ne supporte pas l’audio HTML5.
+	  </audio>
+	</figure>
+  </div>
+  
+</section>
+
+<!-- Salle 7 — Laos-Cambodge -->
+<section id="laos">
+  <h2 id="salle_laos">🐠 Salle 7 — Mystères du Laos et du Cambodge</h2>
+  <div class="navigation-salles">
+    <a href="#maldives" id="btn_previous_5" class="nav-btn precedent">← Salle précédente</a>
+    <a href="#carte" id="btn_back_6" class="nav-btn retour">🗺️ Retour à la carte</a>
+	<a href="#sommaire" id="btn_summary_8" class="nav-btn sommaire">📚 Retour au sommaire</a>
+	<a href="#cloture" id="btn_epilogue" class="nav-btn epilogue" title="Lire l’épilogue poétique">🌌 Fin du voyage</a>
+  </div>
+
+  <div class="table-image-container">
+    <img src="LaosCambodge.jpg" id="paysage_laos" title="Mille verts du Laos-Cambodge" alt="Fractale inspirée des nuances de verts du Laos-cambodge"/>
     <table>
       <thead>
         <tr>
@@ -466,7 +516,7 @@
 	const handleNavigation = (sourceElement, type) => {
 	  const classList = Array.from(sourceElement.classList);
 	  const salleName = classList.find(cls =>
-		["hampi", "bali", "flores", "perou", "maurice", "maldives"].includes(cls)
+		["hampi", "bali", "flores", "perou", "maurice", "maldives", "laos"].includes(cls)
 	  );
 
 	  if (!salleName) return;
@@ -602,6 +652,7 @@
 		document.getElementById("paysage_perou").title = "Salines fractales péruviennes";
 		document.getElementById("paysage_maurice").title = "Couleurs des 7 Terres – Éclats d’Île et d’Océan";
 		document.getElementById("paysage_maldives").title = "Mille bleus de l'Atoll";
+		document.getElementById("paysage_laos").title = "Mille verts du Laos-Cambodge";
 		document.getElementById("fleche-gauche").alt = "Naviguer vers la carte précédente",
 		document.getElementById("fleche-droite").alt = "Naviguer vers la carte suivante",
 		document.getElementById("paysage_hampi").alt = "Fractale inspirée des temples et paysages mystiques de Hampi";
@@ -610,6 +661,7 @@
 		document.getElementById("paysage_perou").alt = "Fractale inspirée des salines de Maras, entre géométrie minérale et lumière des Andes";
 		document.getElementById("paysage_maurice").alt = "Fractale aux couleurs de Maurice, où les dunes arc-en-ciel s’unissent aux lagons turquoise et aux palmes dansantes.";
 		document.getElementById("paysage_maldives").alt = "ractale inspirée des nuances coralliennes et des bleus infinis de l’atoll maldivien";
+		document.getElementById("paysage_laos").alt = "Fractale aux couleurs vertes du Laos-Cambodge";
 	  } else if (lang === "en") {
 	    document.getElementById("btn_enter").title = "Begin the poetic journey";
 		document.getElementById("btn_exit").title = "Exit the exhibition";
@@ -625,6 +677,7 @@
 		document.getElementById("paysage_perou").title = "Peruvian Fractal Salt Flats";
 		document.getElementById("paysage_maurice").title = "Colors of the Seven Earths – Island and Ocean Splendor";
 		document.getElementById("paysage_maldives").title = "A Thousand Blues of the Atoll";
+		document.getElementById("paysage_laos").title = "A Thousand Greens from Laos-Cambodia";
 		document.getElementById("fleche-gauche").alt = "Navigate to previous map",
 		document.getElementById("fleche-droite").alt = "Navigate to next map",
 		document.getElementById("paysage_hampi").alt = "Fractal inspired by the temples and mystical scenery of Hampi";
@@ -633,6 +686,7 @@
 		document.getElementById("paysage_perou").alt = "Fractal inspired by the salt ponds of Maras, blending mineral geometry and Andean light";
 		document.getElementById("paysage_maurice").alt = "Fractal in the colors of Mauritius, where rainbow dunes merge with turquoise lagoons and dancing palm trees.";
 		document.getElementById("paysage_maldives").alt = "Fractal inspired by coral hues and the endless blues of the Maldivian atoll.";
+		document.getElementById("paysage_laos").alt = "Fractal in the green colors of Laos-Cambodia";
 	  }
 	}
 
