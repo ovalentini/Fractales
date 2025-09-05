@@ -159,7 +159,7 @@
 [tonle_fr] 'Tonle Sap: Naviguer entre les arbres et les toits'
 [tonle_en] 'Tonle Sap: Drifting between treetops and rooftops'
 [angkor_fr] 'Ce qui se cache derrière Angkor Wat'
-[angkor_en] 'What's hidden behind Angkor Wat?'
+[angkor_en] 'What´s hidden behind Angkor Wat?'
 [sonLaos_fr] 'Enrichissement sonore'
 [sonLaos_en] 'Soundscape enrichment'
 [element1_fr] 'Élément'
