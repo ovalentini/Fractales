@@ -435,23 +435,25 @@ button:hover {
 }
 
 /* 📚 Sommaire exposition */
-.sommaire-ligne {
-  text-align: center;
-  font-size: 1.1em;
-  line-height: 1.6;
-  color: #444;
-  margin: 20px auto;
-  max-width: 95%;
+.sommaire-vertical {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 20px;
 }
 
-.sommaire-ligne a {
+.sommaire-vertical li {
+  margin-bottom: 8px;
+  font-size: 1.1em;
+}
+
+.sommaire-vertical a {
   text-decoration: none;
   color: #2c3e50;
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
-.sommaire-ligne a:hover {
+.sommaire-vertical a:hover {
   color: #16a085;
 }
 
