@@ -435,7 +435,23 @@ button:hover {
 }
 
 /* 📚 Sommaire exposition */
-.sommaire-exposition {
+.sommaire-ligne {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.sommaire-ligne li {
+  font-size: 1.1em;
+  font-weight: 500;
+  color: #444;
+}
+
+/* .sommaire-exposition {
   padding-left: 0;
 }
 .sommaire-exposition ul {
@@ -452,10 +468,10 @@ button:hover {
 }
 .sommaire-exposition ul ul {
   margin-left: 20px;
-}
+}*/
 
 /* ✨ Salles */
-.sommaire-exposition .salle-1,
+/*.sommaire-exposition .salle-1,
 .sommaire-exposition .salle-2,
 .sommaire-exposition .salle-3,
 .sommaire-exposition .salle-4 {
@@ -488,7 +504,7 @@ button:hover {
 .salle-4:hover {
   background-color: #D3E7FF;
   box-shadow: 0 0 12px rgba(0, 0, 255, 0.4);
-}
+}*/
 
 /* Règles spécifiques pour petits écrans */
 @media screen and (max-width: 600px) {
