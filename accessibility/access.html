@@ -457,14 +457,16 @@
 	
 	// Navigation et carte interactive
 	const handleNavigation = (sourceElement, type) => {
+	  console.log("Coucou"); 
 	  const classList = Array.from(sourceElement.classList);
 	  const salleName = classList.find(cls =>
-		["hampi", "bali", "flores", "perou"].includes(cls)
+		["hampi", "bali", "flores", "perou", "maurice", "maldives", "laos"].includes(cls)
 	  );
 
+      console.log("Coucou2");
 	  if (!salleName) return;
 
-	  const langSuffix = classList.includes("carte-point-en") || classList.includes("debug-zone-en") ? "en" : "fr";
+	  const langSuffix = classList.includes("carte-point-fr") || classList.includes("debug-zone-fr") ? "fr" : "en";
 	  const targetType = type === "debug-zone" ? "carte-point" : "debug-zone";
 	  // logMessage(`🎯 Type source : ${type}, cible : ${targetType}`);
 
@@ -476,7 +478,7 @@
 		highlightTarget.classList.add("highlight");
 		setTimeout(() => highlightTarget.classList.remove("highlight"), 1000);
 	  } else {
-		logMessage(`❌ Aucun élément trouvé pour salle : ${salleName}`);
+		//logMessage(`❌ Aucun élément trouvé pour salle : ${salleName}`);
 	  }
 
 	  const scrollTarget = document.querySelector(`#${salleName}`);
@@ -485,8 +487,8 @@
 	  }
 	};
 
-	  // 🖱️ Écouteurs sur les zones interactives
-	  document.querySelectorAll(".debug-zone-fr, .debug-zone-en").forEach(zone =>
+	// 🖱️ Écouteurs sur les zones interactives
+	document.querySelectorAll(".debug-zone-fr, .debug-zone-en").forEach(zone =>
 	  zone.addEventListener("click", e => {
 		e.preventDefault();
 		// logMessage("🖱️ Zone cliquée : " + zone.className);
@@ -502,14 +504,14 @@
 	  })
 	);
 
-	document.addEventListener("DOMContentLoaded", () => {
+	//document.addEventListener("DOMContentLoaded", () => {
 	  // 🔍 Détection de la langue active
 	  //const navLang = navigator.language.startsWith("fr") ? "fr" : "en";
 	  //const langSuffix = navlang;
 
 	  // Tu peux continuer ici avec ton code...
 	  // logMessage("Langue détectée : " + langSuffix);
-	});
+	//});
 </script>
 
 <script>
@@ -599,7 +601,7 @@
 	  return dictionnaire;
 	}
 
-    // Pas implémanter
+    // Pas implémenté
     async function chargerSalles(url) {
 	  const response = await fetch(url);
 	  const data = await response.json();
@@ -633,10 +635,16 @@
 		document.getElementById("paysage_bali").title = "Paysage spirituel balinais : rizières et mandalas";
 		document.getElementById("paysage_flores").title = "Dragon de Komodo près d'une plage rose";
 		document.getElementById("paysage_perou").title = "Machu Picchu entouré d'une cathédrale dorée";
+		document.getElementById("paysage_maurice").title = "Couleurs des 7 Terres – Éclats d’Île et d’Océan";
+		document.getElementById("paysage_maldives").title = "Mille bleus de l'Atoll";
+		document.getElementById("paysage_laos").title = "Mille verts du Laos-Cambodge";
 		document.getElementById("paysage_hampi").alt = "Fractale inspirée des temples et paysages mystiques de Hampi";
 		document.getElementById("paysage_bali").alt = "Fractale inspirée des paysages de Bali : rizières et mandalas";
 		document.getElementById("paysage_flores").alt = "Fractale évoquant un dragon de Komodo près d'une plage rose et du récif corallien de l'île de Flores";
 		document.getElementById("paysage_perou").alt = "Vue fractale du Machu Picchu entourée de cercles dorés d'une cathédrale";
+		document.getElementById("paysage_maurice").alt = "Fractale aux couleurs de Maurice, où les dunes arc-en-ciel s’unissent aux lagons turquoise et aux palmes dansantes.";
+		document.getElementById("paysage_maldives").alt = "ractale inspirée des nuances coralliennes et des bleus infinis de l’atoll maldivien";
+		document.getElementById("paysage_laos").alt = "Fractale aux couleurs vertes du Laos-Cambodge";
 	  } else if (lang === "en") {
 	    document.getElementById("btn_enter").title = "Begin the poetic journey";
 		document.getElementById("btn_exit").title = "Exit the exhibition";
@@ -650,10 +658,16 @@
 		document.getElementById("paysage_bali").title = "Balinese spiritual landscape: rice fields and mandalas";
 		document.getElementById("paysage_flores").title = "Komodo dragon near pink beach";
 		document.getElementById("paysage_perou").title = "Machu Picchu surrounded by golden cathedral";
+		document.getElementById("paysage_perou").title = "Peruvian Fractal Salt Flats";
+		document.getElementById("paysage_maurice").title = "Colors of the Seven Earths – Island and Ocean Splendor";
+		document.getElementById("paysage_maldives").title = "A Thousand Blues of the Atoll";
 		document.getElementById("paysage_hampi").alt = "Fractal inspired by the temples and mystical scenery of Hampi";
 		document.getElementById("paysage_bali").alt = "Fractal inspired by Balinese landscapes: rice fields and mandalas";
 		document.getElementById("paysage_flores").alt = "Fractal evoking Komodo dragon near pink beach and coral reef on Flores Island";
 		document.getElementById("paysage_perou").alt = "Fractal view of Machu Picchu surrounded by golden cathedral-like circles";
+		document.getElementById("paysage_maurice").alt = "Fractal in the colors of Mauritius, where rainbow dunes merge with turquoise lagoons and dancing palm trees.";
+		document.getElementById("paysage_maldives").alt = "Fractal inspired by coral hues and the endless blues of the Maldivian atoll.";
+		document.getElementById("paysage_laos").alt = "Fractal in the green colors of Laos-Cambodia";
 	  }
 	}
 
@@ -682,7 +696,7 @@
 	  const langueOpposée = langueActuelle === 'fr' ? 'en' : 'fr';
 	  const zonesOpposées = document.querySelectorAll(`.debug-zone-${langueOpposée}`);
 	  if (zonesOpposées.length === 0) {
-		logMessage(`ℹ️ Aucun élément trouvé pour la langue opposée : ${langueOpposée}`);
+		//logMessage(`ℹ️ Aucun élément trouvé pour la langue opposée : ${langueOpposée}`);
 		return;
 	  }
 	  zonesOpposées.forEach(el => {
@@ -749,6 +763,40 @@
 	  img.alt = imgData.alt;
 	  img.title = imgData.title;
 	  caption.textContent = imgData.caption;
+	  
+	  const img2 = document.getElementById("fractals-img2");
+	  const caption2 = document.getElementById("image-caption2");
+
+	  const imageData2 = {
+	  fr: {
+		src: "carte-interactive-fr2.jpg",
+		alt: "Reflets insulaires",
+		title: "Cliquer sur une zone ou un point pour aller à la salle correspondante",
+		caption: "Chaque reflet insulaire murmure une légende. Laissez les vagues vous guider."
+	  },
+	  en: {
+		src: "carte-interactive-en2.jpg",
+		alt: "Island Reflections",
+		title: "Click on an area or point to go to the corresponding room",
+		caption: "Each island reflection whispers a legend. Let the waves guide you."
+	  }
+	  };
+
+		const imgData2 = imageData2[langue];
+		img2.src = imgData2.src;
+		img2.alt = imgData2.alt;
+		img2.title = imgData2.title;
+		caption2.textContent = imgData2.caption;
+
+	  
+	  const cartes = document.querySelectorAll('.carte-wrapper img');
+	  cartes.forEach(carte => {
+		  carte.addEventListener('click', () => {
+			// action commune à toutes les cartes
+		  });
+		});
+
+	  
 
 	  // 🖼️ Mise à jour de la classe body
 	  document.body.className = `lang-${langue}`;

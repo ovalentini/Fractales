@@ -206,6 +206,7 @@ button#fleche-gauche, button#fleche-droite {
 
 button:hover {
   transform: scale(1.05);
+}
 
 .carte-point-en {
   position: absolute;
