@@ -37,6 +37,9 @@ btn_map_0_fr="🗺️ Carte interactive"
 carte_interactive_en="🗺️ Interactive map"
 carte_interactive_fr="🗺️ Carte interactive"
 
+changer_carte_en="Change interactive map"
+changer_carte_fr="Changer de carte interactive"
+
 image-caption_en="Each spiral tells a story. Let the patterns guide your soul."
 image-caption_fr="Chaque spirale raconte une histoire. Laissez les motifs guider votre âme."
 
