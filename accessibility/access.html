@@ -54,38 +54,66 @@
 	</section>
 
     <!-- 🗺️ Interactive Map -->
-    <section id="carte" class="interactive-map" role="region" aria-labelledby="carte_interactive">
-      <h2 id="carte_interactive">🗺️ Interactive map</h2>
-      <div class="carte-container">
-        <div class="carte-wrapper">
-          <img id="fractals-img" src="carte-interactive-en.jpg" title="Interactive fractal map with clickable regions for each room" alt="Interactive fractal map with clickable regions for each room" usemap="#map-salles" aria-describedby="image-caption"/>
-          <p id="image-caption" class="caption">Each spiral tells a story. Let the patterns guide your soul.</p>
+   <section id="carte" class="interactive-map">
+    <h2 id="carte_interactive">🗺️ Carte interactive</h2>
+	<div class="navigation-cartes">
+	  <button id="fleche-gauche" title="aller à la carte précédente" aria-label="Naviguer vers la carte précédente">⬅️</button>
+	  <button id="fleche-droite" title="aller à la carte suivante" aria-label="Naviguer vers la carte suivante">➡️</button>
+	  <p class="carte-texte" id="changer_carte">Changer de carte interactive</p>
+	</div>
+    <div class="carte-container">
+	  <div class="carte-page active" id="carte1">
+		  <div class="carte-wrapper">
+			<img id="fractals-img" src="carte-interactive-fr.jpg" title="Cliquer sur une zone ou un point pour aller à la salle correspondante" usemap="#map-salles" />
+			<p id="image-caption" class="caption">Chaque spirale raconte une histoire. Laissez les motifs guider votre âme.</p>
+			
+			<!-- Zones & Points -->
+			<a href="#hampi" class="debug-zone-fr hampi" title="Salle 1 – Hampi"></a>
+			<a href="#perou" class="debug-zone-fr perou" title="Salle 4 – Pérou"></a>
+			<a href="#flores" class="debug-zone-fr flores" title="Salle 3 – Florès"></a>
+			<a href="#bali" class="debug-zone-fr bali" title="Salle 2 – Bali"></a>
+			
+			<a href="#hampi" class="debug-zone-en hampi" title="Room 1 – Hampi"></a>
+			<a href="#perou" class="debug-zone-en perou" title="Room 4 – Peru"></a>
+			<a href="#flores" class="debug-zone-en flores" title="Room 3 – Flores"></a>
+			<a href="#bali" class="debug-zone-en bali" title="Room 2 – Bali"></a>
 
-          <!-- Zones & Points with tabindex -->
-          <a href="#hampi" class="debug-zone-en hampi" title="Room 1 – Hampi"></a>
-          <a href="#bali" class="debug-zone-en bali" title="Room 2 – Bali"></a>
-          <a href="#flores" class="debug-zone-en flores" title="Room 3 – Flores"></a>
-          <a href="#perou" class="debug-zone-en perou" title="Room 4 – Peru"></a>
-		  
-		  <a href="#hampi" class="debug-zone-fr hampi" title="Salle 1 – Hampi"></a>
-          <a href="#bali" class="debug-zone-fr bali" title="Salle 2 – Bali"></a>
-          <a href="#flores" class="debug-zone-fr flores" title="Salle 3 – Florès"></a>
-          <a href="#perou" class="debug-zone-fr perou" title="Salle 4 – Pérou"></a>
+			<a href="#hampi" class="carte-point-fr hampi" title="Hampi"></a>
+			<a href="#bali" class="carte-point-fr bali" title="Bali"></a>
+			<a href="#flores" class="carte-point-fr flores" title="Florès"></a>
+			<a href="#perou" class="carte-point-fr perou" title="Pérou"></a>
+			
+			<a href="#hampi" class="carte-point-en hampi" title="Hampi"></a>
+			<a href="#bali" class="carte-point-en bali" title="Bali"></a>
+			<a href="#flores" class="carte-point-en flores" title="Flores"></a>
+			<a href="#perou" class="carte-point-en perou" title="Peru"></a>
+		  </div>
+	  </div>
+	  <div class="carte-page" id="carte2">
+		<div class="carte-wrapper">
+			<img id="fractals-img2" src="carte-interactive-fr2.jpg" title="Cliquer sur une zone ou un point pour aller à la salle correspondante" usemap="#map-salles2" />
+			<p id="image-caption2" class="caption">Chaque spirale raconte une histoire. Laissez les motifs guider votre âme.</p>
+			
+			<!-- Zones & Points -->
+			<a href="#maurice" class="debug-zone-fr maurice" title="Salle 5 – île Maurice"></a>
+			<a href="#maldives" class="debug-zone-fr maldives" title="Salle 6 – Maldives"></a>
+			<a href="#laos" class="debug-zone-fr laos" title="Salle 7 – Laos-Cambodge"></a>
+			
+			<a href="#maurice" class="debug-zone-en maurice" title="Room 5 – Mauritius"></a>
+			<a href="#maldives" class="debug-zone-en maldives" title="Room 6 – Maldives"></a>
+            <a href="#laos" class="debug-zone-en laos" title="Room 7 – Laos-Cambodia"></a>
 
-          <a href="#hampi" class="carte-point-en hampi" title="Hampi" tabindex="-1"></a>
-          <a href="#bali" class="carte-point-en bali" title="Bali" tabindex="-1"></a>
-          <a href="#flores" class="carte-point-en flores" title="Flores" tabindex="-1"></a>
-          <a href="#perou" class="carte-point-en perou" title="Peru" tabindex="-1"></a>
+			<a href="#maurice" class="carte-point-fr maurice" title="île Maurice"></a>
+			<a href="#maldives" class="carte-point-fr maldives" title="Maldives"></a>
+		    <a href="#laos" class="carte-point-fr laos" title="Laos-Cambodge"></a>
 		  
-		  <a href="#hampi" class="carte-point-fr hampi" title="Hampi" tabindex="-1"></a>
-          <a href="#bali" class="carte-point-fr bali" title="Bali" tabindex="-1"></a>
-          <a href="#flores" class="carte-point-fr flores" title="Florès" tabindex="-1"></a>
-          <a href="#perou" class="carte-point-fr perou" title="Perou" tabindex="-1"></a>
-		  
-		  
-        </div>
-      </div>
-    </section>
+			<a href="#maurice" class="carte-point-en maurice" title="Mauritius"></a>
+			<a href="#maldives" class="carte-point-en maldives" title="Maldives"></a>
+			<a href="#laos" class="carte-point-en laos" title="Laos-Cambodia"></a>
+		</div>
+	  </div>
+    </div>
+  </section>
 
     <!-- 🕉️ Room 1 — Hampi Market -->
     <section id="hampi" role="region" aria-labelledby="salle_hampi">
@@ -320,6 +348,94 @@
 		    <a href="#quick-navigation" class="nav-btn retour" id="navigationPerou" title="Return to subtitle index">🔝 Back to Quick Navigation</a>
 	    </div>
 	</section>
+	
+	 <!-- 🏔️ Room 5 — Mauritius -->
+    <section id="maurice" role="region" aria-labelledby="salle_maurice">
+      <h2 id="salle_maurice">🏔️ Room 5 — Mauritius</h2>
+	   <div class="navigation-salles">
+		<a href="#carte" id="btn_back_Maurice" class="nav-btn retour">🗺️ Back to the map</a>
+	  </div>
+      <div class="table-image-container">
+        <img src="Maurice.jpg" id="paysage_maurice" alt="Fractal view of Machu Picchu surrounded by golden cathedral-like circles" />
+        <table>
+          <thead>
+            <tr>
+              <th id="element5">Element</th>
+              <th id="lien5">Link</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td id="chant">🏔️ Majestic Andes and ancient terraces</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td id="foret">🌄 Machu Picchu and Inca heritage</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+	
+	<!-- 🏔️ Room 6 — Maldives -->
+    <section id="maldives" role="region" aria-labelledby="salle_maldives">
+      <h2 id="salle_maldives">🏔️ Room 6 — Maldives</h2>
+	   <div class="navigation-salles">
+		<a href="#carte" id="btn_back_Maldives" class="nav-btn retour">🗺️ Back to the map</a>
+	  </div>
+      <div class="table-image-container">
+        <img src="Maldives.jpg" id="paysage_maldives" alt="Fractal view of Machu Picchu surrounded by golden cathedral-like circles" />
+        <table>
+          <thead>
+            <tr>
+              <th id="element6">Element</th>
+              <th id="lien6">Link</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td id="chant">🏔️ Majestic Andes and ancient terraces</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td id="foret">🌄 Machu Picchu and Inca heritage</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+	
+	<!-- 🏔️ Room 7 — Laos-Cambodge -->
+    <section id="laos" role="region" aria-labelledby="salle_laos">
+      <h2 id="salle_laos">🏔️ Room 7 — Laos-Cambodia</h2>
+	   <div class="navigation-salles">
+		<a href="#carte" id="btn_back_Laos" class="nav-btn retour">🗺️ Back to the map</a>
+	  </div>
+      <div class="table-image-container">
+        <img src="LaosCambodge.jpg" id="paysage_laos" alt="Fractal view of Machu Picchu surrounded by golden cathedral-like circles" />
+        <table>
+          <thead>
+            <tr>
+              <th id="element7">Element</th>
+              <th id="lien7">Link</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td id="chant">🏔️ Majestic Andes and ancient terraces</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td id="foret">🌄 Machu Picchu and Inca heritage</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+	
   </main>
 
   <!-- 🌌 Footer -->
@@ -394,6 +510,32 @@
 	  // Tu peux continuer ici avec ton code...
 	  // logMessage("Langue détectée : " + langSuffix);
 	});
+</script>
+
+<script>
+  let pageActuelle = 0;
+  const pages = document.querySelectorAll('.carte-page');
+
+  function afficherPage(index) {
+    pages.forEach((page, i) => {
+      page.classList.toggle('active', i === index);
+    });
+  }
+
+  const flecheGauche = document.getElementById('fleche-gauche');
+  const flecheDroite = document.getElementById('fleche-droite');
+
+  if (flecheGauche && flecheDroite) {
+    flecheGauche.addEventListener('click', () => {
+      pageActuelle = (pageActuelle - 1 + pages.length) % pages.length;
+      afficherPage(pageActuelle);
+    });
+
+    flecheDroite.addEventListener('click', () => {
+      pageActuelle = (pageActuelle + 1) % pages.length;
+      afficherPage(pageActuelle);
+    });
+  }
 </script>
 
 <script>
