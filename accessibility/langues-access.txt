@@ -226,8 +226,8 @@ enrichissementSonoreValleeSacree_en="The Andes whisper legends in the wind, and 
 navigationPerou_en="🔝 Back to Quick Navigation"
 navigationPerou_fr="🔝 Retour à la navigation rapide"
 
-salle_maurice_en="🏔️ Room 5 — Mauritius"
-salle_maurice_fr="🏔️ Salle 5 — île Maurice"
+salle_maurice_en="🏝️ Room 5 — The Seven Colored Earths of Mauritius"
+salle_maurice_fr="🏝️ Salle 5 — Les 7 Terres de Maurice"
 
 element5_en="Element"
 element5_fr="Élément"
@@ -238,8 +238,8 @@ lien5_fr="Lien"
 btn_back_Maurice_en="🗺️ Back to the map"
 btn_back_Maurice_fr="🗺️ Retour à la carte"
 
-salle_maldives_en="🏔️ Room 6 — Maldives"
-salle_maldives_fr="🏔️ Salle 6 — Maldives"
+salle_maldives_en="🐠 Room 6 — The Atoll of a Thousand Blues"
+salle_maldives_fr="🐠 Salle 6 — L’Atoll aux Mille Bleus"
 
 element6_en="Element"
 element6_fr="Élément"
@@ -250,8 +250,8 @@ lien6_fr="Lien"
 btn_back_Maldives_en="🗺️ Back to the map"
 btn_back_Maldives_fr="🗺️ Retour à la carte"
 
-salle_laos_en="🏔️ Room 7 — Laos-Cambodia"
-salle_laos_fr="🏔️ Salle 7 — Laos-Cambodge"
+salle_laos_en="🛕 Room 7 — Mysteries of Laos & Cambodia"
+salle_laos_fr="🛕 Salle 7 — Mystères du Laos et du Cambodge"
 
 element7_en="Element"
 element7_fr="Élément"
