@@ -251,7 +251,7 @@ btn_back_Maldives_en="🗺️ Back to the map"
 btn_back_Maldives_fr="🗺️ Retour à la carte"
 
 salle_laos_en="🏔️ Room 7 — Laos-Cambodia"
-salle_maldives_fr="🏔️ Salle 7 — Laos-Cambodge"
+salle_laos_fr="🏔️ Salle 7 — Laos-Cambodge"
 
 element7_en="Element"
 element7_fr="Élément"

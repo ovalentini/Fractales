@@ -457,18 +457,17 @@
 	
 	// Navigation et carte interactive
 	const handleNavigation = (sourceElement, type) => {
-	  console.log("Coucou"); 
 	  const classList = Array.from(sourceElement.classList);
 	  const salleName = classList.find(cls =>
 		["hampi", "bali", "flores", "perou", "maurice", "maldives", "laos"].includes(cls)
 	  );
 
-      console.log("Coucou2");
 	  if (!salleName) return;
+      console.log("Coucou");
 
 	  const langSuffix = classList.includes("carte-point-fr") || classList.includes("debug-zone-fr") ? "fr" : "en";
 	  const targetType = type === "debug-zone" ? "carte-point" : "debug-zone";
-	  // logMessage(`🎯 Type source : ${type}, cible : ${targetType}`);
+	  console.log(`🎯 Type source : ${type}, cible : ${targetType}`);
 
 	  const highlightTarget = Array.from(document.querySelectorAll(`.${targetType}-${langSuffix}`))
 		.find(el => el.classList.contains(salleName));
@@ -543,7 +542,7 @@
 <script>
 
     // lecture de langues.txt
-	const navLang = navigator.language.startsWith("fr") ? "fr" : "en";
+	const navLang = navigator.language.startsWith("en") ? "en" : "fr";
 	langueActuelle = navLang;
 	console.log(langueActuelle);
 
