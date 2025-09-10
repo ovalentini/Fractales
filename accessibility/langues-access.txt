@@ -238,8 +238,41 @@ element5_fr="Élément"
 lien5_en="Link"
 lien5_fr="Lien"
 
+couleur_fr="🌈 Terres des 7 couleurs de Chamarel"
+couleur_en="🌈 Seven-Colored Earth of Chamarel"
+
+lagon_fr="🏝️ Lagon de l’île aux Cerfs"
+lagon_en="🏝️ Lagoon of Île aux Cerfs"
+
+subtitles_maurice_en="🎧 Subtitles & Transcription – Room 5: Mauritius"
+subtitles_maurice_fr="🎧 Sous-titres et Transcription – Salle 5 : île Maurice"
+
 btn_back_Maurice_en="🗺️ Back to the map"
 btn_back_Maurice_fr="🗺️ Retour à la carte"
+
+subtitle_ocean_en="[Ocean waves gently lapping the shore]"
+subtitle_ocean_fr="[Vagues de l’océan venant doucement caresser le rivage]"
+
+subtitle_oiseau_en="[Tropical birds singing in the canopy]"
+subtitle_oiseau_fr="[Chants d’oiseaux tropicaux dans la canopée]"
+
+subtitle_cascade_en="[Soft waterfall echoing through the rocks]"
+subtitle_cascade_fr="[Cascade douce résonnant à travers les rochers]"
+
+transcription_maurice_en="A peaceful lagoon stretches under the morning sun.  Tropical birds call from the dense foliage, while a gentle waterfall trickles nearby.  The air is warm, filled with the scent of salt and hibiscus.  This is Mauritius — an island breathing between sky and earth."
+transcription_maurice_fr="Un lagon paisible s’étend sous le soleil du matin. Les oiseaux tropicaux chantent depuis le feuillage dense, tandis qu’une cascade douce murmure à proximité. L’air est chaud, imprégné de sel et de fleurs d’hibiscus. Voici l’île Maurice — une île qui respire entre ciel et terre."
+
+texteNarrationMaurice_en="Imagine a tranquil lagoon surrounded by lush vegetation.  The water shimmers in turquoise tones, while tropical birds weave melodies overhead. A small waterfall flows gently over volcanic rocks, adding rhythm to the silence. Mauritius reveals itself as a sanctuary of light, sound, and breath."
+texteNarrationMaurice_fr="texteNarrationMaurice_fr="Imaginez un lagon paisible entouré d’une végétation luxuriante. L’eau scintille en nuances turquoise, tandis que les oiseaux tropicaux tissent leurs mélodies au-dessus de vous. Une petite cascade s’écoule doucement sur les roches volcaniques, ajoutant un rythme au silence. L’île Maurice se révèle comme un sanctuaire de lumière, de son et de souffle."
+
+enrichissementMaurice_fr="Enrichissement sonore"
+enrichissementMaurice_en="Soudscape Enrichment"
+
+enrichissementSonoreMaurice_fr="lagon paisible, chants tropicaux et cascade minérale — une île qui respire entre ciel et terre."
+enrichissementSonoreMaurice_en="Peaceful lagoon, tropical songs and mineral waterfall — an island breathing between sky and earth."
+
+navigationMaurice_en="🔝 Back to Quick Navigation"
+navigationMaurice_fr="🔝 Retour à la navigation rapide"
 
 salle_maldives_en="🐠 Room 6 — The Atoll of a Thousand Blues"
 salle_maldives_fr="🐠 Salle 6 — L’Atoll aux Mille Bleus"
@@ -250,8 +283,41 @@ element6_fr="Élément"
 lien6_en="Link"
 lien6_fr="Lien"
 
+bleu_fr="🌊 Mille bleus de l’océan"
+bleu_en="🌊 A Thousand Blues of the Ocean"
+
+corail_fr="🪸 Plages coraliennes"
+orail_en="🪸 Coral Beaches"
+
+subtitles_maldives_en="🎧 Subtitles & Transcription – Room 6: Maldives"
+subtitles_maldives_fr="🎧 Sous-titres et Transcription – Salle 6 : Maldives"
+
 btn_back_Maldives_en="🗺️ Back to the map"
 btn_back_Maldives_fr="🗺️ Retour à la carte"
+
+subtitle_profondeur_en="[deep ocean ambience]"
+subtitle_profondeur_fr="[Ambiance des profondeurs océaniques]"
+
+subtitle_baleine_en="[whale song echoing in the distance]"
+subtitle_baleine_fr="[Chant de baleine résonnant au loin]"
+
+subtitle_poisson_en="[gentle swish of fish swimming]"
+subtitle_poisson_fr="[Frémissement doux des poissons nageant]"
+
+transcription_maldives_en="Beneath the surface of a turquoise lagoon, silence reigns. Whales sing in the distance, their calls resonating through the deep. Schools of fish glide in synchronized motion, weaving through coral gardens. The Maldives breathe in the echo of blue — a sanctuary of depth and serenity."
+transcription_maldives_fr="Sous la surface d’un lagon turquoise, le silence règne. Les baleines chantent au loin, leurs appels résonnant dans les profondeurs. Des bancs de poissons glissent en parfaite synchronie, tissant leur chemin à travers les jardins de corail. Les Maldives respirent dans l’écho du bleu — un sanctuaire de profondeur et de sérénité."
+
+texteNarrationMaldives_en="Imagine descending into the calm waters of a Maldivian atoll. The light fades into shades of blue as marine life surrounds you. A whale’s distant song pulses through the depths, while fish shimmer like living constellations. Coral formations rise like underwater cathedrals, silent and sacred."
+texteNarrationMaldives_fr="Imaginez plonger dans les eaux calmes d’un atoll maldivien. La lumière s’estompe en nuances de bleu tandis que la vie marine vous enveloppe. Le chant lointain d’une baleine résonne dans les profondeurs, pendant que les poissons scintillent comme des constellations vivantes. Les formations coralliennes s’élèvent telles des cathédrales sous-marines, silencieuses et sacrées."
+
+enrichissementMaldives_fr="Enrichissement sonore"
+enrichissementMaldives_en="Soudscape Enrichment"
+
+enrichissementSonoreMaldives_fr="Murmures des profondeurs, chants de baleines et ballet silencieux des poissons — l’atoll respire dans l’écho du bleu."
+enrichissementSonoreMaldives_en="Whispers from the deep, whale songs, and the silent ballet of fish — the atoll breathes in the echo of blue."
+
+navigationMaldives_en="🔝 Back to Quick Navigation"
+navigationMaldives_fr="🔝 Retour à la navigation rapide"
 
 salle_laos_en="🛕 Room 7 — Mysteries of Laos & Cambodia"
 salle_laos_fr="🛕 Salle 7 — Mystères du Laos et du Cambodge"
@@ -262,8 +328,41 @@ element7_fr="Élément"
 lien7_en="Link"
 lien7_fr="Lien"
 
+cascade_fr="🌊 Cascade Kuang Si — eaux turquoise et forêt sacrée"
+cascade_en="🌊 Kuang Si Waterfall — turquoise waters and sacred forest"
+
+temple_fr="🪷 Temple Banteay Srei — dentelle de pierre et mémoire khmère"
+temple_en="🪷 Banteay Srei Temple — stone lacework and Khmer memory"
+
+subtitles_laos_en="🎧 Subtitles & Transcription – Room 7: Laos-Cambodia"
+subtitles_laos_fr="🎧 Sous-titres et Transcription – Salle 7 : Laos-Cambodge"
+
 btn_back_Laos_en="🗺️ Back to the map"
 btn_back_Laos_fr="🗺️ Retour à la carte"
+
+subtitle_clochette_en="[sacred bells echoing through flooded forest]"
+subtitle_clochette_fr="[Clochettes sacrées résonnant dans la forêt inondée]"
+
+subtitle_musique_en="[Khmer chant rising from ancient stones]"
+subtitle_musique_fr="[Chant khmer s’élevant des pierres anciennes]"
+
+subtitle_pluie_en="[gentle rain falling on floating rooftops]"
+subtitle_pluie_fr="[Pluie douce tombant sur les toits flottants]"
+
+transcription_laos_en="In the heart of a flooded forest, sacred bells shimmer in the mist. Khmer chants rise from moss-covered temples, echoing through time. Rain falls gently on floating rooftops, blending nature and memory. This is the soul of Laos and Cambodia — a landscape of silence and reverence."
+transcription_laos_fr="Au cœur d’une forêt inondée, des clochettes sacrées scintillent dans la brume. Des chants khmers s’élèvent depuis les temples couverts de mousse, résonnant à travers le temps. La pluie tombe doucement sur les toits flottants, mêlant nature et mémoire. Voici l’âme du Laos et du Cambodge — un paysage de silence et de révérence."
+
+texteNarrationLaos_en="Imagine walking through a forest where water laps at ancient roots. Bells ring softly from hidden shrines, and Khmer voices drift like incense. The rain taps gently on wooden roofs, as if whispering forgotten prayers. Laos and Cambodia unfold as a sacred tapestry of sound and stone."
+texteNarrationLaos_fr="Imaginez marcher dans une forêt où l’eau caresse les racines anciennes. Des clochettes résonnent doucement depuis des sanctuaires cachés, et des voix khmères flottent comme de l’encens. La pluie tambourine doucement sur les toits de bois, comme si elle murmurait des prières oubliées. Le Laos et le Cambodge se déploient comme une tapisserie sacrée de sons et de pierre."
+
+enrichissementLaos_fr="Enrichissement sonore"
+enrichissementLaos_en="Soudscape Enrichment"
+
+enrichissementSonoreLaos_fr="Clochettes sacrées dans la forêt inondée, chants khmers qui s’élèvent des pierres anciennes, et pluie qui murmure sur les toits du Tonle Sap."
+enrichissementSonoreLaos_en="Sacred bells in the flooded forest, Khmer chants rising from ancient stones, and rain whispering on the rooftops of Tonle Sap."
+
+navigationLaos_en="🔝 Back to Quick Navigation"
+navigationLaos_fr="🔝 Retour à la navigation rapide"
 
 cloture_visite_en="🖼️ Contemplative Epilogue – Closing of the Visit"
 cloture_visite_fr="🖼️ Épilogue contemplatif – Clôture de la visite"
