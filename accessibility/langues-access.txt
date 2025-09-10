@@ -31,6 +31,15 @@ nav_Flores_fr="🎧 Salle 3: Florès"
 nav_Perou_en="🎧 Room 4: Peru"
 nav_Perou_fr="🎧 Salle 4: Pérou"
 
+nav_Maurice_en="🎧 Room 5: Mauritius"
+nav_Maurice_fr="🎧 Salle 5: île Maurice"
+
+nav_Maldives_en="🎧 Room 6: Maldives"
+nav_Maldives_fr="🎧 Salle 6: Maldives"
+
+nav_Laos_en="🎧 Room 7: Laos-Cambodia"
+nav_Laos_fr="🎧 Salle 7: Laos-Cambodge"
+
 btn_map_0_en="🗺️ Interactive map"
 btn_map_0_fr="🗺️ Carte interactive"
 
