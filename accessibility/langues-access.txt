@@ -43,6 +43,27 @@ nav_Laos_fr="🎧 Salle 7: Laos-Cambodge"
 btn_map_en="🗺️ Interactive map"
 btn_map_fr="🗺️ Carte interactive"
 
+btnHampi_en="🎧 Listen"
+btnHampi_fr="🎧 Écouter"
+
+btnBali_en="🎧 Listen"
+btnBali_fr="🎧 Écouter"
+
+btnFlores_en="🎧 Listen"
+btnFlores_fr="🎧 Écouter"
+
+btnPerou_en="🎧 Listen"
+btnPerou_fr="🎧 Écouter"
+
+btnMaurice_en="🎧 Listen"
+btnMaurice_fr="🎧 Écouter"
+
+btnMaldives_en="🎧 Listen"
+btnMaldives_fr="🎧 Écouter"
+
+btnLaos_en="🎧 Listen"
+btnLaos_fr="🎧 Écouter"
+
 carte_interactive_en="🗺️ Interactive map"
 carte_interactive_fr="🗺️ Carte interactive"
 
