@@ -51,9 +51,9 @@
 		<li><a href="#subtitles_maldives" id="nav_Maldives">🎧 Room 6: Maldives</a></li>
 		<li><a href="#subtitles_laos" id="nav_Laos">🎧 Room 7: Laos-Cambodia</a></li>
 	  </ul>
-	  <div class="quick-navigation">
+	  <!--<div class="quick-navigation">
         <a href="#carte" id="btn_map" class="nav-btn retour" title="Access the interactive map">🗺️ Interactive map</a>
-      </div>
+      </div>-->
 	</section>
 
     <!-- 🧭 Alternative navigation to access the rooms -->
@@ -86,7 +86,7 @@
 		</li>
 		<li>
 		  <button id="nav_altMaldives" onclick="focusSection('maldives')" aria-label="Go to Room 6 — The Atoll of a Thousand Blues">
-			🌊 Room 6 Maldives
+			🐠 Room 6 Maldives
 		  </button>
 		</li>
 		<li>
@@ -101,15 +101,15 @@
    <section id="carte" class="interactive-map">
     <h2 id="carte_interactive">🗺️ Carte interactive</h2>
 	<div class="navigation-cartes">
-	  <button id="fleche-gauche" title="aller à la carte précédente" aria-label="Naviguer vers la carte précédente">⬅️</button>
-	  <button id="fleche-droite" title="aller à la carte suivante" aria-label="Naviguer vers la carte suivante">➡️</button>
+	  <button id="fleche-gauche" title="aller à la carte précédente" aria-label="Navigate to previous map">⬅️</button>
+	  <button id="fleche-droite" title="aller à la carte suivante" aria-label="Navigate to next map">➡️</button>
 	  <p class="carte-texte" id="changer_carte">Changer de carte interactive</p>
 	</div>
     <div class="carte-container">
 	  <div class="carte-page active" id="carte1">
 		  <div class="carte-wrapper">
-			<img id="fractals-img" src="carte-interactive-fr.jpg" title="Cliquer sur une zone ou un point pour aller à la salle correspondante" usemap="#map-salles" />
-			<p id="image-caption" class="caption">Chaque spirale raconte une histoire. Laissez les motifs guider votre âme.</p>
+			<img id="fractals-img" src="carte-interactive-fr.jpg" title="Click on an area or point to go to the corresponding room" usemap="#map-salles" />
+			<p id="image-caption" class="caption">Each spiral tells a story. Let the patterns guide your soul.</p>
 			
 			<!-- Zones & Points -->
 			<a href="#hampi" class="debug-zone-fr hampi" title="Salle 1 – Hampi"></a>
@@ -135,8 +135,8 @@
 	  </div>
 	  <div class="carte-page" id="carte2">
 		<div class="carte-wrapper">
-			<img id="fractals-img2" src="carte-interactive-fr2.jpg" title="Cliquer sur une zone ou un point pour aller à la salle correspondante" usemap="#map-salles2" />
-			<p id="image-caption2" class="caption">Chaque spirale raconte une histoire. Laissez les motifs guider votre âme.</p>
+			<img id="fractals-img2" src="carte-interactive-fr2.jpg" title="Click on an area or point to go to the corresponding room" usemap="#map-salles2" />
+			<p id="image-caption2" class="caption">Each spiral tells a story. Let the patterns guide your soul.</p>
 			
 			<!-- Zones & Points -->
 			<a href="#maurice" class="debug-zone-fr maurice" title="Salle 5 – île Maurice"></a>
@@ -212,7 +212,7 @@
 		    Listen to the temple’s resonance, where each pillar sings the story of a people.
 			The sounds of the market, the whispers of fabric, and sacred notes wrap you in a sonic fresco.
 		  </p>
-		  <button id="btnHampi" onclick="document.getElementById('audioHampi').play()" aria-label="Écouter l’enrichissement sonore de Hampi">🎧 Écouter</button> <audio id="audioHampi" src="sounds/hampi-sound.mp3" type="audio/mpeg" hidden></audio>
+		  <button id="btnHampi" onclick="document.getElementById('audioHampi').play()" aria-label="Listen to the Hampi soundscape">🎧 Écouter</button> <audio id="audioHampi" src="sounds/hampi-sound.mp3" type="audio/mpeg" hidden></audio>
 		  </div>
 		  <div class="retour-navigation">
 		    <a href="#quick-navigation" class="nav-btn retour" id="navigationHampi" title="Return to subtitle index">🔝 Back to Quick Navigation</a>
@@ -269,7 +269,7 @@
 		    Let yourself be carried by gamelans and offering chants, like a prayer dancing in the air.
 			Each sound is a caress, each silence a sacred breath.
 		  </p>
-		  <button id="btnBali" onclick="document.getElementById('audioBali').play()" aria-label="Écouter l’enrichissement sonore de Bali">🎧 Écouter</button> <audio id="audioBali" src="sounds/bali-sound.mp3" type="audio/mpeg" hidden></audio>
+		  <button id="btnBali" onclick="document.getElementById('audioBali').play()" aria-label="Listen to the Bali soundscape">🎧 Écouter</button> <audio id="audioBali" src="sounds/bali-sound.mp3" type="audio/mpeg" hidden></audio>
 		  </div>
 		   <div class="retour-navigation">
 		    <a href="#quick-navigation" class="nav-btn retour" id="navigationBali" title="Return to subtitle index">🔝 Back to Quick Navigation</a>
@@ -327,7 +327,7 @@
 		    Hear the waves speaking to the reefs, the dragon’s steps on the sand, and the cries of birds keeping watch.
 			A wild symphony, woven from mystery and beauty.
 		  </p>
-		  <button id="btnFlores" onclick="document.getElementById('audioFlores').play()" aria-label="Écouter l’enrichissement sonore de Flores">🎧 Écouter</button> <audio id="audioFlores" src="sounds/flores-sound.mp3" type="audio/mpeg" hidden></audio>
+		  <button id="btnFlores" onclick="document.getElementById('audioFlores').play()" aria-label="Listen to the Flores soundscape">🎧 Écouter</button> <audio id="audioFlores" src="sounds/flores-sound.mp3" type="audio/mpeg" hidden></audio>
 		  </div>
 		   <div class="retour-navigation">
 		    <a href="#quick-navigation" class="nav-btn retour" id="navigationFlores" title="Return to subtitle index">🔝 Back to Quick Navigation</a>
@@ -386,7 +386,7 @@
 		    The Andes whisper legends in the wind, and ancient voices echo between the stones.
 			Close your eyes: you are at the heart of Peru’s sacred breath.
 		  </p>	
-		  <button id="btnPerou" onclick="document.getElementById('audioPerou').play()" aria-label="Écouter l’enrichissement sonore de la vallée sacrée">🎧 Écouter</button> <audio id="audioPerou" src="sounds/perou-sound.mp3" type="audio/mpeg" hidden></audio>
+		  <button id="btnPerou" onclick="document.getElementById('audioPerou').play()" aria-label="Listen to the sacred valley soundscape">🎧 Écouter</button> <audio id="audioPerou" src="sounds/perou-sound.mp3" type="audio/mpeg" hidden></audio>
 		<div>  
 		<div class="retour-navigation">
 		    <a href="#quick-navigation" class="nav-btn retour" id="navigationPerou" title="Return to subtitle index">🔝 Back to Quick Navigation</a>
@@ -410,11 +410,11 @@
           </thead>
           <tbody>
             <tr>
-              <td id="couleur">🌈 Terres des 7 couleurs de Chamarel</td>
+              <td id="couleur">🌈 Seven-Colored Earth of Chamarel</td>
               <td></td>
             </tr>
             <tr>
-              <td id="lagon">🏝️ Lagon de l’île aux Cerfs</td>
+              <td id="lagon">🏝️ Lagoon of Île aux Cerfs</td>
               <td></td>
             </tr>
           </tbody>
@@ -448,10 +448,10 @@
 		
 		<h4 role="heading" aria-level="4" id="enrichissementMaurice">Soundscape Enrichment</h4> 
 		<p id="enrichissementSonoreMaurice">
-		  lagon paisible, chants tropicaux et cascade minérale — une île qui respire entre ciel et terre.
+		  Peaceful lagoon, tropical songs and mineral waterfall — an island breathing between sky and earth.
 		</p>    
 		
-		<button id="btnMaurice" onclick="document.getElementById('audioMaurice').play()" aria-label="Écouter l’enrichissement sonore de l'île Maurice">🎧 Écouter</button> 
+		<button id="btnMaurice" onclick="document.getElementById('audioMaurice').play()" aria-label="Listen to the Mauritius soundscape">🎧 Écouter</button> 
 		<audio id="audioMaurice" src="sounds/maurice-sound.mp3" type="audio/mpeg" hidden></audio>
 	  </div>  
 	  
@@ -478,11 +478,11 @@
           </thead>
           <tbody>
             <tr>
-              <td id="bleu">🌊 Mille bleus de l’océan</td>
+              <td id="bleu">🌊 A Thousand Blues of the Ocean</td>
               <td></td>
             </tr>
             <tr>
-              <td id="corail">🪸 Plages coraliennes</td>
+              <td id="corail">🪸 Coral Beaches</td>
               <td></td>
             </tr>
           </tbody>
@@ -516,10 +516,10 @@
 		
 		<h4 role="heading" aria-level="4" id="enrichissementMaldives">Soundscape Enrichment</h4> 
 		<p id="enrichissementSonoreMaldives">
-		  Murmures des profondeurs, chants de baleines et ballet silencieux des poissons — l’atoll respire dans l’écho du bleu.
+		  Whispers from the deep, whale songs, and the silent ballet of fish — the atoll breathes in the echo of blue.
 		</p>    
 		
-		<button id="btnMaldives" onclick="document.getElementById('audioMaldives').play()" aria-label="Écouter l’enrichissement sonore de l'atoll des Maldives">🎧 Écouter</button> 
+		<button id="btnMaldives" onclick="document.getElementById('audioMaldives').play()" aria-label="Listen to the Maldives soundscape">🎧 Écouter</button> 
 		<audio id="audioMaldives" src="sounds/maldives-sound.mp3" type="audio/mpeg" hidden></audio>
 	  </div>  
 	  
@@ -546,11 +546,11 @@
           </thead>
           <tbody>
             <tr>
-              <td id="cascade">🌊 Cascade Kuang Si — eaux turquoise et forêt sacrée</td>
+              <td id="cascade">🌊 Kuang Si Waterfall — turquoise waters and sacred forest</td>
               <td></td>
             </tr>
             <tr>
-              <td id="temple">🪷 Temple Banteay Srei — dentelle de pierre et mémoire khmère</td>
+              <td id="temple">🪷 Banteay Srei Temple — stone lacework and Khmer memory</td>
               <td></td>
             </tr>
           </tbody>
@@ -584,10 +584,10 @@
 		
 		<h4 role="heading" aria-level="4" id="enrichissementLaos">Soundscape Enrichment</h4> 
 		<p id="enrichissementSonoreLaos">
-		  Clochettes sacrées dans la forêt inondée, chants khmers qui s’élèvent des pierres anciennes, et pluie qui murmure sur les toits du Tonle Sap.
+		  Sacred bells in the flooded forest, Khmer chants rising from ancient stones, and rain whispering on the rooftops of Tonle Sap.
 		</p>    
 		
-		<button id="btnLaos" onclick="document.getElementById('audioLaos').play()" aria-label="Écouter l’enrichissement sonore du Laos et du Cambodge">🎧 Écouter</button> 
+		<button id="btnLaos" onclick="document.getElementById('audioLaos').play()" aria-label="Listen to the Laos & Cambodia soundscape">🎧 Écouter</button> 
 		<audio id="audioLaos" src="sounds/laos-sound.mp3" type="audio/mpeg" hidden></audio>
 	  </div>  
 	  

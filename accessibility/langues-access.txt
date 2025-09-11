@@ -55,8 +55,8 @@ nav_altPerou_fr="🏔️ Salle 4 Pérou"
 nav_altMaurice_en="🏝️ Room 5 Mauritius"
 nav_altMaurice_fr="🏝️ Salle 5 Maurice"
 
-nav_altMaldives_en="🌊 Room 6 Maldives"
-nav_altMaldives_fr="🌊 Salle 6 Maldives"
+nav_altMaldives_en="🐠 Room 6 Maldives"
+nav_altMaldives_fr="🐠 Salle 6 Maldives"
 
 nav_altLaos_en="🛕 Room 7 Laos-Cambodia"
 nav_altLaos_fr="🛕 Salle 7 Laos-Cambodge"
