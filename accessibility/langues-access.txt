@@ -40,8 +40,8 @@ nav_Maldives_fr="🎧 Salle 6: Maldives"
 nav_Laos_en="🎧 Room 7: Laos-Cambodia"
 nav_Laos_fr="🎧 Salle 7: Laos-Cambodge"
 
-btn_map_0_en="🗺️ Interactive map"
-btn_map_0_fr="🗺️ Carte interactive"
+btn_map_en="🗺️ Interactive map"
+btn_map_fr="🗺️ Carte interactive"
 
 carte_interactive_en="🗺️ Interactive map"
 carte_interactive_fr="🗺️ Carte interactive"
