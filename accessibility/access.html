@@ -56,41 +56,41 @@
       </div>
 	</section>
 
-    <!-- 🧭 Navigation accessible des salles -->
-	<nav aria-label="Navigation alternative des salles">
+    <!-- 🧭 Alternative navigation to access the rooms -->
+	<nav id="nav_altTitle" aria-label="Navigation alternative des salles">
 	  <ul class="interactive-map-list">
 	    <li>
-		  <button onclick="focusSection('hampi')" aria-label="Access Room 1 — Hampi Market">
+		  <button id="nav_altHampi" onclick="focusSection('hampi')" aria-label="Go to Room 1 — Hampi Market">
 			🕉️ Room 1 Hampi
 		  </button>
 		</li>
 	    <li>
-		  <button onclick="focusSection('bali')" aria-label="Access Room 2 — Bali the Beautiful Island">
+		  <button id="nav_altBali" onclick="focusSection('bali')" aria-label="Go to Room 2 — Bali the Beautiful Island">
 			🌺 Room 2 Bali
 		  </button>
 		</li>
 		<li>
-		  <button onclick="focusSection('flores')" aria-label="Access Room 3 — Flores Island">
+		  <button id="nav_altFlores" onclick="focusSection('flores')" aria-label="Go to Room 3 — Flores Island">
 			🌾 Room 3 Flores
 		  </button>
 		</li>
 		<li>
-		  <button onclick="focusSection('perou')" aria-label="Access Room 4 — Peru’s Sacred Valley">
+		  <button id="nav_altPerou" onclick="focusSection('perou')" aria-label="Go to Room 4 — Peru’s Sacred Valley">
 			🏔️ Room 4 Peru
 		  </button>
 		</li> 
 		<li>
-		  <button onclick="focusSection('maurice')" aria-label="Access Room 5 — The Seven Colored Earths of Mauritius">
+		  <button id="nav_altMaurice" onclick="focusSection('maurice')" aria-label="Go to Room 5 — The Seven Colored Earths of Mauritius">
 			🏝️ Room 5 Mauritius
 		  </button>
 		</li>
 		<li>
-		  <button onclick="focusSection('maldives')" aria-label="Access Room 6 — The Atoll of a Thousand Blues">
+		  <button id="nav_altMaldives" onclick="focusSection('maldives')" aria-label="Go to Room 6 — The Atoll of a Thousand Blues">
 			🌊 Room 6 Maldives
 		  </button>
 		</li>
 		<li>
-		  <button onclick="focusSection('laos')" aria-label="Access Room 7 — Mysteries of Laos & Cambodia">
+		  <button id="nav_altLaos" onclick="focusSection('laos')" aria-label="Go to Room 7 — Mysteries of Laos & Cambodia">
 			🛕 Room 7 Laos-Cambodia
 		  </button>
 		</li>
@@ -103,7 +103,6 @@
 	<div class="navigation-cartes">
 	  <button id="fleche-gauche" title="aller à la carte précédente" aria-label="Naviguer vers la carte précédente">⬅️</button>
 	  <button id="fleche-droite" title="aller à la carte suivante" aria-label="Naviguer vers la carte suivante">➡️</button>
-	  <button onclick="focusSection('maurice')">🔍 Tester l’accessibilité de la salle Maurice</button>
 	  <p class="carte-texte" id="changer_carte">Changer de carte interactive</p>
 	</div>
     <div class="carte-container">
@@ -161,7 +160,7 @@
   </section>
 
     <!-- 🕉️ Room 1 — Hampi Market -->
-    <section id="hampi" role="region" aria-labelledby="salle_hampi">
+    <section id="hampi" role="region" class="access-content" aria-labelledby="salle_hampi">
       <h2 id="salle_hampi">🕉️ Room 1 — Hampi Market</h2>
 	  <div class="navigation-salles">
 		<a href="#carte" id="btn_back_Hampi" class="nav-btn retour">🗺️ Back to the map</a>
@@ -222,7 +221,7 @@
     </section>
 
     <!-- 🌺 Room 2 — Bali the Beautiful Island -->
-    <section id="bali" role="region" aria-labelledby="salle_bali">
+    <section id="bali" role="region" class="access-content" aria-labelledby="salle_bali">
       <h2 id="salle_bali">🌺 Room 2 — Bali the Beautiful Island</h2>
 	   <div class="navigation-salles">
 		<a href="#carte" id="btn_back_Bali" class="nav-btn retour">🗺️ Back to the map</a>
@@ -279,7 +278,7 @@
     </section>
 
     <!-- 🌾 Room 3 — Flores Island -->
-    <section id="flores" role="region" aria-labelledby="salle_flores" role="region">
+    <section id="flores" role="region" class="access-content" aria-labelledby="salle_flores" role="region">
       <h2 id="salle_flores">🌾 Room 3 — Flores Island</h2>
 	   <div class="navigation-salles">
 		<a href="#carte" id="btn_back_Flores" class="nav-btn retour">🗺️ Back to the map</a>
@@ -337,7 +336,7 @@
     </section>
 
      <!-- 🏔️ Room 4 — Peru’s Sacred Valley -->
-    <section id="perou" role="region" aria-labelledby="salle_perou">
+    <section id="perou" role="region" class="access-content" aria-labelledby="salle_perou">
       <h2 id="salle_perou">🏔️ Room 4 — Peru’s Sacred Valley</h2>
 	   <div class="navigation-salles">
 		<a href="#carte" id="btn_back_Perou" class="nav-btn retour">🗺️ Back to the map</a>
@@ -395,7 +394,7 @@
 	</section>
 	
 	 <!-- 🏝️️ Room 5 — Mauritius -->
-    <section id="maurice" class="access-content" role="region" aria-labelledby="salle_maurice" tabindex="-1">
+    <section id="maurice" role="region" class="access-content" aria-labelledby="salle_maurice">
       <h2 id="salle_maurice">🏝️ Room 5 — The Seven Colored Earths of Mauritius</h2>
 	   <div class="navigation-salles">
 		<a href="#carte" id="btn_back_Maurice" class="nav-btn retour">🗺️ Back to the map</a>
@@ -463,7 +462,7 @@
 
 	
 	<!-- 🐠️ Room 6 — Maldives -->
-    <section id="maldives" role="region" aria-labelledby="salle_maldives">
+    <section id="maldives" role="region" class="access-content" aria-labelledby="salle_maldives">
       <h2 id="salle_maldives">🐠 Room 6 — The Atoll of a Thousand Blues</h2>
 	   <div class="navigation-salles">
 		<a href="#carte" id="btn_back_Maldives" class="nav-btn retour">🗺️ Back to the map</a>
@@ -531,7 +530,7 @@
 
 	
 	<!-- 🏔️ Room 7 — Laos-Cambodge -->
-    <section id="laos" role="region" aria-labelledby="salle_laos">
+    <section id="laos" role="region" class="access-content" aria-labelledby="salle_laos">
       <h2 id="salle_laos">🛕 Room 7 — Mysteries of Laos & Cambodia</h2>
 	   <div class="navigation-salles">
 		<a href="#carte" id="btn_back_Laos" class="nav-btn retour">🗺️ Back to the map</a>
@@ -821,6 +820,16 @@
 		document.getElementById("paysage_maurice").alt = "Fractale aux couleurs de Maurice, où les dunes arc-en-ciel s’unissent aux lagons turquoise et aux palmes dansantes.";
 		document.getElementById("paysage_maldives").alt = "Fractale inspirée des nuances coralliennes et des bleus infinis de l’atoll maldivien";
 		document.getElementById("paysage_laos").alt = "Fractale aux couleurs vertes du Laos-Cambodge";
+		document.getElementById("nav_altTitle").setAttribute("aria-label", "Navigation alternative des salles");
+		document.getElementById("nav_altHampi").setAttribute("aria-label", "Accéder à la Salle 1 — Marché de Hampi");
+		document.getElementById("nav_altBali").setAttribute("aria-label", "Accéder à la Salle 2 — Bali la belle île");
+		document.getElementById("nav_altFlores").setAttribute("aria-label", "Accéder à la Salle 3 — Florès");
+		document.getElementById("nav_altPerou").setAttribute("aria-label", "Accéder à la Salle 4 — Vallée sacrée du Pérou");
+		document.getElementById("nav_altMaurice").setAttribute("aria-label", "Accéder à la Salle 5 — Les 7 Terres de Maurice");
+		document.getElementById("nav_altMaldives").setAttribute("aria-label", "Accéder à la Salle 6 — L’Atoll aux Mille Bleus");
+		document.getElementById("nav_altLaos").setAttribute("aria-label", "Accéder à la Salle 7 — Laos-Cambodge");
+		document.getElementById("fleche-gauche").setAttribute("aria-label", "Naviguer vers la carte précédente");
+		document.getElementById("fleche-droite").setAttribute("aria-label", "Naviguer vers la carte suivante");
 	  } else if (lang === "en") {
 	    document.getElementById("btn_enter").title = "Begin the poetic journey";
 		document.getElementById("btn_exit").title = "Exit the exhibition";
@@ -848,6 +857,16 @@
 		document.getElementById("paysage_maurice").alt = "Fractal in the colors of Mauritius, where rainbow dunes merge with turquoise lagoons and dancing palm trees.";
 		document.getElementById("paysage_maldives").alt = "Fractal inspired by coral hues and the endless blues of the Maldivian atoll.";
 		document.getElementById("paysage_laos").alt = "Fractal in the green colors of Laos-Cambodia";
+		document.getElementById("nav_altTitle").setAttribute("aria-label", "Alternative room navigation");
+		document.getElementById("nav_altHampi").setAttribute("aria-label", "Go to Room 1 — Hampi Market");
+		document.getElementById("nav_altBali").setAttribute("aria-label", "Go to Room 2 — Bali the Beautiful Island");
+		document.getElementById("nav_altFlores").setAttribute("aria-label", "Go to Room 3 — Flores Island");
+		document.getElementById("nav_altPerou").setAttribute("aria-label", "Go to Room 4 — Peru’s Sacred Valley");
+		document.getElementById("nav_altMaurice").setAttribute("aria-label", "Go to Room 5 — The Seven-Colored Lands of Mauritius");
+		document.getElementById("nav_altMaldives").setAttribute("aria-label", "Go to Room 6 — The Atoll of a Thousand Blues");
+		document.getElementById("nav_altLaos").setAttribute("aria-label", "Go to Room 7 — Laos-Cambodia");
+		document.getElementById("fleche-gauche").setAttribute("aria-label", "Navigate to previous map");
+		document.getElementById("fleche-droite").setAttribute("aria-label", "Navigate to next map");
 	  }
 	}
 

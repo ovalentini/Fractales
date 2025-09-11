@@ -40,6 +40,27 @@ nav_Maldives_fr="🎧 Salle 6: Maldives"
 nav_Laos_en="🎧 Room 7: Laos-Cambodia"
 nav_Laos_fr="🎧 Salle 7: Laos-Cambodge"
 
+nav_altHampi_en="🕉️ Room 1 Hampi"
+nav_altHampi_fr="🕉️ Salle 1 Hampi"
+
+nav_altBali_en="🌺 Room 2 Bali"
+nav_altBali_fr="🌺 Salle 2 Bali"
+
+nav_altFlores_en="🌾 Room 3 Flores"
+nav_altFlores_fr="🌾 Salle 3 Florès"
+
+nav_altPerou_en="🏔️ Room 4 Peru"
+nav_altPerou_fr="🏔️ Salle 4 Pérou"
+
+nav_altMaurice_en="🏝️ Room 5 Mauritius"
+nav_altMaurice_fr="🏝️ Salle 5 Maurice"
+
+nav_altMaldives_en="🌊 Room 6 Maldives"
+nav_altMaldives_fr="🌊 Salle 6 Maldives"
+
+nav_altLaos_en="🛕 Room 7 Laos-Cambodia"
+nav_altLaos_fr="🛕 Salle 7 Laos-Cambodge"
+
 btn_map_en="🗺️ Interactive map"
 btn_map_fr="🗺️ Carte interactive"
 
