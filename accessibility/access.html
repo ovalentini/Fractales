@@ -56,12 +56,34 @@
       </div>
 	</section>
 
+    <!-- 🧭 Navigation accessible des salles -->
+	<nav aria-label="Navigation alternative des salles">
+	  <ul class="interactive-map-list">
+		<li>
+		  <button onclick="focusSection('maurice')" aria-label="Accéder à la Salle 5 — Les 7 Terres de Maurice">
+			🏝️ Salle Maurice
+		  </button>
+		</li>
+		<li>
+		  <button onclick="focusSection('maldives')" aria-label="Accéder à la Salle 6 — L’Atoll aux Mille Bleus">
+			🌊 Salle Maldives
+		  </button>
+		</li>
+		<li>
+		  <button onclick="focusSection('laos')" aria-label="Accéder à la Salle 7 — Laos-Cambodge">
+			🛕 Salle Laos-Cambodge
+		  </button>
+		</li>
+	  </ul>
+	</nav>
+
     <!-- 🗺️ Interactive Map -->
    <section id="carte" class="interactive-map">
     <h2 id="carte_interactive">🗺️ Carte interactive</h2>
 	<div class="navigation-cartes">
 	  <button id="fleche-gauche" title="aller à la carte précédente" aria-label="Naviguer vers la carte précédente">⬅️</button>
 	  <button id="fleche-droite" title="aller à la carte suivante" aria-label="Naviguer vers la carte suivante">➡️</button>
+	  <button onclick="focusSection('maurice')">🔍 Tester l’accessibilité de la salle Maurice</button>
 	  <p class="carte-texte" id="changer_carte">Changer de carte interactive</p>
 	</div>
     <div class="carte-container">
@@ -353,8 +375,8 @@
 	</section>
 	
 	 <!-- 🏝️️ Room 5 — Mauritius -->
-    <section id="maurice" class="access-content" role="region" aria-labelledby="salle_maurice">
-      <h2 id="salle_maurice">🏝️ Salle 5 — Les 7 Terres de Maurice</h2>
+    <section id="maurice" class="access-content" role="region" aria-labelledby="salle_maurice" tabindex="-1">
+      <h2 id="salle_maurice" tabindex="0">🏝️ Salle 5 — Les 7 Terres de Maurice</h2>
 	   <div class="navigation-salles">
 		<a href="#carte" id="btn_back_Maurice" class="nav-btn retour">🗺️ Back to the map</a>
 	  </div>
@@ -629,6 +651,16 @@
 	  // Tu peux continuer ici avec ton code...
 	  // logMessage("Langue détectée : " + langSuffix);
 	//});
+</script>
+
+<script>
+  function focusSection(id) {
+    const target = document.getElementById(id);
+    if (target) {
+      target.setAttribute("tabindex", "-1"); // au cas où il ne l’a pas déjà
+      target.focus();
+    }
+  }
 </script>
 
 <script>
