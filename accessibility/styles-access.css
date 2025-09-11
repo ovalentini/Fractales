@@ -88,6 +88,7 @@ button:hover {
   border-radius: 6px;
 }
 
+.access-content h2,
 .access-content h3 {
   margin-top: 0;
   color: #4b2e83;
