@@ -60,37 +60,37 @@
 	<nav id="nav_altTitle" aria-label="Navigation alternative des salles">
 	  <ul class="interactive-map-list">
 	    <li>
-		  <button id="nav_altHampi" onclick="focusSection('hampi')" aria-label="Go to Room 1 — Hampi Market">
+		  <button id="nav_altHampi" onclick="focusSection('salle_hampi')" aria-label="Go to Room 1 — Hampi Market">
 			🕉️ Room 1 Hampi
 		  </button>
 		</li>
 	    <li>
-		  <button id="nav_altBali" onclick="focusSection('bali')" aria-label="Go to Room 2 — Bali the Beautiful Island">
+		  <button id="nav_altBali" onclick="focusSection('salle_bali')" aria-label="Go to Room 2 — Bali the Beautiful Island">
 			🌺 Room 2 Bali
 		  </button>
 		</li>
 		<li>
-		  <button id="nav_altFlores" onclick="focusSection('flores')" aria-label="Go to Room 3 — Flores Island">
+		  <button id="nav_altFlores" onclick="focusSection('salle_flores')" aria-label="Go to Room 3 — Flores Island">
 			🌾 Room 3 Flores
 		  </button>
 		</li>
 		<li>
-		  <button id="nav_altPerou" onclick="focusSection('perou')" aria-label="Go to Room 4 — Peru’s Sacred Valley">
+		  <button id="nav_altPerou" onclick="focusSection('salle_perou')" aria-label="Go to Room 4 — Peru’s Sacred Valley">
 			🏔️ Room 4 Peru
 		  </button>
 		</li> 
 		<li>
-		  <button id="nav_altMaurice" onclick="focusSection('maurice')" aria-label="Go to Room 5 — The Seven Colored Earths of Mauritius">
+		  <button id="nav_altMaurice" onclick="focusSection('salle_maurice')" aria-label="Go to Room 5 — The Seven Colored Earths of Mauritius">
 			🏝️ Room 5 Mauritius
 		  </button>
 		</li>
 		<li>
-		  <button id="nav_altMaldives" onclick="focusSection('maldives')" aria-label="Go to Room 6 — The Atoll of a Thousand Blues">
+		  <button id="nav_altMaldives" onclick="focusSection('salle_maldives')" aria-label="Go to Room 6 — The Atoll of a Thousand Blues">
 			🐠 Room 6 Maldives
 		  </button>
 		</li>
 		<li>
-		  <button id="nav_altLaos" onclick="focusSection('laos')" aria-label="Go to Room 7 — Mysteries of Laos & Cambodia">
+		  <button id="nav_altLaos" onclick="focusSection('salle_laos')" aria-label="Go to Room 7 — Mysteries of Laos & Cambodia">
 			🛕 Room 7 Laos-Cambodia
 		  </button>
 		</li>
@@ -165,7 +165,7 @@
 	  <div class="navigation-salles">
 		<a href="#carte" id="btn_back_Hampi" class="nav-btn retour">🗺️ Back to the map</a>
 	  </div>
-      <div class="table-image-container">
+      <div class="table-image-container" tabindex="0">
         <img src="Hampi.jpg" id="paysage_hampi" alt="Mystical chariot in Hampi market surrounded by flowing fabrics"/>
         <table>
           <thead>
@@ -212,7 +212,7 @@
 		    Listen to the temple’s resonance, where each pillar sings the story of a people.
 			The sounds of the market, the whispers of fabric, and sacred notes wrap you in a sonic fresco.
 		  </p>
-		  <button id="btnHampi" onclick="document.getElementById('audioHampi').play()" aria-label="Listen to the Hampi soundscape">🎧 Écouter</button> <audio id="audioHampi" src="sounds/hampi-sound.mp3" type="audio/mpeg" hidden></audio>
+		  <button id="btnHampi" onclick="document.getElementById('audioHampi').play()" aria-label="Listen to the Hampi soundscape">🎧 Listen</button> <audio id="audioHampi" src="sounds/hampi-sound.mp3" type="audio/mpeg" hidden></audio>
 		  </div>
 		  <div class="retour-navigation">
 		    <a href="#quick-navigation" class="nav-btn retour" id="navigationHampi" title="Return to subtitle index">🔝 Back to Quick Navigation</a>
@@ -226,7 +226,7 @@
 	   <div class="navigation-salles">
 		<a href="#carte" id="btn_back_Bali" class="nav-btn retour">🗺️ Back to the map</a>
 	  </div>
-      <div class="table-image-container">
+      <div class="table-image-container" tabindex="0">
         <img src="Bali.jpg" id="paysage_bali" alt="Spiritual Balinese landscape with rice terraces and mandalas" />
         <table>
           <thead>
@@ -269,7 +269,7 @@
 		    Let yourself be carried by gamelans and offering chants, like a prayer dancing in the air.
 			Each sound is a caress, each silence a sacred breath.
 		  </p>
-		  <button id="btnBali" onclick="document.getElementById('audioBali').play()" aria-label="Listen to the Bali soundscape">🎧 Écouter</button> <audio id="audioBali" src="sounds/bali-sound.mp3" type="audio/mpeg" hidden></audio>
+		  <button id="btnBali" onclick="document.getElementById('audioBali').play()" aria-label="Listen to the Bali soundscape">🎧 Listen</button> <audio id="audioBali" src="sounds/bali-sound.mp3" type="audio/mpeg" hidden></audio>
 		  </div>
 		   <div class="retour-navigation">
 		    <a href="#quick-navigation" class="nav-btn retour" id="navigationBali" title="Return to subtitle index">🔝 Back to Quick Navigation</a>
@@ -283,7 +283,7 @@
 	   <div class="navigation-salles">
 		<a href="#carte" id="btn_back_Flores" class="nav-btn retour">🗺️ Back to the map</a>
 	  </div>
-      <div class="table-image-container">
+      <div class="table-image-container" tabindex="0">
         <img src="Komodo.jpg" id="paysage_flores" alt="Komodo dragon near pink beach and coral reef on Flores Island" />
         <table>
           <thead>
@@ -327,7 +327,7 @@
 		    Hear the waves speaking to the reefs, the dragon’s steps on the sand, and the cries of birds keeping watch.
 			A wild symphony, woven from mystery and beauty.
 		  </p>
-		  <button id="btnFlores" onclick="document.getElementById('audioFlores').play()" aria-label="Listen to the Flores soundscape">🎧 Écouter</button> <audio id="audioFlores" src="sounds/flores-sound.mp3" type="audio/mpeg" hidden></audio>
+		  <button id="btnFlores" onclick="document.getElementById('audioFlores').play()" aria-label="Listen to the Flores soundscape">🎧 Listen</button> <audio id="audioFlores" src="sounds/flores-sound.mp3" type="audio/mpeg" hidden></audio>
 		  </div>
 		   <div class="retour-navigation">
 		    <a href="#quick-navigation" class="nav-btn retour" id="navigationFlores" title="Return to subtitle index">🔝 Back to Quick Navigation</a>
@@ -341,7 +341,7 @@
 	   <div class="navigation-salles">
 		<a href="#carte" id="btn_back_Perou" class="nav-btn retour">🗺️ Back to the map</a>
 	  </div>
-      <div class="table-image-container">
+      <div class="table-image-container" tabindex="0">
         <img src="Macchu Pichu.jpg" id="paysage_perou" alt="Fractal view of Machu Picchu surrounded by golden cathedral-like circles" />
         <table>
           <thead>
@@ -386,7 +386,7 @@
 		    The Andes whisper legends in the wind, and ancient voices echo between the stones.
 			Close your eyes: you are at the heart of Peru’s sacred breath.
 		  </p>	
-		  <button id="btnPerou" onclick="document.getElementById('audioPerou').play()" aria-label="Listen to the sacred valley soundscape">🎧 Écouter</button> <audio id="audioPerou" src="sounds/perou-sound.mp3" type="audio/mpeg" hidden></audio>
+		  <button id="btnPerou" onclick="document.getElementById('audioPerou').play()" aria-label="Listen to the sacred valley soundscape">🎧 Listen</button> <audio id="audioPerou" src="sounds/perou-sound.mp3" type="audio/mpeg" hidden></audio>
 		<div>  
 		<div class="retour-navigation">
 		    <a href="#quick-navigation" class="nav-btn retour" id="navigationPerou" title="Return to subtitle index">🔝 Back to Quick Navigation</a>
@@ -399,7 +399,7 @@
 	   <div class="navigation-salles">
 		<a href="#carte" id="btn_back_Maurice" class="nav-btn retour">🗺️ Back to the map</a>
 	  </div>
-      <div class="table-image-container">
+      <div class="table-image-container"tabindex="0">
         <img src="Maurice.jpg" id="paysage_maurice" alt="Fractal in the colors of Mauritius, where rainbow dunes merge with turquoise lagoons and dancing palm trees." />
         <table>
           <thead>
@@ -451,7 +451,7 @@
 		  Peaceful lagoon, tropical songs and mineral waterfall — an island breathing between sky and earth.
 		</p>    
 		
-		<button id="btnMaurice" onclick="document.getElementById('audioMaurice').play()" aria-label="Listen to the Mauritius soundscape">🎧 Écouter</button> 
+		<button id="btnMaurice" onclick="document.getElementById('audioMaurice').play()" aria-label="Listen to the Mauritius soundscape">🎧 Listen</button> 
 		<audio id="audioMaurice" src="sounds/maurice-sound.mp3" type="audio/mpeg" hidden></audio>
 	  </div>  
 	  
@@ -467,7 +467,7 @@
 	   <div class="navigation-salles">
 		<a href="#carte" id="btn_back_Maldives" class="nav-btn retour">🗺️ Back to the map</a>
 	  </div>
-      <div class="table-image-container">
+      <div class="table-image-container" tabindex="0">
         <img src="Maldives.jpg" id="paysage_maldives" alt="Fractale inspirée des nuances coralliennes et des bleus infinis de l’atoll maldivien" />
         <table>
           <thead>
@@ -519,7 +519,7 @@
 		  Whispers from the deep, whale songs, and the silent ballet of fish — the atoll breathes in the echo of blue.
 		</p>    
 		
-		<button id="btnMaldives" onclick="document.getElementById('audioMaldives').play()" aria-label="Listen to the Maldives soundscape">🎧 Écouter</button> 
+		<button id="btnMaldives" onclick="document.getElementById('audioMaldives').play()" aria-label="Listen to the Maldives soundscape">🎧 Listen</button> 
 		<audio id="audioMaldives" src="sounds/maldives-sound.mp3" type="audio/mpeg" hidden></audio>
 	  </div>  
 	  
@@ -535,7 +535,7 @@
 	   <div class="navigation-salles">
 		<a href="#carte" id="btn_back_Laos" class="nav-btn retour">🗺️ Back to the map</a>
 	  </div>
-      <div class="table-image-container">
+      <div class="table-image-container" tabindex="0">
         <img src="LaosCambodge.jpg" id="paysage_laos" alt="Fractale inspirée des verts profonds du Laos et du Cambodge, entre jungle et pierre sacrée" />
         <table>
           <thead>
@@ -587,7 +587,7 @@
 		  Sacred bells in the flooded forest, Khmer chants rising from ancient stones, and rain whispering on the rooftops of Tonle Sap.
 		</p>    
 		
-		<button id="btnLaos" onclick="document.getElementById('audioLaos').play()" aria-label="Listen to the Laos & Cambodia soundscape">🎧 Écouter</button> 
+		<button id="btnLaos" onclick="document.getElementById('audioLaos').play()" aria-label="Listen to the Laos & Cambodia soundscape">🎧 Listen</button> 
 		<audio id="audioLaos" src="sounds/laos-sound.mp3" type="audio/mpeg" hidden></audio>
 	  </div>  
 	  
@@ -678,6 +678,7 @@
     if (target) {
       target.setAttribute("tabindex", "-1"); // au cas où il ne l’a pas déjà
       target.focus();
+	  console.log("Focus");
     }
   }
 </script>
@@ -796,7 +797,6 @@
 	  if (lang === "fr") {
 	    document.getElementById("btn_enter").title = "Commencer le voyage poétique";
 		document.getElementById("btn_exit").title = "Quitter l’exposition";
-		document.getElementById("btn_map").title = "Accéder à la carte interactive";
 		document.getElementById("btn_quick_navigation").title = "Accéder à la navigation rapide";
 		document.getElementById("navigationHampi").title = "Retour à l'index des sous-titres";
 		document.getElementById("navigationBali").title = "Retour à l'index des sous-titres";
@@ -833,7 +833,6 @@
 	  } else if (lang === "en") {
 	    document.getElementById("btn_enter").title = "Begin the poetic journey";
 		document.getElementById("btn_exit").title = "Exit the exhibition";
-		document.getElementById("btn_map").title = "Access the Interactive Map";
 		document.getElementById("btn_quick_navigation").title = "Access the quick navigation";
 		document.getElementById("fleche-gauche").title = "Go to previous map";
 		document.getElementById("fleche-droite").title = "Go to next map";		
