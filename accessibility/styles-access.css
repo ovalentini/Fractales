@@ -95,13 +95,15 @@ button:hover {
 }
 
 .interactive-map-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem 0;
   list-style: none;
-  padding: 0;
-  margin: 1rem 0;
 }
 
 .interactive-map-list li {
-  margin-bottom: 0.5rem;
+  flex: 1 1 auto;
 }
 
 .interactive-map-list button {
