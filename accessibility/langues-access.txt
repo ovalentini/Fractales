@@ -272,7 +272,7 @@ transcription_maurice_en="A peaceful lagoon stretches under the morning sun.  Tr
 transcription_maurice_fr="Un lagon paisible s’étend sous le soleil du matin. Les oiseaux tropicaux chantent depuis le feuillage dense, tandis qu’une cascade douce murmure à proximité. L’air est chaud, imprégné de sel et de fleurs d’hibiscus. Voici l’île Maurice — une île qui respire entre ciel et terre."
 
 texteNarrationMaurice_en="Imagine a tranquil lagoon surrounded by lush vegetation.  The water shimmers in turquoise tones, while tropical birds weave melodies overhead. A small waterfall flows gently over volcanic rocks, adding rhythm to the silence. Mauritius reveals itself as a sanctuary of light, sound, and breath."
-texteNarrationMaurice_fr="texteNarrationMaurice_fr="Imaginez un lagon paisible entouré d’une végétation luxuriante. L’eau scintille en nuances turquoise, tandis que les oiseaux tropicaux tissent leurs mélodies au-dessus de vous. Une petite cascade s’écoule doucement sur les roches volcaniques, ajoutant un rythme au silence. L’île Maurice se révèle comme un sanctuaire de lumière, de son et de souffle."
+texteNarrationMaurice_fr="Imaginez un lagon paisible entouré d’une végétation luxuriante. L’eau scintille en nuances turquoise, tandis que les oiseaux tropicaux tissent leurs mélodies au-dessus de vous. Une petite cascade s’écoule doucement sur les roches volcaniques, ajoutant un rythme au silence. L’île Maurice se révèle comme un sanctuaire de lumière, de son et de souffle."
 
 enrichissementMaurice_fr="Enrichissement sonore"
 enrichissementMaurice_en="Soudscape Enrichment"
