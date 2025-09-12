@@ -758,13 +758,13 @@
 
     // adaptation des aria-label des boutons et div
     const lieux = {
-	  btnPerou: "la Vallée Sacrée",
-	  btnHampi: "Hampi",
-	  btnFlores: "Flores",
-	  btnBali: "Bali",
-	  btnMaurice: "île Maurice",
-	  btnMaldives: "Maldives",
-	  btnLaos: "Laos-Cambodge"
+	  btnPerou: { fr: "la Vallée Sacrée", en: "Sacred Valley" },
+	  btnHampi: { fr: "Hampi", en: "Hampi" },
+	  btnFlores: { fr: "Florès", en: "Flores" },
+	  btnBali: { fr: "Bali", en: "Bali" },
+	  btnMaurice: { fr: "île Maurice", en: "Mauritius" },
+	  btnMaldives: { fr: "Maldives", en: "Maldives" },
+	  btnLaos: { fr: "Laos-Cambodge", en: "Laos-Cambodia" }
 	};
 
 	const templates = {
@@ -772,10 +772,11 @@
 	  en: lieu => `Listen to the ${lieu} soundscape`
 	};
 
-	Object.entries(lieux).forEach(([id, lieu]) => {
+	Object.entries(lieux).forEach(([id, noms]) => {
 	  const bouton = document.getElementById(id);
-	  if (bouton) bouton.setAttribute("aria-label", templates[langueActuelle](lieu));
+	  if (bouton) bouton.setAttribute("aria-label", templates[langueActuelle](noms[langueActuelle]));
 	});
+
 
    const audioDescElements = {
 	  fr: {
@@ -855,7 +856,7 @@
 		document.getElementById("fleche-droite").alt = "Naviguer vers la carte suivante",
 		document.getElementById("paysage_hampi").alt = "Fractale inspirée des temples et paysages mystiques de Hampi";
 		document.getElementById("paysage_bali").alt = "Fractale inspirée des paysages de Bali : rizières et mandalas";
-		document.getElementById("paysage_flores").alt = "Fractale évoquant un dragon de Komodo près d'une plage rose et du récif corallien de l'île de Flores";
+		document.getElementById("paysage_flores").alt = "Fractale évoquant un dragon de Komodo près d'une plage rose et du récif corallien de l'île de Florès";
 		document.getElementById("paysage_perou").alt = "Vue fractale du Machu Picchu entourée de cercles dorés d'une cathédrale";
 		document.getElementById("paysage_maurice").alt = "Fractale aux couleurs de Maurice, où les dunes arc-en-ciel s’unissent aux lagons turquoise et aux palmes dansantes.";
 		document.getElementById("paysage_maldives").alt = "Fractale inspirée des nuances coralliennes et des bleus infinis de l’atoll maldivien";
@@ -871,7 +872,7 @@
 		document.getElementById("fleche-gauche").setAttribute("aria-label", "Naviguer vers la carte précédente");
 		document.getElementById("fleche-droite").setAttribute("aria-label", "Naviguer vers la carte suivante");
 		document.getElementById("vithala").setAttribute("aria-label", "Écouter le paysage sonore (ouvre dans un nouvel onglet)");
-		ocument.getElementById("neoclassique").setAttribute("aria-label", "Écouter le paysage sonore (ouvre dans un nouvel onglet)");
+		document.getElementById("neoclassique").setAttribute("aria-label", "Écouter le paysage sonore (ouvre dans un nouvel onglet)");
 		document.getElementById("icaro").setAttribute("aria-label", "Écouter le paysage sonore (ouvre dans un nouvel onglet)");
 		document.getElementById("cantique").setAttribute("aria-label", "Écouter le paysage sonore (ouvre dans un nouvel onglet)");
 		document.getElementById("element1").setAttribute("aria-label", "Liste des éléments thématiques et des liens audio associés");
@@ -1198,6 +1199,17 @@
     }
   });
 </script>
+<script>
+    const lang = navigator.language.startsWith("en") ? "en" : "fr";
+    console.log(lang);
 
+
+	const titles = {
+	  fr: "Fractales du Monde – Version Accessible | Voyages Sensoriels à travers l’Art, le Son et la Poésie | Ovalentini",
+	  en: "Fractals of the World – Accessible Version | Immersive Fractals – Sensory Journeys through Art, Sound, and Poetry | Ovalentini"
+	};
+
+	document.title = titles[lang] || titles.en;
+</script>
 </body>
 </html>
