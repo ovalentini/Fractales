@@ -163,6 +163,9 @@ ceremonie_fr="🌾 Rizières sacrées et offrandes"
 visite_en="🕉️ Hindu temples and spirals of incense"
 visite_fr="🕉️ Temples hindous et spirales d’encens"
 
+neoclassique_en="Neoclassical music inspired by rice"
+neoclassique_fr="Musique néoclassique inspirée du riz"
+
 subtitles_bali_en="🎧 Subtitles & Transcription – Room 2: Bali"
 subtitles_bali_fr="🎧 Sous-titres et Transcription – Salle 2 : Bali"
 
@@ -250,6 +253,9 @@ chant_fr="🏔️ Andes majestueuses et terrasses anciennes"
 foret_en="🌄 Machu Picchu and Inca heritage"
 foret_fr="🌄 Machu Picchu et héritage inca"
 
+icaro_en="Sacred Icaro — Amazonian shamanic chant"
+icaro_fr="Icaro sacré — chant chamanique amazonien"
+
 subtitles_perou_en="🎧 Subtitles & Transcription – Room 4: Peru"
 subtitles_perou_fr="🎧 Sous-titres et Transcription – Salle 4 : Pérou"
 
@@ -294,6 +300,9 @@ couleur_en="🌈 Seven-Colored Earth of Chamarel"
 
 lagon_fr="🏝️ Lagon de l’île aux Cerfs"
 lagon_en="🏝️ Lagoon of Île aux Cerfs"
+
+cantique_en="Mauritian Creole Hymn – Holy Spirit kan to la"
+cantique_fr="Cantique Créole Mauricien - Saint Esprit kan to la"
 
 subtitles_maurice_en="🎧 Subtitles & Transcription – Room 5: Mauritius"
 subtitles_maurice_fr="🎧 Sous-titres et Transcription – Salle 5 : île Maurice"
