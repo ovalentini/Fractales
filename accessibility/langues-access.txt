@@ -163,9 +163,6 @@ ceremonie_fr="🌾 Rizières sacrées et offrandes"
 visite_en="🕉️ Hindu temples and spirals of incense"
 visite_fr="🕉️ Temples hindous et spirales d’encens"
 
-neoclassique_en="Neoclassical music inspired by rice"
-neoclassique_fr="Musique néoclassique inspirée du riz"
-
 subtitles_bali_en="🎧 Subtitles & Transcription – Room 2: Bali"
 subtitles_bali_fr="🎧 Sous-titres et Transcription – Salle 2 : Bali"
 
@@ -208,8 +205,11 @@ lien3_fr="Lien"
 komodo_en="🌺 Komodo dragons and pink beaches"
 komodo_fr="🌺 Dragons de Komodo et plages roses"
 
-coral_en="🌊 Coral reefs and underwater wonders"
-coral_fr="🌊 Récifs coralliens et merveilles sous-marines"
+corail_en="🌊 Coral reefs and underwater wonders"
+corail_fr="🌊 Récifs coraliens et merveilles sous-marines"
+
+neoclassique_en="Neoclassical music inspired by rice"
+neoclassique_fr="Musique néoclassique inspirée du riz"
 
 subtitles_flores_en="🎧 Subtitles & Transcription – Room 3: Flores"
 subtitles_flores_fr="🎧 Sous-titres et Transcription – Salle 3 : Florès"
