@@ -57,7 +57,7 @@
 	</section>
 
     <!-- 🧭 Alternative navigation to navigate to the rooms -->
-	<nav id="nav_altTitle" aria-label="Alternative room navigation">
+	<nav id="nav_altTitle" aria-label="Alternative room navigation (for visual impaired)">
 	  <ul class="interactive-map-list">
 	    <li>
 		  <button id="nav_altHampi" onclick="focusSection('salle_hampi')" aria-label="Go to Room 1 — Hampi Market">
@@ -108,7 +108,7 @@
     <div class="carte-container">
 	  <div class="carte-page active" id="carte1">
 		  <div class="carte-wrapper">
-			<img id="fractals-img" src="carte-interactive-fr.jpg" title="Click on an area or point to go to the corresponding room" usemap="#map-salles" />
+			<img id="fractals-img" src="carte-interactive-fr.jpg" title="Click on an area or point to go to the corresponding room (not for vistûal impaired)" usemap="#map-salles" />
 			<p id="image-caption" class="caption">Each spiral tells a story. Let the patterns guide your soul.</p>
 			
 			<!-- Zones & Points -->
@@ -163,7 +163,7 @@
     <section id="hampi" role="region" class="access-content" aria-labelledby="salle_hampi">
       <h2 id="salle_hampi">🕉️ Room 1 — Hampi Market</h2>
 	  <div class="navigation-salles">
-		<a href="#carte" id="btn_back_Hampi" class="nav-btn retour">🗺️ Back to the map</a>
+		<a href="#nav_altTitle" id="btn_back_Hampi" class="nav-btn retour">🗺️ Back to the map</a>
 	  </div>
       <div class="table-image-container" tabindex="0">
         <img src="Hampi.jpg" id="paysage_hampi" alt="Mystical chariot in Hampi market surrounded by flowing fabrics"/>
@@ -230,7 +230,7 @@
     <section id="bali" role="region" class="access-content" aria-labelledby="salle_bali">
       <h2 id="salle_bali">🌺 Room 2 — Bali the Beautiful Island</h2>
 	   <div class="navigation-salles">
-		<a href="#carte" id="btn_back_Bali" class="nav-btn retour">🗺️ Back to the map</a>
+		<a href="#nav_altTitle" id="btn_back_Bali" class="nav-btn retour">🗺️ Back to the map</a>
 	  </div>
       <div class="table-image-container" tabindex="0">
         <img src="Bali.jpg" id="paysage_bali" alt="Spiritual Balinese landscape with rice terraces and mandalas" />
@@ -292,7 +292,7 @@
     <section id="flores" role="region" class="access-content" aria-labelledby="salle_flores" role="region">
       <h2 id="salle_flores">🌾 Room 3 — Flores Island</h2>
 	   <div class="navigation-salles">
-		<a href="#carte" id="btn_back_Flores" class="nav-btn retour">🗺️ Back to the map</a>
+		<a href="#nav_altTitle" id="btn_back_Flores" class="nav-btn retour">🗺️ Back to the map</a>
 	  </div>
       <div class="table-image-container" tabindex="0">
         <img src="Komodo.jpg" id="paysage_flores" alt="Komodo dragon near pink beach and coral reef on Flores Island" />
@@ -357,7 +357,7 @@
     <section id="perou" role="region" class="access-content" aria-labelledby="salle_perou">
       <h2 id="salle_perou">🏔️ Room 4 — Peru’s Sacred Valley</h2>
 	   <div class="navigation-salles">
-		<a href="#carte" id="btn_back_Perou" class="nav-btn retour">🗺️ Back to the map</a>
+		<a href="#nav_altTitle" id="btn_back_Perou" class="nav-btn retour">🗺️ Back to the map</a>
 	  </div>
       <div class="table-image-container" tabindex="0">
         <img src="Macchu Pichu.jpg" id="paysage_perou" alt="Fractal view of Machu Picchu surrounded by golden cathedral-like circles" />
@@ -421,7 +421,7 @@
     <section id="maurice" role="region" class="access-content" aria-labelledby="salle_maurice">
       <h2 id="salle_maurice">🏝️ Room 5 — The Seven Colored Earths of Mauritius</h2>
 	   <div class="navigation-salles">
-		<a href="#carte" id="btn_back_Maurice" class="nav-btn retour">🗺️ Back to the map</a>
+		<a href="#nav_altTitle" id="btn_back_Maurice" class="nav-btn retour">🗺️ Back to the map</a>
 	  </div>
       <div class="table-image-container"tabindex="0">
         <img src="Maurice.jpg" id="paysage_maurice" alt="Fractal in the colors of Mauritius, where rainbow dunes merge with turquoise lagoons and dancing palm trees." />
@@ -495,7 +495,7 @@
     <section id="maldives" role="region" class="access-content" aria-labelledby="salle_maldives">
       <h2 id="salle_maldives">🐠 Room 6 — The Atoll of a Thousand Blues</h2>
 	   <div class="navigation-salles">
-		<a href="#carte" id="btn_back_Maldives" class="nav-btn retour">🗺️ Back to the map</a>
+		<a href="#nav_altTitle" id="btn_back_Maldives" class="nav-btn retour">🗺️ Back to the map</a>
 	  </div>
       <div class="table-image-container" tabindex="0">
         <img src="Maldives.jpg" id="paysage_maldives" alt="Fractale inspirée des nuances coralliennes et des bleus infinis de l’atoll maldivien" />
@@ -568,7 +568,7 @@
     <section id="laos" role="region" class="access-content" aria-labelledby="salle_laos">
       <h2 id="salle_laos">🛕 Room 7 — Mysteries of Laos & Cambodia</h2>
 	   <div class="navigation-salles">
-		<a href="#carte" id="btn_back_Laos" class="nav-btn retour">🗺️ Back to the map</a>
+		<a href="#nav_altTitle" id="btn_back_Laos" class="nav-btn retour">🗺️ Back to the map</a>
 	  </div>
       <div class="table-image-container" tabindex="0">
         <img src="LaosCambodge.jpg" id="paysage_laos" alt="Fractale inspirée des verts profonds du Laos et du Cambodge, entre jungle et pierre sacrée" />
@@ -861,7 +861,7 @@
 		document.getElementById("paysage_maurice").alt = "Fractale aux couleurs de Maurice, où les dunes arc-en-ciel s’unissent aux lagons turquoise et aux palmes dansantes.";
 		document.getElementById("paysage_maldives").alt = "Fractale inspirée des nuances coralliennes et des bleus infinis de l’atoll maldivien";
 		document.getElementById("paysage_laos").alt = "Fractale aux couleurs vertes du Laos-Cambodge";
-		document.getElementById("nav_altTitle").setAttribute("aria-label", "Navigation alternative des salles");
+		document.getElementById("nav_altTitle").setAttribute("aria-label", "Navigation alternative des salles (pour déficients visuels)");
 		document.getElementById("nav_altHampi").setAttribute("aria-label", "Accéder à la Salle 1 — Marché de Hampi");
 		document.getElementById("nav_altBali").setAttribute("aria-label", "Accéder à la Salle 2 — Bali la belle île");
 		document.getElementById("nav_altFlores").setAttribute("aria-label", "Accéder à la Salle 3 — Florès");
@@ -908,7 +908,7 @@
 		document.getElementById("paysage_maurice").alt = "Fractal in the colors of Mauritius, where rainbow dunes merge with turquoise lagoons and dancing palm trees.";
 		document.getElementById("paysage_maldives").alt = "Fractal inspired by coral hues and the endless blues of the Maldivian atoll.";
 		document.getElementById("paysage_laos").alt = "Fractal in the green colors of Laos-Cambodia";
-		document.getElementById("nav_altTitle").setAttribute("aria-label", "Alternative room navigation");
+		document.getElementById("nav_altTitle").setAttribute("aria-label", "Alternative room navigation (for visual impaired)");
 		document.getElementById("nav_altHampi").setAttribute("aria-label", "Go to Room 1 — Hampi Market");
 		document.getElementById("nav_altBali").setAttribute("aria-label", "Go to Room 2 — Bali the Beautiful Island");
 		document.getElementById("nav_altFlores").setAttribute("aria-label", "Go to Room 3 — Flores Island");
