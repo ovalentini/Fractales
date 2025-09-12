@@ -100,8 +100,8 @@ salle_hampi_fr="🕉️ Salle 1 — Marché de Hampi"
 btn_back_Hampi_en="🗺️ Back to the map"
 btn_back_Hampi_fr="🗺️ Retour à la carte"
 
-element1_en="Element"
-element1_fr="Élément"
+element1_en="Elements & Links"
+element1_fr="Éléments et Liens"
 
 lien1_en="Link"
 lien1_fr="Lien"
@@ -151,8 +151,8 @@ salle_bali_fr="🌺 Salle 2 — Bali, l’île spirituelle"
 btn_back_Bali_en="🗺️ Back to the map"
 btn_back_Bali_fr="🗺️ Retour à la carte"
 
-element2_en="Element"
-element2_fr="Élément"
+element2_en="Elements"
+element2_fr="Éléments"
 
 lien2_en="Link"
 lien2_fr="Lien"
@@ -196,8 +196,8 @@ salle_flores_fr="🌾 Salle 3 — Île de Florès"
 btn_back_Flores_en="🗺️ Back to the map"
 btn_back_Flores_fr="🗺️ Retour à la carte"
 
-element3_en="Element"
-element3_fr="Élément"
+element3_en="Elements & Links"
+element3_fr="Éléments et Liens"
 
 lien3_en="Link"
 lien3_fr="Lien"
@@ -241,8 +241,8 @@ navigationFlores_fr="🔝 Retour à la navigation rapide"
 salle_perou_en="🏔️ Room 4 — Peru’s Sacred Valley"
 salle_perou_fr="🏔️ Salle 4 — Vallée Sacrée du Pérou"
 
-element4_en="Element"
-element4_fr="Élément"
+element4_en="Elements & Links"
+element4_fr="Élémens et Liens"
 
 lien4_en="Link"
 lien4_fr="Lien"
@@ -289,8 +289,8 @@ navigationPerou_fr="🔝 Retour à la navigation rapide"
 salle_maurice_en="🏝️ Room 5 — The Seven Colored Earths of Mauritius"
 salle_maurice_fr="🏝️ Salle 5 — Les 7 Terres de Maurice"
 
-element5_en="Element"
-element5_fr="Élément"
+element5_en="Elements & Links"
+element5_fr="Éléments et Liens"
 
 lien5_en="Link"
 lien5_fr="Lien"
@@ -337,7 +337,7 @@ navigationMaurice_fr="🔝 Retour à la navigation rapide"
 salle_maldives_en="🐠 Room 6 — The Atoll of a Thousand Blues"
 salle_maldives_fr="🐠 Salle 6 — L’Atoll aux Mille Bleus"
 
-element6_en="Element"
+element6_en="Elements"
 element6_fr="Élément"
 
 lien6_en="Link"
