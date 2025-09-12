@@ -205,8 +205,8 @@ lien3_fr="Lien"
 komodo_en="🌺 Komodo dragons and pink beaches"
 komodo_fr="🌺 Dragons de Komodo et plages roses"
 
-corail_en="🌊 Coral reefs and underwater wonders"
-corail_fr="🌊 Récifs coraliens et merveilles sous-marines"
+recif_en="🌊 Coral reefs and underwater wonders"
+recif_fr="🌊 Récifs coraliens et merveilles sous-marines"
 
 neoclassique_en="Neoclassical music inspired by rice"
 neoclassique_fr="Musique néoclassique inspirée du riz"
