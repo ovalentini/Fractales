@@ -338,7 +338,7 @@ salle_maldives_en="🐠 Room 6 — The Atoll of a Thousand Blues"
 salle_maldives_fr="🐠 Salle 6 — L’Atoll aux Mille Bleus"
 
 element6_en="Elements"
-element6_fr="Élément"
+element6_fr="Éléments"
 
 lien6_en="Link"
 lien6_fr="Lien"
@@ -382,8 +382,8 @@ navigationMaldives_fr="🔝 Retour à la navigation rapide"
 salle_laos_en="🛕 Room 7 — Mysteries of Laos & Cambodia"
 salle_laos_fr="🛕 Salle 7 — Mystères du Laos et du Cambodge"
 
-element7_en="Element"
-element7_fr="Élément"
+element7_en="Elements"
+element7_fr="Éléments"
 
 lien7_en="Link"
 lien7_fr="Lien"
