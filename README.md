@@ -1,8 +1,5 @@
 🌀 Fractals of the World: Reflections of Souls
-Some fractals made with photos after my travels to Hampi (India), Bali, Flores (Indonesia), Peru, Mauritius, Maldives and Laos-Cambodia. 
-
-added CALIFORNIA, UNDER CONSTRUCTION...
-
+Some fractals made with photos after my travels to Hampi (India), Bali, Flores (Indonesia), Peru, Mauritius, Maldives, Laos-Cambodia and California. 
 
 An interactive poetic page was designed with the help of Copilot.
 
@@ -16,7 +13,11 @@ Bilingual version (French/English) using langues.txt for dynamic translation
 
 HTML generation partially built with JavaScript for flexibility and modularity
 
+
 ♿ Accessibility
+
+UNDER CONSTRUCTION: California to add
+
 This project includes a dedicated accessible version for visually and hearing impaired visitors:
 
 ✅ Audiodescriptions for each room, describing visual elements and soundscapes
