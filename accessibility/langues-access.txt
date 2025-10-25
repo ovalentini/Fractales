@@ -40,6 +40,9 @@ nav_Maldives_fr="🎧 Salle 6: Maldives"
 nav_Laos_en="🎧 Room 7: Laos-Cambodia"
 nav_Laos_fr="🎧 Salle 7: Laos-Cambodge"
 
+nav_Californie_en="🎧 Room 8: California"
+nav_Californie_fr="🎧 Salle 8: Californie"
+
 nav_altHampi_en="🕉️ Room 1 Hampi"
 nav_altHampi_fr="🕉️ Salle 1 Hampi"
 
@@ -60,6 +63,9 @@ nav_altMaldives_fr="🐠 Salle 6 Maldives"
 
 nav_altLaos_en="🛕 Room 7 Laos-Cambodia"
 nav_altLaos_fr="🛕 Salle 7 Laos-Cambodge"
+
+nav_altCalifornie_en="🌄 Room 8 California"
+nav_altCalifornie_fr="🌄 Salle 8 Californie"
 
 btn_map_en="🗺️ Interactive map"
 btn_map_fr="🗺️ Carte interactive"
@@ -84,6 +90,9 @@ btnMaldives_fr="🎧 Écouter"
 
 btnLaos_en="🎧 Listen"
 btnLaos_fr="🎧 Écouter"
+
+btnCalifornie_en="🎧 Listen"
+btnCalifornie_fr="🎧 Écouter"
 
 carte_interactive_en="🗺️ Interactive map"
 carte_interactive_fr="🗺️ Carte interactive"
@@ -420,6 +429,51 @@ enrichissementLaos_en="Soudscape Enrichment"
 
 enrichissementSonoreLaos_fr="Clochettes sacrées dans la forêt inondée, chants khmers qui s’élèvent des pierres anciennes, et pluie qui murmure sur les toits du Tonle Sap."
 enrichissementSonoreLaos_en="Sacred bells in the flooded forest, Khmer chants rising from ancient stones, and rain whispering on the rooftops of Tonle Sap."
+
+navigationLaos_en="🔝 Back to Quick Navigation"
+navigationLaos_fr="🔝 Retour à la navigation rapide"
+
+salle_californie_en="🌄 Room 8 — California between ocean and desert"
+salle_californie_fr=🌄 Salle 8 — Californie entre océan et désert"
+
+element8_en="Elements"
+element8_fr="Éléments"
+
+lien8_en="Link"
+lien8_fr="Lien"
+
+death_en="Death Valley — mineral spirals"
+death_fr="Death Valley — spirales minérales"
+
+surf_en="Santa Barbara — golden mist"
+surf_fr="Santa Barbara — brumes dorées"
+
+subtitles_californie_en="🎧 Subtitles & Transcription – Room 8: California"
+subtitles_californie_fr="🎧 Sous-titres et Transcription – Salle 8 : Californie"
+
+btn_back_Californie_en="🗺️ Back to the map"
+btn_back_Californie_fr="🗺️ Retour à la carte"
+
+subtitle_tram_en="[The tram glides through the suspended streets of San Francisco,]"
+subtitle_tram_fr="[Le tram s’élance dans les rues suspendues de San Francisco,]"
+
+subtitle_desert_en="[The desert wind whispers between the dunes,]"
+subtitle_desert_fr="[Le vent du désert murmure entre les dunes,]"
+
+subtitle_vagues_en="[And the waves of Santa Barbara bring the memory to a close.]"su
+subtitle_vagues_fr="[Et les vagues de Santa Barbara viennent clore le souvenir]"
+
+transcription_californie_en="A tram glides through the suspended streets of San Francisco. The desert wind whispers between the spiraling dunes of Death Valley. Golden mist rolls over the waves of Santa Barbara. This is California — a land of contrasts, where motion becomes memory."
+transcription_californie_fr="Un tram glisse dans les rues suspendues de San Francisco. Le vent du désert murmure entre les dunes en spirale de Death Valley. Une brume dorée roule sur les vagues de Santa Barbara. Voici la Californie — terre de contrastes, où le mouvement devient mémoire."
+
+texteNarrationCalifornie_en="Imagine a tram climbing steep hills, its bell echoing through fog. The desert stretches wide, sculpted by wind into mineral spirals. At the edge of the Pacific, waves shimmer beneath golden mist. California unfolds as a journey between silence and surf, stone and sky."
+texteNarrationCalifornie_fr="Imagine un tram gravissant des collines abruptes, sa cloche résonnant dans la brume. Le désert s’étend à perte de vue, sculpté par le vent en spirales minérales. Au bord du Pacifique, les vagues scintillent sous une brume dorée. La Californie se déploie comme un voyage entre silence et ressac, pierre et ciel."
+
+enrichissementCalifornie_fr="Enrichissement sonore"
+enrichissementCalifornie_en="Soudscape Enrichment"
+
+enrichissementSonoreCalifornie_fr="Le tram s’élance dans les rues suspendues, Le vent du désert murmure entre les dunes, Et les vagues de Santa Barbara viennent clore le souvenir."
+enrichissementSonoreCalifornie_en="The tram glides through the suspended streets, The desert wind whispers between the dunes, And the waves of Santa Barbara bring the memory to a close."
 
 navigationLaos_en="🔝 Back to Quick Navigation"
 navigationLaos_fr="🔝 Retour à la navigation rapide"
