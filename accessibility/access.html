@@ -740,7 +740,7 @@
 	const handleNavigation = (sourceElement, type) => {
 	  const classList = Array.from(sourceElement.classList);
 	  const salleName = classList.find(cls =>
-		["hampi", "bali", "flores", "perou", "maurice", "maldives", "laos"].includes(cls)
+		["hampi", "bali", "flores", "perou", "maurice", "maldives", "laos", "californie"].includes(cls)
 	  );
 
 	  if (!salleName) return;
@@ -846,7 +846,8 @@
 	  btnBali: { fr: "Bali", en: "Bali" },
 	  btnMaurice: { fr: "île Maurice", en: "Mauritius" },
 	  btnMaldives: { fr: "Maldives", en: "Maldives" },
-	  btnLaos: { fr: "Laos-Cambodge", en: "Laos-Cambodia" }
+	  btnLaos: { fr: "Laos-Cambodge", en: "Laos-Cambodia" },
+	  btnCalifornie: { fr: "Californie", en: "California" }
 	};
 
 	const templates = {

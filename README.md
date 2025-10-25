@@ -16,8 +16,6 @@ HTML generation partially built with JavaScript for flexibility and modularity
 
 ♿ Accessibility
 
-UNDER CONSTRUCTION: California to add
-
 This project includes a dedicated accessible version for visually and hearing impaired visitors:
 
 ✅ Audiodescriptions for each room, describing visual elements and soundscapes
