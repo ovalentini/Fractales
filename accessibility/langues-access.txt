@@ -460,8 +460,8 @@ subtitle_tram_fr="[Le tram s’élance dans les rues suspendues de San Francisco
 subtitle_desert_en="[The desert wind whispers between the dunes,]"
 subtitle_desert_fr="[Le vent du désert murmure entre les dunes,]"
 
-subtitle_vagues_en="[And the waves of Santa Barbara bring the memory to a close.]"su
-subtitle_vagues_fr="[Et les vagues de Santa Barbara viennent clore le souvenir]"
+subtitle_vagues_en="[And the waves of Santa Barbara bring the memory to a close.]"
+subtitle_vagues_fr="[Et les vagues de Santa Barbara viennent clore le souvenir.]"
 
 transcription_californie_en="A tram glides through the suspended streets of San Francisco. The desert wind whispers between the spiraling dunes of Death Valley. Golden mist rolls over the waves of Santa Barbara. This is California — a land of contrasts, where motion becomes memory."
 transcription_californie_fr="Un tram glisse dans les rues suspendues de San Francisco. Le vent du désert murmure entre les dunes en spirale de Death Valley. Une brume dorée roule sur les vagues de Santa Barbara. Voici la Californie — terre de contrastes, où le mouvement devient mémoire."
