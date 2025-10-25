@@ -470,13 +470,13 @@ texteNarrationCalifornie_en="Imagine a tram climbing steep hills, its bell echoi
 texteNarrationCalifornie_fr="Imagine un tram gravissant des collines abruptes, sa cloche résonnant dans la brume. Le désert s’étend à perte de vue, sculpté par le vent en spirales minérales. Au bord du Pacifique, les vagues scintillent sous une brume dorée. La Californie se déploie comme un voyage entre silence et ressac, pierre et ciel."
 
 enrichissementCalifornie_fr="Enrichissement sonore"
-enrichissementCalifornie_en="Soudscape Enrichment"
+enrichissementCalifornie_en="Soundscape Enrichment"
 
 enrichissementSonoreCalifornie_fr="Le tram s’élance dans les rues suspendues, Le vent du désert murmure entre les dunes, Et les vagues de Santa Barbara viennent clore le souvenir."
 enrichissementSonoreCalifornie_en="The tram glides through the suspended streets, The desert wind whispers between the dunes, And the waves of Santa Barbara bring the memory to a close."
 
-navigationLaos_en="🔝 Back to Quick Navigation"
-navigationLaos_fr="🔝 Retour à la navigation rapide"
+navigationCalifornie_en="🔝 Back to Quick Navigation"
+navigationCalifornie_fr="🔝 Retour à la navigation rapide"
 
 cloture_visite_en="🖼️ Contemplative Epilogue – Closing of the Visit"
 cloture_visite_fr="🖼️ Épilogue contemplatif – Clôture de la visite"
