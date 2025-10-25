@@ -434,7 +434,7 @@ navigationLaos_en="🔝 Back to Quick Navigation"
 navigationLaos_fr="🔝 Retour à la navigation rapide"
 
 salle_californie_en="🌄 Room 8 — California between ocean and desert"
-salle_californie_fr=🌄 Salle 8 — Californie entre océan et désert"
+salle_californie_fr="🌄 Salle 8 — Californie entre océan et désert"
 
 element8_en="Elements"
 element8_fr="Éléments"
