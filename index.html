@@ -130,6 +130,33 @@
 			<a href="#californie" class="carte-point-en californie" title="California"></a>
 		</div>
 	  </div>
+	  <div class="carte-page" id="carte3">
+		<div class="carte-wrapper">
+			<img id="fractals-img3" src="carte-interactive-fr3.jpg" title="Cliquer sur une zone ou un point pour aller à la salle correspondante" usemap="#map-salles3" />
+			<p id="image-caption3" class="caption">Chaque spirale raconte une histoire. Laissez les motifs guider votre âme.</p>
+			
+			<!-- Zones & Points -->
+			<!--<a href="#maurice" class="debug-zone-fr maurice" title="Salle 5 – île Maurice"></a>
+			<a href="#maldives" class="debug-zone-fr maldives" title="Salle 6 – Maldives"></a>
+			<a href="#laos" class="debug-zone-fr laos" title="Salle 7 – Laos-Cambodge"></a>
+			<a href="#californie" class="debug-zone-fr californie" title="Salle 8 – Californie"></a>
+			
+			<a href="#maurice" class="debug-zone-en maurice" title="Room 5 – Mauritius"></a>
+			<a href="#maldives" class="debug-zone-en maldives" title="Room 6 – Maldives"></a>
+            <a href="#laos" class="debug-zone-en laos" title="Room 7 – Laos-Cambodia"></a>
+			<a href="#californie" class="debug-zone-en californie" title="Room 8 – California"></a>
+
+			<a href="#maurice" class="carte-point-fr maurice" title="île Maurice"></a>
+			<a href="#maldives" class="carte-point-fr maldives" title="Maldives"></a>
+		    <a href="#laos" class="carte-point-fr laos" title="Laos-Cambodge"></a>
+			<a href="#californie" class="carte-point-fr californie" title="Californie"></a>
+		  
+			<a href="#maurice" class="carte-point-en maurice" title="Mauritius"></a>
+			<a href="#maldives" class="carte-point-en maldives" title="Maldives"></a>
+			<a href="#laos" class="carte-point-en laos" title="Laos-Cambodia"></a>
+			<a href="#californie" class="carte-point-en californie" title="California"></a>-->
+		</div>
+	  </div>
     </div>
   </section>
   
@@ -958,6 +985,29 @@
 		img2.title = imgData2.title;
 		caption2.textContent = imgData2.caption;
 
+	 const img3 = document.getElementById("fractals-img3");
+	 const caption3 = document.getElementById("image-caption3");
+
+	  const imageData3 = {
+	  fr: {
+		src: "carte-interactive-fr3.jpg",
+		alt: "Sous les tropiques",
+		title: "Cliquer sur une zone ou un point pour aller à la salle correspondante",
+		caption: "Chaque reflet insulaire murmure une légende. Laissez les vagues vous guider."
+	  },
+	  en: {
+		src: "carte-interactive-en3.jpg",
+		alt: "Island Reflections",
+		title: "Click on an area or point to go to the corresponding room",
+		caption: "Each island reflection whispers a legend. Let the waves guide you."
+	  }
+	  };
+
+		const imgData3 = imageData3[langue];
+		img3.src = imgData3.src;
+		img3.alt = imgData3.alt;
+		img3.title = imgData3.title;
+		caption3.textContent = imgData3.caption;	
 	  
 	  const cartes = document.querySelectorAll('.carte-wrapper img');
 	  cartes.forEach(carte => {
