@@ -37,7 +37,10 @@ liens_a_verifier = [
     "https://youtu.be/qZXaQ79hy9E",
     "https://www.youtube.com/watch?v=5e4OFhFmvH4",
     "https://www.youtube.com/watch?v=uLU6Ias-Au8",
-    "https://www.youtube.com/watch?v=RvxiFg_2P-M"
+    "https://www.youtube.com/watch?v=RvxiFg_2P-M",
+    "https://www.youtube.com/watch?v=gzwlmzAkNb0",
+    "https://www.youtube.com/watch?v=O1Zz75rYp6s",
+    "https://www.youtube.com/watch?v=Q0Rz7vKqKXc"
 ]
 
 # Affichage des résultats
