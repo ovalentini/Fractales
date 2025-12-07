@@ -1,13 +1,18 @@
 [btn_flag_fr] ' Français'
 [btn_flag_en] ' English'
+
 [btn_quit_fr] '🌌 Quitter le temple fractal'
 [btn_quit_en] '🌌 Leave the fractal temple'
 [btn_enter_fr] '✨ Entrer dans l’exposition'
 [btn_enter_en] '✨ Enter the exhibition'
+
 [btn_map_0_fr] '🗺️ Carte interactive'
 [btn_map_0_en] '🗺️ Interactive map'
 [btn_map_1_fr] '🗺️ Carte interactive'
 [btn_map_1_en] '🗺️ Interactive map'
+[btn_map_2_fr] '🗺️ Carte interactive'
+[btn_map_2_en] '🗺️ Interactive map'
+
 [btn_next_0_fr] '→ Salle suivante'
 [btn_next_0_en] '→ Next room'
 [btn_next_1_fr] '→ Salle suivante'
@@ -22,6 +27,9 @@
 [btn_next_5_en] '→ Next room'
 [btn_next_6_fr] '→ Salle suivante'
 [btn_next_6_en] '→ Next room'
+[btn_next_7_fr] '→ Salle suivante'
+[btn_next_7_en] '→ Next room'
+
 [btn_previous_0_fr] '← Salle précédente'
 [btn_previous_0_en] '← Previous room'
 [btn_previous_1_fr] '← Salle précédente'
@@ -36,6 +44,9 @@
 [btn_previous_5_en] '← Previous room'
 [btn_previous_6_fr] '← Salle précédente'
 [btn_previous_6_en] '← Previous room'
+[btn_previous_7_fr] '← Salle précédente'
+[btn_previous_7_en] '← Previous room'
+
 [btn_back_0_fr] '🗺️ Retour à la carte'
 [btn_back_0_en] '🗺️ Back to the map'
 [btn_back_1_fr] '🗺️ Retour à la carte'
@@ -52,8 +63,12 @@
 [btn_back_6_en] '🗺️ Back to the map'
 [btn_back_7_fr] '🗺️ Retour à la carte'
 [btn_back_7_en] '🗺️ Back to the map'
+[btn_back_8_fr] '🗺️ Retour à la carte'
+[btn_back_8_en] '🗺️ Back to the map'
+
 [btn_exit_fr] 'Quitter'
 [btn_exit_en] 'Exit'
+
 [btn_quick_navigation_fr] '🎧 Navigation rapide – Sous-titres & Transcriptions'
 [btn_quick_navigation_en] '🎧 Quick Navigation – Subtitles & Transcriptions'
 [btn_summary_0_fr] '📚 Voir le sommaire'
@@ -76,8 +91,12 @@
 [btn_summary_8_en] '📚 View the summary'
 [btn_summary_9_fr] '📚 Voir le sommaire'
 [btn_summary_9_en] '📚 View the summary'
+[btn_summary_10_fr] '📚 Voir le sommaire'
+[btn_summary_10_en] '📚 View the summary'
+
 [btn_epilogue_fr] '🌌 Fin du voyage'
 [btn_epilogue_en] '🌌 End of the journey'
+
 [changer_carte_fr] 'Changer de carte interactive'
 [changer_carte_en] 'Change interactive map'
 [fractales_fr] '🖼️ Fractales du Monde : Reflets d’Âmes'
@@ -88,6 +107,7 @@
 [prologue_sensible_en] '🖼️ Sensitive Prologue – Poetic Introduction'
 [intro_poetique_fr] 'Fermez les yeux… et ouvrez l’âme. Vous entrez dans un monde où les frontières se dissolvent. Ici, chaque image est un souffle, chaque spirale une mémoire. Les fractales ne sont pas que des motifs… elles sont les reflets d’âmes dispersées aux quatre vents du monde. Suivez la lumière, écoutez le rythme caché derrière les pixels, et laissez-vous porter…'
 [intro_poetique_en] 'Close your eyes… and open your soul. You are entering a world where boundaries dissolve. Here, every image is a breath, every spiral a memory. Fractals are not just patterns… they are reflections of souls scattered to the four winds of the world. Follow the light, listen to the hidden rhythm behind the pixels, and let yourself be carried away…'
+
 [sommaire_expo_fr] '📚 Sommaire de l’exposition'
 [sommaire_expo_en] '📚 Exhibition Summary'
 [sommaire_hampi_fr] '🛕 Hampi — Char mystique'
@@ -106,6 +126,9 @@
 [sommaire_laos_en] '🛕 Laos-Cambodia — Bells and floating rain'
 [sommaire_californie_fr] '🌄 Californie — Spirales du désert et embruns dorés'
 [sommaire_californie_en] '🌄 California — Desert Spirals and Golden Sea Spray'
+[sommaire_australie_fr] '🐨 Australie — Kata Tjuta et les gardiens d’eucalyptus'
+[sommaire_australie_en] '🐨 Australia — Kata Tjuta and the guardians of eucalyptus'
+
 [salle1_fr] 'Salle 1 - Marché à Hampi ✨ Char mystique de Hampi 🌈 Mandalas et étoffes ondulantes 🎵 Ambiance sonore : Piliers musicaux du temple Vithala'
 [salle1_en] 'Room 1 - Hampi Market ✨ Mystical chariot of Hampi 🌈 Mandalas and flowing fabrics 🎵 Soundscape: Musical pillars of the Vithala temple'
 [salle2_fr] 'Salle 2 - Bali la belle île 🌾 Rizières sacrées et offrandes 🕉️ Temples hindous et spirales d’encens 🎶 Ambiance sonore : Gamelan balinais'
@@ -116,6 +139,7 @@
 [salle4_en] 'Room 4 - Amazonian Salt Flats ✨ Salt terraces and fractal reflections 🌊 Aquatic geometry and mineral memory 🎶 Soundscape: Traditional Amazonian chants'
 [carte_interactive_fr] '🗺️ Carte interactive'
 [carte_interactive_en] '🗺️ Interactive map'
+
 [salle_hampi_fr] '🕉️ Salle 1 — Marché à Hampi'
 [salle_hampi_en] '🕉️ Room 1 — Hampi Market'
 [vithala_fr] 'Piliers musicaux du temple Vithala' 
@@ -126,6 +150,7 @@
 [histoire_en] 'Immersive historical narration'
 [sonHampi_fr] 'Enrichissement sonore'
 [sonHampi_en] 'Soundscape enrichment'
+
 [salle_bali_fr] '🌺 Salle 2 — Bali la belle île'
 [salle_bali_en] '🌺 Room 2 — Bali the Beautiful Island'
 [ceremonie_fr] 'Gamelan balinais & sons de cérémonie'
@@ -136,6 +161,7 @@
 [priere_en] 'Prayer sounds and offerings'
 [sonBali_fr] 'Enrichissement sonore'
 [sonBali_en] 'Soundscape enrichment'
+
 [salle_flores_fr] '🌾 Salle 3 — Fleurs de rizières'
 [salle_flores_en] '🌾 Room 3 — Rice Field Flowers'
 [berceuse_fr] 'Berceuse des rizières'
@@ -146,6 +172,7 @@
 [matin_en] 'Morning atmosphere in the fields'
 [sonFlores_fr] 'Enrichissement sonore'
 [sonFlores_en] 'Soundscape enrichment'
+
 [salle_perou_fr] '🏔️ Salle 4 — Salines Amazoniennes'
 [salle_perou_en] '🏔️ Room 4 — Amazonian Salt Flats'
 [chant_fr] 'Chants traditionnels amazoniens'
@@ -156,6 +183,7 @@
 [icaro_en] 'Sacred Icaro — Amazonian shamanic chant'
 [sonPerou_fr] 'Enrichissement sonore'
 [sonPerou_en] 'Soundscape enrichment'
+
 [salle_maurice_fr] '🏝️ Salle 5 — Les 7 Terres de Maurice'
 [salle_maurice_en] '🏝️ Room 5 — The Seven Colored Earths of Mauritius'
 [cantique_fr] 'Cantique Créole Mauricien - Saint Esprit kan to la'
@@ -166,6 +194,7 @@
 [marin_en] 'Mauritius – The Marine Park of Blue Bay'
 [sonMaurice_fr] 'Enrichissement sonore'
 [sonMaurice_en] 'Soundscape enrichment'
+
 [salle_maldives_fr] '🐠 Salle 6 — L’Atoll aux Mille Bleus'
 [salle_maldives_en] '🐠 Room 6 — The Atoll of a Thousand Blues'
 [coraux_fr] 'Maldives : Coraux, un trésor à sauver'
@@ -176,6 +205,7 @@
 [poissons_en] 'The Lateral Line – Schooling Fish'
 [sonMaldives_fr] 'Enrichissement sonore'
 [sonMaldives_en] 'Soundscape enrichment'
+
 [salle_laos_fr] '🛕 Salle 7 — Mystères du Laos et du Cambodge'
 [salle_laos_en] '🛕 Room 7 — Mysteries of Laos & Cambodia'
 [mekong_fr] 'Ceux qui dépendent du fleuve Mékong'
@@ -186,6 +216,7 @@
 [angkor_en] 'What’s hidden behind Angkor Wat?'
 [sonLaos_fr] 'Enrichissement sonore'
 [sonLaos_en] 'Soundscape enrichment'
+
 [salle_californie_fr] '🌄 Salle 8 — Californie, spirales du désert et embruns dorés'
 [salle_californie_en] '🌄 Room 8 — California,  Desert Spirals and Golden Sea Spray'
 [tram_fr] 'A bord des célèbres tramways de San Francisco'
@@ -195,7 +226,19 @@
 [surf_fr] 'Surf spectaculaire à Rincon Point, Santa Barbara' 
 [surf_en] 'Amazing Rincon Point surf, Santa Barbara' 
 [sonCalifornie_fr] 'Enrichissement sonore'
-[son Californie_en] 'Soudscape enrichment'
+[son Californie_en] 'Soundscape enrichment'
+
+[salle_australie_fr] '🐨 Salle 12 — Kata Tjuta et les gardiens d’eucalyptus'
+[salle_australie_en] '🐨 Room 12 — Kata Tjuta and the guardians of eucalyptus'
+[olga_fr] 'Monts Olga (Kata Tjuta)'
+[olga_en] 'Olga Mountains (Kata Tjuta)'
+[koala_fr] 'Rencontre avec les koalas'
+[koala_en] 'Encounter with the koalas'
+[dreaming_fr] 'Paysages du Dreamtime'
+[dreaming_en] 'Landscapes of the Dreamtime'
+[sonAustralie_fr] 'Enrichissement sonore'
+[sonAustralie_en] 'Soundscape enrichment'
+
 [element1_fr] 'Élément'
 [element1_en] 'Element'
 [lien1_fr] 'Lien'
@@ -236,6 +279,7 @@
 [decouvre4_en] 'Discover'
 [ecoute5_fr] 'Ecouter'
 [ecoute5_en] 'Listen'
+
 [element5_fr] 'Élément'
 [element5_en] 'Element'
 [lien5_fr] 'Lien'
@@ -246,6 +290,7 @@
 [decouvre5_en] 'Discover'
 [explore4_fr] 'Explorer'
 [explore4_en] 'Explore'
+
 [element6_fr] 'Élément'
 [element6_en] 'Element'
 [lien6_fr] 'Lien'
@@ -256,6 +301,7 @@
 [decouvre7_en] 'Discover'
 [explore5_fr] 'Explorer'
 [explore5_en] 'Explore'
+
 [element7_fr] 'Élément'
 [element7_en] 'Element'
 [lien7_fr] 'Lien'
@@ -266,6 +312,7 @@
 [decouvre9_en] 'Discover'
 [explore6_fr] 'Explorer'
 [explore6_en] 'Explore'
+
 [element8_fr] 'Élément'
 [element8_en] 'Element'
 [lien8_fr] 'Lien'
@@ -276,6 +323,19 @@
 [decouvre11_en] 'Discover'
 [explore7_fr] 'Explorer'
 [explore7_en] 'Explore'
+
+[element9_fr] 'Élément'
+[element9_en] 'Element'
+[lien9_fr] 'Lien'
+[lien9_en] 'Link'
+[decouvre12_fr] 'Découvrir'
+[decouvre12_en] 'Discover'
+[explore8_fr] 'Explorer'
+[explore8_en] 'Explore'
+[reve1_fr] 'Rêver'
+[reve1_en] 'Dream'
+
+
 [cloture_visite_fr] '🖼️ Épilogue contemplatif – Clôture de la visite'
 [cloture_visite_en] '🖼️ Contemplative Epilogue – Closing of the Visit'
 [epilogue_fr] 'Et lorsque les lumières s’éteignent, les fractales continuent de danser dans l’obscurité. Elles murmurent des histoires anciennes, des secrets oubliés, et des rêves à venir. Chaque reflet est une promesse, chaque spirale un voyage sans fin.'
