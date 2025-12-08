@@ -48,6 +48,7 @@ Accessible version available in /accessibility/access.html Styles defined in /ac
   - [Routard — Bali](https://www.routard.com/fr/photo/p/345-bali)  
   - [Visitons Bali](https://www.visitonsbali.com/photos)  
   - [OkVoyage — Bali landscapes](https://www.okvoyage.com/post/paysages-bali/)
+  - [Aventura Costa Rica Tours] (https://aventura-costarica.com/coati-du-costa-rica/)
 
 ### 🌀 Fractals & Visuals
 - Fractal compositions created with **UltraFractal**, blended with travel photography memories across multiple journeys
