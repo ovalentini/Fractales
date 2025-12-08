@@ -1,5 +1,5 @@
 🌀 Fractals of the World: Reflections of Souls
-Some fractals made with photos after my travels to Hampi (India), Bali, Flores (Indonesia), Peru, Mauritius, Maldives, Laos-Cambodia, California and Australia. 
+Some fractals made with photos after my travels to Hampi (India), Bali, Flores (Indonesia), Peru, Mauritius, Maldives, Laos-Cambodia, California, Costa Rica and Australia. 
 
 An interactive poetic page was designed with the help of Copilot.
 

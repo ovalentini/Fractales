@@ -29,6 +29,8 @@
 [btn_next_6_en] '→ Next room'
 [btn_next_7_fr] '→ Salle suivante'
 [btn_next_7_en] '→ Next room'
+[btn_next_8_fr] '→ Salle suivante'
+[btn_next_8_en] '→ Next room'
 
 [btn_previous_0_fr] '← Salle précédente'
 [btn_previous_0_en] '← Previous room'
@@ -46,6 +48,8 @@
 [btn_previous_6_en] '← Previous room'
 [btn_previous_7_fr] '← Salle précédente'
 [btn_previous_7_en] '← Previous room'
+[btn_previous_8_fr] '← Salle précédente'
+[btn_previous_8_en] '← Previous room'
 
 [btn_back_0_fr] '🗺️ Retour à la carte'
 [btn_back_0_en] '🗺️ Back to the map'
@@ -65,6 +69,9 @@
 [btn_back_7_en] '🗺️ Back to the map'
 [btn_back_8_fr] '🗺️ Retour à la carte'
 [btn_back_8_en] '🗺️ Back to the map'
+[btn_back_9_fr] '🗺️ Retour à la carte'
+[btn_back_9_en] '🗺️ Back to the map'
+
 
 [btn_exit_fr] 'Quitter'
 [btn_exit_en] 'Exit'
@@ -93,6 +100,8 @@
 [btn_summary_9_en] '📚 View the summary'
 [btn_summary_10_fr] '📚 Voir le sommaire'
 [btn_summary_10_en] '📚 View the summary'
+[btn_summary_11_fr] '📚 Voir le sommaire'
+[btn_summary_11_en] '📚 View the summary'
 
 [btn_epilogue_fr] '🌌 Fin du voyage'
 [btn_epilogue_en] '🌌 End of the journey'
