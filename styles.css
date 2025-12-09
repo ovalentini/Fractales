@@ -274,6 +274,43 @@ td a {
   opacity: 0.8;
 }
 
+.carte-legende {
+  position: absolute;
+  top: 2%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 0.5em 1em;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-family: 'Georgia', serif;
+  z-index: 10;
+}
+
+.carte-legende-fr,
+.carte-legende-en {
+  margin: 0;
+  font-size: 1em;
+  line-height: 1.4;
+  color: #333;
+}
+
+/* Par défaut, on masque les deux */
+.carte-legende-fr,
+.carte-legende-en {
+  display: none;
+}
+
+/* Si la langue est française */
+.lang-fr .carte-legende-fr {
+  display: block;
+}
+
+/* Si la langue est anglaise */
+.lang-en .carte-legende-en {
+  display: block;
+}
 
 button#fleche-gauche, button#fleche-droite {
   background: linear-gradient(to right, #00c6ff, #0072ff);
@@ -333,8 +370,14 @@ button:hover {
 .carte-point-en.laos     { top: 75.1%; left: 80.3%; background-color: green;    box-shadow: 0 0 12px rgba(0, 0, 255, 0.6); }
 .carte-point-en.californie     { top: 69%; left: 10.0%; background-color: orange;    box-shadow: 0 0 12px rgba(255, 165, 0, 0.6); }
 
+.carte-point-fr.costarica     { top: 70.0%; left: 17.0%; background-color: crimson; box-shadow: 0 0 12px rgba(255, 0, 0, 0.6); }
+.carte-point-fr.dominicana     { top: 68.0%; left: 22.0%; background-color: blue;    box-shadow: 0 0 12px rgba(0, 0, 255, 0.6); }
+.carte-point-fr.guyane     { top: 72.5%; left: 28.0%; background-color: green;    box-shadow: 0 0 12px rgba(0, 0, 255, 0.6); }
 .carte-point-fr.australie      { top: 80.8%; left: 90.0%; background-color: orange;  box-shadow: 0 0 12px rgba(255, 165, 0, 0.6); }
 
+.carte-point-en.costarica     { top: 70.0%; left: 17.0%; background-color: crimson; box-shadow: 0 0 12px rgba(255, 0, 0, 0.6); }
+.carte-point-en.dominicana     { top: 68.0%; left: 22.0%; background-color: blue;    box-shadow: 0 0 12px rgba(0, 0, 255, 0.6); }
+.carte-point-en.guyane     { top: 72.5%; left: 28.0%; background-color: green;    box-shadow: 0 0 12px rgba(0, 0, 255, 0.6); }
 .carte-point-en.australie      { top: 80.8%; left: 90.0%; background-color: orange;  box-shadow: 0 0 12px rgba(255, 165, 0, 0.6); }
 
 .carte-point-fr.highlight {
@@ -410,8 +453,14 @@ button:hover {
 .debug-zone-en.laos  { top: 20.9%; left: 51.7%; width: 20%; height: 32.7%; background-color: rgba(0, 255, 0, 0.3); }
 .debug-zone-en.californie  { top: 20.9%; left: 75.3%; width: 20%; height: 32.7%; background-color: rgba(255, 165, 0, 0.3); }
 
+.debug-zone-fr.costarica   { top: 16.9%; left: 4.7%; width: 20%; height: 32.7%; background-color: rgba(255, 0, 0, 0.3); }
+.debug-zone-fr.dominicana   { top: 16.9%; left: 28.3%; width: 20%; height: 32.7%; background-color: rgba(0, 0, 255, 0.3); }
+.debug-zone-fr.guyane   { top: 16.9%; left: 51.7%; width: 20%; height: 32.7%; background-color: rgba(0, 255, 0, 0.3); }
 .debug-zone-fr.australie   { top: 16.9%; left: 75.3%; width: 20%; height: 32.7%; background-color: rgba(255, 165, 0, 0.3); }
 
+.debug-zone-en.costarica   { top: 16.9%; left: 4.7%; width: 20%; height: 32.7%; background-color: rgba(255, 0, 0, 0.3); }
+.debug-zone-en.dominicana   { top: 16.9%; left: 28.3%; width: 20%; height: 32.7%; background-color: rgba(0, 0, 255, 0.3); }
+.debug-zone-en.guyane   { top: 16.9%; left: 51.7%; width: 20%; height: 32.7%; background-color: rgba(0, 255, 0, 0.3); }
 .debug-zone-en.australie   { top: 16.9%; left: 75.3%; width: 20%; height: 32.7%; background-color: rgba(255, 165, 0, 0.3); }
 
 

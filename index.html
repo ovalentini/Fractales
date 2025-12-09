@@ -139,25 +139,30 @@
 			<img id="fractals-img3" src="maps/carte-interactive-fr3.jpg" title="Cliquer sur une zone ou un point pour aller à la salle correspondante" usemap="#map-salles3" />
 			<p id="image-caption3" class="caption">Chaque spirale raconte une histoire. Laissez les motifs guider votre âme.</p>
 			
-			<!-- Zones & Points -->
-			<!--<a href="#maldives" class="debug-zone-fr maldives" title="Salle 6 – Maldives"></a>
-			<a href="#laos" class="debug-zone-fr laos" title="Salle 7 – Laos-Cambodge"></a>-->
-			<a href="#costarica" class="debug-zone-fr costarica" title="Salle 9 – Costa Rica"></a>
-			<a href="#australie" class="debug-zone-fr australie" title="Salle 12 – Australie"></a>
+			<div class="carte-legende">
+			  <p class="carte-legende-fr">Fractales du monde — Reflet d’âmes</p>
+			  <p class="carte-legende-en">Fractals of the World — Reflections of Souls</p>
+			</div>
 			
-			<!--<a href="#maurice" class="debug-zone-en maurice" title="Room 5 – Mauritius"></a>
-			<a href="#maldives" class="debug-zone-en maldives" title="Room 6 – Maldives"></a>-->
+			<!-- Zones & Points -->
+			<a href="#costarica" class="debug-zone-fr costarica" title="Salle 9 – Costa Rica"></a>
+			<a href="#dominicana" class="debug-zone-fr dominicana" title="Salle 10 – République dominicaine"></a>
+			<a href="#guyane" class="debug-zone-fr guyane" title="Salle 11 – Guyane"></a>
+			<a href="#australie" class="debug-zone-fr australie" title="Salle 12 – Australie"></a>
+		
 			<a href="#costarica" class="debug-zone-en costarica" title="Salle 9 – Costa Rica"></a>
+			<a href="#dominicana" class="debug-zone-en dominicana" title="Salle 10 – Dominican republic"></a>
+			<a href="#guyane" class="debug-zone-en guyane" title="Salle 11 – Guyana"></a>
 			<a href="#australie" class="debug-zone-en australie" title="Room 12 – Australia"></a>
 
-			<!--<a href="#maurice" class="carte-point-fr maurice" title="île Maurice"></a>
-			<a href="#maldives" class="carte-point-fr maldives" title="Maldives"></a>-->
 		    <a href="#costarica" class="carte-point-fr costarica" title="Costa Rica"></a>
+			<a href="#dominicana" class="carte-point-fr dominicana" title="République dominicaine"></a>
+			<a href="#guyane" class="carte-point-fr guyane" title="Guyane"></a>
 			<a href="#australie" class="carte-point-fr australie" title="Australie"></a>
 		  
-			<!--<a href="#maurice" class="carte-point-en maurice" title="Mauritius"></a>
-			<a href="#maldives" class="carte-point-en maldives" title="Maldives"></a>-->
 			<a href="#costarica" class="carte-point-en costarica" title="Costa Rica"></a>
+			<a href="#dominicana" class="carte-point-en dominicana" title="Dominican republic"></a>
+			<a href="#guyane" class="carte-point-en guyane" title="Guyana"></a>
 			<a href="#australie" class="carte-point-en australie" title="Australia"></a>
 		</div>
 	  </div>
@@ -1138,6 +1143,10 @@
 	// langues fr ou en, div id="lang-switch"
 	function switchLangue() {
 	  langueActuelle = (langueActuelle === 'fr') ? 'en' : 'fr';
+
+      // 🔑 Met à jour la classe du body pour le CSS conditionnel
+	  document.body.classList.remove('lang-fr', 'lang-en');
+	  document.body.classList.add('lang-' + langueActuelle);
 
 	  chargerLangues('https://ovalentini.github.io/Fractales/langues.txt').then(labels => {
 		appliquerTextes(labels, langueActuelle);
