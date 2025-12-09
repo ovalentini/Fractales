@@ -1,5 +1,5 @@
 🌀 Fractals of the World: Reflections of Souls
-Some fractals made with photos after my travels to Hampi (India), Bali, Flores (Indonesia), Peru, Mauritius, Maldives, Laos-Cambodia, California, Costa Rica and Australia. 
+Some fractals made with photos after my travels to Hampi (India), Bali, Flores (Indonesia), Peru, Mauritius, Maldives, Laos-Cambodia, California, Costa Rica, Dominican republic, Guyana and Australia. 
 
 An interactive poetic page was designed with the help of Copilot.
 
@@ -36,7 +36,7 @@ Accessible version available in /accessibility/access.html Styles defined in /ac
 ## 📖 Credits & Links
 
 ### 🎶 Soundscapes & Audio
-- [Freesound.org](https://freesound.org) — ambient recordings (desert wind, ocean waves, forest rustling, didgeridoo, gamelan bells)
+- [Freesound.org](https://freesound.org) — ambient recordings (desert wind, ocean waves, forest rustling, didgeridoo, gamelan bells, ...)
 - [Munki Audio](https://munki.audio/catalogue/albums/410/artistes-divers--comptines-et-berceuses-des-rizieres) — traditional nursery rhymes and rice field lullabies
 - [SoundCloud — Julien Boulier](https://soundcloud.com/julien-boulier/episodes-rizieres-by-julien) — “Episodes Rizières” composition
 - Mixed and edited with [Audacity](https://www.audacityteam.org/)
