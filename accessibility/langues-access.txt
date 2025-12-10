@@ -43,6 +43,18 @@ nav_Laos_fr="🎧 Salle 7: Laos-Cambodge"
 nav_Californie_en="🎧 Room 8: California"
 nav_Californie_fr="🎧 Salle 8: Californie"
 
+nav_Costarica_en="🎧 Room 9: Costa Rica"
+nav_Costarica_fr="🎧 Salle 9: Costa Rica"
+
+nav_Dominicana_en="🎧 Room 10: Dominican republic"
+nav_Dominicana_fr="🎧 Salle 10: République dominicaine"
+
+nav_Guyane_en="🎧 Room 11: Guyana"
+nav_Guyane_fr="🎧 Salle 11: Guyane"
+
+nav_Australie_en="🎧 Room 12: Australia"
+nav_Australie_fr="🎧 Salle 12: Australie"
+
 nav_altHampi_en="🕉️ Room 1 Hampi"
 nav_altHampi_fr="🕉️ Salle 1 Hampi"
 
@@ -66,6 +78,18 @@ nav_altLaos_fr="🛕 Salle 7 Laos-Cambodge"
 
 nav_altCalifornie_en="🌄 Room 8 California"
 nav_altCalifornie_fr="🌄 Salle 8 Californie"
+
+nav_altCostarica_en="🌄 Room 9 Costa Rica"
+nav_altCostarica_fr="🌄 Salle 9 Costa Rica"
+
+nav_altDominicana_en="🌄 Room 10 Dominican republic"
+nav_altDominicana_fr="🌄 Salle 10 République dominicaine"
+
+nav_altGuyane_en="🌄 Room 11 Guyana"
+nav_altGuyane_fr="🌄 Salle 11 Guyane"
+
+nav_altAustrsalie_en="🌄 Room 12 Australia"
+nav_altGuyane_fr="🌄 Salle 12 Australie"
 
 btn_map_en="🗺️ Interactive map"
 btn_map_fr="🗺️ Carte interactive"
@@ -93,6 +117,18 @@ btnLaos_fr="🎧 Écouter"
 
 btnCalifornie_en="🎧 Listen"
 btnCalifornie_fr="🎧 Écouter"
+
+btnCostarica_en="🎧 Listen"
+btnCostarica_fr="🎧 Écouter"
+
+btnDominicana_en="🎧 Listen"
+btnDominicana_fr="🎧 Écouter"
+
+btnGuyane_en="🎧 Listen"
+btnGuyane_fr="🎧 Écouter"
+
+btnAustralie_en="🎧 Listen"
+btnAustralie_fr="🎧 Écouter"
 
 carte_interactive_en="🗺️ Interactive map"
 carte_interactive_fr="🗺️ Carte interactive"
@@ -477,6 +513,56 @@ enrichissementSonoreCalifornie_en="The tram glides through the suspended streets
 
 navigationCalifornie_en="🔝 Back to Quick Navigation"
 navigationCalifornie_fr="🔝 Retour à la navigation rapide"
+
+
+
+salle_costarica_en="🌄 Room 9 — Costa Rica Pura vida!"
+salle_costarica_fr="🌄 Salle 9 — Costa Rica Pura vida!"
+
+element9_en="Elements"
+element9_fr="Éléments"
+
+lien9_en="Link"
+lien9_fr="Lien"
+
+navigationCostarica_en="🔝 Back to Quick Navigation"
+navigationCostarica_fr="🔝 Retour à la navigation rapide"
+
+salle_dominicana_en="🌄 Room 10 — Dominican republic Climb to the light"
+salle_dominicana_fr="🌄 Salle 10 — République dominicaine Grimpe vers la lumière"
+
+element10_en="Elements"
+element10_fr="Éléments"
+
+lien10_en="Link"
+lien10_fr="Lien"
+
+navigationDominicana_en="🔝 Back to Quick Navigation"
+navigationDominicana_fr="🔝 Retour à la navigation rapide"
+
+salle_guyane_en="🌄 Room 11 — Guyana at the heart of Amazonia"
+salle_guyane_fr="🌄 Salle 11 — Guyane au coeur de l'Amazonie"
+
+element11_en="Elements"
+element11_fr="Éléments"
+
+lien11_en="Link"
+lien11_fr="Lien"
+
+navigationGuyane_en="🔝 Back to Quick Navigation"
+navigationGuyane_fr="🔝 Retour à la navigation rapide"
+
+salle_australie_en="🌄 Room 12 — Australia guardians of eucalyptus"
+salle_australie_fr="🌄 Salle 12 — Australie les gardiens des eucalyptus"
+
+element12_en="Elements"
+element12_fr="Éléments"
+
+lien12_en="Link"
+lien12_fr="Lien"
+
+navigationAustralie_en="🔝 Back to Quick Navigation"
+navigationAustralie_fr="🔝 Retour à la navigation rapide"
 
 cloture_visite_en="🖼️ Contemplative Epilogue – Closing of the Visit"
 cloture_visite_fr="🖼️ Épilogue contemplatif – Clôture de la visite"

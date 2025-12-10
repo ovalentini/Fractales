@@ -32,6 +32,8 @@ This project includes a dedicated accessible version for visually and hearing im
 
 Accessible version available in /accessibility/access.html Styles defined in /accessibility/styles-access.css
 
+*********** Accessible version under construction, adding 4 new rooms ****************************************
+
 
 ## 📖 Credits & Links
 

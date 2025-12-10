@@ -51,6 +51,10 @@
 		<li><a href="#subtitles_maldives" id="nav_Maldives">🎧 Room 6: Maldives</a></li>
 		<li><a href="#subtitles_laos" id="nav_Laos">🎧 Room 7: Laos-Cambodia</a></li>
 		<li><a href="#subtitles_californie" id="nav_Californie">🎧 Room 8: California</a></li>
+		<li><a href="#subtitles_costarica" id="nav_Costarica">🎧 Room 9: Costa Rica</a></li>
+		<li><a href="#subtitles_dominicana" id="nav_Dominicana">🎧 Room 10: Dominican republic</a></li>
+		<li><a href="#subtitles_guyane" id="nav_Guyane">🎧 Room 11: Guyana</a></li>
+		<li><a href="#subtitles_australia" id="nav_Australia">🎧 Room 12: Australia</a></li>
 	  </ul>
 	  <!--<div class="quick-navigation">
         <a href="#carte" id="btn_map" class="nav-btn retour" title="Access the interactive map">🗺️ Interactive map</a>
@@ -100,6 +104,26 @@
 			🌄 Room 8 California
 		  </button>
 		</li>
+		<li>
+		  <button id="nav_altCostarica" onclick="focusSection('salle_costarica')" aria-label="Go to Room 9 — Costa Rica Pura vida!">
+			🦜 Room 9 Costa Rica
+		  </button>
+		</li>
+		<li>
+		  <button id="nav_altDominicana" onclick="focusSection('salle_dominicana')" aria-label="Go to Room 10 — Dominican republic climb to the light">
+			🏝️ Room 10 Dominican republic
+		  </button>
+		</li>
+		<li>
+		  <button id="nav_altGuyane" onclick="focusSection('salle_guyane')" aria-label="Go to Room 11 — Guyana in the heart of Amazonia">
+			🐒️ Room 11 Guyana
+		  </button>
+		</li>
+		<li>
+		  <button id="nav_altAustralie" onclick="focusSection('salle_australie')" aria-label="Go to Room 12 — Australia guardians of the eucalyptus">
+			🐒️ Room 12 Australia
+		  </button>
+		</li
 	  </ul>
 	</nav>
 
@@ -153,7 +177,7 @@
 			<a href="#maurice" class="debug-zone-en maurice" title="Room 5 – Mauritius"></a>
 			<a href="#maldives" class="debug-zone-en maldives" title="Room 6 – Maldives"></a>
             <a href="#laos" class="debug-zone-en laos" title="Room 7 – Laos-Cambodia"></a>
-			<a href="#californie" class="debug-zone-en californie" title="Salle 8 – Californie"></a>
+			<a href="#californie" class="debug-zone-en californie" title="Salle 8 – California"></a>
 
 			<a href="#maurice" class="carte-point-fr maurice" title="île Maurice"></a>
 			<a href="#maldives" class="carte-point-fr maldives" title="Maldives"></a>
@@ -163,7 +187,39 @@
 			<a href="#maurice" class="carte-point-en maurice" title="Mauritius"></a>
 			<a href="#maldives" class="carte-point-en maldives" title="Maldives"></a>
 			<a href="#laos" class="carte-point-en laos" title="Laos-Cambodia"></a>
-			<a href="#californie" class="carte-point-en californie" title="Californie"></a>
+			<a href="#californie" class="carte-point-en californie" title="California"></a>
+		</div>
+	  </div>
+	  <div class="carte-page" id="carte3">
+		<div class="carte-wrapper">
+			<img id="fractals-img3" src="maps/carte-interactive-fr3.jpg" title="Click on an area or point to go to the corresponding room" usemap="#map-salles3" />
+			<p id="image-caption3" class="caption">Each spiral tells a story. Let the patterns guide your soul.</p>
+			
+			<div class="carte-legende">
+			  <p class="carte-legende-fr">Fractales du monde — Reflet d’âmes</p>
+			  <p class="carte-legende-en">Fractals of the World — Reflections of Souls</p>
+			</div>
+			
+			<!-- Zones & Points -->
+			<a href="#costarica" class="debug-zone-fr costarica" title="Salle 9 – Costa Rica"></a>
+			<a href="#dominicana" class="debug-zone-fr dominicana" title="Salle 10 – République dominicaine"></a>
+			<a href="#guyane" class="debug-zone-fr guyane" title="Salle 11 – Guyane"></a>
+			<a href="#australie" class="debug-zone-fr australie" title="Salle 12 – Australie"></a>
+		
+			<a href="#costarica" class="debug-zone-en costarica" title="Salle 9 – Costa Rica"></a>
+			<a href="#dominicana" class="debug-zone-en dominicana" title="Salle 10 – Dominican republic"></a>
+			<a href="#guyane" class="debug-zone-en guyane" title="Salle 11 – Guyana"></a>
+			<a href="#australie" class="debug-zone-en australie" title="Room 12 – Australia"></a>
+
+		    <a href="#costarica" class="carte-point-fr costarica" title="Costa Rica"></a>
+			<a href="#dominicana" class="carte-point-fr dominicana" title="République dominicaine"></a>
+			<a href="#guyane" class="carte-point-fr guyane" title="Guyane"></a>
+			<a href="#australie" class="carte-point-fr australie" title="Australie"></a>
+		  
+			<a href="#costarica" class="carte-point-en costarica" title="Costa Rica"></a>
+			<a href="#dominicana" class="carte-point-en dominicana" title="Dominican republic"></a>
+			<a href="#guyane" class="carte-point-en guyane" title="Guyana"></a>
+			<a href="#australie" class="carte-point-en australie" title="Australia"></a>
 		</div>
 	  </div>
     </div>
@@ -646,7 +702,7 @@
 	  </div>
 	</section>
 	
-	<!-- 🏔️ Room 8 — Californie -->
+	<!-- 🏔️ Room 8 — California -->
     <section id="californie" role="region" class="access-content" aria-labelledby="salle_californie">
       <h2 id="salle_californie">🌄 Room 8 — California between ocean and desert</h2>
 	   <div class="navigation-salles">
@@ -654,24 +710,7 @@
 	  </div>
       <div class="table-image-container" tabindex="0">
         <img src="pictures/Californie.jpg" id="paysage_californie" alt="Paysage fractal inspiré de la Californie, entre les brumes dorées de Santa Barbara et les spirales minérales de Death Valley" />
-        <!--<table>
-          <thead>
-            <tr>
-              <th id="element7">Element</th>
-              <th id="lien7">Link</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td id="cascade">🌊 Kuang Si Waterfall — turquoise waters and sacred forest</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td id="temple">🪷 Banteay Srei Temple — stone lacework and Khmer memory</td>
-              <td></td>
-            </tr>
-          </tbody>
-        </table>-->
+        
 		<h3 id="element8" role="heading" aria-label="List of thematic elements">Elements</h3>
 		<ul>
 		  <li id="death">Death Valley — spirales minérales</li> 
@@ -679,7 +718,7 @@
 		</ul>
       </div>
     </section>
-	<section class="access-content" aria-labelledby="subtitles_cambodge" role="region">
+	<section class="access-content" aria-labelledby="subtitles_californie" role="region">
 	  <h3 id="subtitles_californie">🎧 Subtitles & Transcription – Room 8: California</h3>
 	  
 	  <ul>
@@ -717,8 +756,229 @@
 		<a href="#quick-navigation" class="nav-btn retour" id="navigationCalifornie" title="Return to subtitle index">🔝 Back to Quick Navigation</a>
 	  </div>
 	</section>
+	
+	<!-- 🏔️ Room 9 — Costa Rica -->
+    <section id="costarica" role="region" class="access-content" aria-labelledby="salle_costarica">
+      <h2 id="salle_costarica">🦜 Room 9 — Costa Rica Pura vida!</h2>
+	   <div class="navigation-salles">
+		<a href="#nav_altTitle" id="btn_back_Costarica" aria-label="Back to alternative navigation" class="nav-btn retour">🗺️ Back to the map</a>
+	  </div>
+      <div class="table-image-container" tabindex="0">
+        <img src="pictures/Costa-Rica.jpg" id="paysage_costarica" alt="Fractale poétique inspirée du Costa Rica, entre sable natal et feuillage miroir" />
+        
+		<h3 id="element9" role="heading" aria-label="List of thematic elements">Elements</h3>
+		<ul>
+		  <li id="turtle">birth of turtles</li> 
+		  <li id="forest">mirrored foliage</li>
+		</ul>
+      </div>
+    </section>
+	<section class="access-content" aria-labelledby="subtitles_costarica" role="region">
+	  <h3 id="subtitles_costarica">🎧 Subtitles & Transcription – Room 9: Costa Rica</h3>
+	  
+	  <ul>
+		<li id="subtitle_tram">[Le tram s’élance dans les rues suspendues de San Francisco]</li>
+		<li id="subtitle_desert">[Le vent du désert murmure entre les dunes]</li>
+		<li id="subtitle_vagues">[Et les vagues de Malibu viennent clore le souvenir]</li>
+	  </ul>
+	  
+	  <p class="transcription" id="transcription_costarica">
+		A tram glides through the suspended streets of San Francisco.  
+		The desert wind whispers between the spiraling dunes of Death Valley.  
+		Golden mist rolls over the waves of Santa Barbara.  
+		This is California — a land of contrasts, where motion becomes memory.
+	  </p>
+	  
+	  <div id="divaudioCostarica" aria-label="Audiodescription for the visually impaired" tabindex="0"> 
+		<h4 role="heading" aria-level="4">Narration</h4>    
+		<p id="texteNarrationCostarica">
+			Imagine a tram climbing steep hills, its bell echoing through fog.  
+			The desert stretches wide, sculpted by wind into mineral spirals.  
+			At the edge of the Pacific, waves shimmer beneath golden mist.  
+			California unfolds as a journey between silence and surf, stone and sky.
+		</p> 
+		
+		<h4 role="heading" aria-level="4" id="enrichissementCostarica">Soundscape Enrichment</h4> 
+		<p id="enrichissementSonoreCostarica">
+		  The tram glides through the suspended streets, The desert wind whispers between the dunes, And the waves of Santa Barbara bring the memory to a close.
+		</p>    
+		
+		<button id="btnCostarica" onclick="document.getElementById('audioCostarica').play()" aria-label="Listen to the Costa Rica soundscape">🎧 Listen</button> 
+		<audio id="audioCostarica" src="sounds/costarica-sound.mp3" type="audio/mpeg" hidden></audio>
+	  </div>  
+	  
+	  <div class="retour-navigation">
+		<a href="#quick-navigation" class="nav-btn retour" id="navigationCostarica" title="Return to subtitle index">🔝 Back to Quick Navigation</a>
+	  </div>
+	</section>
+	
+	<!-- 🏔️ Room 10 — Dominican republic -->
+    <section id="dominicana" role="region" class="access-content" aria-labelledby="salle_dominicana">
+      <h2 id="salle_dominicana">🦜 Room 10 — Dominican republic Climb to the light!</h2>
+	   <div class="navigation-salles">
+		<a href="#nav_altTitle" id="btn_back_Dominicana" aria-label="Back to alternative navigation" class="nav-btn retour">🗺️ Back to the map</a>
+	  </div>
+      <div class="table-image-container" tabindex="0">
+        <img src="pictures/Dominicana.jpg" id="paysage_dominicana" alt="Paysage poétique en République dominicaine : palmiers, ciel azur et fractale en marche vers la lumière" />
+        
+		<h3 id="element10" role="heading" aria-label="List of thematic elements">Elements</h3>
+		<ul>
+		  <li id="beach">wonderful beaches</li> 
+		  <li id="palm">palm trees</li>
+		</ul>
+      </div>
+    </section>
+	<section class="access-content" aria-labelledby="subtitles_dominicana" role="region">
+	  <h3 id="subtitles_dominicana">🎧 Subtitles & Transcription – Room 10: Dominican republic</h3>
+	  
+	  <ul>
+		<li id="subtitle_tram">[Le tram s’élance dans les rues suspendues de San Francisco]</li>
+		<li id="subtitle_desert">[Le vent du désert murmure entre les dunes]</li>
+		<li id="subtitle_vagues">[Et les vagues de Malibu viennent clore le souvenir]</li>
+	  </ul>
+	  
+	  <p class="transcription" id="transcription_costarica">
+		A tram glides through the suspended streets of San Francisco.  
+		The desert wind whispers between the spiraling dunes of Death Valley.  
+		Golden mist rolls over the waves of Santa Barbara.  
+		This is California — a land of contrasts, where motion becomes memory.
+	  </p>
+	  
+	  <div id="divaudioDominicana" aria-label="Audiodescription for the visually impaired" tabindex="0"> 
+		<h4 role="heading" aria-level="4">Narration</h4>    
+		<p id="texteNarrationDominicana">
+			Imagine a tram climbing steep hills, its bell echoing through fog.  
+			The desert stretches wide, sculpted by wind into mineral spirals.  
+			At the edge of the Pacific, waves shimmer beneath golden mist.  
+			California unfolds as a journey between silence and surf, stone and sky.
+		</p> 
+		
+		<h4 role="heading" aria-level="4" id="enrichissementDominicana">Soundscape Enrichment</h4> 
+		<p id="enrichissementSonoreDominicana">
+		  The tram glides through the suspended streets, The desert wind whispers between the dunes, And the waves of Santa Barbara bring the memory to a close.
+		</p>    
+		
+		<button id="btnDominicana" onclick="document.getElementById('audioDominicana').play()" aria-label="Listen to the Dominican republic soundscape">🎧 Listen</button> 
+		<audio id="audioDominicana" src="sounds/dominicana-sound.mp3" type="audio/mpeg" hidden></audio>
+	  </div>  
+	  
+	  <div class="retour-navigation">
+		<a href="#quick-navigation" class="nav-btn retour" id="navigationDominicana" title="Return to subtitle index">🔝 Back to Quick Navigation</a>
+	  </div>
+	</section>
+	
+	<!-- 🏔️ Room 11 — Guyana -->
+    <section id="guyane" role="region" class="access-content" aria-labelledby="salle_guyane">
+      <h2 id="salle_guyane">🦜 Room 11 — Guyana at the heart of Amazonia</h2>
+	   <div class="navigation-salles">
+		<a href="#nav_altTitle" id="btn_back_Guyane" aria-label="Back to alternative navigation" class="nav-btn retour">🗺️ Back to the map</a>
+	  </div>
+      <div class="table-image-container" tabindex="0">
+        <img src="pictures/Guyane.jpg" id="paysage_guyane" alt="Fractale verte avec singe au centre, gardien de la canopée guyanaise" />
+        
+		<h3 id="element11" role="heading" aria-label="List of thematic elements">Elements</h3>
+		<ul>
+		  <li id="monkey">howling monkey</li> 
+		  <li id="amazonia">green canopea</li>
+		</ul>
+      </div>
+    </section>
+	<section class="access-content" aria-labelledby="subtitles_guyane" role="region">
+	  <h3 id="subtitles_guyane">🎧 Subtitles & Transcription – Room 11: Guyana</h3>
+	  
+	  <ul>
+		<li id="subtitle_tram">[Le tram s’élance dans les rues suspendues de San Francisco]</li>
+		<li id="subtitle_desert">[Le vent du désert murmure entre les dunes]</li>
+		<li id="subtitle_vagues">[Et les vagues de Malibu viennent clore le souvenir]</li>
+	  </ul>
+	  
+	  <p class="transcription" id="transcription_guyane">
+		A tram glides through the suspended streets of San Francisco.  
+		The desert wind whispers between the spiraling dunes of Death Valley.  
+		Golden mist rolls over the waves of Santa Barbara.  
+		This is California — a land of contrasts, where motion becomes memory.
+	  </p>
+	  
+	  <div id="divaudioGuyane" aria-label="Audiodescription for the visually impaired" tabindex="0"> 
+		<h4 role="heading" aria-level="4">Narration</h4>    
+		<p id="texteNarratioGuyane">
+			Imagine a tram climbing steep hills, its bell echoing through fog.  
+			The desert stretches wide, sculpted by wind into mineral spirals.  
+			At the edge of the Pacific, waves shimmer beneath golden mist.  
+			California unfolds as a journey between silence and surf, stone and sky.
+		</p> 
+		
+		<h4 role="heading" aria-level="4" id="enrichissementGuyane">Soundscape Enrichment</h4> 
+		<p id="enrichissementSonoreGuyane">
+		  The tram glides through the suspended streets, The desert wind whispers between the dunes, And the waves of Santa Barbara bring the memory to a close.
+		</p>    
+		
+		<button id="btnGuyane" onclick="document.getElementById('audioGuyane').play()" aria-label="Listen to the Guyana soundscape">🎧 Listen</button> 
+		<audio id="audioGuyane" src="sounds/guyane-sound.mp3" type="audio/mpeg" hidden></audio>
+	  </div>  
+	  
+	  <div class="retour-navigation">
+		<a href="#quick-navigation" class="nav-btn retour" id="navigationGuyane" title="Return to subtitle index">🔝 Back to Quick Navigation</a>
+	  </div>
+	</section>
+	
+	<!-- 🏔️ Room 12 — Australia -->
+    <section id="australie" role="region" class="access-content" aria-labelledby="salle_australie">
+      <h2 id="salle_australie">🦜 Room 12 — Australia guardians of eucalyptus</h2>
+	   <div class="navigation-salles">
+		<a href="#nav_altTitle" id="btn_back_Australie" aria-label="Back to alternative navigation" class="nav-btn retour">🗺️ Back to the map</a>
+	  </div>
+      <div class="table-image-container" tabindex="0">
+        <img src="pictures/Australie.jpg" id="paysage_australie" alt="Fractale poétique inspirée de l’Australie, entre roches sacrées et gardiens d’eucalyptus" />
+        
+		<h3 id="element12" role="heading" aria-label="List of thematic elements">Elements</h3>
+		<ul>
+		  <li id="mountain">Kata Tjuta (Olga mts)</li> 
+		  <li id="koala">koalas</li>
+		</ul>
+      </div>
+    </section>
+	<section class="access-content" aria-labelledby="subtitles_australie" role="region">
+	  <h3 id="subtitles_australie">🎧 Subtitles & Transcription – Room 12: Australia</h3>
+	  
+	  <ul>
+		<li id="subtitle_tram">[Le tram s’élance dans les rues suspendues de San Francisco]</li>
+		<li id="subtitle_desert">[Le vent du désert murmure entre les dunes]</li>
+		<li id="subtitle_vagues">[Et les vagues de Malibu viennent clore le souvenir]</li>
+	  </ul>
+	  
+	  <p class="transcription" id="transcription_australie">
+		A tram glides through the suspended streets of San Francisco.  
+		The desert wind whispers between the spiraling dunes of Death Valley.  
+		Golden mist rolls over the waves of Santa Barbara.  
+		This is California — a land of contrasts, where motion becomes memory.
+	  </p>
+	  
+	  <div id="divaudioAustralie" aria-label="Audiodescription for the visually impaired" tabindex="0"> 
+		<h4 role="heading" aria-level="4">Narration</h4>    
+		<p id="texteNarratioAustralie">
+			Imagine a tram climbing steep hills, its bell echoing through fog.  
+			The desert stretches wide, sculpted by wind into mineral spirals.  
+			At the edge of the Pacific, waves shimmer beneath golden mist.  
+			California unfolds as a journey between silence and surf, stone and sky.
+		</p> 
+		
+		<h4 role="heading" aria-level="4" id="enrichissementAustralie">Soundscape Enrichment</h4> 
+		<p id="enrichissementSonoreAustralie">
+		  The tram glides through the suspended streets, The desert wind whispers between the dunes, And the waves of Santa Barbara bring the memory to a close.
+		</p>    
+		
+		<button id="btnAustralie" onclick="document.getElementById('audioAustralie').play()" aria-label="Listen to the Australia soundscape">🎧 Listen</button> 
+		<audio id="audioAustralie" src="sounds/australie-sound.mp3" type="audio/mpeg" hidden></audio>
+	  </div>  
+	  
+	  <div class="retour-navigation">
+		<a href="#quick-navigation" class="nav-btn retour" id="navigationAustralie" title="Return to subtitle index">🔝 Back to Quick Navigation</a>
+	  </div>
+	</section>
+	
   </main>
-
+  
   <!-- 🌌 Footer -->
  <footer role="contentinfo">
   <section id="cloture" class="cloture" aria-labelledby="cloture_visite" role="region">
@@ -740,7 +1000,7 @@
 	const handleNavigation = (sourceElement, type) => {
 	  const classList = Array.from(sourceElement.classList);
 	  const salleName = classList.find(cls =>
-		["hampi", "bali", "flores", "perou", "maurice", "maldives", "laos", "californie"].includes(cls)
+		["hampi", "bali", "flores", "perou", "maurice", "maldives", "laos", "californie", "costarica", "dominicana", "guyane", "australie"].includes(cls)
 	  );
 
 	  if (!salleName) return;
@@ -847,7 +1107,11 @@
 	  btnMaurice: { fr: "île Maurice", en: "Mauritius" },
 	  btnMaldives: { fr: "Maldives", en: "Maldives" },
 	  btnLaos: { fr: "Laos-Cambodge", en: "Laos-Cambodia" },
-	  btnCalifornie: { fr: "Californie", en: "California" }
+	  btnCalifornie: { fr: "Californie", en: "California" },
+	  btnCostarica: { fr: "Costa Rica", en: "Costa Rica" },
+	  btnDominicana: { fr: "République dominicaine", en: "Dominican republic" },
+	  btnGuyane: { fr: "Guyane", en: "Guyana" },
+	  btnAustralie: { fr: "Australie", en: "Australia" },
 	};
 
 	const templates = {
@@ -864,11 +1128,11 @@
    const audioDescElements = {
 	  fr: {
 		label: "Audiodescription pour les personnes malvoyantes",
-		ids: ["divaudioHampi", "divaudioBali", "divaudioFlores", "divaudioPerou", "divaudioMaurice", "divaudioMaldives", "divaudioLaos", "divaudioCalifornie"]
+		ids: ["divaudioHampi", "divaudioBali", "divaudioFlores", "divaudioPerou", "divaudioMaurice", "divaudioMaldives", "divaudioLaos", "divaudioCalifornie", "divaudioCostarica", "divaudioDominicana", "divaudioGuyane", "divaudioAustralie"]
 	  },
 	  en: {
 		label: "Audiodescription for the visually impaired",
-		ids: ["divaudioHampi", "divaudioBali", "divaudioFlores", "divaudioPerou", "divaudioMaurice", "divaudioMaldives", "divaudioLaos", "divaudioCalifornie"]
+		ids: ["divaudioHampi", "divaudioBali", "divaudioFlores", "divaudioPerou", "divaudioMaurice", "divaudioMaldives", "divaudioLaos", "divaudioCalifornie", "divaudioCostarica", "divaudioDominicana", "divaudioGuyane", "divaudioAustralie"]
 	  }
 	};
 
@@ -935,7 +1199,11 @@
 		document.getElementById("paysage_maurice").title = "Couleurs des 7 Terres – Éclats d’Île et d’Océan";
 		document.getElementById("paysage_maldives").title = "Mille bleus de l'Atoll";
 		document.getElementById("paysage_laos").title = "Mille verts du Laos-Cambodge";
-		document.getElementById("paysage_californie").title = "Mille verts du Laos-Cambodge";
+		document.getElementById("paysage_californie").title = "Entre océan et désert";
+		document.getElementById("paysage_costarica").title = "Sable natal et feuillage miroir";
+		document.getElementById("paysage_dominicana").title = "Grimper vers la lumière";
+		document.getElementById("paysage_guyane").title = "Au coeur de l'Amazonie";
+		document.getElementById("paysage_australie").title = "Guardiens des eucalyptus";
 		document.getElementById("fleche-gauche").alt = "Naviguer vers la carte précédente",
 		document.getElementById("fleche-droite").alt = "Naviguer vers la carte suivante",
 		document.getElementById("paysage_hampi").alt = "Fractale inspirée des temples et paysages mystiques de Hampi";
@@ -945,7 +1213,11 @@
 		document.getElementById("paysage_maurice").alt = "Fractale aux couleurs de Maurice, où les dunes arc-en-ciel s’unissent aux lagons turquoise et aux palmes dansantes.";
 		document.getElementById("paysage_maldives").alt = "Fractale inspirée des nuances coralliennes et des bleus infinis de l’atoll maldivien";
 		document.getElementById("paysage_laos").alt = "Fractale aux couleurs vertes du Laos-Cambodge";
-		document.getElementById("paysage_laos").alt = "Fractale aux couleurs vertes du Laos-Cambodge";
+		document.getElementById("paysage_californie").alt = "Paysage fractal inspiré de la Californie, entre les brumes dorées de Santa Barbara et les spirales minérales de Death Valley";
+		document.getElementById("paysage_costarica").alt = "Fractale poétique inspirée du Costa Rica, entre sable natal et feuillage miroir";
+		document.getElementById("paysage_dominicana").alt = "Fractale aux couleurs vertes du Laos-Cambodge";
+		document.getElementById("paysage_guyane").alt = "Fractale aux couleurs vertes du Laos-Cambodge";
+		document.getElementById("paysage_australie").alt = "Fractale aux couleurs vertes du Laos-Cambodge";
 		document.getElementById("nav_altTitle").setAttribute("aria-label", "Navigation alternative des salles pour les personnes malvoyantes");
 		document.getElementById("btn_back_Hampi").setAttribute("aria-label", "Retour à la navigation alternative des salles");
 		document.getElementById("btn_back_Bali").setAttribute("aria-label", "Retour à la navigation alternative des salles");
@@ -955,6 +1227,10 @@
 		document.getElementById("btn_back_Maldives").setAttribute("aria-label", "Retour à la navigation alternative des salles");
 		document.getElementById("btn_back_Laos").setAttribute("aria-label", "Retour à la navigation alternative des salles");
 		document.getElementById("btn_back_Californie").setAttribute("aria-label", "Retour à la navigation alternative des salles");
+		document.getElementById("btn_back_Costarica").setAttribute("aria-label", "Retour à la navigation alternative des salles");
+		document.getElementById("btn_back_Dominicana").setAttribute("aria-label", "Retour à la navigation alternative des salles");
+		document.getElementById("btn_back_Guyane").setAttribute("aria-label", "Retour à la navigation alternative des salles");
+		document.getElementById("btn_back_Australie").setAttribute("aria-label", "Retour à la navigation alternative des salles");
 		document.getElementById("nav_altHampi").setAttribute("aria-label", "Accéder à la Salle 1 — Marché de Hampi");
 		document.getElementById("nav_altBali").setAttribute("aria-label", "Accéder à la Salle 2 — Bali la belle île");
 		document.getElementById("nav_altFlores").setAttribute("aria-label", "Accéder à la Salle 3 — Florès");
@@ -963,6 +1239,10 @@
 		document.getElementById("nav_altMaldives").setAttribute("aria-label", "Accéder à la Salle 6 — L’Atoll aux Mille Bleus");
 		document.getElementById("nav_altLaos").setAttribute("aria-label", "Accéder à la Salle 7 — Laos-Cambodge");
 		document.getElementById("nav_altCalifornie").setAttribute("aria-label", "Accéder à la Salle 8 — Californie");
+		document.getElementById("nav_altCostarica").setAttribute("aria-label", "Accéder à la Salle 9 — Costa Rica");
+		document.getElementById("nav_altDominicana").setAttribute("aria-label", "Accéder à la Salle 10 — République dominicaine");
+		document.getElementById("nav_altGuyane").setAttribute("aria-label", "Accéder à la Salle 11 — Guyane");
+		document.getElementById("nav_altAustralie").setAttribute("aria-label", "Accéder à la Salle 12 — Australie");
 		document.getElementById("fleche-gauche").setAttribute("aria-label", "Naviguer vers la carte précédente");
 		document.getElementById("fleche-droite").setAttribute("aria-label", "Naviguer vers la carte suivante");
 		document.getElementById("vithala").setAttribute("aria-label", "Écouter le paysage sonore (ouvre dans un nouvel onglet)");
@@ -977,6 +1257,10 @@
 		document.getElementById("element6").setAttribute("aria-label", "Liste des éléments thématiques");
 		document.getElementById("element7").setAttribute("aria-label", "Liste des éléments thématiques");
 		document.getElementById("element8").setAttribute("aria-label", "Liste des éléments thématiques");
+		document.getElementById("element9").setAttribute("aria-label", "Liste des éléments thématiques");
+		document.getElementById("element10").setAttribute("aria-label", "Liste des éléments thématiques");
+		document.getElementById("element11").setAttribute("aria-label", "Liste des éléments thématiques");
+		document.getElementById("element12").setAttribute("aria-label", "Liste des éléments thématiques");
 	  } else if (lang === "en") {
 	    document.getElementById("btn_enter").title = "Begin the poetic journey";
 		document.getElementById("btn_exit").title = "Exit the exhibition";
@@ -994,7 +1278,11 @@
 		document.getElementById("paysage_maurice").title = "Colors of the Seven Earths – Island and Ocean Splendor";
 		document.getElementById("paysage_maldives").title = "A Thousand Blues of the Atoll";
 		document.getElementById("paysage_laos").title = "A Thousand Greens of Laos-Cambodia";
-		document.getElementById("paysage_californie").title = "A Thousand Greens of Laos-Cambodia";
+		document.getElementById("paysage_californie").title = "Between ocean and desert";
+		document.getElementById("paysage_costarica").title = "Sable natal et feuillages";
+		document.getElementById("paysage_dominicana").title = "Grimper vers la lumière";
+		document.getElementById("paysage_guyane").title = "Au coeur de l'Amazonie";
+		document.getElementById("paysage_australie").title = "Guardiens des eucalyptus";
 		document.getElementById("fleche-gauche").alt = "Navigate to previous map",
 		document.getElementById("fleche-droite").alt = "Navigate to next map",
 		document.getElementById("paysage_hampi").alt = "Fractal inspired by the temples and mystical scenery of Hampi";
@@ -1004,6 +1292,11 @@
 		document.getElementById("paysage_maurice").alt = "Fractal in the colors of Mauritius, where rainbow dunes merge with turquoise lagoons and dancing palm trees.";
 		document.getElementById("paysage_maldives").alt = "Fractal inspired by coral hues and the endless blues of the Maldivian atoll.";
 		document.getElementById("paysage_laos").alt = "Fractal in the green colors of Laos-Cambodia";
+		document.getElementById("paysage_californie").alt = "Paysage fractal inspiré de la Californie, entre les brumes dorées de Santa Barbara et les spirales minérales de Death Valley";
+		document.getElementById("paysage_costarica").alt = "Fractale poétique inspirée du Costa Rica, entre sable natal et feuillage miroir";
+		document.getElementById("paysage_dominicana").alt = "Fractale aux couleurs vertes du Laos-Cambodge";
+		document.getElementById("paysage_guyane").alt = "Fractale aux couleurs vertes du Laos-Cambodge";
+		document.getElementById("paysage_australie").alt = "Fractale aux couleurs vertes du Laos-Cambodge";
 		document.getElementById("nav_altTitle").setAttribute("aria-label", "Alternative room navigation for the visually impaired");
 		document.getElementById("btn_back_Hampi").setAttribute("aria-label", "Back to the alternative room navigation");
 		document.getElementById("btn_back_Bali").setAttribute("aria-label", "Back to the alternative room navigation");
@@ -1013,6 +1306,10 @@
 		document.getElementById("btn_back_Maldives").setAttribute("aria-label", "Back to the alternative room navigation");
 		document.getElementById("btn_back_Laos").setAttribute("aria-label", "Back to the alternative room navigation");
 		document.getElementById("btn_back_Californie").setAttribute("aria-label", "Back to the alternative room navigation");
+		document.getElementById("btn_back_Costarica").setAttribute("aria-label", "Back to the alternative room navigation");
+		document.getElementById("btn_back_Dominicana").setAttribute("aria-label", "Back to the alternative room navigation");
+		document.getElementById("btn_back_Guyane").setAttribute("aria-label", "Back to the alternative room navigation");
+		document.getElementById("btn_back_Australie").setAttribute("aria-label", "Back to the alternative room navigation");
 		document.getElementById("nav_altHampi").setAttribute("aria-label", "Go to Room 1 — Hampi Market");
 		document.getElementById("nav_altBali").setAttribute("aria-label", "Go to Room 2 — Bali the Beautiful Island");
 		document.getElementById("nav_altFlores").setAttribute("aria-label", "Go to Room 3 — Flores Island");
@@ -1020,7 +1317,11 @@
 		document.getElementById("nav_altMaurice").setAttribute("aria-label", "Go to Room 5 — The Seven-Colored Lands of Mauritius");
 		document.getElementById("nav_altMaldives").setAttribute("aria-label", "Go to Room 6 — The Atoll of a Thousand Blues");
 		document.getElementById("nav_altLaos").setAttribute("aria-label", "Go to Room 7 — Laos-Cambodia");
-		document.getElementById("nav_altCalifornie").setAttribute("aria-label", "Go to Room 8 — Califoria");
+		document.getElementById("nav_altCalifornie").setAttribute("aria-label", "Go to Room 8 — California");
+		document.getElementById("nav_altCostarica").setAttribute("aria-label", "Go to Room 9 — Costa Rica");
+		document.getElementById("nav_altDominicana").setAttribute("aria-label", "Go to Room 10 — Dominican republic");
+		document.getElementById("nav_altGuyane").setAttribute("aria-label", "Go to Room 11 — Guyana");
+		document.getElementById("nav_altAustralie").setAttribute("aria-label", "Go to Room 12 — Australia");
 		document.getElementById("fleche-gauche").setAttribute("aria-label", "Navigate to previous map");
 		document.getElementById("fleche-droite").setAttribute("aria-label", "Navigate to next map");
 		document.getElementById("vithala").setAttribute("aria-label", "Listen to the soundscape (opens in a new tab)");
@@ -1035,6 +1336,10 @@
 		document.getElementById("element6").setAttribute("aria-label", "List of thematic elements");
 		document.getElementById("element7").setAttribute("aria-label", "List of thematic elements");
 		document.getElementById("element8").setAttribute("aria-label", "List of thematic elements");
+		document.getElementById("element9").setAttribute("aria-label", "List of thematic elements");
+		document.getElementById("element10").setAttribute("aria-label", "List of thematic elements");
+		document.getElementById("element11").setAttribute("aria-label", "List of thematic elements");
+		document.getElementById("element12").setAttribute("aria-label", "List of thematic elements");
 	  }
 	}
 
@@ -1154,6 +1459,30 @@
 		img2.alt = imgData2.alt;
 		img2.title = imgData2.title;
 		caption2.textContent = imgData2.caption;
+		
+	  const img3 = document.getElementById("fractals-img3");
+	  const caption3 = document.getElementById("image-caption3");
+
+	  const imageData3 = {
+	  fr: {
+		src: "maps/carte-interactive-fr3.jpg",
+		alt: "Reflets tropicaux",
+		title: "Cliquer sur une zone ou un point pour aller à la salle correspondante",
+		caption: "Chaque reflet insulaire murmure une légende. Laissez les vagues vous guider."
+	  },
+	  en: {
+		src: "maps/carte-interactive-en3.jpg",
+		alt: "Tropical Reflections",
+		title: "Click on an area or point to go to the corresponding room",
+		caption: "Each island reflection whispers a legend. Let the waves guide you."
+	  }
+	  };
+
+		const imgData3 = imageData3[langue];
+		img3.src = imgData3.src;
+		img3.alt = imgData3.alt;
+		img3.title = imgData3.title;
+		caption3.textContent = imgData3.caption;	
 
 	  
 	  const cartes = document.querySelectorAll('.carte-wrapper img');
@@ -1282,7 +1611,11 @@
 	  document.getElementById('audioMaurice'),
 	  document.getElementById('audioMaldives'),
 	  document.getElementById('audioLaos'),
-	  document.getElementById('audioCalifornie')
+	  document.getElementById('audioCalifornie'),
+	  document.getElementById('audioCostarica'),
+	  document.getElementById('audioDominicana'),
+	  document.getElementById('audioGuyane'),
+	  document.getElementById('audioAustralie')
 	].filter(audio => audio !== null);
 
 
