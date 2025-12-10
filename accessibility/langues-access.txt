@@ -88,8 +88,8 @@ nav_altDominicana_fr="🌄 Salle 10 République dominicaine"
 nav_altGuyane_en="🌄 Room 11 Guyana"
 nav_altGuyane_fr="🌄 Salle 11 Guyane"
 
-nav_altAustrsalie_en="🌄 Room 12 Australia"
-nav_altGuyane_fr="🌄 Salle 12 Australie"
+nav_altAustralie_en="🌄 Room 12 Australia"
+nav_altAustralie_fr="🌄 Salle 12 Australie"
 
 btn_map_en="🗺️ Interactive map"
 btn_map_fr="🗺️ Carte interactive"
@@ -529,7 +529,7 @@ navigationCostarica_en="🔝 Back to Quick Navigation"
 navigationCostarica_fr="🔝 Retour à la navigation rapide"
 
 salle_dominicana_en="🌄 Room 10 — Dominican republic Climb to the light"
-salle_dominicana_fr="🌄 Salle 10 — République dominicaine Grimpe vers la lumière"
+salle_dominicana_fr="🌄 Salle 10 — République dominicaine Grimper vers la lumière"
 
 element10_en="Elements"
 element10_fr="Éléments"
