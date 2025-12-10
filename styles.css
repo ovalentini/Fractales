@@ -276,24 +276,24 @@ td a {
 
 .carte-legende {
   position: absolute;
-  top: 2%;
+  top: 1%;
   left: 50%;
   transform: translateX(-50%);
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: trnasparent;
   padding: 0.5em 1em;
   border-radius: 8px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
   text-align: center;
   font-family: 'Georgia', serif;
-  z-index: 10;
+  z-index: 100;
 }
 
 .carte-legende-fr,
 .carte-legende-en {
   margin: 0;
-  font-size: 1em;
+  font-weight: bold;
+  letter-spacing: 0.05em;
   line-height: 1.4;
-  color: #333;
+  color: #ffd700; /* doré */
 }
 
 /* Par défaut, on masque les deux */
@@ -545,6 +545,20 @@ button:hover {
     padding: 10px 12px;
     text-align: center;
   }
+
+@media screen and (max-width: 600px) {
+  .carte-legende-fr,
+  .carte-legende-en {
+    font-size: 1em;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .carte-legende-fr,
+  .carte-legende-en {
+    font-size: 1.5em;
+  }
+}
 
   /* Supprime ou commente .epilogue si ce n’est pas utile ici */
   /* .epilogue {
