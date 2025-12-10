@@ -525,6 +525,12 @@ element9_fr="Éléments"
 lien9_en="Link"
 lien9_fr="Lien"
 
+subtitles_costarica_en="🎧 Subtitles & Transcription – Room 9 : Costa Rica"
+subtitles_costarica_fr="🎧 Sous-titres et Transcription – Salle 9: Costa Rica"
+
+btn_back_Costarica_en="🗺️ Back to the map"
+btn_back_Costarica_fr="🗺️ Retour à la carte"
+
 navigationCostarica_en="🔝 Back to Quick Navigation"
 navigationCostarica_fr="🔝 Retour à la navigation rapide"
 
@@ -536,6 +542,12 @@ element10_fr="Éléments"
 
 lien10_en="Link"
 lien10_fr="Lien"
+
+subtitles_dominicana_en="🎧 Subtitles & Transcription – Room 10: Dominican republic"
+subtitles_dominicana_fr="🎧 Sous-titres et Transcription – Salle 10: République dominicaine"
+
+btn_back_Dominicana_en="🗺️ Back to the map"
+btn_back_Dominicana_fr="🗺️ Retour à la carte"
 
 navigationDominicana_en="🔝 Back to Quick Navigation"
 navigationDominicana_fr="🔝 Retour à la navigation rapide"
@@ -549,6 +561,12 @@ element11_fr="Éléments"
 lien11_en="Link"
 lien11_fr="Lien"
 
+subtitles_guyane_en="🎧 Subtitles & Transcription – Room 11: Guyana"
+subtitles_guyane_fr="🎧 Sous-titres et Transcription – Salle 11: Guyane"
+
+btn_back_Guyane_en="🗺️ Back to the map"
+btn_back_Guyane_fr="🗺️ Retour à la carte"
+
 navigationGuyane_en="🔝 Back to Quick Navigation"
 navigationGuyane_fr="🔝 Retour à la navigation rapide"
 
@@ -561,8 +579,16 @@ element12_fr="Éléments"
 lien12_en="Link"
 lien12_fr="Lien"
 
+subtitles_australie_en="🎧 Subtitles & Transcription – Room 12: Australia"
+subtitles_australie_fr="🎧 Sous-titres et Transcription – Salle 12: Australie"
+
+btn_back_Australie_en="🗺️ Back to the map"
+btn_back_Australie_fr="🗺️ Retour à la carte"
+
 navigationAustralie_en="🔝 Back to Quick Navigation"
 navigationAustralie_fr="🔝 Retour à la navigation rapide"
+
+
 
 cloture_visite_en="🖼️ Contemplative Epilogue – Closing of the Visit"
 cloture_visite_fr="🖼️ Épilogue contemplatif – Clôture de la visite"
