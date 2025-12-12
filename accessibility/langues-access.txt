@@ -658,7 +658,7 @@ lien12_fr="Lien"
 mountain_fr="Kata Tjuta (monts Olga)"
 koala_fr="koalas se nourrissant"
 
-mountain_en="Kata Tjuta (Olga mts)"
+mountain_en="Kata Tjuta (Olga mountains)"
 koala_en="koalas feeding"
 
 subtitles_australie_en="🎧 Subtitles & Transcription – Room 12: Australia"
