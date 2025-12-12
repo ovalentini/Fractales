@@ -218,8 +218,8 @@
 [icaro_en] 'Sacred Icaro — Amazonian shamanic chant'
 [fractale1_fr] 'Autres Fractales — Variations poétiques'
 [fractale1_en] 'Other Fractals — Poetic variations'
-[altfractale1_fr] '🦝 Machu Picchu dans une cathédrale'
-[altfractale1_en] '🐊 Machu Picchu in a cathedral'
+[altfractale1_fr] '⛪ Machu Picchu dans une cathédrale'
+[altfractale1_en] '⛪ Machu Picchu in a cathedral'
 [sonPerou_fr] 'Enrichissement sonore'
 [sonPerou_en] 'Soundscape enrichment'
 
@@ -266,8 +266,8 @@
 [surf_en] 'Amazing Rincon Point surf, Santa Barbara' 
 [fractale2_fr] 'Autres Fractales — Variations poétiques'
 [fractale2_en] 'Other Fractals — Poetic variations'
-[altfractale2_fr] '🦝 🦝 Tram et Golden Gate'
-[altfractale2_en] '🐊 🦝 Tramway and Golden Gate'
+[altfractale2_fr] '🚋 Tram et Golden Gate'
+[altfractale2_en] '🚋 Tramway and Golden Gate'
 [sonCalifornie_fr] 'Enrichissement sonore'
 [son Californie_en] 'Soundscape enrichment'
 
