@@ -30,9 +30,7 @@ This project includes a dedicated accessible version for visually and hearing im
 
 ✅ Soundscapes enrichment
 
-Accessible version available in /accessibility/access.html Styles defined in /accessibility/styles-access.css
-
-*********** Accessible version under construction, adding 4 new rooms ****************************************
+Accessible version available in /accessibility/access.html Styles defined in /accessibility/styles-access.css Translations in /accessibility/langues-access.txt
 
 
 ## 📖 Credits & Links
