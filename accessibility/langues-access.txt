@@ -79,17 +79,17 @@ nav_altLaos_fr="🛕 Salle 7 Laos-Cambodge"
 nav_altCalifornie_en="🌄 Room 8 California"
 nav_altCalifornie_fr="🌄 Salle 8 Californie"
 
-nav_altCostarica_en="🌄 Room 9 Costa Rica"
-nav_altCostarica_fr="🌄 Salle 9 Costa Rica"
+nav_altCostarica_en="🦜 Room 9 Costa Rica"
+nav_altCostarica_fr="🦜 Salle 9 Costa Rica"
 
-nav_altDominicana_en="🌄 Room 10 Dominican republic"
-nav_altDominicana_fr="🌄 Salle 10 République dominicaine"
+nav_altDominicana_en="🏝 Room 10 Dominican republic"
+nav_altDominicana_fr="🏝 Salle 10 République dominicaine"
 
-nav_altGuyane_en="🌄 Room 11 Guyana"
-nav_altGuyane_fr="🌄 Salle 11 Guyane"
+nav_altGuyane_en="🐒 Room 11 Guyana"
+nav_altGuyane_fr="🐒 Salle 11 Guyane"
 
-nav_altAustralie_en="🌄 Room 12 Australia"
-nav_altAustralie_fr="🌄 Salle 12 Australie"
+nav_altAustralie_en="🐨 Room 12 Australia"
+nav_altAustralie_fr="🐨 Salle 12 Australie"
 
 btn_map_en="🗺️ Interactive map"
 btn_map_fr="🗺️ Carte interactive"
@@ -514,8 +514,8 @@ enrichissementSonoreCalifornie_en="The tram glides through the suspended streets
 navigationCalifornie_en="🔝 Back to Quick Navigation"
 navigationCalifornie_fr="🔝 Retour à la navigation rapide"
 
-salle_costarica_en="🌄 Room 9 — Costa Rica Pura vida!"
-salle_costarica_fr="🌄 Salle 9 — Costa Rica Pura vida!"
+salle_costarica_en="🦜 Room 9 — Costa Rica Pura vida!"
+salle_costarica_fr="🦜 Salle 9 — Costa Rica Pura vida!"
 
 element9_en="Elements"
 element9_fr="Éléments"
@@ -546,6 +546,9 @@ transcription_costarica_en="On the natal sand of Costa Rica, baby turtles begin 
 texteNarrationCostarica_fr="La canopée bruisse doucement, vivante des cris tropicaux qui résonnent dans la forêt.  Au loin, les vagues respirent contre le rivage, rythme du Pacifique.  Sur le sable natal, les tortues avancent avec une fragile détermination vers la mer.  Tout près, un coati à nez blanc se régale, tandis qu’une fleur s’ouvre et respire la lumière.  Voici le Costa Rica — une symphonie vivante où chaque créature se meut, se nourrit et respire en harmonie."
 texteNarrationCostarica_en="The canopy rustles softly, alive with tropical cries echoing through the forest.  In the distance, waves breathe against the shore, a rhythm of the Pacific.  On the natal sand, turtles advance with fragile determination toward the sea.  Nearby, a white-nosed coati delights in its feast, while a flower opens, inhaling light.  This is Costa Rica — a living symphony where every creature moves, feeds, and breathes in harmony."
 
+enrichissementCostarica_fr="Enrichissement sonore"
+enrichissementCostarica_en="Soundscape Enrichment"
+
 enrichissementSonoreCostarica_fr="Canopée bruissante, cris tropicaux, vagues lointaines…  Les tortues avancent, le coati festoie, la fleur respire."
 enrichissementSonoreCostarica_en="Rustling canopy, tropical cries, distant waves…  Turtles advance, the coati feasts, the flower breathes."
 
@@ -555,8 +558,8 @@ btn_back_Costarica_fr="🗺️ Retour à la carte"
 navigationCostarica_en="🔝 Back to Quick Navigation"
 navigationCostarica_fr="🔝 Retour à la navigation rapide"
 
-salle_dominicana_en="🌄 Room 10 — Dominican republic, Climb to the light"
-salle_dominicana_fr="🌄 Salle 10 — République dominicaine, Grimper vers la lumière"
+salle_dominicana_en="🏝 Room 10 — Dominican republic, Climb to the light"
+salle_dominicana_fr="🏝 Salle 10 — République dominicaine, Grimper vers la lumière"
 
 element10_en="Elements"
 element10_fr="Éléments"
@@ -587,6 +590,9 @@ transcription_dominicana_en"=Caribbean waves caress golden shores, breathing lig
 texteNarrationDominicana_fr="Les tambours de bois résonnent dans l’air tropical, leur rythme parcourant l’île.  Les guitares de bachata tissent des mélodies entre les ombres des palmiers et la brise marine.  Les échos tropicaux montent et s’effacent, portant des voix de danse et de silence.  La République dominicaine respire — une île vivante, où musique et nature battent à l’unisson."
 texteNarrationDominicana_en="Wooden drums resound in the tropical air, their rhythm echoing through the island.  Bachata guitars weave melodies between palm shadows and ocean breeze.  Tropical echoes rise and fade, carrying voices of dance and silence.  The Dominican Republic breathes — an island alive, where music and nature pulse together."  
 
+enrichissementDominicana_fr="Enrichissement sonore"
+enrichissementDominicana_en="Soundscape Enrichment"
+
 enrichissementSonoreDominicana_fr="Tambours de bois, guitares de bachata, échos tropicaux…  Une île respire, entre danse et silence."
 enrichissementSonoreDominicana_en="Wooden drums, bachata guitars, tropical echoes…  An island breathes, between dance and silence."
 
@@ -596,8 +602,8 @@ btn_back_Dominicana_fr="🗺️ Retour à la carte"
 navigationDominicana_en="🔝 Back to Quick Navigation"
 navigationDominicana_fr="🔝 Retour à la navigation rapide"
 
-salle_guyane_en="🌄 Room 11 — Guyana at the heart of Amazonia"
-salle_guyane_fr="🌄 Salle 11 — Guyane au coeur de l'Amazonie"
+salle_guyane_en="🐒 Room 11 — Guyana at the heart of Amazonia"
+salle_guyane_fr="🐒 Salle 11 — Guyane au coeur de l'Amazonie"
 
 element11_en="Elements"
 element11_fr="Éléments"
@@ -628,6 +634,9 @@ transcription_guyane_en="In the emerald breath of Amazonia, a howler monkey crie
 texteNarrationGuyane_fr="Le gardien hurle au cœur du vert, sa voix résonnant à travers la canopée vivante.  Les oiseaux répondent par des cris vibrants, tissant des fils sonores dans l’air de la forêt.  Le fleuve respire lentement, portant sa force cachée sous le voile émeraude.  La canopée s’anime — entre murmure et puissance, l’Amazonie s’éveille en résonance."
 texteNarrationGuyane_en="The guardian howls within the green, his voice echoing across the living canopy.  Birds answer in vibrant cries, weaving threads of sound through the forest air.  The river breathes slowly, carrying its hidden strength beneath the emerald veil.  The canopy stirs — between whisper and power, Amazonia awakens in resonance."
 
+enrichissementGuyane_fr="Enrichissement sonore"
+enrichissementGuyane_en="Soundscape Enrichment"
+
 enrichissementSonoreGuyane_fr="Le gardien hurle dans le vert, les oiseaux répondent, le fleuve respire…  La canopée s’anime, entre murmure et puissance."
 enrichissementSonoreGuyane_en="The guardian howls in the green, birds respond, the river breathes…  The canopy stirs, between whisper and power." 
 
@@ -637,8 +646,8 @@ btn_back_Guyane_fr="🗺️ Retour à la carte"
 navigationGuyane_en="🔝 Back to Quick Navigation"
 navigationGuyane_fr="🔝 Retour à la navigation rapide"
 
-salle_australie_en="🌄 Room 12 — Australia guardians of eucalyptus"
-salle_australie_fr="🌄 Salle 12 — Australie les gardiens des eucalyptus"
+salle_australie_en="🐨 Room 12 — Australia guardians of eucalyptus"
+salle_australie_fr="🐨 Salle 12 — Australie les gardiens des eucalyptus"
 
 element12_en="Elements"
 element12_fr="Éléments"
@@ -668,6 +677,9 @@ transcription_australie_en="Two koalas climb slowly, silent guardians of the euc
 
 texteNarrationAustralie_fr="Le didgeridoo résonne comme une mémoire ancestrale, sa vibration traversant la nuit.  Un souffle chaud s’élève des roches sacrées, portant l’esprit de la terre.  Les feuilles d’eucalyptus bruissent doucement, accompagnant des pas discrets sous leur ombre.  Le bush australien s’ouvre dans un silence habité — une présence vivante entre la terre et le ciel."
 texteNarrationAustralie_en="The didgeridoo resounds like an ancestral memory, its vibration echoing through the night.  Warm breath rises from the sacred rocks, carrying the spirit of the land.  The eucalyptus leaves rustle softly, accompanying discreet steps beneath their shade.  The Australian bush opens in a silence inhabited — a living presence between earth and sky."
+
+enrichissementAustralie_fr="Enrichissement sonore"
+enrichissementAustralie_en="Soundscape Enrichment"
 
 enrichissementSonoreAustralie_fr="Échos du didgeridoo, roches sacrées qui respirent, eucalyptus bruissants…  Le bush s’éveille dans un silence habité."
 enrichissementSonoreAustralie_en="Didgeridoo echoes, sacred rocks breathe, eucalyptus rustles…  The bush awakens in inhabited silence."
