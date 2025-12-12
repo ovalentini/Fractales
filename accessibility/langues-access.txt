@@ -622,13 +622,13 @@ subtitle_singe_en="[The howler monkey’s cry resounds in the canopy, invisible 
 subtitle_feuille_en="[Mirrored foliage trembles beneath tropical cries and suspended droplets]"
 subtitle_eau_en="[The forest breathes, between the rustle of wings and hidden murmurs of water]"
 
-transcription_guyane_fr="Dans le souffle émeraude de l’Amazonie, un singe hurleur s’écrie — gardien de la canopée éveillée.  Les feuilles-miroirs frémissent sous les appels tropicaux et les gouttes suspendues, tissant lumière et ombre.  La forêt inspire lentement, ses ailes bruissent, ses eaux cachées murmurent sous le vert.  Voici la Guyane — un royaume de résonance, où chaque son est un battement du cœur de la jungle.
+transcription_guyane_fr="Dans le souffle émeraude de l’Amazonie, un singe hurleur s’écrie — gardien de la canopée éveillée.  Les feuilles-miroirs frémissent sous les appels tropicaux et les gouttes suspendues, tissant lumière et ombre.  La forêt inspire lentement, ses ailes bruissent, ses eaux cachées murmurent sous le vert.  Voici la Guyane — un royaume de résonance, où chaque son est un battement du cœur de la jungle."
 transcription_guyane_en="In the emerald breath of Amazonia, a howler monkey cries — guardian of the waking canopy.  Mirror-leaves tremble under tropical calls and suspended droplets, weaving light and shadow.  The forest inhales slowly, its wings rustling, its hidden waters whispering beneath the green.  This is Guyana — a realm of resonance, where every sound is a heartbeat of the jungle."
 
 texteNarrationGuyane_fr="Le gardien hurle au cœur du vert, sa voix résonnant à travers la canopée vivante.  Les oiseaux répondent par des cris vibrants, tissant des fils sonores dans l’air de la forêt.  Le fleuve respire lentement, portant sa force cachée sous le voile émeraude.  La canopée s’anime — entre murmure et puissance, l’Amazonie s’éveille en résonance."
 texteNarrationGuyane_en="The guardian howls within the green, his voice echoing across the living canopy.  Birds answer in vibrant cries, weaving threads of sound through the forest air.  The river breathes slowly, carrying its hidden strength beneath the emerald veil.  The canopy stirs — between whisper and power, Amazonia awakens in resonance."
 
-enrichissementSonoreGuyane_fr="Le gardien hurle dans le vert, les oiseaux répondent, le fleuve respire…  La canopée s’anime, entre murmure et puissance.
+enrichissementSonoreGuyane_fr="Le gardien hurle dans le vert, les oiseaux répondent, le fleuve respire…  La canopée s’anime, entre murmure et puissance."
 enrichissementSonoreGuyane_en="The guardian howls in the green, birds respond, the river breathes…  The canopy stirs, between whisper and power." 
 
 btn_back_Guyane_en="🗺️ Back to the map"
