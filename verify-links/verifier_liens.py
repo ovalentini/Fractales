@@ -38,8 +38,6 @@ liens_a_verifier = [
     "https://www.youtube.com/watch?v=5e4OFhFmvH4",
     "https://www.youtube.com/watch?v=uLU6Ias-Au8",
     "https://www.youtube.com/watch?v=RvxiFg_2P-M",
-    "https://www.youtube.com/watch?v=gzwlmzAkNb0",
-    "https://www.youtube.com/watch?v=O1Zz75rYp6s",
     "https://www.youtube.com/watch?v=Q0Rz7vKqKXc",
     "https://www.youtube.com/watch?v=qSPbpoNb4A4",
     "https://aventura-costarica.com/coati-du-costa-rica/",
@@ -49,7 +47,10 @@ liens_a_verifier = [
     "https://www.youtube.com/watch?v=Lgyf3EUnpSM",
     "https://www.youtube.com/watch?v=QeUWtfKiX9s",
     "https://www.youtube.com/watch?v=RvNEXSl24tI",
-    "https://www.youtube.com/watch?v=VO2QzRF7P7Q"
+    "https://www.youtube.com/watch?v=VO2QzRF7P7Q",
+    "https://www.youtube.com/watch?v=gzwlmzAkNb0",
+    "https://www.youtube.com/watch?v=O1Zz75rYp6s",
+    "https://www.youtube.com/watch?v=t62jpUY0EQU"
 ]
 
 # Affichage des résultats
