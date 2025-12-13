@@ -179,6 +179,10 @@
 [ruines_en] 'Hampi ruins atmosphere'
 [histoire_fr] 'Narration historique immersive'
 [histoire_en] 'Immersive historical narration'
+[fractale5_fr] 'Autres Fractales — Variations poétiques'
+[fractale5_en] 'Other Fractals — Poetic variations'
+[altfractale7_fr] 'Fusion Bombay-Hampi'
+[altfractale7_en] 'Hampi-Bombay fusion'
 [sonHampi_fr] 'Enrichissement sonore'
 [sonHampi_en] 'Soundscape enrichment'
 
@@ -190,6 +194,10 @@
 [visite_en] 'Immersive tour of Bali'
 [priere_fr] 'Sons de prière et offrandes'
 [priere_en] 'Prayer sounds and offerings'
+[fractale6_fr] 'Autres Fractales — Variations poétiques'
+[fractale6_en] 'Other Fractals — Poetic variations'
+[altfractale8_fr] 'Gardien et rizières.'
+[altfractale8_en] 'Guardian and rice fields.'
 [sonBali_fr] 'Enrichissement sonore'
 [sonBali_en] 'Soundscape enrichment'
 

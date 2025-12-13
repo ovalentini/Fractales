@@ -32,6 +32,14 @@ This project includes a dedicated accessible version for visually and hearing im
 
 Accessible version available in /accessibility/access.html Styles defined in /accessibility/styles-access.css Translations in /accessibility/langues-access.txt
 
+🇬🇧 English annotation :
+
+Indian mandala
+Architecture and flowers mirrored in sacred geometry.
+
+Balines mandala
+Guardian and rice fields mirrored in sacred balance.
+
 
 ## 📖 Credits & Links
 
