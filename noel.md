@@ -1,17 +1,14 @@
 # 🎁 Cadeau de Noël — Fractales Poétiques
 
 ## Français
-En ce Noël, je vous offre un voyage poétique à travers mes salles fractales.  
-Entre nature, musique et mémoire, chaque salle est une porte ouverte vers un monde sensible.  
-🌍 Découvrez la galerie ici : https://ovalentini.github.io/Fractales/
-
----
+Pour Noël, je vous invite à explorer mes salles fractales, un voyage entre nature, musique et mémoire.
+De nouvelles salles et de nouvelles fractales vous y attendent, comme des éclats de lumière pour cette fin d’année.
+🌍 Galerie : https://ovalentini.github.io/Fractales/
 
 ## English
-This Christmas, I share with you a poetic journey through my fractal rooms.  
-Between nature, music, and memory, each room opens a doorway into a living world.  
-🌍 Explore the gallery here: https://ovalentini.github.io/Fractales/
-
+For Christmas, I invite you to explore my fractal rooms — a journey through nature, music, and memory.
+New rooms and new fractals await you there, like small sparks of light for the end of the year.
+🌍 Gallery: https://ovalentini.github.io/Fractales/
 
 🇫🇷 Annotation française :
 Fractale indienne
