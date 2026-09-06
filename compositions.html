@@ -157,6 +157,26 @@
 	  }
 	}
 
+    @media screen and (max-width: 600px) {
+	  .close-caption {
+		position: absolute;
+		top: 0.3em;
+		right: 0.5em;
+		background: rgba(0,0,0,0.6);
+		color: #ffcc66;
+		border: none;
+		font-size: 1.4em;
+		padding: 0.1em 0.4em;
+		border-radius: 5px;
+		cursor: pointer;
+		z-index: 10;
+	  }
+
+	  .close-caption:active {
+		background: rgba(0,0,0,0.8);
+	  }
+	}
+
 	@media screen and (min-width: 601px) {
 	  figcaption p {
 		font-size: 1em;
@@ -180,6 +200,7 @@
   <figure class="slide active">
     <img src="compositions/pictures/Bing-2.jpg" alt="Le Gardien du Sous-Bois">
     <figcaption>
+	  <button class="close-caption">×</button>
       <h3>Le Gardien du Sous‑Bois</h3>
       <p>Sous la voûte verte d’un chemin forestier, un renard surgit comme un esprit des feuillages. Son regard calme relie la terre et la lumière, gardien silencieux d’un monde où la nature veille encore.</p>
     </figcaption>
@@ -409,5 +430,12 @@
       });
     });
   </script>
+  <script>
+	document.querySelectorAll('.close-caption').forEach(btn => {
+	  btn.addEventListener('click', () => {
+		btn.parentElement.style.opacity = 0;
+	  });
+	});
+	</script>
 </body>
 </html>
