@@ -240,7 +240,23 @@
   .help-close:hover {
     background: rgba(201, 169, 107, 0.3);
   }
+  
+  /* Boîte d’aide : défilable sur petits écrans */
+  @media screen and (max-width: 600px) {
+	.help-box {
+	  max-height: 80vh;     /* limite à 80% de la hauteur de l’écran */
+	  overflow-y: auto;     /* permet de scroller le texte */
+	  padding-top: 3.5em;   /* espace pour le bouton × */
+	}
 
+	/* Bouton × de la page d’aide */
+	.help-close {
+	  top: 1.2rem;          /* ↓ bouton plus bas, accessible */
+	  right: 1rem;
+	  z-index: 9999;
+	}
+  }
+  
   </style>
 </head>
 <body>
@@ -552,5 +568,6 @@
 		document.getElementById('helpOverlay').style.display = 'none';
 	  });
 	</script>
+	
 </body>
 </html>
