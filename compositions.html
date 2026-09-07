@@ -29,24 +29,20 @@
 	  border-radius: 10px;
 	  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 	}
-
 	.slide {
 	  position: relative;
 	  display: none;
 	  width: 100%;
 	  transition: opacity 1s ease;
 	}
-
 	.slide.active {
 	  display: block;
 	  opacity: 1;
 	}
-
 	.slide img {
 	  width: 100%;
 	  border-radius: 10px;
 	}
-
 	figcaption {
 	  position: absolute;
 	  bottom: 0;
@@ -63,22 +59,18 @@
 	  transition: opacity 0.8s ease;
 	  border-radius: 0 0 10px 10px;
 	}
-
 	figcaption p {
 	  margin: 0.5em 0;
 	  line-height: 1.4;
 	}
-
 	.slide:hover figcaption {
 	  opacity: 1;
 	}
-
 	figure {
 	  position: relative;
 	  text-align: center;
 	  margin: 0;
 	}
-
 	figcaption h3 {
 	  margin: 0.2em 0;
 	  font-weight: 600;
@@ -86,7 +78,6 @@
 	  color: #fff; /* couleur blanche pour le titre */
 	  text-shadow: 0 2px 4px rgba(0,0,0,0.4); /* léger halo pour lisibilité */
 	}
-
     figcaption h3 {
 	  transition: color 0.5s ease, text-shadow 0.5s ease;
 	}
@@ -116,6 +107,7 @@
     .controls button:hover {
       background-color: rgba(255,255,255,0.9);
     }
+	
     footer {
       text-align: center;
       padding: 1em;
@@ -129,12 +121,10 @@
 		max-height: 45%;
 		color: #ffcc66; /* test couleur */
 	  }
-
 	  figcaption h3 {
 		font-size: 1.2em;   /* ← comme avant */
 		line-height: 1.3;
 	  }
-
 	  figcaption p {
 		font-size: 0.95em;  /* ← comme avant */
 		line-height: 1.45;
@@ -145,12 +135,10 @@
 	  header {
 		padding: 1.2em 0; /* un peu moins haut */
 	  }
-
 	  h1 {
 		font-size: 1.4em;   /* ↓ avant : 2em */
 		letter-spacing: 0.5px;
 	  }
-
 	  header p {
 		font-size: 0.95em;     /* ↓ si tu as un sous-titre */
 		margin: 0.5em 0;
@@ -185,6 +173,9 @@
 	  figcaption h3 {
 		font-size: 1.2em;
 	  }
+	  .close-caption {
+		display: none;
+	  }	
 	}
 	
   /* Bouton Aide */
@@ -225,8 +216,9 @@
 
   .help-close {
     position: absolute;
-    top: 0.5rem;
-    right: 0.5rem;
+    top: 1rem;
+    right: 1rem;
+	z-index: 9999; /* pour qu’il reste au-dessus de l’aide, mais pas du diaporama */
     width: 28px;
     height: 28px;
     border-radius: 50%;
@@ -239,9 +231,16 @@
     cursor: pointer;
   }
 
+	/* Pour éviter la confusion visuelle */
+  .help-close::after {
+	  content: "X";  /* ou ✕ si tu préfères garder un symbole */
+	  font-size: 0.9em;
+  }
+
   .help-close:hover {
     background: rgba(201, 169, 107, 0.3);
   }
+
   </style>
 </head>
 <body>
@@ -256,7 +255,7 @@
   <figure class="slide active">
     <img src="compositions/pictures/Bing-2.jpg" alt="Le Gardien du Sous-Bois">
     <figcaption>
-	  <button class="close-caption">×</button>
+	  <button class="close-caption">x</button>
       <h3>Le Gardien du Sous‑Bois</h3>
       <p>Sous la voûte verte d’un chemin forestier, un renard surgit comme un esprit des feuillages. Son regard calme relie la terre et la lumière, gardien silencieux d’un monde où la nature veille encore.</p>
     </figcaption>
@@ -460,7 +459,7 @@
 <!-- Overlay d’aide -->
 <div class="help-overlay" id="helpOverlay">
   <div class="help-box">
-    <button class="help-close" id="helpCloseBtn" aria-label="Fermer l’aide">×</button>
+    <button class="help-close" id="helpCloseBtn" aria-label="Fermer l’aide"></button>
 
     <h1>Comment lire cette galerie poétique&nbsp;?</h1>
 
@@ -478,11 +477,9 @@
        • Laissez la légende venir comme une brume dorée, puis repartir.</p>
 
     <div class="help-footer">
-      <p>Fermez cette aide en touchant le bouton ×.</p>
+      <p>Fermez cette aide en touchant le bouton x.</p>
     </div>
-  </div>
-</div>
-  </div>
+ </div>
 </div>
 
 
@@ -555,8 +552,5 @@
 		document.getElementById('helpOverlay').style.display = 'none';
 	  });
 	</script>
-</body>
-</html>
-
 </body>
 </html>
