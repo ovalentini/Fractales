@@ -186,6 +186,62 @@
 		font-size: 1.2em;
 	  }
 	}
+	
+  /* Bouton Aide */
+  .help-open {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    padding: 0.5rem 1rem;
+    background: rgba(0,0,0,0.6);
+    color: #f7dca0;
+    border: 1px solid #c9a96b;
+    cursor: pointer;
+    z-index: 9000;
+  }
+
+  /* Overlay plein écran */
+  .help-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.85);
+    display: none; /* caché au départ */
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+  }
+
+  .help-box {
+    position: relative;
+    max-width: 600px;
+    padding: 2rem;
+    background: #1b1b1b;
+    border: 1px solid #c9a96b;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    color: #f5e6c8;
+    font-family: "Georgia", serif;
+    line-height: 1.6;
+  }
+
+  .help-close {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 1px solid #c9a96b;
+    background: rgba(0, 0, 0, 0.6);
+    color: #f7dca0;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .help-close:hover {
+    background: rgba(201, 169, 107, 0.3);
+  }
   </style>
 </head>
 <body>
@@ -398,6 +454,38 @@
   </div>
 </div>
 
+<!-- Bouton pour ouvrir l’aide -->
+<button id="openHelpBtn" class="help-open">Aide</button>
+
+<!-- Overlay d’aide -->
+<div class="help-overlay" id="helpOverlay">
+  <div class="help-box">
+    <button class="help-close" id="helpCloseBtn" aria-label="Fermer l’aide">×</button>
+
+    <h1>Comment lire cette galerie poétique&nbsp;?</h1>
+
+    <p><strong>Sur smartphone / iPhone :</strong></p>
+    <p>• Touchez l’image pour faire apparaître la légende.<br>
+       • Touchez le bouton × pour refermer la légende.<br>
+       • Les images défilent automatiquement toutes les <strong>12 secondes</strong>.</p>
+
+    <p><strong>Sur ordinateur :</strong></p>
+    <p>• Passez la souris sur l’image pour lire la légende.<br>
+       • Le défilement automatique est identique&nbsp;: <strong>12 secondes par image</strong>.</p>
+
+    <p><strong>Conseil de lecture :</strong></p>
+    <p>• Prenez votre temps, chaque image porte une petite histoire.<br>
+       • Laissez la légende venir comme une brume dorée, puis repartir.</p>
+
+    <div class="help-footer">
+      <p>Fermez cette aide en touchant le bouton ×.</p>
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+
+
   <footer>
     <p>© 2026 Olivier – Fractales & Compositions</p>
   </footer>
@@ -457,5 +545,18 @@
 	  });
 	});
 	</script>
+	
+	<script>
+	  document.getElementById('openHelpBtn').addEventListener('click', function () {
+		document.getElementById('helpOverlay').style.display = 'flex';
+	  });
+
+	  document.getElementById('helpCloseBtn').addEventListener('click', function () {
+		document.getElementById('helpOverlay').style.display = 'none';
+	  });
+	</script>
+</body>
+</html>
+
 </body>
 </html>
