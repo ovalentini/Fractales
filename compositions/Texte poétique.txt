@@ -121,104 +121,108 @@ Description :
 Sous le ciel de feu, deux âmes marines traversent le désert immobile.
 Leur silence garde la mémoire des océans disparus.
 
-🐋 : “Les Gardiens du Rivage”
+🐋 : “Les Gardiens du Rivage” (Bing 38)
 Description :  
 Sous les arbres noyés, deux esprits marins veillent le dernier souffle du jour.
 
-🌊 : “Les Voyageuses du Lagon”
+🌊 : “Les Voyageuses du Lagon” (Bing 39)
 Description :  
 Sous le soleil éclatant de Bora Bora, quatre girafes avancent lentement dans le lagon turquoise.
 
-🌵: “Le Gardien du Soleil”
+🌵: “Le Gardien du Soleil” (Bing 40)
 Description: 
 Dans la lumière dorée du Saguaro, un boa se love entre les cactus géants.
 
-🦎: “Le Voyageur des Glaces”
+🦎: “Le Voyageur des Glaces” (Bing 41)
 Description: 
 Sous le ciel du Denali, un varan avance, étranger et majestueux.
 
-🌙: Le Gardien des Lucioles
+🌙: Le Gardien des Lucioles (Bing 42)
 Description :  
 Sous la voûte des arbres, un requin citron glisse dans une rivière illuminée.
 
-🦬: Les Voyageurs du Rivage
+🦬: Les Voyageurs du Rivage (Bing 43)
 Description :
 Les gnous avancent, portés par le vent et la mémoire des rivages anciens.
 
-🦬: Les Voyageurs du Récif 
+🦬: Les Voyageurs du Récif  (Bing 44)
 Description :
 Les gnous marchent sur l’eau claire, portés par le souvenir des terres disparues.
 
-🪶:  L’instant suspendu à Raja Ampat 
+🪶:  L’instant suspendu à Raja Ampat  (Bing 46)
 Description :
 Un héron glisse entre ciel et mer, dans la douceur pêche du lagon.
 
-🐕:  Les Gardiens du Printemps
+🐕:  Les Gardiens du Printemps (Bing 47)
 Description :
 Trois shiba‑inu gambadent sur les collines vertes d’Hitachi, sous un ciel clair de printemps.
 
-🐎: Les Cavaliers du Pacifique
+🐎: Les Cavaliers du Pacifique (Bing 48)
 Description :
 Sous le ciel doré, les chevaux de Camargue traversent l’océan comme un souffle venu du rêve.
 
-🕊️: Sous le vent des plaines
+🕊️: Sous le vent des plaines (Bing 49)
 Description :
 Hirondelles légères sur les épis, chevaux immobiles dans la plaine. — un instant où le vent relie le ciel à la terre.
 
-🪸: Le souffle des pierres et des vagues 
+🪸: Le souffle des pierres et des vagues  (Bing 50)
 Description :
-Les poissons glissent entre les parois, et le canyon devient mer silencieuse. (50)
-Sous la lumière naissante, les coraux s’éveillent et les pierres deviennent mer.(503)
+Les poissons glissent entre les parois, et le canyon devient mer silencieuse. (Bing 50)
+Sous la lumière naissante, les coraux s’éveillent et les pierres deviennent mer.(Bing 503)
 
- 🦩: Silence rose sur les montagnes 
+ 🦩: Silence rose sur les montagnes  (Bing 51)
 Description :
  Sous le ciel du Sikkim, les flamants marchent comme des songes rosés dans la montagne. 
 
-🐅: Les tigres du soleil couchant
+🐅: Les tigres du soleil couchant (Bing 52)
 Description :
 Sous la lumière d’Hawaï, les tigres avancent comme des flammes tranquilles sur le sable. 
 
-🔥:  Les nageurs du feu
+🔥:  Les nageurs du feu (Bing 53)
 Description :
  Sous le souffle du feu, les poissons dansent comme des éclats d’or entre les vagues et la lave. 
 
-🦉: La gardienne du désert
+🦉: La gardienne du désert (Bing 54)
 Description :
  Sous le ciel pourpre du désert, la chouette veille — gardienne du silence et des routes de lumière.
      
-🦬: Le veilleur des terres dorées
+🦬: Le veilleur des terres dorées (Bing 55)
 Photo du gnou : Muhammad Mahdi Karim – œuvre originale sous licence CC BY.
 Description :
 Sous la lumière dorée, le gnou géant avance, gardien des terres anciennes où le soleil se souvient encore. 
 
-🐌: Les escargots du silence vert
+🐌: Les escargots du silence vert (Bing 56)
 Description :
 Dans le labyrinthe des osmanthus, les coquilles dorées sommeillent, bercées par la lumière du soir.
 
-🐠: Les nageurs du couchant
+🐠: Les nageurs du couchant (Bing 57)
 Description :
 Sous la lumière dorée, les poissons semblent flotter entre deux mondes : celui de l’eau et celui du rêve.
 
-🦋: Le souffle du désert ailé
+🦋: Le souffle du désert ailé (Bing 58)
 Description :
 Dans la poussière rouge, le papillon devient messager du feu et du vent, gardien du crépuscule.
 
-🐘: Marche au bord du ciel
+🐘: Marche au bord du ciel (Bing 59)
 Description :
 Sur les terres hautes des Andes, le troupeau traverse la vallée comme une apparition tranquille.
 
-🐸: Les Veilleurs du Tropique Astral
+🐸: Les Veilleurs du Tropique Astral (Bing 60)
 Description :
 Grenouilles immobiles, fleurs ouvertes vers le ciel — une Perséide passe.
 
-🦋: Éclat du désert violet
+🦋: Éclat du désert violet (Bing 61)
 Description :
 Sous le ciel embrasé du Nouveau‑Mexique, un papillon s’est posé comme une pensée lumineuse sur la solitude minérale.
 
-🐅: “L’instant suspendu”
+🐅: “L’instant suspendu” (Bing 62)
 Description :  
 Dans la forêt baignée d’or, un tigre immobile observe l’ombre bondissante d’un ours.
 
-🦈: Le géant des mousses
+🦈: Le géant des mousses (Bing 63)
 Description :
 Sous les chapeaux fragiles des champignons, un requin‑baleine rêve d’océan dans la lumière verte d’un monde minuscule.
+
+🌸: Le messager des fleurs (Bing 66)
+Description :
+Entre la neige éternelle et les prairies en éveil, un petit voyageur porte le printemps dans son bec.

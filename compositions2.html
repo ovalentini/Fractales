@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compositions animales II</title>
+  <style>
+    body {
+      background-color: #f9f9f9;
+      font-family: "Segoe UI", sans-serif;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #e0e0e0;
+      text-align: center;
+      padding: 2em 0;
+    }
+    h1 {
+      font-size: 2em;
+      letter-spacing: 1px;
+    }
+    .slideshow {
+	  position: relative;
+	  max-width: 900px;
+	  margin: 3em auto;
+	  overflow: hidden;
+	  border-radius: 10px;
+	  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+	}
+	.slide {
+	  position: relative;
+	  display: none;
+	  width: 100%;
+	  transition: opacity 1s ease;
+	}
+	.slide.active {
+	  display: block;
+	  opacity: 1;
+	}
+	.slide img {
+	  width: 100%;
+	  border-radius: 10px;
+	}
+	figcaption {
+	  position: absolute;
+	  bottom: 0;
+	  left: 0;
+	  width: 100%;
+	  box-sizing: border-box;   /* ← à ajouter */
+	  max-height: 40%;        /* limite la hauteur */
+	  overflow-y: auto;       /* ajoute un scroll interne si le texte est long */
+	  background: rgba(0,0,0,0.55);
+	  color: #fff;
+	  padding: 1em;
+	  text-align: center;
+	  opacity: 0;
+	  transition: opacity 0.8s ease;
+	  border-radius: 0 0 10px 10px;
+	}
+	figcaption p {
+	  margin: 0.5em 0;
+	  line-height: 1.4;
+	}
+	.slide:hover figcaption {
+	  opacity: 1;
+	}
+	figure {
+	  position: relative;
+	  text-align: center;
+	  margin: 0;
+	}
+	figcaption h3 {
+	  margin: 0.2em 0;
+	  font-weight: 600;
+	  font-size: 1.2em;
+	  color: #fff; /* couleur blanche pour le titre */
+	  text-shadow: 0 2px 4px rgba(0,0,0,0.4); /* léger halo pour lisibilité */
+	}
+    figcaption h3 {
+	  transition: color 0.5s ease, text-shadow 0.5s ease;
+	}
+
+	figcaption p {
+	  font-style: italic;
+	  font-size: 0.95em;
+	}
+
+    .controls {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      transform: translateY(-50%);
+    }
+    .controls button {
+      background-color: rgba(255,255,255,0.7);
+      border: none;
+      font-size: 1.5em;
+      cursor: pointer;
+      padding: 0.5em 1em;
+      border-radius: 50%;
+      transition: background-color 0.3s;
+    }
+    .controls button:hover {
+      background-color: rgba(255,255,255,0.9);
+    }
+	
+    footer {
+      text-align: center;
+      padding: 1em;
+      font-size: 0.9em;
+      color: #666;
+    }
+	
+	@media screen and (max-width: 600px) {
+	  figcaption {
+		padding: 1em;
+		max-height: 45%;
+		color: #ffcc66; /* test couleur */
+	  }
+	  figcaption h3 {
+		font-size: 1.2em;   /* ← comme avant */
+		line-height: 1.3;
+	  }
+	  figcaption p {
+		font-size: 0.95em;  /* ← comme avant */
+		line-height: 1.45;
+	  }
+	}
+	
+	@media screen and (max-width: 600px) {
+	  header {
+		padding: 1.2em 0; /* un peu moins haut */
+	  }
+	  h1 {
+		font-size: 1.4em;   /* ↓ avant : 2em */
+		letter-spacing: 0.5px;
+	  }
+	  header p {
+		font-size: 0.95em;     /* ↓ si tu as un sous-titre */
+		margin: 0.5em 0;
+	  }
+	}
+
+    @media screen and (max-width: 600px) {
+	  .close-caption {
+		position: absolute;
+		top: 0.3em;
+		right: 0.5em;
+		background: rgba(0,0,0,0.6);
+		color: #ffcc66;
+		border: none;
+		font-size: 1.4em;
+		padding: 0.1em 0.4em;
+		border-radius: 5px;
+		cursor: pointer;
+		z-index: 10;
+	  }
+
+	  .close-caption:active {
+		background: rgba(0,0,0,0.8);
+	  }
+	}
+
+	@media screen and (min-width: 601px) {
+	  figcaption p {
+		font-size: 1em;
+		line-height: 1.4;
+	  }
+	  figcaption h3 {
+		font-size: 1.2em;
+	  }
+	  .close-caption {
+		display: none;
+	  }	
+	}
+	
+  /* Bouton Aide */
+  .help-open {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    padding: 0.5rem 1rem;
+    background: rgba(0,0,0,0.6);
+    color: #f7dca0;
+    border: 1px solid #c9a96b;
+    cursor: pointer;
+    z-index: 9000;
+  }
+
+  /* Overlay plein écran */
+  .help-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.85);
+    display: none; /* caché au départ */
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+  }
+
+  .help-box {
+    position: relative;
+    max-width: 600px;
+    padding: 2rem;
+    background: #1b1b1b;
+    border: 1px solid #c9a96b;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    color: #f5e6c8;
+    font-family: "Georgia", serif;
+    line-height: 1.6;
+  }
+
+  .help-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+	z-index: 9999; /* pour qu’il reste au-dessus de l’aide, mais pas du diaporama */
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 1px solid #c9a96b;
+    background: rgba(0, 0, 0, 0.6);
+    color: #f7dca0;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    cursor: pointer;
+  }
+
+	/* Pour éviter la confusion visuelle */
+  .help-close::after {
+	  content: "X";  /* ou ✕ si tu préfères garder un symbole */
+	  font-size: 0.9em;
+  }
+
+  .help-close:hover {
+    background: rgba(201, 169, 107, 0.3);
+  }
+  
+  /* Boîte d’aide : défilable sur petits écrans */
+  @media screen and (max-width: 600px) {
+	.help-box {
+	  max-height: 80vh;     /* limite à 80% de la hauteur de l’écran */
+	  overflow-y: auto;     /* permet de scroller le texte */
+	  padding-top: 3.5em;   /* espace pour le bouton × */
+	}
+
+	/* Bouton × de la page d’aide */
+	.help-close {
+	  top: 1.2rem;          /* ↓ bouton plus bas, accessible */
+	  right: 1rem;
+	  z-index: 9999;
+	}
+  }
+  
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Compositions animales II</h1>
+    <p>Exploration visuelle entre fractales et formes vivantes</p>
+  </header>
+
+  <div class="slideshow">
+
+  <!-- 🌅 Acte I : L'appel du monde -->
+  <figure class="slide active">
+    <img src="compositions/pictures/Bing-74.jpg" alt="Les gardiens de la porte jaune">
+    <figcaption>
+	  <button class="close-caption">x</button>
+      <h3>🦜 Les gardiens de la porte jaune</h3>
+      <p>Sous la colline fleurie, deux aras veillent sur une maison que les chemins ont oubliée.</p>
+    </figcaption>
+  </figure>
+
+  <figure class="slide">
+    <img src="compositions/pictures/Bing-83.jpg" alt="L'art de prendre son temps">
+    <figcaption>
+	  <button class="close-caption">×</button>
+      <h3>🦥 L'art de prendre son temps</h3>
+      <p>Pendant que le monde poursuit sa route, un voyageur préfère savourer chaque instant.</p>
+    </figcaption>
+  </figure>
+
+  <figure class="slide">
+    <img src="compositions/pictures/Bing-96.jpg" alt="Le conseil du crépuscule">
+    <figcaption>
+	  <button class="close-caption">×</button>
+      <h3>🦩: Le conseil du crépuscule</h3>
+      <p>À l'heure où les reflets d'or envahissent le fleuve, les voyageurs se réunissent en silence.</p>
+    </figcaption>
+  </figure>
+
+  <figure class="slide">
+    <img src="compositions/pictures/Bing-99.jpg" alt="Le gardien du crépuscule">
+    <figcaption>
+	  <button class="close-caption">×</button>
+      <h3>🐆 Le gardien du crépuscule</h3>
+      <p>Lorsque la mer se teinte d'or et de rose, un discret veilleur observe le dernier souffle du jour.</p>
+    </figcaption>
+  </figure>
+
+  <!-- II. Glace, géométrie -->
+  <figure class="slide">
+    <img src="compositions/pictures/Bing-9.jpg" alt="L’Envol du Silence">
+    <figcaption>
+	  <button class="close-caption">×</button>
+      <h3>L’Envol du Silence</h3>
+      <p>Sous la neige immobile, trois oiseaux dorés traversent l’air glacé. Leur vol suspendu éclaire le Palais de Cristal, comme une promesse de lumière au cœur de l’hiver.</p>
+    </figcaption>
+  </figure>
+
+  <figure class="slide">
+    <img src="compositions/pictures/Bing-13.jpg" alt="Le Souffle du Crépuscule">
+    <figcaption>
+	  <button class="close-caption">×</button>
+      <h3>Le Souffle du Crépuscule</h3>
+      <p>Un rapace glisse au‑dessus d’un lac paisible, ses ailes capturant les derniers reflets du jour. L’horizon s’efface dans l’or et l’ombre, entre puissance et sérénité.</p>
+    </figcaption>
+  </figure>
+
+  <!-- III. Ciel, totems -->
+  <figure class="slide">
+    <img src="compositions/pictures/Bing-8.jpg" alt="Gardien des Étoiles">
+    <figcaption>
+	  <button class="close-caption">×</button>
+      <h3>Gardien des Étoiles</h3>
+      <p>Sous la voûte céleste, un écureuil veille sur ses trésors glacés. Autour de lui, la nuit scintille comme un conte ancien, où la douceur défie le froid.</p>
+    </figcaption>
+  </figure>
+
+  <figure class="slide">
+    <img src="compositions/pictures/Bing-17.jpg" alt="Lumières du Nord">
+    <figcaption>
+	  <button class="close-caption">×</button>
+      <h3>Lumières du Nord</h3>
+      <p>Sous les aurores boréales, l’ours polaire avance dans le silence glacé. Autour de lui, le ciel s’embrase comme un rêve arctique, reflet d’une terre qui respire la lumière.</p>
+    </figcaption>
+  </figure>
+
+  <figure class="slide">
+    <img src="compositions/pictures/Bing-19.jpg" alt="Brume d’Amazonie">
+    <figcaption>
+	  <button class="close-caption">×</button> 
+      <h3>Brume d’Amazonie</h3>
+      <p>Les aras s’élèvent au‑dessus de la forêt endormie. Leurs ailes colorent la brume dorée, messagères d’un matin qui s’éveille dans la chaleur du monde.</p>
+    </figcaption>
+  </figure>
+
+  <figure class="slide">
+    <img src="compositions/pictures/Bing-18.jpg" alt="Vol des Andes">
+    <figcaption>
+	  <button class="close-caption">×</button>
+      <h3>Vol des Andes</h3>
+      <p>Le condor plane sur Machu Picchu, gardien des pierres et du vent. Son ombre glisse sur les ruines, reliant le ciel ancien à la mémoire des montagnes.</p>
+    </figcaption>
+  </figure>
+
+  <!-- IV. Éléments, tension -->
+  <figure class="slide">
+    <img src="compositions/pictures/Bing-21.jpg" alt="Sous le Ciel Électrique">
+    <figcaption>
+	  <button class="close-caption">×</button>
+      <h3>Sous le Ciel Électrique</h3>
+      <p>Deux grues immobiles dans le désert, tandis que la foudre déchire le ciel. Leurs yeux rouges reflètent la tempête intérieure du monde, entre tension et beauté.</p>
+    </figcaption>
+  </figure>
+
+  <figure class="slide">
+    <img src="compositions/pictures/Bing-23.jpg" alt="Bláhver‑no‑Kawazu">
+    <figcaption>
+	  <button class="close-caption">×</button>
+      <h3>Bláhver‑no‑Kawazu, Gardien des Sources</h3>
+      <p>Né de la vapeur, gardien des eaux bleues. Il apaise la terre et inspire ceux qui s’attardent dans son silence.</p>
+    </figcaption>
+  </figure>
+
+  <figure class="slide">
+    <img src="compositions/pictures/Bing-25.jpg" alt="Lumière des Collines">
+    <figcaption>
+	  <button class="close-caption">×</button>
+      <h3>Lumière des Collines</h3>
+      <p>Sous le soleil couchant, un âne et son petit se reposent dans la douceur dorée. Leurs ombres s’allongent sur les collines, comme une promesse de paix.</p>
+    </figcaption>
+  </figure>
+
+  <!-- V. Jardins du silence -->
+  <figure class="slide">
+    <img src="compositions/pictures/Bing-26.jpg" alt="Sous l’Arche des Étoiles">
+    <figcaption>
+	  <button class="close-caption">×</button> 
+      <h3>Sous l’Arche des Étoiles</h3>
+      <p>Trois macareux veillent sous une arche de pierre, tandis que la Voie lactée s’élève derrière eux. Leurs cris résonnent comme des chants anciens, gardiens du lien entre ciel et mer.</p>
+    </figcaption>
+  </figure>
+
+  <figure class="slide">
+    <img src="compositions/pictures/Bing-28.jpg" alt="Rêve de Printemps Polaire">
+    <figcaption>
+	  <button class="close-caption">×</button>
+      <h3>Rêve de Printemps Polaire</h3>
+      <p>Une mère ours et ses petits reposent parmi les fleurs bleues. Autour d’eux, la lumière du soir caresse la terre, et le monde semble retenir son souffle.</p>
+    </figcaption>
+  </figure>
+
+  <figure class="slide">
+    <img src="compositions/pictures/Bing-29.jpg" alt="Lustration du Corail">
+    <figcaption>
+	  <button class="close-caption">×</button>
+      <h3>Lustration du Corail</h3>
+      <p>Dans la lumière turquoise de la mer d’Australie, une aigrette nettoie son plumage comme pour purifier l’océan.</p>
+    </figcaption>
+  </figure>
+
+  <!-- VI. Eau, cosmos -->
+  <figure class="slide">
+    <img src="compositions/pictures/Bing-30.jpg" alt="La Mer Céleste">
+    <figcaption>
+	  <button class="close-caption">×</button>
+      <h3>La Mer Céleste</h3>
+      <p>Sous le ciel de Thaïlande, la méduse crinière de lion flotte au‑dessus du port de Ko Samui.</p>
+    </figcaption>
+  </figure>
+
+  <figure class="slide">
+    <img src="compositions/pictures/Bing-31.jpg" alt="La Méduse de la Voie Lactée">
+    <figcaption>
+	  <button class="close-caption">×</button> 
+      <h3>La Méduse de la Voie Lactée</h3>
+      <p>Elle glisse entre les étoiles, filaments de lumière ouverts au cosmos, comme un rêve d’océan suspendu dans la nuit.</p>
+    </figcaption>
+  </figure>
+
+  <!-- VII. Mouvement final -->
+  <figure class="slide">
+    <img src="compositions/pictures/Bing-43.jpg" alt="Les Voyageurs du Rivage">
+    <figcaption>
+	  <button class="close-caption">×</button>
+      <h3>Les Voyageurs du Rivage</h3>
+      <p>Les gnous avancent, portés par le vent et la mémoire des rivages anciens.</p>
+    </figcaption>
+  </figure>
+
+  <figure class="slide">
+    <img src="compositions/pictures/Bing-48.jpg" alt="Les Cavaliers du Pacifique">
+    <figcaption>
+	  <button class="close-caption">×</button>
+      <h3>Les Cavaliers du Pacifique</h3>
+      <p>Sous le ciel doré, les chevaux de Camargue traversent l’océan comme un souffle venu du rêve.</p>
+    </figcaption>
+  </figure>
+
+  <figure class="slide">
+    <img src="compositions/pictures/Bing-50.jpg" alt="Le souffle des pierres et des vagues">
+    <figcaption>
+	  <button class="close-caption">×</button>
+      <h3>Le souffle des pierres et des vagues</h3>
+      <p>Les poissons glissent entre les parois, et le canyon devient mer silencieuse. Sous la lumière naissante, les coraux s’éveillent et les pierres deviennent mer.</p>
+    </figcaption>
+  </figure>
+  
+  <figure class="slide">
+    <img src="compositions/pictures/Bing-66.jpg" alt="Le messager des fleurs">
+    <figcaption>
+	  <button class="close-caption">×</button>
+      <h3>Le messager des fleurs</h3>
+      <p>Entre la neige éternelle et les prairies en éveil, un petit voyageur porte le printemps dans son bec.</p>
+    </figcaption>
+  </figure>
+
+  <div class="controls">
+    <button id="prev">❮</button>
+    <button id="next">❯</button>
+  </div>
+</div>
+
+<!-- Bouton pour ouvrir l’aide -->
+<button id="openHelpBtn" class="help-open">Aide</button>
+
+<!-- Overlay d’aide -->
+<div class="help-overlay" id="helpOverlay">
+  <div class="help-box">
+    <button class="help-close" id="helpCloseBtn" aria-label="Fermer l’aide"></button>
+
+    <h1>Comment lire cette galerie poétique&nbsp;?</h1>
+
+    <p><strong>Sur smartphone / iPhone :</strong></p>
+    <p>• Touchez l’image pour faire apparaître la légende.<br>
+       • Touchez le bouton × pour refermer la légende.<br>
+       • Les images défilent automatiquement toutes les <strong>12 secondes</strong>.</p>
+
+    <p><strong>Sur ordinateur :</strong></p>
+    <p>• Passez la souris sur l’image pour lire la légende.<br>
+       • Le défilement automatique est identique&nbsp;: <strong>12 secondes par image</strong>.</p>
+
+    <p><strong>Conseil de lecture :</strong></p>
+    <p>• Prenez votre temps, chaque image porte une petite histoire.<br>
+       • Laissez la légende venir comme une brume dorée, puis repartir.</p>
+
+    <div class="help-footer">
+      <p>Fermez cette aide en touchant le bouton x.</p>
+    </div>
+ </div>
+</div>
+
+
+  <footer>
+    <p>© 2026 Olivier – Fractales & Compositions</p>
+  </footer>
+
+  <script>
+    const slides = document.querySelectorAll('.slide');
+    let index = 0;
+
+    function showSlide(i) {
+      slides.forEach((s, n) => s.classList.toggle('active', n === i));
+    }
+
+    document.getElementById('next').onclick = () => {
+      index = (index + 1) % slides.length;
+      showSlide(index);
+    };
+    document.getElementById('prev').onclick = () => {
+      index = (index - 1 + slides.length) % slides.length;
+      showSlide(index);
+    };
+
+    // Diaporama automatique toutes les 10 secondes
+    setInterval(() => {
+      index = (index + 1) % slides.length;
+      showSlide(index);
+    }, 12000);
+
+    // Vue plein écran au double-clic
+    slides.forEach(img => {
+      img.addEventListener('dblclick', () => {
+        const popup = document.createElement('div');
+        popup.style.position = 'fixed';
+        popup.style.top = '0';
+        popup.style.left = '0';
+        popup.style.width = '100%';
+        popup.style.height = '100%';
+        popup.style.backgroundColor = 'rgba(0,0,0,0.8)';
+        popup.style.display = 'flex';
+        popup.style.alignItems = 'center';
+        popup.style.justifyContent = 'center';
+        popup.style.cursor = 'zoom-out';
+        const fullImg = document.createElement('img');
+        fullImg.src = img.src;
+        fullImg.style.maxWidth = '90%';
+        fullImg.style.maxHeight = '90%';
+        fullImg.style.borderRadius = '10px';
+        popup.appendChild(fullImg);
+        popup.addEventListener('click', () => popup.remove());
+        document.body.appendChild(popup);
+      });
+    });
+  </script>
+  <script>
+	document.querySelectorAll('.close-caption').forEach(btn => {
+	  btn.addEventListener('click', () => {
+		btn.parentElement.style.opacity = 0;
+	  });
+	});
+	</script>
+	
+	<script>
+	  document.getElementById('openHelpBtn').addEventListener('click', function () {
+		document.getElementById('helpOverlay').style.display = 'flex';
+	  });
+
+	  document.getElementById('helpCloseBtn').addEventListener('click', function () {
+		document.getElementById('helpOverlay').style.display = 'none';
+	  });
+	</script>
+	
+</body>
+</html>
